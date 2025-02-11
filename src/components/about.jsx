@@ -11,7 +11,7 @@ export const About = (props) => {
             <div className="about-section">
               <div className="about-title-container">
                 <h1 className="about-title">About</h1>
-                <h4 className="about-title2">the Conference</h4>
+                <h4 className="about-title2">Conference</h4>
               </div>
             </div>
 
