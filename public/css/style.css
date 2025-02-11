@@ -80,11 +80,11 @@ hr {
 /* กำหนดสไตล์ให้เฉพาะ TopicsOfInterest */
 
 .heading-left {
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
 }
 
 .heading-left::first-letter {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 .page-topics-background {
