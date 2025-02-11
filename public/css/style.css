@@ -489,9 +489,10 @@ a:focus,
 }
 
 /* เมนูย่อย Dropdown */
-.navbar .dropdown-menu {
+.navbar .dropdown-menu {  
   display: none;
-  position: absolute;
+  position: relative;
+  display: inline-block; /* ทำให้ขนาดของ dropdown ขยายตามเนื้อหา */
   left: 0;
   top: 100%;
   background-color: #293236;
