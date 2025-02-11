@@ -30,7 +30,10 @@ const App = () => {
         <Route path="/topics-of-interest" element={<TopicsOfInterest />} /> {/* ✅ เพิ่ม Route ใหม่ */}
         <Route path="/organizing-committees" element={<OrganizeCommittee />} /> {/* ✅ เพิ่ม Route ใหม่ */}
       </Routes>
-
+      <div>
+        <Team2 data={landingPageData.Team} />   
+        <Team1 data={landingPageData.Team2} />   
+      </div> 
       <Contact data={landingPageData.Contact} /> {/* ✅ Contact คงที่ */}
     </Router>
   );
