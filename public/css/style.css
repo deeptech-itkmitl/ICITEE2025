@@ -285,7 +285,7 @@ hr {
   width: 100% !important;  /* ใช้เต็มความกว้างของ viewport */
   height: 100% !important; /* ใช้เต็มความสูงของ viewport */
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   animation: slideshow2 15s ease-in-out infinite;
   }
   
@@ -295,22 +295,7 @@ hr {
   66% { background-image: url(../img/intro-bg-3.jpg); }
   100% { background-image: url(../img/intro-bg-5.jpg);  }
   }
-
-  /*Background*/
-.slideshow1 {
-  width: 100% !important;  /* ใช้เต็มความกว้างของ viewport */
-  height: 100% !important; /* ใช้เต็มความสูงของ viewport */
-  background-size: cover;
-  background-repeat: no-repeat;
-  animation: slideshow1 15s ease-in-out infinite;
-  }
   
-  @keyframes slideshow1 {
-  0% { background-image: url(../img/intro-bg-4.jpg); }
-  33% { background-image: url(../img/intro-bg-1.jpg); }
-  66% { background-image: url(../img/intro-bg-3.jpg); }
-  100% { background-image: url(../img/intro-bg-5.jpg);  }
-  }
  
 /* Navigation */
 #menu {
