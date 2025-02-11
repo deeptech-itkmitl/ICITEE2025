@@ -10,8 +10,8 @@ export const About = (props) => {
             {/* ส่วนหัวข้อซ้าย */}
             <div className="about-section">
               <div className="about-title-container">
-                <h1 className="about-title">About</h1>
-                <h4 className="about-title2">Conference</h4>
+                <h3 className="about-title">About</h3>
+                <h3 className="about-title2">Conference</h3>
               </div>
             </div>
 
@@ -35,8 +35,8 @@ export const About = (props) => {
           <div className="content-layout">
             <div className="important-section">
               <div className="about-title-container">
-                <h1 className="about-title">Important</h1>
-                <h4 className="about-title2">Dates</h4>
+                <h3 className="about-title">Important</h3>
+                <h3 className="about-title2">Dates</h3>
               </div>
             </div>
 
