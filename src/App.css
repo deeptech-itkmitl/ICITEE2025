@@ -67,7 +67,7 @@
 .countdown__card__bg {
   position: relative;
   width: 100%;
-  max-width: 120px;
+  max-width: 100px;
   height: auto;
   aspect-ratio: 120 / 120;
   background-color: #f0e8ec7e;
