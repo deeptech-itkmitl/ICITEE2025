@@ -51,9 +51,9 @@ export const TopicsOfInterest = () => {
         <div className="topics-grid">
           {topics.map((topic, index) => (
             <div key={index} className="topic-row">
-              <h2>
+              <h3>
                  <div className="heading-left topics-title">{topic.title}</div>
-              </h2>
+              </h3>
               <div className="topic-description text-justify">{topic.description}</div>
             </div>
           ))}
