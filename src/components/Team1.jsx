@@ -5,7 +5,7 @@ export const Team1 = (props) => {
     <div id="team2" className="text-center">
       <div className="container">
         <div className="col-md-8 col-md-offset-2 section-title">
-          <h4>Co-Organizer</h4>
+          <h3>Co-Organizer</h3>
           <p>
           </p>
         </div>
