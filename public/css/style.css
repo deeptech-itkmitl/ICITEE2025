@@ -492,39 +492,35 @@ a:focus,
 .navbar .dropdown-menu {
   display: none;
   position: absolute;
-  left: 0;
-  top: 100%;
   background-color: #293236;
   list-style: none;
   margin: 0;
   padding: 10px 0;
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  min-width: 100%; /* ทำให้เมนูย่อยกว้างเท่ากับเมนูหลัก */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* ปรับเงาให้เห็น */
 }
 
 .navbar .dropdown:hover .dropdown-menu,
-.navbar .dropdown-menu.open {
+.navbar .dropdown-menu.open { 
   display: block;
 }
 
-.dropdown-menu li {
+.dropdown-menu li {  
   margin: 0;
 }
 
 .dropdown-menu a {
   display: block;
-  padding: 10px 20px;
-  color: white !important;
+  padding: 10px 20px;  
+  color: white !important; /* สีปกติเป็นสีขาว */
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .dropdown-menu a:hover {
-  background-color: #ffffff;
-  color: #1f2937 !important;
+  background-color: #ffffff; /* สีพื้นหลังเมื่อโฮเวอร์ */
+  color: #1f2937 !important; /* เปลี่ยนสีตัวอักษรเป็นสีเข้ม */
 }
-
 
 .intro {
   display: table;
@@ -1148,7 +1144,7 @@ label {
   height: 100%;
   background-size: cover;
   background-position: center;
-  animation: fade 10s infinite;
+  animation: fade 12s infinite;
   background: #0c1329;
 }
 
