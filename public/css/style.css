@@ -17,7 +17,7 @@ h4 {
   font-family: "Poppins";
 }
 h2 {
-  
+  text-transform: uppercase;
   margin: 0 0 20px;
   font-weight: 800;
   font-size: 36px;
@@ -34,13 +34,13 @@ h4 {
   font-weight: 600;
 }
 h5 {
- 
+  text-transform: uppercase;
   font-weight: 700;
   line-height: 20px;
 }
 p {
   font-family: "Poppins";
-  font-size: 14px;
+  font-size: 15px;
 }
 p.intro {
   margin: 12px 0 0;
@@ -75,7 +75,6 @@ hr {
   margin-bottom: 20px;
   border: 0;
 }
-
 
 /* กำหนดสไตล์ให้เฉพาะ TopicsOfInterest */
 
@@ -222,7 +221,7 @@ hr {
 .committee-title {
   font-family: "Poppins";
   color: #d1d5db;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 2rem;
@@ -285,17 +284,32 @@ hr {
   width: 100% !important;  /* ใช้เต็มความกว้างของ viewport */
   height: 100% !important; /* ใช้เต็มความสูงของ viewport */
   background-size: cover;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   animation: slideshow2 15s ease-in-out infinite;
   }
   
   @keyframes slideshow2 {
-  10% { background-image: url(../img/intro-bg-3.jpg); }
-  33% { background-image: url(../img/intro-bg-4.jpg); }
-  66% { background-image: url(../img/intro-bg-5.jpg); }
-  100% { background-image: url(../img/intro-bg-1.jpg);  }
+  0% { background-image: url(../img/intro-bg-4.jpg); }
+  33% { background-image: url(../img/intro-bg-1.jpg); }
+  66% { background-image: url(../img/intro-bg-3.jpg); }
+  100% { background-image: url(../img/intro-bg-5.jpg);  }
+  }
+
+  /*Background*/
+.slideshow1 {
+  width: 100% !important;  /* ใช้เต็มความกว้างของ viewport */
+  height: 100% !important; /* ใช้เต็มความสูงของ viewport */
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: slideshow1 15s ease-in-out infinite;
   }
   
+  @keyframes slideshow1 {
+  0% { background-image: url(../img/intro-bg-4.jpg); }
+  33% { background-image: url(../img/intro-bg-1.jpg); }
+  66% { background-image: url(../img/intro-bg-3.jpg); }
+  100% { background-image: url(../img/intro-bg-5.jpg);  }
+  }
  
 /* Navigation */
 #menu {
@@ -316,12 +330,12 @@ hr {
   font-size: 24px;
   font-weight: 150;
   color: #333;
-  
+  text-transform: uppercase;
 }
 
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Poppins", Poppins;
-  
+  text-transform: uppercase;
   color: #ffffff;
   font-size: 15px;
   font-weight: 400;
@@ -396,7 +410,7 @@ hr {
 }
 .btn-custom {
   font-family: "Raleway", sans-serif;
-  
+  text-transform: uppercase;
   color: #fff;
   background-color: #5ca9fb;
   background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
@@ -443,7 +457,7 @@ a:focus,
 
 .conference-logo {
   width: 100%; /* ปรับขนาดโลโก้ให้เต็มพื้นที่ */
-  max-width: 130px; /* ตั้งขนาดสูงสุดของโลโก้ */
+  max-width: 125px; /* ตั้งขนาดสูงสุดของโลโก้ */
   text-align: right;
 }
 
@@ -492,7 +506,7 @@ a:focus,
 .navbar .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #293236;
+  background-color: #1f2937;
   list-style: none;
   margin: 0;
   padding: 10px 0;
@@ -537,7 +551,7 @@ a:focus,
   color: #fff;
   font-size: 82px;
   font-weight: 700;
- 
+  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -617,21 +631,9 @@ header .intro-text {
   font-size: 1.8em;
   font-weight: bold;
   color: #f7f4f4;
-  text-align: center; /* จัดชิดซ้าย */
+  text-align: left; /* จัดชิดซ้าย */
   line-height: 1.6; /* ระยะห่างระหว่างบรรทัด */
 }
-
-/* Left column (Title) */
-.about-title2 {
-  font-family: "Poppins";
-  width: 30%; /* กำหนดความกว้างของหัวข้อ */
-  font-size: 1.8em;
-  font-weight: bold;
-  color: #f7f4f4;
-  text-align: center; /* จัดชิดซ้าย */
-  line-height: 1.6; /* ระยะห่างระหว่างบรรทัด */
-}
-
 
 /* Right column (Details) */
 .about-details {
@@ -741,13 +743,13 @@ header .intro-text {
 .important-dates th, .important-dates td {
   font-family: "Poppins";
   padding: 12px 15px;
-  font-size: 14px;
+  font-size: 18px;
   color: #ffffff; /* ปรับเป็นสีขาว */
 }
 
 .important-dates th {
   font-weight: bold;
-  
+  text-transform: uppercase;
 }
 
 .important-dates tbody tr {
@@ -894,7 +896,7 @@ header .intro-text {
   font-size: 18px;
   letter-spacing: 1px;
   font-weight: 500;
- 
+  text-transform: uppercase;
 }
 .hover-bg:hover .hover-text > h4 {
   opacity: 1;
