@@ -187,29 +187,29 @@
   "Team": [
     {
       "img": "img/team/01.jpg",
-      "name": "Organizer",
+      "name": " ",
       "job": "IEEE Thailand Section"
     },
     {
       "img": "img/team/02.jpg",
-      "name": "Organizer",
+      "name": " ",
       "job": "IEEE Computational Intelligence Society (CIS) Thailand Chapter"
     }
   ],
   "Team2": [
     {
       "img": "img/team/03.jpg",
-      "name": "Co-Organizer",
+      "name": " ",
       "job": "King Mongkut's Institute of Technology Ladkrabang (KMITL), Thailand."
     },
     {
       "img": "img/team/04.jpg",
-      "name": "Co-Organizer",
+      "name": " ",
       "job": "School of Information Technology, King Mongkut's Institute of Technology Ladkrabang (KMITL),Thailand."
     },
     {
       "img": "img/team/05.jpg",
-      "name": "Co-Organizer",
+      "name": " ",
       "job": "Department of Electrical Engineering and Information Technology, Universitas Gadjah Mada (UGM), Indonesia."
     }
   ],
