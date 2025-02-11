@@ -20,20 +20,20 @@ const App = () => {
 
   return (
     <Router>
-      <Navigation />
       <Header data={landingPageData.Header} /> {/* ✅ Header คงที่ */}
-
+      <Navigation />
       <Routes>
         <Route path="/" element={<About data={landingPageData.About} />} />
         <Route path="/team1" element={<Team1 data={landingPageData.Team} />} />
         <Route path="/team2" element={<Team2 data={landingPageData.Team2} />} />
         <Route path="/topics-of-interest" element={<TopicsOfInterest />} /> {/* ✅ เพิ่ม Route ใหม่ */}
         <Route path="/organizing-committees" element={<OrganizeCommittee />} /> {/* ✅ เพิ่ม Route ใหม่ */}
-      </Routes>
+        
+      </Routes>  
       <div>
         <Team2 data={landingPageData.Team} />   
         <Team1 data={landingPageData.Team2} />   
-      </div> 
+      </div>   
       <Contact data={landingPageData.Contact} /> {/* ✅ Contact คงที่ */}
     </Router>
   );

@@ -50,7 +50,7 @@ export const TopicsOfInterest = () => {
         </h3>
         <div className="topics-grid">
           {topics.map((topic, index) => (
-            <div key={index} className="">
+            <div key={index} className="topic-row">
               <h2>
                  <div className="heading-left topics-title">{topic.title}</div>
               </h2>

@@ -43,7 +43,7 @@ export const Navigation = (props) => {
         </div>
 
         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul className="nav navbar-nav navbar-right">
+          <ul className="nav navbar-nav">
             <li>
               <a href="/" target="_top" rel="noopener noreferrer" className="page-scroll">
                 Home
@@ -58,7 +58,7 @@ export const Navigation = (props) => {
                   toggleSubmissionDropdown();
                 }}
               >
-                Submission <i className="fa fa-caret-down"></i>
+                Submission <i className="fa fa-caret-down "></i>
               </a>
               {isSubmissionOpen && (
                 <ul className="dropdown-menu">
