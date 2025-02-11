@@ -38,11 +38,6 @@ export const TopicsOfInterest = () => {
     <div className="page-topics-background  mb-5">
             {/* 🔹 เพิ่มรูปภาพหัวข้อ */}
             <div className="header-container text-center mb-5">
-                   <img
-                    src={`${process.env.PUBLIC_URL}/img/topics-head-image.png`}
-                    alt="ICITEE Titles"
-                    className="w-full max-w-[600px] mx-auto md:max-w-[800px] lg:max-w-[1000px]"
-                  />
             </div>
       <div className="container">
         <h3 className="topics-title">
