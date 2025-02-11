@@ -640,10 +640,10 @@ header .intro-text {
 .about-title2 {
   font-family: "Poppins";
   width: 30%; /* กำหนดความกว้างของหัวข้อ */
-  font-size: 1em;
+  font-size: 1.8em;
   font-weight: bold;
   color: #f7f4f4;
-  text-align: left; /* จัดชิดซ้าย */
+  text-align: center; /* จัดชิดซ้าย */
   line-height: 1.6; /* ระยะห่างระหว่างบรรทัด */
 }
 
