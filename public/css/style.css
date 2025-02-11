@@ -636,6 +636,18 @@ header .intro-text {
   line-height: 1.6; /* ระยะห่างระหว่างบรรทัด */
 }
 
+/* Left column (Title) */
+.about-title2 {
+  font-family: "Poppins";
+  width: 30%; /* กำหนดความกว้างของหัวข้อ */
+  font-size: 1em;
+  font-weight: bold;
+  color: #f7f4f4;
+  text-align: left; /* จัดชิดซ้าย */
+  line-height: 1.6; /* ระยะห่างระหว่างบรรทัด */
+}
+
+
 /* Right column (Details) */
 .about-details {
   font-family: "Poppins";
