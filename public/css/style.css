@@ -443,7 +443,7 @@ a:focus,
 
 .conference-logo {
   width: 100%; /* ปรับขนาดโลโก้ให้เต็มพื้นที่ */
-  max-width: 135px; /* ตั้งขนาดสูงสุดของโลโก้ */
+  max-width: 130px; /* ตั้งขนาดสูงสุดของโลโก้ */
   text-align: right;
 }
 
