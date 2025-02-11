@@ -475,6 +475,19 @@ a:focus,
   text-align: center;
 }
 
+
+.typotitle{
+  color: #FFF;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  padding-top: 10px;
+}
+
 /* Header Section */
 .btn-registration {
   background-color: linear-gradient(to right, #553c9a 0%, #5ca9fb 100%);
