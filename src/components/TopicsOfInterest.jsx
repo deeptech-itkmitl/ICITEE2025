@@ -52,7 +52,7 @@ export const TopicsOfInterest = () => {
           {topics.map((topic, index) => (
             <div key={index} className="">
               <h2>
-                 <div className="heading-left topic-title">{topic.title}</div>
+                 <div className="heading-left topics-title">{topic.title}</div>
               </h2>
               <div className="topic-description text-justify">{topic.description}</div>
             </div>
