@@ -632,7 +632,7 @@ header .intro-text {
   font-size: 1.8em;
   font-weight: bold;
   color: #f7f4f4;
-  text-align: left; /* จัดชิดซ้าย */
+  text-align: center; /* จัดชิดซ้าย */
   line-height: 1.6; /* ระยะห่างระหว่างบรรทัด */
 }
 
