@@ -489,9 +489,15 @@ a:focus,
 }
 
 /* เมนูย่อย Dropdown */
+.navbar .dropdown {
+  position: relative; /* ตั้งค่า relative เพื่อให้ตำแหน่งลูกอ้างอิงจากตรงนี้ */
+}
+
 .navbar .dropdown-menu {
   display: none;
   position: absolute;
+  left: 0; /* จัดให้เริ่มต้นจากขอบซ้ายของเมนูหลัก */
+  top: 100%; /* ให้เมนูแสดงผลด้านล่างของเมนูหลัก */
   background-color: #293236;
   list-style: none;
   margin: 0;
@@ -1144,7 +1150,7 @@ label {
   height: 100%;
   background-size: cover;
   background-position: center;
-  animation: fade 12s infinite;
+  animation: fade 10s infinite;
   background: #0c1329;
 }
 
