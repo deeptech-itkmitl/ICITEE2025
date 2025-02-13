@@ -17,7 +17,7 @@ export function VisitorCounter() {
   // 📅 ดึงวันที่ปัจจุบัน (ภาษาอังกฤษ และ ค.ศ.)
   const today = new Date();
   const thaiYear = today.getFullYear();
-  const engYear = thaiYear; // แปลงจาก พ.ศ. เป็น ค.ศ.
+  const engYear = thaiYear - 0; // 543 แปลงจาก พ.ศ. เป็น ค.ศ.
   
   const dateString = today.toLocaleDateString("en-US", {
     year: "numeric",
