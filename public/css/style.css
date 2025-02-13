@@ -76,6 +76,127 @@ hr {
   border: 0;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: center; /* จัดให้อยู่กึ่งกลาง */
+  align-items: center; /* จัดให้ทุกองค์ประกอบอยู่กึ่งกลาง */
+  gap: 20px; /* ระยะห่างระหว่างไอคอนกับ counter */
+  flex-wrap: wrap; /* ป้องกันการซ้อนกันหากพื้นที่ไม่พอ */
+}
+
+.visitor-counter {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+/*Visitor Count*/
+.visitor-counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.visitor-counter-box {
+  background-color: rgba(128, 0, 128, 0.1); /* สีม่วงจางๆ */
+  border: 2px solid rgba(128, 0, 128, 0.3); /* เส้นขอบสีม่วง */
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 150px;
+  height: 100px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 2px 4px 10px rgba(128, 0, 128, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.visitor-icon {
+  font-size: 1vw; /* ขยายขนาดตามความกว้างของหน้าจอหรือกล่อง */
+  color: purple;
+  margin-bottom: 10px;
+}
+
+.visitor-text {
+  font-size: 0.5vw; /* ขนาดฟอนต์ปรับตามขนาดกล่อง */
+  font-weight: 600;
+  color: purple;
+  margin-bottom: 0px;
+}
+
+.visitor-number-date-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.visitor-number {
+  font-size: medium; /* ขนาดฟอนต์ปรับตามขนาดกล่อง */
+  font-weight: bold;
+  color: black;
+}
+
+.visitor-date {
+  font-size: 0.7vw; /* ขนาดฟอนต์ปรับตามขนาดกล่อง */
+  color: gray;
+  margin-top: 0px;
+}
+
+/* เพิ่ม Media Queries สำหรับอุปกรณ์ต่างๆ */
+@media (max-width: 768px) {
+  .visitor-counter-box {
+    width: 180px; /* เพิ่มความกว้างเมื่อจอเล็ก */
+    height: auto;
+  }
+
+  .visitor-icon {
+    font-size: 6vw; /* ปรับขนาดให้เหมาะสมกับหน้าจอเล็ก */
+  }
+
+  .visitor-text {
+    font-size: 3vw; /* ปรับขนาดฟอนต์ */
+  }
+
+  .visitor-number {
+    font-size: 5vw; /* ปรับขนาดฟอนต์ */
+  }
+
+  .visitor-date {
+    font-size: 2vw; /* ปรับขนาดฟอนต์ */
+  }
+}
+
+@media (max-width: 480px) {
+  .visitor-counter-box {
+    width: 120px; /* ขนาดเล็กลงในหน้าจอมือถือ */
+    height: auto;
+  }
+
+  .visitor-icon {
+    font-size: 8vw; /* เพิ่มขนาดไอคอนในหน้าจอเล็ก */
+  }
+
+  .visitor-text {
+    font-size: 4vw; /* ปรับขนาดฟอนต์ */
+  }
+
+  .visitor-number {
+    font-size: 6vw; /* ปรับขนาดฟอนต์ */
+  }
+
+  .visitor-date {
+    font-size: 3vw; /* ปรับขนาดฟอนต์ */
+  }
+}
+
 
 /* กำหนดสไตล์ให้เฉพาะ TopicsOfInterest */
 

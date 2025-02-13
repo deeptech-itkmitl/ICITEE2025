@@ -6,8 +6,8 @@ import { About } from "./components/about";
 import { Team1 } from "./components/Team1";
 import { Team2 } from "./components/Team2";
 import { Contact } from "./components/contact";
-import { TopicsOfInterest } from "./components/TopicsOfInterest"; // ✅ เพิ่มหน้า Topics of Interest
-import { OrganizeCommittee } from "./components/OrganizeCommittee"; // ✅ เพิ่มหน้า Topics of Interest
+import { TopicsOfInterest } from "./components/TopicsOfInterest";
+import { OrganizeCommittee } from "./components/OrganizeCommittee";
 import JsonData from "./data/data.json";
 import "./App.css";
 
@@ -26,9 +26,8 @@ const App = () => {
         <Route path="/" element={<About data={landingPageData.About} />} />
         <Route path="/team1" element={<Team1 data={landingPageData.Team} />} />
         <Route path="/team2" element={<Team2 data={landingPageData.Team2} />} />
-        <Route path="/topics-of-interest" element={<TopicsOfInterest />} /> {/* ✅ เพิ่ม Route ใหม่ */}
-        <Route path="/organizing-committees" element={<OrganizeCommittee />} /> {/* ✅ เพิ่ม Route ใหม่ */}
-        
+        <Route path="/topics-of-interest" element={<TopicsOfInterest />} />
+        <Route path="/organizing-committees" element={<OrganizeCommittee />} />
       </Routes>  
       <div>
         <Team2 data={landingPageData.Team} />   

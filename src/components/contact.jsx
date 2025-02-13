@@ -1,23 +1,23 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
+import { VisitorCounter } from "./visitor"; // ✅ แก้ import ให้ถูกต้อง (ไม่ต้องใช้ /components/visitor)
 
 const initialState = {
   name: "",
   email: "",
   message: "",
 };
+
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
 
- 
   const clearState = () => setState({ ...initialState });
-  
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);   
-    
+    console.log(name, email, message);
+
     emailjs
       .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
       .then(
@@ -30,42 +30,46 @@ export const Contact = (props) => {
         }
       );
   };
+
   return (
     <div>
       <div id="contact">
         <div className="container">
           <div className="col-md-8">
             <div className="section-title">
-                <h2><img src={`${process.env.PUBLIC_URL}/img/footer-head-text1.jpg`} alt="ICITEE 2025 Logo" className="conference-logo2" /></h2>
+              <h2>
+                <img
+                  src={`${process.env.PUBLIC_URL}/img/footer-head-text1.jpg`}
+                  alt="ICITEE 2025 Logo"
+                  className="conference-logo2"
+                />
+              </h2>
             </div>
-            <div className="row">              
-              <form name="sentMessage" validate onSubmit={handleSubmit}>               
-                <div className="form-group">             
+            <div className="row">
+              <form name="sentMessage" validate onSubmit={handleSubmit}>
+                <div className="form-group">
                   <div className="image-slider-container img-responsive">
-                    
-                  <iframe
-                          src="https://www.youtube.com/embed/q3OUFsQAivI?autoplay=1&mute=1"
-                          title="Tourism Video"
-                          frameBorder="0"
-                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                          style={{
-                            width: "100%",
-                            maxWidth: "750px",
-                            height: "420px",
-                            aspectRatio: "16/9", // ทำให้วิดีโอปรับขนาดตามสัดส่วน 16:9
-                          }}
-                        ></iframe>
-         
-                      </div>
+                    <iframe
+                      src="https://www.youtube.com/embed/q3OUFsQAivI?autoplay=1&mute=1"
+                      title="Tourism Video"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      style={{
+                        width: "100%",
+                        maxWidth: "750px",
+                        height: "420px",
+                        aspectRatio: "16/9",
+                      }}
+                    ></iframe>
+                  </div>
                 </div>
-                <div id="success"></div>     
+                <div id="success"></div>
               </form>
             </div>
-          </div>          
+          </div>
           <div className="col-md-3 col-md-offset-1 contact-info">
-            <div className="contact-item">             
-              <h3>{}</h3>
+            <div className="contact-item">
               <h3>Contact Info</h3>
               <p>
                 <span>
@@ -89,28 +93,16 @@ export const Contact = (props) => {
                 </span>{" "}
                 {props.data ? props.data.email : "loading"}
               </p>
-            </div>
+            </div>            
           </div>
           <div className="col-md-12">
+                                {/* ✅ แสดง VisitorCounter ด้านล่าง */}
+                                <div className="col-md-12">
+                           <VisitorCounter />
+                      </div>
             <div className="row">
               <div className="social">
-                <ul>
-                  <li>
-                    <a href={props.data ? props.data.facebook : "/"}>
-                      <i className="fa fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
-                      <i className="fa fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.youtube : "/"}>
-                      <i className="fa fa-youtube"></i>
-                    </a>
-                  </li>
-                </ul>
+
               </div>
             </div>
           </div>
