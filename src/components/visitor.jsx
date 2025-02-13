@@ -14,13 +14,16 @@ export function VisitorCounter() {
     });
   }, []);
 
-  // 📅 ดึงวันที่ปัจจุบัน
+  // 📅 ดึงวันที่ปัจจุบัน (ภาษาอังกฤษ และ ค.ศ.)
   const today = new Date();
-  const dateString = today.toLocaleDateString("th-TH", {
+  const thaiYear = today.getFullYear();
+  const engYear = thaiYear - 543; // แปลงจาก พ.ศ. เป็น ค.ศ.
+  
+  const dateString = today.toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
-  });
+  }).replace(thaiYear, engYear); // แทนที่ปี พ.ศ. ด้วย ค.ศ.
 
   return (
     <div className="visitor-counter-container">
