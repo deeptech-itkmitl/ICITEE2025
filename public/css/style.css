@@ -145,7 +145,7 @@ hr {
 }
 
 .visitor-date {
-  font-size: 0.7vw; /* ขนาดฟอนต์ปรับตามขนาดกล่อง */
+  font-size: 0.5vw; /* ขนาดฟอนต์ปรับตามขนาดกล่อง */
   color: gray;
   margin-top: 0px;
 }
