@@ -86,7 +86,7 @@ export const Navigation = (props) => {
                   {/* ปุ่ม Registration */}
                       <a
                         href="/registration" target="_top" rel="noopener noreferrer"
-                        className="bg-gradient-to-r from-purple-800 to-purple-500 text-white px-4 py-2 rounded-md font-semibold shadow-md hover:from-purple-500 hover:to-purple-800 transition"
+                        className="text-registryhighlight bg-gradient-to-r from-purple-800 to-purple-500 text-white px-4 py-2 rounded-md font-semibold shadow-md hover:from-purple-500 hover:to-purple-800 transition"
                       >
                       Registration
                     </a>
@@ -172,13 +172,13 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="/registration" target="_top" rel="noopener noreferrer">
-                <img
-                  src={`${process.env.PUBLIC_URL}/img/registration.png`}
-                  alt="Registration Button"
-                  style={{ height: "40px" }}
-                />
-              </a>
+                  {/* ปุ่ม Registration */}
+                  <a
+                        href="/registration" target="_top" rel="noopener noreferrer"
+                        className="text-registryhighlight bg-gradient-to-r from-purple-800 to-purple-500 text-white px-4 py-2 rounded-md font-semibold shadow-md hover:from-purple-500 hover:to-purple-800 transition"
+                      >
+                      Registration
+                    </a>
             </li>
             <li>
               <a href="mailto:icitee2025@it.kmitl.ac.th" target="_top" rel="noopener noreferrer" className="btn-registration">

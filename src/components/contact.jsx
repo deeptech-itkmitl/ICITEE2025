@@ -38,10 +38,10 @@ export const Contact = (props) => {
           <div className="col-md-8">
             <div className="section-title">
               <h2>
-               <p class="text-highlight2">
+               <p class="text-highlight2 bg-gradient-to-r from-purple-800 to-purple-500 text-white px-4 py-2 rounded-md font-semibold shadow-md hover:from-purple-500 hover:to-purple-800 transition">
                  <span>Experience</span> Bangkok through 
               </p>
-              <p class="text-highlight2">
+              <p class="text-highlight2 bg-gradient-to-r from-purple-800 to-purple-500 text-white px-4 py-2 rounded-md font-semibold shadow-md hover:from-purple-500 hover:to-purple-800 transition">
                  <span>Cutting-Edge Technology</span> and <span>Cultural Richness</span>
               </p>
               </h2>

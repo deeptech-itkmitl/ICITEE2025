@@ -425,10 +425,10 @@ hr {
   }
   
   @keyframes slideshow2 {
-  0% { background-image: url(../img/intro-bg-3.jpg); }
-  33% { background-image: url(../img/intro-bg-4.jpg); }
-  66% { background-image: url(../img/intro-bg-5.jpg); }
-  100% { background-image: url(../img/intro-bg-1.jpg);  }
+  0% { background-image: url(../img/intro-bg-3.png); }
+  33% { background-image: url(../img/intro-bg-4.png); }
+  66% { background-image: url(../img/intro-bg-5.png); }
+  100% { background-image: url(../img/intro-bg-1.png);  }
   }
 
 
@@ -511,14 +511,28 @@ hr {
 
 /**/
 /* ปุ่ม Registration */
+.text-registryhighlight span {
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #f7f8fc, #7a5cff); /* Gradient สีม่วง */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .navbar-button {
   background: linear-gradient(to right, #4b0082, #7a5cff);
-  color: white;
+  color: linear-gradient(to right, #4b0082, #7a5cff);
   padding: 8px 15px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s;
+}
+
+.navbar-button:hover {
+  color: linear-gradient(to right, #4b0082, #7a5cff);
+  background: linear-gradient(to right, #7a5cff, #4b0082);
 }
 
 /*   section tile*/
@@ -682,7 +696,7 @@ a:focus,
   margin-top: 0px;
   margin-bottom: 0px;
   /* background: #0c1329; */
-  background-image: url(../img/intro-bg-4.jpg);
+  background-image: url(../img/intro-bg-3.png);
 }
 
 .intro h1 {
