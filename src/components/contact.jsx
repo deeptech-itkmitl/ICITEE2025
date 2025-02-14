@@ -38,11 +38,12 @@ export const Contact = (props) => {
           <div className="col-md-8">
             <div className="section-title">
               <h2>
-                <img
-                  src={`${process.env.PUBLIC_URL}/img/footer-head-text1.jpg`}
-                  alt="ICITEE 2025 Logo"
-                  className="conference-logo2"
-                />
+               <p class="text-highlight2">
+                 <span>Experience</span> Bangkok through 
+              </p>
+              <p class="text-highlight2">
+                 <span>Cutting-Edge Technology</span> and <span>Cultural Richness</span>
+              </p>
               </h2>
             </div>
             <div className="row">

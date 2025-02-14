@@ -27,6 +27,7 @@ export const OrganizeCommittee = () => {
         "Pornsuree Jamsri (KMITL, Thailand)",
         "Samart Moodleah (KMITL, Thailand)",
         "Sirion Vittayakorn (KMITL, Thailand)",
+        "Suvit Poomrittigul (KMITL, Thailand)",
         "Taravichit Titijaroenroj (KMITL, Thailand)",
         "Tuchsanai Ploysuwan (KMITL, Thailand)",
         "Warune Buavirat (KMITL, Thailand)",

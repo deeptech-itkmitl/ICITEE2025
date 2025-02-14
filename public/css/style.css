@@ -197,9 +197,30 @@ hr {
   }
 }
 
+/* รูปแบบ หัวข้อ บนวิดีโอ */
+.text-highlight2 {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  background: linear-gradient(to bottom, #f7f8fc, #7a5cff); /* Gradient สีม่วง */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-highlight2 span {
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #f7f8fc, #7a5cff); /* Gradient สีม่วง */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
 
 /* กำหนดสไตล์ให้เฉพาะ TopicsOfInterest */
-
 
 .page-topics-background {
   background-color: #0c1329;
