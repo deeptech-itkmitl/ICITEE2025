@@ -442,6 +442,7 @@ hr {
   background-color: #293236;
   border-color: rgba(231, 231, 231, 0);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  max-width: 100%;
 }
 
 #menu a.navbar-brand {
@@ -449,7 +450,7 @@ hr {
   font-size: 24px;
   font-weight: 150;
   color: #333;
-  
+  max-width: 100%;
 }
 
 #menu.navbar-default .navbar-nav > li > a {
