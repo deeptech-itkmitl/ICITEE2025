@@ -602,7 +602,12 @@ a:focus,
 
 .nav-head{
   display: flex !important;
-    justify-content: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .nav-head {
+    display: block !important;
+  }
 }
 
 /* Logo CSS */
