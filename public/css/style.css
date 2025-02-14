@@ -624,7 +624,7 @@ a:focus,
 
 .conference-logo2 {
   width: 100%; /* ปรับขนาดโลโก้ให้เต็มพื้นที่ */
-  max-width: 750px; /* ตั้งขนาดสูงสุดของโลโก้ */
+  max-width: 550px; /* ตั้งขนาดสูงสุดของโลโก้ */
   max-height: 230px;
   text-align: center;
 }
