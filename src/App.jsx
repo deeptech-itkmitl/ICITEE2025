@@ -27,7 +27,7 @@ const App = () => {
         <Route path="/team1" element={<Team1 data={landingPageData.Team} />} />
         <Route path="/team2" element={<Team2 data={landingPageData.Team2} />} />
         <Route path="/topics-of-interest" element={<TopicsOfInterest />} />
-        <Route path="/organizing-committees" element={<OrganizeCommittee />} />
+        <Route path="/organizing-committee" element={<OrganizeCommittee />} />
       </Routes>  
       <div>
         <Team2 data={landingPageData.Team} />   
