@@ -447,15 +447,14 @@ hr {
 
 #menu a.navbar-brand {
   font-family: "Poppins", Poppins;
-  font-size: 24px;
+  font-size: 15px;
   font-weight: 150;
   color: #333;
   max-width: 100%;
 }
 
 #menu.navbar-default .navbar-nav > li > a {
-  font-family: "Poppins", Poppins;
-  
+  font-family: "Poppins", Poppins;  
   color: #ffffff;
   font-size: 15px;
   font-weight: 400;
