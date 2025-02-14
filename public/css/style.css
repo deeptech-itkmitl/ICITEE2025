@@ -414,7 +414,6 @@ hr {
   }
 }
 
-
 /*Background*/
 .slideshow2 {
   width: 100% !important;  /* ใช้เต็มความกว้างของ viewport */
@@ -430,8 +429,6 @@ hr {
   80% { background-image: url(../img/intro-bg-5.png); }
   100% { background-image: url(../img/intro-bg-1.png);  }
   }
-
-
   
 /* Navigation */
 #menu {
@@ -465,6 +462,7 @@ hr {
   border-radius: 0;
   margin: 9px 20px 0;
 }
+
 #menu.navbar-default .navbar-nav > li > a:after {
   display: block;
   position: absolute;
@@ -607,9 +605,10 @@ a:focus,
 
 .conference-logo {
   width: 100%; /* ปรับขนาดโลโก้ให้เต็มพื้นที่ */
-  max-width: 130px; /* ตั้งขนาดสูงสุดของโลโก้ */
+  max-width: 200px; /* ตั้งขนาดสูงสุดของโลโก้ */
   text-align: right;
 }
+
 
 .conference-logo2 {
   width: 100%; /* ปรับขนาดโลโก้ให้เต็มพื้นที่ */
