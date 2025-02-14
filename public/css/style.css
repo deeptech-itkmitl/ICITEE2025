@@ -508,6 +508,20 @@ hr {
 .navbar-default .navbar-toggle:hover > .icon-bar {
   background-color: #608dfd;
 }
+
+/**/
+/* ปุ่ม Registration */
+.navbar-button {
+  background: linear-gradient(to right, #4b0082, #7a5cff);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+/*   section tile*/
 .section-title {
   margin-bottom: 70px;
 }

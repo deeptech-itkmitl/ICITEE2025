@@ -83,7 +83,11 @@ export const Navigation = (props) => {
                     </a>
                   </li>
                   <li>
-                    <a href="/registration" target="_top" rel="noopener noreferrer" className="page-scroll">
+                  {/* ปุ่ม Registration */}
+                      <a
+                        href="/registration" target="_top" rel="noopener noreferrer"
+                        className="bg-gradient-to-r from-purple-800 to-purple-500 text-white px-4 py-2 rounded-md font-semibold shadow-md hover:from-purple-500 hover:to-purple-800 transition"
+                      >
                       Registration
                     </a>
                   </li>
