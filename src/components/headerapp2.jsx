@@ -1,10 +1,11 @@
 import React from "react";
+import CountDownTimer from "../components/CountDownTimer";
+//import SlideshowHeader from "../components/SlideshowHeader";
 
-const HeaderSub = () => {
+export const Header2 = (props) => {
   return (
-<header id="headersub">
+    <header id="header2">
       <div className="intro slideshow1">
-        
         {/* Slideshow as Background */}
         {/* <div className="slideshow-container"> */}
           {/*<SlideshowHeader />*/}
@@ -17,14 +18,19 @@ const HeaderSub = () => {
               <div className="col-md-8 col-md-offset-0.5 intro-text">
                 <h1 className="conference-title">
                   <div className="conference-title"></div>
-                  <p><div class="typotitle2">Committees</div></p>
                 </h1>
-                <p><div class="typotitle2"></div></p>
+                <p><div className="typotitle">20 - 22 October 2025 | Bangkok, Thailand</div></p>
                 <div className="conference-timer"></div>
-                <div>               
+                <div>
+                 
                 </div>
                 <div><p></p></div>
                 <div>
+                  <a 
+                    href="https://icitee2025.it.kmitl.ac.th/pdf/A4-21x29.7_ICITEE2025_CFP_03-3.pdf" 
+                    className="btn btn-custom btn-lg page-scroll">
+                    CALL FOR PAPERS
+                  </a>
                 </div>
               </div>
             </div>
@@ -33,15 +39,14 @@ const HeaderSub = () => {
       </div>
 
       <style jsx>{`
-
-        .intro1 {
+        .intro {
           position: relative;
           width: 100%;
           height: 100vh;
           overflow: hidden;
         }
 
-        .slideshow-container3 {
+        .slideshow-container2 {
           position: absolute;
           top: 0;
           left: 0;
@@ -50,10 +55,10 @@ const HeaderSub = () => {
           z-index: 1;
         }
 
-        .overlay3 {
+        .overlay {
           position: relative;
           z-index: 2;
-          pointer-events: none; /* Allow clicks to pass through */
+          pointer-events: none;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -63,26 +68,31 @@ const HeaderSub = () => {
         }
 
         .overlay > * {
-          pointer-events: all; /* Allow interactions only for overlay content */
+          pointer-events: all;
         }
 
-        .conference-title3 {
+        .conference-title {
           font-size: 2.5rem;
           font-weight: bold;
           margin-bottom: 20px;
         }
 
-        .conference-logo22 {
+        .conference-logo2 {
           max-width: 80%;
           margin: 0 auto;
           display: block;
         }
 
+        .typotitle {
+          font-size: 1.2rem;
+          font-weight: normal;
+        }
+
+        .conference-timer {
+          margin-top: 20px;
+          font-size: 1.5rem;
+        }
       `}</style>
     </header>
   );
 };
-
-export default HeaderSub; // ✅ ต้องมี export default
-
-
