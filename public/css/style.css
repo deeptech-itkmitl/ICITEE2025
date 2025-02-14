@@ -425,8 +425,8 @@ hr {
   }
   
   @keyframes slideshow2 {
-  0% { background-image: url(../img/intro-bg-4.png); }
-  33% { background-image: url(../img/intro-bg-3.png); }
+  0% { background-image: url(../img/intro-bg-3.png); }
+  33% { background-image: url(../img/intro-bg-4.png); }
   66% { background-image: url(../img/intro-bg-5.png); }
   100% { background-image: url(../img/intro-bg-1.png);  }
   }
@@ -707,7 +707,7 @@ a:focus,
   margin-top: 0px;
   margin-bottom: 0px;
   /* background: #0c1329; */
-  background-image: url(../img/intro-bg-4.png);
+  background-image: url(../img/intro-bg-3.png);
 }
 
 .intro h1 {
