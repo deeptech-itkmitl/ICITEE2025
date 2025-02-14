@@ -48,10 +48,10 @@ export const Navigation = () => {
               </a>
               {isAboutOpen && (
                 <ul className="dropdown-menu">
-                  <li><a href="/about-icitee" className="page-scroll">About ICITEE</a></li>
+                  
                   <li><a href="/organizing-committee" className="page-scroll">Organizing Committee</a></li>
-                  <li><a href="/past-conferences" className="page-scroll">Past Conferences</a></li>
-                  <li><a href="/gallery" className="page-scroll">Gallery</a></li>
+                  
+                  
                 </ul>
               )}
             </li>
@@ -64,9 +64,9 @@ export const Navigation = () => {
                 <ul className="dropdown-menu">
                   <li><a href="/call-for-papers" className="page-scroll">Call for Papers</a></li>
                   <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>
-                  <li><a href="/paper-submission-guidelines" className="page-scroll">Paper Submission Guidelines</a></li>
-                  <li><a href="/important-dates" className="page-scroll">Important Dates</a></li>
-                  <li><a href="/submission-portal" className="page-scroll">Submission Portal Link</a></li>
+                  
+                  
+                  
                 </ul>
               )}
             </li>
@@ -77,10 +77,10 @@ export const Navigation = () => {
               </a>
               {isProgramOpen && (
                 <ul className="dropdown-menu">
-                  <li><a href="/keynote-speakers" className="page-scroll">Keynote Speakers</a></li>
-                  <li><a href="/conference-schedule" className="page-scroll">Conference Schedule</a></li>
-                  <li><a href="/accepted-papers-list" className="page-scroll">Accepted Papers List</a></li>
-                  <li><a href="/best-paper-award" className="page-scroll">Best Paper Award</a></li>
+                  
+                  
+                  
+                  
                 </ul>
               )}
             </li>
@@ -91,10 +91,10 @@ export const Navigation = () => {
               </a>
               {isRegistrationOpen && (
                 <ul className="dropdown-menu">
-                  <li><a href="/registration-fees" className="page-scroll">Registration Fees</a></li>
-                  <li><a href="/payment-methods" className="page-scroll">Payment Methods</a></li>
-                  <li><a href="/registration-portal" className="page-scroll">Registration Portal Link</a></li>
-                  <li><a href="/cancellation-policy" className="page-scroll">Cancellation Policy</a></li>
+                  
+                  
+                  
+                  
                 </ul>
               )}
             </li>
@@ -105,8 +105,8 @@ export const Navigation = () => {
               </a>
               {isVenueOpen && (
                 <ul className="dropdown-menu">
-                  <li><a href="/conference-venue" className="page-scroll">Conference Venue Details</a></li>
-                  <li><a href="/travel-guidance" className="page-scroll">Travel Guidance</a></li>
+                  
+                  
                 </ul>
               )}
             </li>
@@ -117,9 +117,9 @@ export const Navigation = () => {
               </a>
               {isPolicyOpen && (
                 <ul className="dropdown-menu">
-                  <li><a href="/paper-citation" className="page-scroll">Paper Citation</a></li>
-                  <li><a href="/ieee-format" className="page-scroll">IEEE Format</a></li>
-                  <li><a href="/rolling-open-review" className="page-scroll">Rolling/Open Review Process</a></li>
+                  
+                  
+                  
                 </ul>
               )}
             </li>

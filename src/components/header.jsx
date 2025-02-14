@@ -82,16 +82,6 @@ export const Header = (props) => {
           display: block;
         }
 
-        .conference-timer {
-          font-family: 'Poppins';
-          margin-top: 1rem; /* ห่างจากบรรทัดบน 1 บรรทัด */
-          margin-bottom: 1rem; /* ห่างจากบรรทัดล่าง 1 บรรทัด */
-          font-size: 3rem; /* ขนาดตัวอักษรที่เหมาะสม */
-          font-weight: bold; /* เน้นตัวหนังสือให้ชัด */
-          text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
-          color: #eeecec; /* ปรับสีให้ชัดขึ้น */
-        }
-
       `}</style>
     </header>
   );
