@@ -81,7 +81,7 @@ export const About = (props) => {
       </div>
 
       <style jsx>{`
-        .container {
+        .container3 {
          color: #FFFFFF;
           max-width: 0 auto;
           margin: 0 auto;
