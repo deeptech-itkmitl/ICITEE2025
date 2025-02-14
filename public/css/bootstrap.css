@@ -4169,12 +4169,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 0px;
   border: 1px solid transparent;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .navbar {
     border-radius: 4px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .navbar-header {
     float: left;    
   }
@@ -4191,8 +4191,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-collapse.in {
   overflow-y: auto;
 }
-
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .navbar-collapse {
     width: auto;
     border-top: 0;
@@ -4219,7 +4218,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-fixed-bottom .navbar-collapse {
   max-height: 340px;
 }
-
 @media (max-device-width: 480px) and (orientation: landscape) {
   .navbar-fixed-top .navbar-collapse,
   .navbar-fixed-bottom .navbar-collapse {
@@ -4233,14 +4231,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-right: -15px;
   margin-left: -15px;
 }
-
 @media (min-width: 1200px) {
   .container > .navbar-header,
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,
   .container-fluid > .navbar-collapse {
     
-    /*margin-left: 0;*/
+    margin-left: 0;
   }
 }
 .navbar-static-top {
@@ -4277,19 +4274,22 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 
 
 .navbar-brand {
-  float: left;
+  float: center;
   height: auto;
   padding: 15px 15px;
   font-size: 18px;
   line-height: auto;
 }
+
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
 }
+
 .navbar-brand > img {
   display: block;
 }
+
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
