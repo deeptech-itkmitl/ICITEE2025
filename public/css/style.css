@@ -600,7 +600,7 @@ hr {
 .btn-custom.active {
   color: #fff;
   background-image: none;
-  background-color: #6372ff;
+  background-color: linear-gradient(to right, #5F3FC0 0%, #9174e7 100%);
 }
 .btn:active,
 .btn.active {
