@@ -414,6 +414,7 @@ hr {
   }
 }
 
+
 /*Background*/
 .slideshow2 {
   width: 100% !important;  /* ใช้เต็มความกว้างของ viewport */
@@ -424,11 +425,13 @@ hr {
   }
   
   @keyframes slideshow2 {
-  0% { background-image: url(../img/intro-bg-3.png); }
-  40% { background-image: url(../img/intro-bg-4.png); }
-  80% { background-image: url(../img/intro-bg-5.png); }
+  0% { background-image: url(../img/intro-bg-4.png); }
+  33% { background-image: url(../img/intro-bg-3.png); }
+  66% { background-image: url(../img/intro-bg-5.png); }
   100% { background-image: url(../img/intro-bg-1.png);  }
   }
+
+
   
 /* Navigation */
 #menu {
@@ -442,19 +445,19 @@ hr {
   background-color: #293236;
   border-color: rgba(231, 231, 231, 0);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  max-width: 100%;
 }
 
 #menu a.navbar-brand {
   font-family: "Poppins", Poppins;
-  font-size: 15px;
+  font-size: 24px;
   font-weight: 150;
   color: #333;
-  max-width: 100%;
+  
 }
 
 #menu.navbar-default .navbar-nav > li > a {
-  font-family: "Poppins", Poppins;  
+  font-family: "Poppins", Poppins;
+  
   color: #ffffff;
   font-size: 15px;
   font-weight: 400;
@@ -462,7 +465,6 @@ hr {
   border-radius: 0;
   margin: 9px 20px 0;
 }
-
 #menu.navbar-default .navbar-nav > li > a:after {
   display: block;
   position: absolute;
@@ -605,10 +607,9 @@ a:focus,
 
 .conference-logo {
   width: 100%; /* ปรับขนาดโลโก้ให้เต็มพื้นที่ */
-  max-width: 200px; /* ตั้งขนาดสูงสุดของโลโก้ */
+  max-width: 130px; /* ตั้งขนาดสูงสุดของโลโก้ */
   text-align: right;
 }
-
 
 .conference-logo2 {
   width: 100%; /* ปรับขนาดโลโก้ให้เต็มพื้นที่ */
@@ -695,7 +696,7 @@ a:focus,
   margin-top: 0px;
   margin-bottom: 0px;
   /* background: #0c1329; */
-  background-image: url(../img/intro-bg-3.png);
+  background-image: url(../img/intro-bg-4.png);
 }
 
 .intro h1 {
