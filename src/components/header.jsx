@@ -38,14 +38,14 @@ export const Header = (props) => {
 
       <style jsx>{`
 
-        .intro {
+        .intro1 {
           position: relative;
           width: 100%;
           height: 100vh;
           overflow: hidden;
         }
 
-        .slideshow-container {
+        .slideshow-container3 {
           position: absolute;
           top: 0;
           left: 0;
@@ -54,7 +54,7 @@ export const Header = (props) => {
           z-index: 1;
         }
 
-        .overlay {
+        .overlay3 {
           position: relative;
           z-index: 2;
           pointer-events: none; /* Allow clicks to pass through */
@@ -70,13 +70,13 @@ export const Header = (props) => {
           pointer-events: all; /* Allow interactions only for overlay content */
         }
 
-        .conference-title {
+        .conference-title3 {
           font-size: 2.5rem;
           font-weight: bold;
           margin-bottom: 20px;
         }
 
-        .conference-logo2 {
+        .conference-logo22 {
           max-width: 80%;
           margin: 0 auto;
           display: block;

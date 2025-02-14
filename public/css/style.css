@@ -600,6 +600,11 @@ a:focus,
   outline-offset: none;
 }
 
+.nav-head{
+  display: flex !important;
+    justify-content: center;
+}
+
 /* Logo CSS */
 .right-aligned-text {
   text-align: right;
@@ -607,7 +612,7 @@ a:focus,
 
 .conference-logo {
   width: 100%; /* ปรับขนาดโลโก้ให้เต็มพื้นที่ */
-  max-width: 200px; /* ตั้งขนาดสูงสุดของโลโก้ */
+  max-width: 150px; /* ตั้งขนาดสูงสุดของโลโก้ */
   text-align: right;
 }
 
