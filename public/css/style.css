@@ -452,13 +452,14 @@ hr {
   }
 
   /*Background*/
-.slideshow1 {
+ .slideshow1 {
   width: 100% !important;  /* ใช้เต็มความกว้างของ viewport */
-  height: 100% !important; /* ใช้เต็มความสูงของ viewport */
+  /* height: 100% !important; */ /* ใช้เต็มความสูงของ viewport */
   background-size: cover;
   background-repeat: no-repeat;
   animation: slideshow1 100s ease-in-out infinite;
   }
+  
   
   @keyframes slideshow1 {
   0% { background-image: url(../img/intro-bg-6.png); }
@@ -687,7 +688,7 @@ a:focus,
   color: #FFF;
   text-align: center;
   font-family: "Poppins";
-  font-size: 25px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

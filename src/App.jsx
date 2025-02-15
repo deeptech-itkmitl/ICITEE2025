@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout2 from "./Layout2"; // ✅ Import Layout2 ให้ถูกต้อง
 import Layout3 from "./Layout3"; // ✅ Import Layout2 ให้ถูกต้อง
 import { Navigation } from "./components/navigation";
@@ -22,7 +22,9 @@ const App = () => {
 
   return (
     <Router>
+      
       <Header data={landingPageData.Header} />
+
       <Navigation />
       <Routes>
         <Route path="/" element={<About data={landingPageData.About} />} />
