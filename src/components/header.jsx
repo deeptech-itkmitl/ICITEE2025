@@ -40,53 +40,7 @@ export const Header = (props) => {
         </div>
       </div>
 
-      <style jsx>{`
-
-        .intro1 {
-          position: relative;
-          width: 100%;
-          height: 100vh;
-          overflow: hidden;
-        }
-
-        .slideshow-container3 {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          z-index: 1;
-        }
-
-        .overlay3 {
-          position: relative;
-          z-index: 2;
-          pointer-events: none; /* Allow clicks to pass through */
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          color: white;
-          height: 100%;
-        }
-
-        .overlay > * {
-          pointer-events: all; /* Allow interactions only for overlay content */
-        }
-
-        .conference-title3 {
-          font-size: 2.5rem;
-          font-weight: bold;
-          margin-bottom: 20px;
-        }
-
-        .conference-logo22 {
-          max-width: 80%;
-          margin: 0 auto;
-          display: block;
-        }
-
-      `}</style>
+      
     </header>
   );
 };

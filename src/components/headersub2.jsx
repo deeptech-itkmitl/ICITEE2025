@@ -1,11 +1,10 @@
 import React from "react";
-import CountDownTimer from "../components/CountDownTimer";
-//import SlideshowHeader from "../components/SlideshowHeader";
 
-export const Header2 = (props) => {
+const HeaderSub2 = () => {
   return (
-    <header id="header2">
+<header id="headersub2">
       <div className="intro slideshow1">
+        
         {/* Slideshow as Background */}
         {/* <div className="slideshow-container"> */}
           {/*<SlideshowHeader />*/}
@@ -18,19 +17,14 @@ export const Header2 = (props) => {
               <div className="col-md-8 col-md-offset-0.5 intro-text">
                 <h1 className="conference-title">
                   <div className="conference-title"></div>
+                  <p><div class="typotitle2">Topics of Interest</div></p>
                 </h1>
-                <p><div className="typotitle">20 - 22 October 2025 | Bangkok, Thailand</div></p>
+                <p><div class="typotitle2"></div></p>
                 <div className="conference-timer"></div>
-                <div>
-                 
+                <div>               
                 </div>
                 <div><p></p></div>
                 <div>
-                  <a 
-                    href="https://icitee2025.it.kmitl.ac.th/pdf/A4-21x29.7_ICITEE2025_CFP_03-3.pdf" 
-                    className="btn btn-custom btn-lg page-scroll">
-                    CALL FOR PAPERS
-                  </a>
                 </div>
               </div>
             </div>
@@ -39,14 +33,15 @@ export const Header2 = (props) => {
       </div>
 
       <style jsx>{`
-        .intro {
+
+        .intro1 {
           position: relative;
           width: 100%;
           height: 100vh;
           overflow: hidden;
         }
 
-        .slideshow-container2 {
+        .slideshow-container3 {
           position: absolute;
           top: 0;
           left: 0;
@@ -55,10 +50,10 @@ export const Header2 = (props) => {
           z-index: 1;
         }
 
-        .overlay {
+        .overlay3 {
           position: relative;
           z-index: 2;
-          pointer-events: none;
+          pointer-events: none; /* Allow clicks to pass through */
           display: flex;
           justify-content: center;
           align-items: center;
@@ -68,31 +63,26 @@ export const Header2 = (props) => {
         }
 
         .overlay > * {
-          pointer-events: all;
+          pointer-events: all; /* Allow interactions only for overlay content */
         }
 
-        .conference-title {
+        .conference-title3 {
           font-size: 2.5rem;
           font-weight: bold;
           margin-bottom: 20px;
         }
 
-        .conference-logo2 {
+        .conference-logo22 {
           max-width: 80%;
           margin: 0 auto;
           display: block;
         }
 
-        .typotitle {
-          font-size: 1.2rem;
-          font-weight: normal;
-        }
-
-        .conference-timer {
-          margin-top: 20px;
-          font-size: 1.5rem;
-        }
       `}</style>
     </header>
   );
 };
+
+export default HeaderSub2; // ✅ ต้องมี export default
+
+
