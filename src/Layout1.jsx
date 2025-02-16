@@ -3,6 +3,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Headersub from "./components/headersub"; // แก้ไขการนำเข้าให้ตรง
 import { Navigation } from "./components/navigation"; // นำเข้า Navigation
+import { Footer } from "components/Footer";
 
 const Layout1 = ({ data }) => { // รับข้อมูลจาก props
   return (
@@ -16,6 +17,7 @@ const Layout1 = ({ data }) => { // รับข้อมูลจาก props
         <Outlet />
       </main>
       {/* แสดง Footer */}
+      <Footer/>
       
     </div>
   );
