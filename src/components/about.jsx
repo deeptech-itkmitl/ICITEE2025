@@ -50,23 +50,23 @@ export const About = (props) => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>20 - 22 October 2025</td>
+                    <td>-</td>
                     <td>Submission Deadline</td>
                   </tr>
                   <tr>
-                    <td>20 - 22 October 2025</td>
+                    <td>-</td>
                     <td>Notification of Acceptance</td>
                   </tr>
                   <tr>
-                    <td>20 - 22 October 2025</td>
+                    <td>-</td>
                     <td>Camera Ready Deadline</td>
                   </tr>
                   <tr>
-                    <td>20 - 22 October 2025</td>
+                    <td>-</td>
                     <td>Early Registration Deadline</td>
                   </tr>
                   <tr>
-                    <td>1 October 2025</td>
+                    <td>-</td>
                     <td>Regular Registration Deadline</td>
                   </tr>
                   <tr>
