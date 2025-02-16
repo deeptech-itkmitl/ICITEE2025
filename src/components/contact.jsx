@@ -2,7 +2,7 @@ import { useState } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
  // import { VisitorCounter } from "./visitor"; ✅ แก้ import ให้ถูกต้อง (ไม่ต้องใช้ /components/visitor)
- import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebook } from "react-icons/fa";
+ //import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebook } from "react-icons/fa";
 
 const initialState = {
   name: "",
@@ -78,46 +78,16 @@ export const Contact = (props) => {
               </p>
             </div>
 
-            <div className="bg-gray-900 text-white p-6 rounded-2xl shadow-lg max-w-lg mx-auto">
-      <div className="grid gap-4">
-        <div className="grid grid-cols-3 gap-2 items-start">
-          <div className="flex items-center justify-center">
-            <FaMapMarkerAlt className="text-xl" />
-          </div>
-          <div className="col-span-2 flex flex-col justify-center">
-            <p className="font-semibold">King Mongkut's Institute of Technology Ladkrabang</p>
-            <p>1 Chalong Krung 1 Alley, Lat Krabang, Bangkok, Thailand</p>
-          </div>
-        </div>
+          <div className="contact-info">
+              <p className="address">King Mongkut's Institute of Technology Ladkrabang
+              1 Chalong Krung 1 Alley, Lat Krabang, Bangkok, Thailand</p>
 
-        <div className="grid grid-cols-3 gap-2 items-center">
-          <div className="flex items-center justify-center">
-            <FaPhone className="text-xl" />
-          </div>
-          <div>
-          <p className="col-span-2 flex items-center">(+66) 2-723-4900</p>
-          </div>          
-        </div>
+              <p>(+66) 2-723-4900</p>
 
-        <div className="grid grid-cols-3 gap-2 items-center">
-          <div className="flex items-center justify-center">
-            <FaEnvelope className="text-xl" />
-          </div>
-          <div>
-          <p className="col-span-2 flex items-center">icitee2025@it.kmitl.ac.th</p>
-          </div>          
-        </div>
+              <p>icitee2025@it.kmitl.ac.th</p>
 
-        <div className="grid grid-cols-3 gap-2 items-center">
-          <div className="flex items-center justify-center">
-            <FaFacebook className="text-xl" />
+              <p><a href="https://www.facebook.com/icitee">https://www.facebook.com/icitee</a></p>
           </div>
-          <a href="https://www.facebook.com/icitee" className="col-span-2 flex items-center hover:underline" target="_blank" rel="noopener noreferrer">
-            https://www.facebook.com/icitee
-          </a>
-        </div>
-      </div>
-    </div>
 
           </div>          
           <div className="col-md-12">

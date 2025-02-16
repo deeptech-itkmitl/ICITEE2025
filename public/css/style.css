@@ -51,6 +51,12 @@ text-xl{
 .icon {
   color: #ffffff; /* หรือ white */
 }
+.contact-info p {
+  margin-bottom: 1.5em; /* ปรับค่าตามต้องการ */
+  
+}.address {
+  margin-bottom: 2em; /* ปรับระยะห่างตามต้องการ */
+}
 p.intro {
   margin: 12px 0 0;
   line-height: 24px;
