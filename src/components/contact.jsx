@@ -79,44 +79,44 @@ export const Contact = (props) => {
             </div>
 
             <div className="bg-gray-900 text-white p-6 rounded-2xl shadow-lg max-w-lg mx-auto">
-            <table className="w-full">
-              <tbody>
-                <tr className="align-middle">
-                <FaMapMarkerAlt className="text-xl" />
-                  <td className="w-5/6">
-                    <p className="font-semibold">King Mongkut's Institute of Technology Ladkrabang</p>
-                    <p>1 Chalong Krung 1 Alley, Lat Krabang, Bangkok, Thailand</p>
-                  </td>
-                </tr>
-                <tr className="align-middle">
-                  <td className="text-center">
-                    <FaPhone className="text-xl" />
-                  </td>
-                  <td>
-                    <p>(+66) 2-723-4900</p>
-                  </td>
-                </tr>
-                <tr className="align-middle">
-                  <td className="text-center">
-                    <FaEnvelope className="text-xl" />
-                  </td>
-                  <td>
-                    <p>icitee2025@it.kmitl.ac.th</p>
-                  </td>
-                </tr>
-                <tr className="align-middle">
-                  <td className="text-center">
-                    <FaFacebook className="text-xl" />
-                  </td>
-                  <td>
-                    <a href="https://www.facebook.com/icitee" className="hover:underline" target="_blank" rel="noopener noreferrer">
-                      https://www.facebook.com/icitee
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+      <table className="w-full border text-white border-collapse">
+        <tbody>
+          <tr className="align-middle border border-white">
+            <FaMapMarkerAlt className="text-xl" />
+            <td className="w-5/6 border border-white">
+              <p className="font-semibold text-white">King Mongkut's Institute of Technology Ladkrabang</p>
+              <p className="text-white">1 Chalong Krung 1 Alley, Lat Krabang, Bangkok, Thailand</p>
+            </td>
+          </tr>
+          <tr className="align-middle border border-white">
+            <td className="text-white text-center border border-white">
+              <FaPhone className="text-xl" />
+            </td>
+            <td className="border border-white">
+              <p>(+66) 2-723-4900</p>
+            </td>
+          </tr>
+          <tr className="align-middle border border-white">
+            <td className="text-center border border-white">
+              <FaEnvelope className="text-xl" />
+            </td>
+            <td className="border border-white">
+              <p>icitee2025@it.kmitl.ac.th</p>
+            </td>
+          </tr>
+          <tr className="align-middle border border-white">
+            <td className="text-center border border-white">
+              <FaFacebook className="text-xl" />
+            </td>
+            <td className="border border-white">
+              <a href="https://www.facebook.com/icitee" className="hover:underline" target="_blank" rel="noopener noreferrer">
+                https://www.facebook.com/icitee
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
           </div>          
           <div className="col-md-12">

@@ -41,6 +41,12 @@ h5 {
 p {
   font-family: "Poppins";
   font-size: 14px;
+  color: white;
+}
+text-xl{
+  font-family: "Poppins";
+  font-size: 14px;
+  color: white;
 }
 p.intro {
   margin: 12px 0 0;
