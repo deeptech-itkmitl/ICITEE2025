@@ -79,37 +79,50 @@ export const Contact = (props) => {
             </div>
 
             <div className="bg-gray-900 text-white p-6 rounded-2xl shadow-lg max-w-lg mx-auto">
-      <table className="w-full border text-white border-collapse">
+      <table className="w-full border border-collapse text-white">
         <tbody>
           <tr className="align-middle border border-white">
-            <FaMapMarkerAlt className="text-xl" />
+            {/* ใส่ไอคอนใน <td> แยกเพื่อจัดตำแหน่งได้ง่ายขึ้น */}
+            <FaMapMarkerAlt className="text-xl text-white" />
             <td className="w-5/6 border border-white">
-              <p className="font-semibold text-white">King Mongkut's Institute of Technology Ladkrabang</p>
-              <p className="text-white">1 Chalong Krung 1 Alley, Lat Krabang, Bangkok, Thailand</p>
+              <p className="font-semibold text-white">
+                King Mongkut's Institute of Technology Ladkrabang
+              </p>
+              <p className="text-white">
+                1 Chalong Krung 1 Alley, Lat Krabang, Bangkok, Thailand
+              </p>
             </td>
           </tr>
+
           <tr className="align-middle border border-white">
-            <td className="text-white text-center border border-white">
-              <FaPhone className="text-xl" />
+            <td className="text-center border border-white">
+              <FaPhone className="text-xl text-white" />
             </td>
             <td className="border border-white">
               <p>(+66) 2-723-4900</p>
             </td>
           </tr>
+
           <tr className="align-middle border border-white">
             <td className="text-center border border-white">
-              <FaEnvelope className="text-xl" />
+              <FaEnvelope className="text-xl text-white" />
             </td>
             <td className="border border-white">
               <p>icitee2025@it.kmitl.ac.th</p>
             </td>
           </tr>
+
           <tr className="align-middle border border-white">
             <td className="text-center border border-white">
-              <FaFacebook className="text-xl" />
+              <FaFacebook className="text-xl text-white" />
             </td>
             <td className="border border-white">
-              <a href="https://www.facebook.com/icitee" className="hover:underline" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.facebook.com/icitee"
+                className="hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 https://www.facebook.com/icitee
               </a>
             </td>

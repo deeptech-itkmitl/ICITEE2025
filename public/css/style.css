@@ -48,6 +48,9 @@ text-xl{
   font-size: 14px;
   color: white;
 }
+.icon {
+  color: #ffffff; /* หรือ white */
+}
 p.intro {
   margin: 12px 0 0;
   line-height: 24px;
