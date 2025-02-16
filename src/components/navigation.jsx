@@ -62,7 +62,7 @@ export const Navigation = () => {
               </a>
               {isSubmissionOpen && (
                 <ul className="dropdown-menu">
-                  <li><a href="/call-for-papers" className="page-scroll">Call for Papers</a></li>
+                 
                   <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>
                   
                   
