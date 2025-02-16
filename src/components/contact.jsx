@@ -80,7 +80,7 @@ export const Contact = (props) => {
 
             <div className="bg-gray-900 text-white p-6 rounded-2xl shadow-lg max-w-lg mx-auto">
             <div className="space-y-4">
-              <div className="flex items-start space-x-2">
+              <div className="flex items-start space-x-4">
                 <FaMapMarkerAlt className="text-xl mt-1" />
                
                <div>
@@ -89,17 +89,17 @@ export const Contact = (props) => {
                 </div>
               </div>
 
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-4">
                 <FaPhone className="text-xl" />
                 <p>(+66) 2-723-4900</p>
               </div>
 
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-4">
                 <FaEnvelope className="text-xl" />
                 <p>icitee2025@it.kmitl.ac.th</p>
               </div>
 
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-4">
                 <FaFacebook className="text-xl" />
                 <a href="https://www.facebook.com/icitee" className="hover:underline" target="_blank" rel="noopener noreferrer">
                   https://www.facebook.com/icitee
