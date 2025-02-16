@@ -78,45 +78,59 @@ export const Contact = (props) => {
               </p>
             </div>
 
-            <div className="bg-gray-900 text-white p-6 rounded-2xl shadow-lg max-w-lg mx-auto">
-      <div className="grid gap-4">
-        <div className="grid grid-cols-3 gap-2 items-start">
-          <div className="flex items-center justify-center">
-            <FaMapMarkerAlt className="text-xl" />
-          </div>
-          <div className="col-span-2 flex flex-col justify-center">
-            <p className="font-semibold">King Mongkut's Institute of Technology Ladkrabang</p>
-            <p>1 Chalong Krung 1 Alley, Lat Krabang, Bangkok, Thailand</p>
-          </div>
-        </div>
+    <div className="bg-gray-900 text-white p-6 rounded-2xl shadow-lg max-w-lg mx-auto">
+      <table className="w-full border border-collapse text-white">
+        <tbody>
+          <tr className="align-middle border border-white">
+            {/* ใส่ไอคอนใน <td> แยกเพื่อจัดตำแหน่งได้ง่ายขึ้น */}
+            <td className="text-center border border-white">
+              <FaMapMarkerAlt className="text-xl text-white" />
+            </td>
+            <td className="w-5/6 border border-white">
+              <p className="font-semibold text-white">
+                King Mongkut's Institute of Technology Ladkrabang
+              </p>
+              <p className="text-white">
+                1 Chalong Krung 1 Alley, Lat Krabang, Bangkok, Thailand
+              </p>
+            </td>
+          </tr>
 
-        <div className="grid grid-cols-3 gap-2 items-center">
-          <div className="flex items-center justify-center">
-            <FaPhone className="text-xl" />
-          </div>
-          <div>
-          <p className="col-span-2 flex items-center">(+66) 2-723-4900</p>
-          </div>          
-        </div>
+          <tr className="align-middle border border-white">
+            <td className="text-center border border-white">
+              <FaPhone className="text-xl text-white" />
+            </td>
+            <td className="border border-white">
+              <p>(+66) 2-723-4900</p>
+            </td>
+          </tr>
 
-        <div className="grid grid-cols-3 gap-2 items-center">
-          <div className="flex items-center justify-center">
-            <FaEnvelope className="text-xl" />
-          </div>
-          <div>
-          <p className="col-span-2 flex items-center">icitee2025@it.kmitl.ac.th</p>
-          </div>          
-        </div>
+          <tr className="align-middle border border-white">
+            <td className="text-center border border-white">
+              <FaEnvelope className="text-xl text-white" />
+            </td>
+            <td className="border border-white">
+              <p>icitee2025@it.kmitl.ac.th</p>
+            </td>
+          </tr>
 
-        <div className="grid grid-cols-3 gap-2 items-center">
-          <div className="flex items-center justify-center">
-            <FaFacebook className="text-xl" />
-          </div>
-          <a href="https://www.facebook.com/icitee" className="col-span-2 flex items-center hover:underline" target="_blank" rel="noopener noreferrer">
-            https://www.facebook.com/icitee
-          </a>
-        </div>
-      </div>
+          <tr className="align-middle border border-white">
+            <td className="text-center border border-white">
+              <FaFacebook className="text-xl text-white" />
+            </td>
+            <td className="border border-white">
+              <a
+                href="https://www.facebook.com/icitee"
+                className="hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://www.facebook.com/icitee
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
           </div>          
