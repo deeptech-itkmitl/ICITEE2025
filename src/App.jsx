@@ -30,11 +30,12 @@ const App = () => {
 // ✅ แยก `AppContent` เพื่อให้ `useLocation()` ใช้ได้
 const AppContent = ({ landingPageData }) => {
   const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   return (
     <>
       {/* ✅ แสดง Header เฉพาะหน้า "/" */}
-      {location.pathname === "/" && <Header data={landingPageData.Header} />}
+      {isHomePage && <Header data={landingPageData.Header} />}
       <Navigation />
 
       <Routes>
@@ -46,14 +47,20 @@ const AppContent = ({ landingPageData }) => {
           <Route index element={<OrganizeCommittee data={landingPageData.OrganizeCommittee} />} />
         </Route>
 
+        {/* ✅ ใช้ Layout3 เมื่อเข้าหน้า Topics of Interest */}
         <Route path="/topics-of-interest" element={<Layout3 data={landingPageData} />}>
           <Route index element={<TopicsOfInterest data={landingPageData.OrganizeCommittee} />} />
         </Route>
       </Routes>
 
-      <Team2 data={landingPageData.Team} />
-      <Team1 data={landingPageData.Team2} />
-      <Contact data={landingPageData.Contact} />
+      {/* ✅ แสดง Team2 และ Team1 เฉพาะหน้า "/" */}
+      {isHomePage && (
+        <>
+          <Team2 data={landingPageData.Team} />
+          <Team1 data={landingPageData.Team2} />
+          <Contact data={landingPageData.Contact} />
+        </>
+      )}      
     </>
   );
 };
