@@ -95,6 +95,7 @@ export const About = (props) => {
           justify-content: center;
           align-items: center;
           gap: 20px;
+          padding: 10px;
         }
 
         .about-section, .important-section {
