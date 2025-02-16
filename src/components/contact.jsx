@@ -2,6 +2,7 @@ import { useState } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
  // import { VisitorCounter } from "./visitor"; ✅ แก้ import ให้ถูกต้อง (ไม่ต้องใช้ /components/visitor)
+ import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebook } from "react-icons/fa";
 
 const initialState = {
   name: "",
@@ -79,22 +80,34 @@ export const Contact = (props) => {
                 {props.data ? props.data.address : "loading"}
               </p>
             </div>
-            <div className="contact-item">
-              <p>
-                <span>
-                  <i className="fa fa-phone"></i> Phone
-                </span>{" "}
-                {props.data ? props.data.phone : "loading"}
-              </p>
-            </div>
-            <div className="contact-item">
-              <p>
-                <span>
-                  <i className="fa fa-envelope-o"></i> Email
-                </span>{" "}
-                {props.data ? props.data.email : "loading"}
-              </p>
-            </div>            
+            <div className="bg-gray-900 text-white p-6 rounded-2xl shadow-lg max-w-lg mx-auto">
+      <div className="space-y-4">
+        <div className="flex items-start space-x-4">
+          <FaMapMarkerAlt className="text-xl mt-1" />
+          <div>
+            <p className="font-semibold">King Mongkut's Institute of Technology Ladkrabang</p>
+            <p>1 Chalong Krung 1 Alley, Lat Krabang, Bangkok, Thailand</p>
+          </div>
+        </div>
+
+        <div className="flex items-center space-x-4">
+          <FaPhone className="text-xl" />
+          <p>(+66) 2-723-4900</p>
+        </div>
+
+        <div className="flex items-center space-x-4">
+          <FaEnvelope className="text-xl" />
+          <p>icitee2025@it.kmitl.ac.th</p>
+        </div>
+
+        <div className="flex items-center space-x-4">
+          <FaFacebook className="text-xl" />
+          <a href="https://www.facebook.com/icitee" className="hover:underline" target="_blank" rel="noopener noreferrer">
+            https://www.facebook.com/icitee
+          </a>
+        </div>
+      </div>
+    </div>            
           </div>
           <div className="col-md-12">
                                 {/* ✅ แสดง VisitorCounter ด้านล่าง <VisitorCounter />*/}
