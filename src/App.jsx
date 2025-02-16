@@ -53,7 +53,7 @@ const AppContent = ({ landingPageData }) => {
         </Route>
       </Routes>
 
-      {/* ✅ แสดง Team2 และ Team1 เฉพาะหน้า "/" */}
+      {/* ✅ แสดง Team2 Team1 และ Contact เฉพาะหน้า "/" */}
       {isHomePage && (
         <>
           <Team2 data={landingPageData.Team} />

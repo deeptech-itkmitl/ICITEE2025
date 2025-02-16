@@ -1,7 +1,7 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
-import { VisitorCounter } from "./visitor"; // ✅ แก้ import ให้ถูกต้อง (ไม่ต้องใช้ /components/visitor)
+ // import { VisitorCounter } from "./visitor"; ✅ แก้ import ให้ถูกต้อง (ไม่ต้องใช้ /components/visitor)
 
 const initialState = {
   name: "",
@@ -97,9 +97,9 @@ export const Contact = (props) => {
             </div>            
           </div>
           <div className="col-md-12">
-                                {/* ✅ แสดง VisitorCounter ด้านล่าง */}
+                                {/* ✅ แสดง VisitorCounter ด้านล่าง <VisitorCounter />*/}
                                 <div className="col-md-12">
-                           <VisitorCounter />
+                          
                       </div>
             <div className="row">
               <div className="social">
