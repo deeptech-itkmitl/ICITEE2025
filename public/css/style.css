@@ -507,8 +507,7 @@ hr {
 }
 
 #menu.navbar-default .navbar-nav > li > a {
-  font-family: "Poppins", Poppins;
-  
+  font-family: "Poppins", Poppins;  
   color: #ffffff;
   font-size: 15px;
   font-weight: 400;
@@ -585,9 +584,6 @@ hr {
   color: linear-gradient(to right, #4b0082, #7a5cff);
   background: linear-gradient(to right, #7a5cff, #4b0082);
 }
-
-/**/
-
 
 /*   section tile*/
 .section-title {
