@@ -61,7 +61,7 @@ export const Contact = (props) => {
                           width: "100%",
                           maxWidth: "750px",
                           height: "420px",
-                          aspectRatio: "16/9",
+                          aspectRatio: "16/9", 
                         }}
                       ></iframe>
                   </div>
