@@ -107,7 +107,7 @@ export const About = (props) => {
         }
 
         @media (max-width: 768px) {
-          .content-layout {            
+          .content-layout {           
             text-align: center;
           }
         }
