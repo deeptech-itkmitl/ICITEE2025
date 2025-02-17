@@ -48,27 +48,7 @@ export const About = (props) => {
                     <th>EVENT</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td>-</td>
-                    <td>Submission Deadline</td>
-                  </tr>
-                  <tr>
-                    <td>-</td>
-                    <td>Notification of Acceptance</td>
-                  </tr>
-                  <tr>
-                    <td>-</td>
-                    <td>Camera Ready Deadline</td>
-                  </tr>
-                  <tr>
-                    <td>-</td>
-                    <td>Early Registration Deadline</td>
-                  </tr>
-                  <tr>
-                    <td>-</td>
-                    <td>Regular Registration Deadline</td>
-                  </tr>
+                <tbody>                 
                   <tr>
                     <td>20 - 22 October 2025</td>
                     <td>Conference Date</td>
@@ -95,7 +75,7 @@ export const About = (props) => {
           justify-content: center;
           align-items: center;
           gap: 20px;
-          padding: 15px;
+          padding: 30px;
         }
 
         .about-section, .important-section {

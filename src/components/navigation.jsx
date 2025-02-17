@@ -21,7 +21,7 @@ export const Navigation = () => {
             type="button"
             className="navbar-toggle collapsed"
             data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1 "
+            data-target="#bs-example-navbar-collapse-1"
             
           >
             <span className="sr-only">Toggle navigation</span>
@@ -73,7 +73,7 @@ export const Navigation = () => {
             
             <li className="dropdown">
               <a href="#program" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setProgramOpen); }}>
-                Program <i className="fa fa-caret-down"></i>
+                
               </a>
               {isProgramOpen && (
                 <ul className="dropdown-menu">
@@ -87,7 +87,7 @@ export const Navigation = () => {
             
             <li className="dropdown">
               <a href="#registration" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setRegistrationOpen); }}>
-                Registration <i className="fa fa-caret-down"></i>
+                
               </a>
               {isRegistrationOpen && (
                 <ul className="dropdown-menu">
@@ -101,7 +101,7 @@ export const Navigation = () => {
             
             <li className="dropdown">
               <a href="#venue" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setVenueOpen); }}>
-                Venue & Travel Information <i className="fa fa-caret-down"></i>
+                
               </a>
               {isVenueOpen && (
                 <ul className="dropdown-menu">
@@ -113,7 +113,7 @@ export const Navigation = () => {
             
             <li className="dropdown">
               <a href="#policy" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setPolicyOpen); }}>
-                Policy <i className="fa fa-caret-down"></i>
+                
               </a>
               {isPolicyOpen && (
                 <ul className="dropdown-menu">

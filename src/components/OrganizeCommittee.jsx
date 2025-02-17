@@ -5,7 +5,8 @@ export const OrganizeCommittee = () => {
     {
       title: "Advisory Boards",
       members: [
-        "Komsan Maleesee (KMITL, Thailand) | Worapoj Kreesuradej (KMITL, Thailand) "
+        "Komsan Maleesee (KMITL, Thailand)",
+        "Worapoj Kreesuradej (KMITL, Thailand) "
       ],
     },
     {

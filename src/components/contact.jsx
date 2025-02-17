@@ -106,10 +106,7 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            Copyright © ICITEE 2025 : 17th International Conference on Information Technology and Electrical Engineering{" "}
-            <a href="http://icitee2025.it.kmitl.ac.th" rel="nofollow">
-              ICITEE 2025
-            </a>
+            Copyright © ICITEE 2025 : 17th International Conference on Information Technology and Electrical Engineering.{" "}
           </p>
         </div>
       </div>

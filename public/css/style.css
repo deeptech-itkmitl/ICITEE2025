@@ -248,7 +248,7 @@ hr {
   width: 100%;
   max-width: 1000px;
   text-align: center;
-  padding: 40px 20px;
+  padding: 30px 20px;
   margin: auto;
   border-radius: 12px;
 }
@@ -586,9 +586,12 @@ hr {
   background: linear-gradient(to right, #7a5cff, #4b0082);
 }
 
+/**/
+
+
 /*   section tile*/
 .section-title {
-  margin-bottom: 70px;
+  margin-bottom: 0px;
 }
 .section-title h2 {
   position: relative;
@@ -653,13 +656,20 @@ a:focus,
 
 .nav-head{
   display: flex !important;
-  justify-content: center;
+  justify-content: space-between;
 }
-@media (max-width: 768px) {
+@media (max-width: 1025px) {
   .nav-head {
     display: block !important;
+    /* justify-content: flex-end; */
+  }
+  .navbar-header{
+    width: 100%;
   }
 }
+/* .navbar-header{
+  width: 100%;
+} */
 
 /* Logo CSS */
 .right-aligned-text {
