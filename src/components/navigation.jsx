@@ -4,6 +4,10 @@ import 'font-awesome/css/font-awesome.min.css';
 export const Navigation = () => {
   const [isAboutOpen, setAboutOpen] = useState(false);
   const [isSubmissionOpen, setSubmissionOpen] = useState(false);
+  const [isProgramOpen, setProgramOpen] = useState(false);
+  const [isRegistrationOpen, setRegistrationOpen] = useState(false);
+  const [isVenueOpen, setVenueOpen] = useState(false);
+  const [isPolicyOpen, setPolicyOpen] = useState(false);
 
   const toggleDropdown = (setFunction) => {
     setFunction(prev => !prev);
@@ -18,6 +22,7 @@ export const Navigation = () => {
             className="navbar-toggle collapsed"
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
+            
           >
             <span className="sr-only">Toggle navigation</span>
             <span className="icon-bar"></span>
@@ -32,59 +37,21 @@ export const Navigation = () => {
             />
           </a>
         </div>
+
         <div className="collapse navbar-collapse col-md-6" id="bs-example-navbar-collapse-1">
           <ul className="nav navbar-nav">
             <li><a href="/" className="page-scroll">Home</a></li>
-            <li className="dropdown">
-
-              {isSubmissionOpen && (
-                <ul className="dropdown-menu">                
-                  <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>                
-                </ul>
-              )}
-            </li> 
-            <li className="dropdown">
-       
-              {isSubmissionOpen && (
-                <ul className="dropdown-menu">                
-                  <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>                
-                </ul>
-              )}
-            </li> 
-            <li className="dropdown">
-       
-       {isSubmissionOpen && (
-         <ul className="dropdown-menu">                
-           <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>                
-         </ul>
-       )}
-     </li> 
-
-     <li className="dropdown">
-       
-       {isSubmissionOpen && (
-         <ul className="dropdown-menu">                
-           <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>                
-         </ul>
-       )}
-     </li> 
-
-     <li className="dropdown">
-       
-       {isSubmissionOpen && (
-         <ul className="dropdown-menu">                
-           <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>                
-         </ul>
-       )}
-     </li> 
-
+            
             <li className="dropdown">
               <a href="#about" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setAboutOpen); }}>
                 About <i className="fa fa-caret-down"></i>
               </a>
               {isAboutOpen && (
                 <ul className="dropdown-menu">
-                  <li><a href="/organizing-committee" className="page-scroll">Organizing Committee</a></li>                                   
+                  
+                  <li><a href="/organizing-committee" className="page-scroll">Organizing Committee</a></li>
+                  
+                  
                 </ul>
               )}
             </li>
@@ -94,11 +61,68 @@ export const Navigation = () => {
                 Submission <i className="fa fa-caret-down"></i>
               </a>
               {isSubmissionOpen && (
-                <ul className="dropdown-menu">                
-                  <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>                
+                <ul className="dropdown-menu">
+                 
+                  <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>
+                  
+                  
+                  
                 </ul>
               )}
-            </li> 
+            </li>
+            
+            <li className="dropdown">
+              <a href="#program" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setProgramOpen); }}>
+                Program <i className="fa fa-caret-down"></i>
+              </a>
+              {isProgramOpen && (
+                <ul className="dropdown-menu">
+                  
+                  
+                  
+                  
+                </ul>
+              )}
+            </li>
+            
+            <li className="dropdown">
+              <a href="#registration" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setRegistrationOpen); }}>
+                Registration <i className="fa fa-caret-down"></i>
+              </a>
+              {isRegistrationOpen && (
+                <ul className="dropdown-menu">
+                  
+                  
+                  
+                  
+                </ul>
+              )}
+            </li>
+            
+            <li className="dropdown">
+              <a href="#venue" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setVenueOpen); }}>
+                Venue & Travel Information <i className="fa fa-caret-down"></i>
+              </a>
+              {isVenueOpen && (
+                <ul className="dropdown-menu">
+                  
+                  
+                </ul>
+              )}
+            </li>
+            
+            <li className="dropdown">
+              <a href="#policy" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setPolicyOpen); }}>
+                Policy <i className="fa fa-caret-down"></i>
+              </a>
+              {isPolicyOpen && (
+                <ul className="dropdown-menu">
+                  
+                  
+                  
+                </ul>
+              )}
+            </li>
           </ul>
         </div>
       </div>
