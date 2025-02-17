@@ -32,7 +32,7 @@ export const Header = (props) => {
                 </div>
                 <div><p></p></div>
                 <div>
-                <a href="../../public/pdf/A4-21x29.7_ICITEE2025_CFP_03-3.pdf" class="btn btn-custom btn-lg page-scroll">CALL FOR PAPERS</a>
+                <a href="../pdf/A4-21x29.7_ICITEE2025_CFP_03-3.pdf" class="btn btn-custom btn-lg page-scroll">CALL FOR PAPERS</a>
                 </div>
               </div>
             </div>
