@@ -3476,9 +3476,11 @@ input[type="button"].btn-block {
 }
 .collapse {
   display: none;
+  height: 200px;
 }
 .collapse.in {
   display: block;
+  height: 200px;
 }
 tr.collapse.in {
   display: table-row;
