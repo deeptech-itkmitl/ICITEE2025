@@ -18,7 +18,6 @@ export const Navigation = () => {
             className="navbar-toggle collapsed"
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
-            
           >
             <span className="sr-only">Toggle navigation</span>
             <span className="icon-bar"></span>
@@ -33,21 +32,59 @@ export const Navigation = () => {
             />
           </a>
         </div>
-
         <div className="collapse navbar-collapse col-md-6" id="bs-example-navbar-collapse-1">
           <ul className="nav navbar-nav">
             <li><a href="/" className="page-scroll">Home</a></li>
-            
+            <li className="dropdown">
+
+              {isSubmissionOpen && (
+                <ul className="dropdown-menu">                
+                  <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>                
+                </ul>
+              )}
+            </li> 
+            <li className="dropdown">
+       
+              {isSubmissionOpen && (
+                <ul className="dropdown-menu">                
+                  <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>                
+                </ul>
+              )}
+            </li> 
+            <li className="dropdown">
+       
+       {isSubmissionOpen && (
+         <ul className="dropdown-menu">                
+           <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>                
+         </ul>
+       )}
+     </li> 
+
+     <li className="dropdown">
+       
+       {isSubmissionOpen && (
+         <ul className="dropdown-menu">                
+           <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>                
+         </ul>
+       )}
+     </li> 
+
+     <li className="dropdown">
+       
+       {isSubmissionOpen && (
+         <ul className="dropdown-menu">                
+           <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>                
+         </ul>
+       )}
+     </li> 
+
             <li className="dropdown">
               <a href="#about" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setAboutOpen); }}>
                 About <i className="fa fa-caret-down"></i>
               </a>
               {isAboutOpen && (
                 <ul className="dropdown-menu">
-                  
-                  <li><a href="/organizing-committee" className="page-scroll">Organizing Committee</a></li>
-                  
-                  
+                  <li><a href="/organizing-committee" className="page-scroll">Organizing Committee</a></li>                                   
                 </ul>
               )}
             </li>
@@ -57,14 +94,11 @@ export const Navigation = () => {
                 Submission <i className="fa fa-caret-down"></i>
               </a>
               {isSubmissionOpen && (
-                <ul className="dropdown-menu">
-                
-                  <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>                 
-                  
+                <ul className="dropdown-menu">                
+                  <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>                
                 </ul>
               )}
-            </li>
- 
+            </li> 
           </ul>
         </div>
       </div>
