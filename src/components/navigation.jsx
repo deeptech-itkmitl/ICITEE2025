@@ -4,10 +4,6 @@ import 'font-awesome/css/font-awesome.min.css';
 export const Navigation = () => {
   const [isAboutOpen, setAboutOpen] = useState(false);
   const [isSubmissionOpen, setSubmissionOpen] = useState(false);
-  const [isProgramOpen, setProgramOpen] = useState(false);
-  const [isRegistrationOpen, setRegistrationOpen] = useState(false);
-  const [isVenueOpen, setVenueOpen] = useState(false);
-  const [isPolicyOpen, setPolicyOpen] = useState(false);
 
   const toggleDropdown = (setFunction) => {
     setFunction(prev => !prev);
@@ -62,67 +58,13 @@ export const Navigation = () => {
               </a>
               {isSubmissionOpen && (
                 <ul className="dropdown-menu">
-                 
-                  <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>
-                  
-                  
-                  
-                </ul>
-              )}
-            </li>
-            
-            <li className="dropdown">
-              <a href="#program" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setProgramOpen); }}>
                 
-              </a>
-              {isProgramOpen && (
-                <ul className="dropdown-menu">
-                  
-                  
-                  
+                  <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>                 
                   
                 </ul>
               )}
             </li>
-            
-            <li className="dropdown">
-              <a href="#registration" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setRegistrationOpen); }}>
-                
-              </a>
-              {isRegistrationOpen && (
-                <ul className="dropdown-menu">
-                  
-                  
-                  
-                  
-                </ul>
-              )}
-            </li>
-            
-            <li className="dropdown">
-              <a href="#venue" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setVenueOpen); }}>
-                
-              </a>
-              {isVenueOpen && (
-                <ul className="dropdown-menu">
-                  
-                  
-                </ul>
-              )}
-            </li>
-            
-            <li className="dropdown">
-              <a href="#policy" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setPolicyOpen); }}>
-                
-              </a>
-              {isPolicyOpen && (
-                <ul className="dropdown-menu">
-                  
-                  
-                  
-                </ul>
-              )}
-            </li>
+ 
           </ul>
         </div>
       </div>
