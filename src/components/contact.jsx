@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import React from "react";
  // import { VisitorCounter } from "./visitor"; ✅ แก้ import ให้ถูกต้อง (ไม่ต้องใช้ /components/visitor)
  //import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebook } from "react-icons/fa";
+ import  VisitorCounter  from "./VisitorCounter";
 
 const initialState = {
   name: "",
@@ -93,7 +94,7 @@ export const Contact = (props) => {
           <div className="col-md-12">
                                 {/* ✅ แสดง VisitorCounter ด้านล่าง <VisitorCounter />*/}
                                 <div className="col-md-12">
-                          
+                          <VisitorCounter/>
                       </div>
             <div className="row">
               <div className="social">

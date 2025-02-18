@@ -13,6 +13,7 @@ import { OrganizeCommittee } from "./components/OrganizeCommittee";
 import JsonData from "./data/data.json";
 import "./App.css";
 
+
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
 
@@ -58,7 +59,7 @@ const AppContent = ({ landingPageData }) => {
         <>
           <Team2 data={landingPageData.Team} />
           <Team1 data={landingPageData.Team2} />
-          <Contact data={landingPageData.Contact} />
+          <Contact data={landingPageData.Contact} />    
         </>
       )}      
     </>

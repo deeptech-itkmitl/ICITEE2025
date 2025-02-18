@@ -100,7 +100,7 @@ hr {
 }
 
 .visitor-counter {
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1); */
   padding: 10px 20px;
   border-radius: 10px;
   text-align: center;
@@ -1437,5 +1437,86 @@ label {
 @media (max-width: 768px) {
   #about img {
     margin: 50px 0;
+  }
+}
+
+/* Container สำหรับการจัดตำแหน่ง */
+.center-container {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  transition:background-color 0.3s ease;
+  text-align: center;
+}
+/* สไตล์สำหรับหัวข้อ (จำนวนผู้เข้าชม) */
+.visitor-counter h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  transition:background-color 0.3s ease;
+  max-width: fit-content;
+}
+
+* สไตล์สำหรับ Visitor Counter */
+.visitor-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #ffffff30; */
+  /* border-radius: 1.5rem; */
+  /* padding: 0rem; */
+  /* box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); */
+  /* text-align: justify; */
+}
+
+/* สไตล์สำหรับหัวข้อ (จำนวนผู้เข้าชม) */
+.visitor-counter h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 0rem;
+  transition:background-color 0.3s ease;
+}
+
+/* สไตล์สำหรับปุ่ม */
+.visitor-counter button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.visitor-counter button:hover {
+  background-color: #2563eb;
+}
+
+/* ทำให้รองรับการแสดงผลบนอุปกรณ์ต่าง ๆ */
+
+/* สำหรับอุปกรณ์ขนาด iPad (Tablet) */
+@media (max-width: 1024px) {
+  .visitor-counter h1 {
+    font-size: 1.5rem;
+  }
+
+  .visitor-counter button {
+    padding: 0.5rem 1.25rem;
+  }
+}
+
+/* สำหรับอุปกรณ์ขนาดมือถือ */
+@media (max-width: 768px) {
+  .visitor-counter h1 {
+    font-size: 1.25rem;
+  }
+
+  .visitor-counter button {
+    padding: 0.5rem 1rem;
   }
 }
