@@ -92,8 +92,8 @@ export const Contact = (props) => {
 
           </div>          
           <div className="col-md-12">
-                                {/* ✅ แสดง VisitorCounter ด้านล่าง <VisitorCounter />*/}
-                                <div className="col-md-12">
+                      {/* ✅ แสดง VisitorCounter ด้านล่าง <VisitorCounter />*/}
+                      <div className="col-md-12">
                           <VisitorCounter/>
                       </div>
             <div className="row">
