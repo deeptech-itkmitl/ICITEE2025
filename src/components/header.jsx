@@ -32,7 +32,12 @@ export const Header = (props) => {
                 </div>
                 <div><p></p></div>
                 <div>
-                <a href="https://icitee2025.it.kmitl.ac.th/public/pdf/A4-21x29.7_ICITEE2025_CFP_03-3.pdf" class="btn btn-custom btn-lg page-scroll">CALL FOR PAPERS</a>
+                <a href={`${process.env.PUBLIC_URL}/pdf/A4-21x29.7_ICITEE2025_CFP_03-3.pdf`} 
+                  className="btn btn-custom btn-lg page-scroll" 
+                  target="_blank" 
+                  rel="noopener noreferrer">
+                  CALL FOR PAPERS
+                </a>
                 </div>
               </div>
             </div>
