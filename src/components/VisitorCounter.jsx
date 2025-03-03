@@ -18,7 +18,7 @@ export default function VisitorCounter() {
   return (
     <div className="center-container">
       <div className="visitor-counter">
-        <h4>Visitors: {count}</h4>       
+        <h4></h4>       
       </div>
     </div>
   );
