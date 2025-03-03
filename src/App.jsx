@@ -11,6 +11,8 @@ import { Team2 } from "./components/Team2";
 import { Contact } from "./components/contact";
 import { TopicsOfInterest } from "./components/TopicsOfInterest";
 import { OrganizeCommittee } from "./components/OrganizeCommittee";
+import QualityControlPage from './components/QualityControl';
+
 import JsonData from "./data/data.json";
 import "./App.css";
 
@@ -57,7 +59,7 @@ const AppContent = ({ landingPageData }) => {
 
         {/* ✅ ใช้ Layout3 เมื่อเข้าหน้า Topics of Interest */}
         <Route path="/quality-control-management" element={<Layout4 data={landingPageData} />}>
-          <Route index element={<TopicsOfInterest data={landingPageData.OrganizeCommittee} />} />
+          <Route index element={<QualityControlPage data={landingPageData.Quality} />} />
         </Route>
 
       </Routes>
