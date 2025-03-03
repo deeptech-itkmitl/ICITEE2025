@@ -16,6 +16,7 @@ const QualityControl = () => {
       </p>
 
       <p>Our <strong>quality control strategy</strong> is based on:</p>
+      <p>
       <ul>
         <li>
           <span className="check-icon"></span>
@@ -30,6 +31,7 @@ const QualityControl = () => {
           <strong> Multiple revision opportunities</strong> to enhance the quality of accepted papers.
         </li>
       </ul>
+      </p>
     </div>      
 
       <div className="card">
@@ -73,6 +75,7 @@ const QualityControl = () => {
 
       <div className="card">
         <h3>Comparison of Rolling vs. Traditional Review</h3>
+        <p>
         <table>
           <thead>
             <tr>
@@ -109,6 +112,7 @@ const QualityControl = () => {
             </tr>
           </tbody>
         </table>
+        </p>
       </div>
 
       <div className="card">
