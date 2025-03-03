@@ -80,12 +80,12 @@ export const Contact = (props) => {
             </div>
 
           <div className="contact-info">
-              <p className="address">King Mongkut's Institute of Technology Ladkrabang
+              <p className="address"><b>Address :</b> King Mongkut's Institute of Technology Ladkrabang
               1 Chalong Krung 1 Alley, Lat Krabang, Bangkok, Thailand</p>
 
-              <p>(+66) 2-723-4900</p>
+              <p><b>Telephone :</b> (+66) 2-723-4900</p>
 
-              <p>icitee2025@it.kmitl.ac.th</p>
+              <p><b>Email :</b> icitee2025@it.kmitl.ac.th</p>
 
               <p><a href="https://www.facebook.com/icitee">https://www.facebook.com/icitee</a></p>
           </div>

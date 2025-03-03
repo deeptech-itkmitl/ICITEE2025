@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Layout2 from "./Layout2";
 import Layout3 from "./Layout3";
+import Layout4 from "./Layout4";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { About } from "./components/about";
@@ -52,6 +53,13 @@ const AppContent = ({ landingPageData }) => {
         <Route path="/topics-of-interest" element={<Layout3 data={landingPageData} />}>
           <Route index element={<TopicsOfInterest data={landingPageData.OrganizeCommittee} />} />
         </Route>
+      
+
+        {/* ✅ ใช้ Layout3 เมื่อเข้าหน้า Topics of Interest */}
+        <Route path="/quality-control-management" element={<Layout4 data={landingPageData} />}>
+          <Route index element={<TopicsOfInterest data={landingPageData.OrganizeCommittee} />} />
+        </Route>
+
       </Routes>
 
       {/* ✅ แสดง Team2 Team1 และ Contact เฉพาะหน้า "/" */}

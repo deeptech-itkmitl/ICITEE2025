@@ -10,8 +10,8 @@ export const About = (props) => {
             {/* ส่วนหัวข้อซ้าย */}
             <div className="about-section">
               <div className="about-title-container">
-                <h1 className="topic-title">About</h1>
-                <h6 className="topic-title">Conference</h6>
+                <h1 className="about-text topic-title">About Conference</h1>
+                <h6 className="about-text topic-title"></h6>
               </div>
             </div>
 
@@ -35,13 +35,13 @@ export const About = (props) => {
           <div className="content-layout">
             <div className="important-section">
               <div className="about-title-container">
-                <h1 className="topic-title">Important</h1>
-                <h6 className="topic-title">Dates</h6>
+                <h1 className="topic-title">Important Dates</h1>
+                <h6 className="topic-title"></h6>
               </div>
             </div>
 
             <div className="important-dates-container">          
-              <table className="important-dates">
+              <table className="important-dates tr:hover">
                 <thead>
                   <tr>
                     <th>DATE</th>
@@ -91,20 +91,31 @@ export const About = (props) => {
           min-width: 300px;
         }
 
-        .important-dates {
-         color: #FFFFFF;
-          width: 100%;
-          border-collapse: collapse;
-          overflow-x: auto;
-          display: block;
-        }
+        /* ตารางปรับปรุงใหม่ */
+            .important-dates {
+                width: 100%;
+                border-collapse: collapse;
+                overflow-x: auto;
+                display: block;
+            }
 
-        .important-dates th, .important-dates td {
-         color: #FFFFFF;
-          border: 1px solid #ccc;
-          padding: 8px;
-          text-align: left;
-        }
+            .important-dates th, .important-dates td {
+                color: #FFFFFF;
+                border: 1px solid rgba(255, 255, 255, 0.3); /* ลดความเข้มของเส้นขอบ */
+                padding: 8px;
+                text-align: left;
+            }
+
+            .important-dates th {
+                border: 1px solid rgba(255, 255, 255, 0.3); /* ลดความเข้มของเส้นขอบ */
+                font-weight: bold;
+            }
+
+            .important-dates tr:hover {
+                background-color: rgba(245, 244, 244, 0.19); /* เปลี่ยนสีพื้นหลังเมื่อวางเมาส์ */
+                transition: background-color 0.3s ease-in-out; /* เพิ่มเอฟเฟกต์ลื่นไหล */
+            }
+
 
         @media (max-width: 768px) {
           .content-layout {           

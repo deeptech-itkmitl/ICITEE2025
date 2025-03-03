@@ -4,8 +4,8 @@ import 'font-awesome/css/font-awesome.min.css';
 export const Navigation = () => {
   const [isAboutOpen, setAboutOpen] = useState(false);
   const [isSubmissionOpen, setSubmissionOpen] = useState(false);
+  const [isQualityOpen, setQualityOpen] = useState(false);
  
-
   const toggleDropdown = (setFunction) => {
     setFunction(prev => !prev);
   };
@@ -61,6 +61,17 @@ export const Navigation = () => {
                 </ul>
               )}
             </li>
+
+            <li className="dropdown">
+              <a href="#quality" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setQualityOpen); }}>
+              Quality Control <i className="fa fa-caret-down"></i>
+              </a>
+              {isQualityOpen && (
+                <ul className="dropdown-menu">                 
+                  <li><a href="/quality-control-management" className="page-scroll">Quality Control & Management</a></li>                 
+                </ul>
+              )}
+            </li>            
 
           </ul>
         </div>
