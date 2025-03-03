@@ -4,12 +4,7 @@ import "../css/QualityControl.css";
 const QualityControl = () => {
   return (
     <div className="quality-container">
-      <h2 className="title"></h2>
-      <p className="intro">
-        ICITEE 2025 adopts a Rolling Review Process with an Open Review Policy to enhance the
-        peer review experience and ensure high-quality research contributions.
-      </p>
-
+      <h4 className="title"></h4>
       <div className="card">      
       <p>
         ICITEE 2025 adopts a <strong>Rolling Review Process</strong> with an <strong>Open Review Policy</strong> to enhance the peer review experience and ensure high-quality research contributions. This approach provides <strong>timely, transparent, and constructive feedback</strong>, helping authors improve their work before final acceptance.
@@ -18,15 +13,15 @@ const QualityControl = () => {
       <p>Our <strong>quality control strategy</strong> is based on:</p>
       <ul>
         <li>
-          <span className="check-icon">✔</span>
+          <span className="check-icon"></span>
           <strong> Continuous review</strong> to provide rapid feedback and reduce delays.
         </li>
         <li>
-          <span className="check-icon">✔</span>
+          <span className="check-icon"></span>
           <strong> Transparent and interactive review</strong> to encourage constructive discussions.
         </li>
         <li>
-          <span className="check-icon">✔</span>
+          <span className="check-icon"></span>
           <strong> Multiple revision opportunities</strong> to enhance the quality of accepted papers.
         </li>
       </ul>
