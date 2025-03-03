@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 .body {
-  font-family: 'Poppins';  
+  font-family: 'Poppins'; 
+  text-align: justify; 
   color: #e2e8f0;
   background-color: #334155;
+  font-size: 14px;
 }
 
 .quality-container {
@@ -19,6 +21,7 @@
   font-weight: 600;
   margin-bottom: 20px;
   color: white;
+  text-align: justify; 
 }
 
 .intro {
@@ -54,16 +57,19 @@ table {
 th {
   background: #334155;
   color: #f8fafc;
+  
 }
 
 th, td {
   padding: 12px;
   border: 1px solid #475569;
   color: #f8fafc;
+  text-align: justify; 
 }
 
 ul {
   list-style: disc;
   padding-left: 20px;
   color: #f8fafc;
+  text-align: justify; 
 }
