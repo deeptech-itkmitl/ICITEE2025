@@ -44,8 +44,8 @@ h5 {
 p {
   font-family: "Poppins";
   font-size: 14px;
-  color: white;
-  text-align : justify;
+  /* color: white;
+  text-align : justify; */
 }
 text-xl{
   font-family: "Poppins";
