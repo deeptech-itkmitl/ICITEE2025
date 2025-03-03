@@ -1,8 +1,9 @@
 import React from "react";
+// import "../css/Team.css";
 
 export const Team1 = (props) => {
   return (
-    <div id="team2" className="text-center">
+    <div id="team2" style={{background: 'white'}} className="text-center">
       <div className="container">
         <div className="col-md-8 col-md-offset-2 section-title">
           <h3>Co-Organizer</h3>

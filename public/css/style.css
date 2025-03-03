@@ -11,6 +11,9 @@ html {
   width: 100% !important;
   height: 100% !important;
 }
+body{
+  background-color: #0c1329 !important;
+}
 h2,
 h3,
 h4 {

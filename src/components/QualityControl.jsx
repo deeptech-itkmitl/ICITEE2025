@@ -5,6 +5,11 @@ const QualityControl = () => {
   return (
     <div className="quality-container">
       <h4 className="title"></h4>
+      <p className="intro">
+        ICITEE 2025 adopts a Rolling Review Process with an Open Review Policy to enhance the
+        peer review experience and ensure high-quality research contributions.
+      </p>
+
       <div className="card">      
       <p>
         ICITEE 2025 adopts a <strong>Rolling Review Process</strong> with an <strong>Open Review Policy</strong> to enhance the peer review experience and ensure high-quality research contributions. This approach provides <strong>timely, transparent, and constructive feedback</strong>, helping authors improve their work before final acceptance.
