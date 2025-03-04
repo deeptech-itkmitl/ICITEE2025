@@ -9,8 +9,8 @@ const QualityControl = () => {
       <p className="intro">
         ICITEE 2025 adopts a <strong>Rolling Review Process</strong> with an <strong>Open Review Policy</strong> to enhance the peer review experience and ensure high-quality research contributions. This approach provides <strong>timely, transparent, and constructive feedback</strong>, helping authors improve their work before final acceptance.
       </p>
-      <p>Our <strong>quality control strategy</strong> is based on:</p>
-      <p>
+      <p2>Our <strong>quality control strategy</strong> is based on:</p2>
+      <p2>
       <ul>
         <li>
           <span className="check-icon"></span>
@@ -25,44 +25,44 @@ const QualityControl = () => {
           <strong> Multiple revision opportunities</strong> to enhance the quality of accepted papers.
         </li>
       </ul>
-      </p>
+      </p2>
     </div>      
 
       <div className="card">
         <h2>1. What is a Rolling Review Process?</h2>
-        <p>
+        <p2>
           A Rolling Review Process is a continuous submission and evaluation system where authors
           can submit their papers at any time within the submission window.
           Instead of waiting for a fixed deadline, papers are reviewed as they arrive, 
           and authors receive decisions within three weeks of submission.          
-        </p>
+        </p2>
         <h3>Key Benefits of Rolling Review for Quality Control</h3>
         <h3>Faster Review & Decisions</h3>        
-        <p>
+        <p2>
            <li>Papers are reviewed as soon as they are submitted, preventing delays in the review process.</li>
-        </p>
-        <p>
+        </p2>
+        <p2>
         <li>Authors receive feedback within three weeks, enabling them to revise and improve their work without long waiting times.</li>
-        </p>
+        </p2>
         <h3></h3>
         <h3>Better Paper Quality</h3>        
-        <p>
+        <p2>
            <li>Iterative Improvement: If a paper is not immediately accepted, authors often receive a Revise & Resubmit decision rather than outright rejection, encouraging them to refine their work.</li>
-        </p>
-        <p>
+        </p2>
+        <p2>
         <li>More Opportunities to Improve: Authors can incorporate expert feedback into their revisions, leading to higher-quality final submissions.</li>
-        </p>
-        <p>
+        </p2>
+        <p2>
         <li>Reduced Last-Minute Rush: Traditional conferences lead to rushed submissions near the deadline, often reducing quality. Rolling review allows authors to submit when they are ready, leading to better-prepared research papers.</li>
-        </p>
+        </p2>
         <h3></h3>
         <h3>More Flexibility for Authors</h3>        
-        <p>
+        <p2>
         <li>Researchers can submit their work at their convenience, avoiding the pressure of a single deadline.</li>
-        </p>
-        <p>
+        </p2>
+        <p2>
         <li>Beneficial for multi-stage research projects, where findings can be submitted incrementally rather than waiting for the next conference cycle.</li>
-        </p>
+        </p2>
         <p>        
         </p>        
       </div>
@@ -109,9 +109,9 @@ const QualityControl = () => {
 
       <div className="card">
         <h2>2. What is an Open Review Policy?</h2>
-        <p>
+        <p2>
         ICITEE 2025 follows a Partially Open Review Policy, which enhances quality control by ensuring transparent and constructive reviews.
-        </p>
+        </p2>
         <ul>
           <li>Reviews are publicly visible to authors and the research community.</li>
           <li>Authors can respond to reviewer feedback before the final decision.</li>
@@ -128,9 +128,9 @@ const QualityControl = () => {
 
       <div className="card">
         <h2>3. Why is ICITEE 2025 Implementing Rolling & Open Review?</h2>
-        <p>
+        <p2>
         Traditional peer review systems often suffer from delays, inconsistent feedback, and lack of author engagement. ICITEE 2025 is committed to ensuring high-quality research through a fairer and more transparent review process.
-        </p>
+        </p2>
         <h3>Key Reasons for Implementing These Policies:</h3>
         <ul>
           <li><strong>Faster Decision-Making:</strong> Authors receive reviews within three weeks.</li>

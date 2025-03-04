@@ -58,10 +58,9 @@ const AppContent = ({ landingPageData }) => {
 
       {/* แสดงข้อมูล VisitorCounter และ Team2 Team1 Contact เฉพาะหน้า "/" */}
       {isHomePage && (
-        <>          
+        <>                   
           <Team2 data={landingPageData.Team} />
-          <Team1 data={landingPageData.Team2} />
-          <Announcement />
+          <Team1 data={landingPageData.Team2} />          
           <Contact data={landingPageData.Contact} />          
         </>
       )}
