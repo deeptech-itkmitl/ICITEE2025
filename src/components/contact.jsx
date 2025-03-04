@@ -87,7 +87,7 @@ export const Contact = (props) => {
 
               <p><b>Email :</b> icitee2025@it.kmitl.ac.th</p>
 
-              <p><a href="https://www.facebook.com/icitee">https://www.facebook.com/icitee</a></p>
+              <p><b>Facebook :</b><a href="https://www.facebook.com/icitee"> ICITEE2025 </a></p>
           </div>
 
           </div>          
