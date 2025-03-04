@@ -45,7 +45,7 @@ const QualityControl = () => {
         <li>Authors receive feedback within three weeks, enabling them to revise and improve their work without long waiting times.</li>
         </p>
         <h3></h3>
-        <h3>Better Paper Quality</h3>        
+        <h33>Better Paper Quality</h33>        
         <p>
            <li>Iterative Improvement: If a paper is not immediately accepted, authors often receive a Revise & Resubmit decision rather than outright rejection, encouraging them to refine their work.</li>
         </p>
