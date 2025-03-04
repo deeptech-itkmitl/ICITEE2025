@@ -47,7 +47,9 @@ export default function ProgressTimeline() {
       </div>
       <h1></h1>
       <div className="text-center mt-4">
-        <Link to="/announcement" className="text-blue-500 hover:underline">&lt;&lt; Details &gt;&gt;</Link>
+      <div className="btn btn-custom btn-lg page-scroll flex justify-center">
+        <Link to="/announcement" className="text-blue-500 hover:underline"> Announcement Detail </Link>
+      </div>    
       </div>
     </div>
   );
