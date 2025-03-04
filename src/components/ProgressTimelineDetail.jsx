@@ -50,10 +50,7 @@ export default function ProgressTimelineDetail() {
         </table>
       </div>
       <h1></h1>
-      <div className="text-center mt-4">
-      <div className="btn btn-custom btn-lg page-scroll flex justify-center">
-        <Link to="/announcement" className="text-blue-500 hover:underline"> Announcement Detail </Link>
-      </div>    
+      <div className="text-center mt-4">  
       </div>
       <h1></h1>
     </div>
