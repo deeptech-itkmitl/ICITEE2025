@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { CheckCircle, Clock, Circle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const steps = [
   { title: "Planning and Topic Selection", date: "March 1, 2025" },
@@ -14,6 +15,7 @@ export default function ProgressTimeline() {
 
   return (
     <div className="container">
+      <h1></h1>
       <h2 className="text-2xl font-bold mb-4"></h2>
       <div className="overflow-x-auto">
         <table className="min-w-full border-collapse border border-gray-300">
@@ -42,6 +44,10 @@ export default function ProgressTimeline() {
             ))}
           </tbody>
         </table>
+      </div>
+      <h1></h1>
+      <div className="text-center mt-4">
+        <Link to="/announcement" className="text-blue-500 hover:underline">&gt;&gt; Details &gt;&gt;</Link>
       </div>
     </div>
   );

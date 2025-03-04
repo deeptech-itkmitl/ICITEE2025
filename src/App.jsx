@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import Layout2 from "./Layout2";
 import Layout3 from "./Layout3";
 import Layout4 from "./Layout4";
+import Layout5 from "./Layout5";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { About } from "./components/about";
@@ -12,7 +13,8 @@ import { Contact } from "./components/contact";
 import { TopicsOfInterest } from "./components/TopicsOfInterest";
 import { OrganizeCommittee } from "./components/OrganizeCommittee";
 import QualityControlPage  from "./components/QualityControl";
-import Announcement from  "./components/announcement";
+import Announcement from  "./components/ProgressTimeline";
+import AnnouncementDetail from  "./components/ProgressTimelineDetail";
 import JsonData from "./data/data.json";
 import "./App.css";
 
@@ -60,6 +62,11 @@ const AppContent = ({ landingPageData }) => {
         {/* ✅ ใช้ Layout3 เมื่อเข้าหน้า Topics of Interest */}
         <Route path="/quality-control-management" element={<Layout4 data={landingPageData} />}>
           <Route index element={<QualityControlPage data={landingPageData.Quality} />} />
+        </Route>
+
+                {/* ✅ ใช้ Layout3 เมื่อเข้าหน้า Topics of Interest */}
+        <Route path="/announcement" element={<Layout5 data={landingPageData} />}>
+          <Route index element={<AnnouncementDetail data={landingPageData.Quality} />} />
         </Route>
 
       </Routes>
