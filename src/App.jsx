@@ -12,6 +12,7 @@ import { Contact } from "./components/contact";
 import { TopicsOfInterest } from "./components/TopicsOfInterest";
 import { OrganizeCommittee } from "./components/OrganizeCommittee";
 import QualityControlPage  from "./components/QualityControl";
+import Announcement from  "./components/announcement";
 import JsonData from "./data/data.json";
 import "./App.css";
 
@@ -68,6 +69,7 @@ const AppContent = ({ landingPageData }) => {
         <>
           <Team2 data={landingPageData.Team} />
           <Team1 data={landingPageData.Team2} />
+          <Announcement/>
           <Contact data={landingPageData.Contact} />    
         </>
       )}      
