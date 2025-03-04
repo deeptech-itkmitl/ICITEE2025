@@ -29,23 +29,23 @@ const QualityControl = () => {
     </div>      
 
       <div className="card">
-        <h2>1. What is a Rolling Review Process?</h2>
+        <h22>1. What is a Rolling Review Process?</h22>
         <p>
           A Rolling Review Process is a continuous submission and evaluation system where authors
           can submit their papers at any time within the submission window.
           Instead of waiting for a fixed deadline, papers are reviewed as they arrive, 
           and authors receive decisions within three weeks of submission.          
         </p>
-        <h3>Key Benefits of Rolling Review for Quality Control</h3>
-        <h3>Faster Review & Decisions</h3>        
+        <h33>Key Benefits of Rolling Review for Quality Control</h33>
+        <h33>Faster Review & Decisions</h33>        
         <p>
            <li>Papers are reviewed as soon as they are submitted, preventing delays in the review process.</li>
         </p>
         <p>
         <li>Authors receive feedback within three weeks, enabling them to revise and improve their work without long waiting times.</li>
         </p>
-        <h3></h3>
-        <h3>Better Paper Quality</h3>        
+        <h33></h33>
+        <h33>Better Paper Quality</h33>        
         <p>
            <li>Iterative Improvement: If a paper is not immediately accepted, authors often receive a Revise & Resubmit decision rather than outright rejection, encouraging them to refine their work.</li>
         </p>
@@ -55,8 +55,8 @@ const QualityControl = () => {
         <p>
         <li>Reduced Last-Minute Rush: Traditional conferences lead to rushed submissions near the deadline, often reducing quality. Rolling review allows authors to submit when they are ready, leading to better-prepared research papers.</li>
         </p>
-        <h3></h3>
-        <h3>More Flexibility for Authors</h3>        
+        <h33></h33>
+        <h33>More Flexibility for Authors</h33>        
         <p>
         <li>Researchers can submit their work at their convenience, avoiding the pressure of a single deadline.</li>
         </p>
@@ -68,7 +68,7 @@ const QualityControl = () => {
       </div>
 
       <div className="card">
-        <h3>Comparison of Rolling vs. Traditional Review</h3>
+        <h33>Comparison of Rolling vs. Traditional Review</h33>
         <table>
           <thead>
             <tr>
@@ -108,7 +108,7 @@ const QualityControl = () => {
       </div>
 
       <div className="card">
-        <h2>2. What is an Open Review Policy?</h2>
+        <h22>2. What is an Open Review Policy?</h22>
         <p>
         ICITEE 2025 follows a Partially Open Review Policy, which enhances quality control by ensuring transparent and constructive reviews.
         </p>
@@ -118,7 +118,7 @@ const QualityControl = () => {
           <li>Reviewer identities remain anonymous to ensure fairness.</li>
           <li>Discussions between authors and reviewers improve the quality of submissions.</li>
         </ul>
-        <h3>How Open Review Improves Quality Control:</h3>
+        <h33>How Open Review Improves Quality Control:</h33>
         <ul>
           <li>Transparency – Public reviews encourage constructive and fair feedback.</li>
           <li>Accountability – Reviewers provide more detailed and professional feedback when reviews are visible.</li>
@@ -127,11 +127,11 @@ const QualityControl = () => {
       </div>
 
       <div className="card">
-        <h2>3. Why is ICITEE 2025 Implementing Rolling & Open Review?</h2>
+        <h22>3. Why is ICITEE 2025 Implementing Rolling & Open Review?</h22>
         <p>
         Traditional peer review systems often suffer from delays, inconsistent feedback, and lack of author engagement. ICITEE 2025 is committed to ensuring high-quality research through a fairer and more transparent review process.
         </p>
-        <h3>Key Reasons for Implementing These Policies:</h3>
+        <h33>Key Reasons for Implementing These Policies:</h33>
         <ul>
           <li><strong>Faster Decision-Making:</strong> Authors receive reviews within three weeks.</li>
           <li><strong>More Revision Opportunities:</strong> Papers can be refined through interactive discussions, leading to higher acceptance quality.</li>
@@ -142,7 +142,7 @@ const QualityControl = () => {
       </div>
 
       <div className="card">
-        <h2>4. Benefits for Authors</h2>
+        <h22>4. Benefits for Authors</h22>
         <ul>
           <li><strong>Faster Review & Decisions:</strong> Receive feedback within 3 weeks of submission.</li>
           <li><strong>Higher Paper Quality:</strong> Iterative feedback helps refine research contributions.</li>
