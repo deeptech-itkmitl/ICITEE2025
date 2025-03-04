@@ -13,5 +13,6 @@ code {
 }
 
 .text-justify { 
+  font-family: "Poppins";
   text-align: justify; 
 }

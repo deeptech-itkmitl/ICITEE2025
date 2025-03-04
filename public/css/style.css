@@ -1243,6 +1243,7 @@ header .intro-text {
 }
 /* Contact Section  */
 #contact {
+  font-family : poppins;
   padding: 50px 0 10px;
   background: #0c1329;
   color: rgba(255, 255, 255, 0.75);
@@ -1285,6 +1286,7 @@ header .intro-text {
   text-align: left;
 }
 #contact .btn-custom {
+  font-family : poppins;
   margin: 30px 0;
   background: transparent;
   border: 2px solid #fff;
