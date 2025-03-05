@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Layout2 from "./Layout2";
+import Layout3 from "./Layout3";
 import Layout4 from "./Layout4";
 import Layout5 from "./Layout5";
 import { Navigation } from "./components/navigation";
@@ -44,16 +45,25 @@ const AppContent = ({ landingPageData }) => {
 
       <Routes>
         <Route path="/" element={<About data={landingPageData.About} />} />
-        <Route path="/topics-of-interest" element={<TopicsOfInterest />} />
+
+        {/* <Route path="/topics-of-interest" element={<TopicsOfInterest />} /> */}
+
         <Route path="/organizing-committee" element={<Layout2 data={landingPageData} />}>
           <Route index element={<OrganizeCommittee data={landingPageData.OrganizeCommittee} />} />
         </Route>
+
         <Route path="/quality-control-management" element={<Layout4 data={landingPageData} />}>
           <Route index element={<QualityControlPage data={landingPageData.Quality} />} />
         </Route>
+
+        <Route path="/topics-of-interest" element={<Layout3 data={landingPageData} />}>
+          <Route index element={<TopicsOfInterest data={landingPageData.Quality} />} />
+        </Route>
+
         <Route path="/announcement" element={<Layout5 data={landingPageData} />}>
           <Route index element={<AnnouncementDetail data={landingPageData.Quality} />} />
         </Route>
+        
       </Routes>
 
       {/* แสดงข้อมูล VisitorCounter และ Team2 Team1 Contact เฉพาะหน้า "/" */}
