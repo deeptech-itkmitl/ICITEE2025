@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { CheckCircle, Clock, Circle } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const steps = [
@@ -19,40 +18,30 @@ export default function ProgressTimelineDetail() {
   const [currentStep, setCurrentStep] = useState(2); // Set current step
 
   return (
-    <div className="container">
-      <h2 className="text-2xl font-bold mb-4"></h2>
-      <div className="overflow-x-auto">
-        <table className="min-w-full border-collapse border border-gray-300">
+    <div className="container mx-auto p-4">
+      <h2 className="text-2xl font-bold mb-4 text-center"></h2>
+      
+      <div className="overflow-x-auto flex justify-center">
+        <table className="min-w-full max-w-3xl mx-auto border-collapse border border-gray-300 border-spacing-4">
           <thead>
             <tr className="bg-gray-100">
-              {/* <th className="border p-2 text-left">Status</th> */}
-              <th className="border p-2 text-left">Task</th>
-              {/* <th className="border p-2 text-left">Date</th> */}
+              <th className="border border-gray-300 p-2 text-left text-sm md:text-base">Task</th>
             </tr>
           </thead>
           <tbody>
             {steps.map((step, index) => (
-              <tr key={index} className="border">
-                {/* <td className="border p-2 text-center">
-                  {index < currentStep ? (
-                    <CheckCircle className="text-green-500 inline" />
-                  ) : index === currentStep ? (
-                    <Clock className="text-yellow-500 inline" />
-                  ) : (
-                    <Circle className="text-gray-400 inline" />
-                  )}
-                </td> */}
-                <td className="border p-2">{step.title}</td>
-                {/* <td className="border p-2">{step.date}</td> */}
+              <tr key={index} className="border border-gray-300 hover:bg-gray-100 transition">
+                <td className="p-2 text-sm md:text-base">{step.title}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
-      <h1></h1>
-      <div className="text-center mt-4">  
+
+      {/* ปุ่มลิงก์ไปหน้าประกาศ */}
+      <div className="text-right mt-4">
       </div>
-      <h1></h1>
+      <h2 className="text-2xl font-bold mb-4 text-center"></h2>
     </div>
   );
 }
