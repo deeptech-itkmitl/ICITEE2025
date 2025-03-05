@@ -52,7 +52,7 @@ export const Contact = (props) => {
               <form name="sentMessage" validate onSubmit={handleSubmit}>
                 <div className="form-group">
                   <div className="image-slider-container img-responsive">
-                  <iframe
+                  {/* <iframe
                         src="https://www.youtube.com/embed/q3OUFsQAivI?autoplay=1&mute=1&loop=1&playlist=q3OUFsQAivI"
                         title="Tourism Video"
                         frameBorder="0"
@@ -64,7 +64,21 @@ export const Contact = (props) => {
                           height: "420px",
                           aspectRatio: "16/9", 
                         }}
+                      ></iframe> */}
+                      <iframe
+                        src="https://www.youtube.com/embed/q3OUFsQAivI?autoplay=1&mute=1&loop=1&playlist=q3OUFsQAivI,https://www.youtube.com/embed/q3OUFsQAivI?autoplay=1&mute=1&loop=1&playlist=q3OUFsQAivI,https://www.youtube.com/embed/q3OUFsQAivI?autoplay=1&mute=1&loop=1&playlist=q3OUFsQAivI"
+                        title="Tourism Video"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        style={{
+                          width: "100%",
+                          maxWidth: "750px",
+                          height: "420px",
+                          aspectRatio: "16/9", 
+                        }}
                       ></iframe>
+
                   </div>
                 </div>
                 <div id="success"></div>
