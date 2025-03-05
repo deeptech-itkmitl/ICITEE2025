@@ -44,8 +44,8 @@ export const About = (props) => {
               <table>
                 <thead>
                   <tr>
-                    <th>DATE</th>
-                    <th>EVENT</th>
+                    <th>Date</th>
+                    <th>Event</th>
                   </tr>
                 </thead>
                 <tbody>                 
