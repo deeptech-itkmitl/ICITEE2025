@@ -71,7 +71,8 @@ const AppContent = ({ landingPageData }) => {
         <>    
           <Announcement data={landingPageData.Team} />               
           <Team2 data={landingPageData.Team} />
-          <Team1 data={landingPageData.Team2} />          
+          <Team1 data={landingPageData.Team2} />   
+          {/* <VisitorCounter data={landingPageData}/>        */}
           <Contact data={landingPageData.Contact} />          
         </>
       )}
