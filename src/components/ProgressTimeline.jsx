@@ -23,7 +23,7 @@ export default function ProgressTimeline() {
 
         {/* ส่วนซ้าย */}
         <div className="about-section text-center md:text-left flex-1">
-          <h1 className="text-xl font-semibold"></h1>
+          <h1 className="topic-title">Announcement</h1>
           <h6 className="text-gray-400"></h6>
         </div>
 
@@ -33,7 +33,7 @@ export default function ProgressTimeline() {
             <table>
               <thead>
                 <tr>
-                  <th>Announcement</th>
+                  <th>Topics</th>
                 </tr>
               </thead>
               <tbody>

@@ -3,10 +3,10 @@ import React from "react";
 export const About = (props) => {
   return (
     <div id="features" className="text-center">
+      <h1 className="topic-title"></h1>
       <div>
         <div className="container">  
           <div className="content-layout">
-
             {/* ส่วนหัวข้อซ้าย */}
             <div className="about-section">
               <div className="about-title-container">
