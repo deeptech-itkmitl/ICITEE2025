@@ -41,7 +41,7 @@ export const About = (props) => {
             </div>
 
             <div className="important-dates-container">          
-              <table className="tr:hover">
+              <table>
                 <thead>
                   <tr>
                     <th>DATE</th>
@@ -61,11 +61,11 @@ export const About = (props) => {
       </div>
 
       <style jsx>{`
-        .container3 {
+        .container {
          color: #FFFFFF;
           max-width: 0 auto;
           margin: 0 auto;
-          padding: 20px;
+          padding: 0px;
         }
 
         .content-layout {
@@ -75,7 +75,7 @@ export const About = (props) => {
           justify-content: center;
           align-items: center;
           gap: 20px;
-          padding: 30px;
+          padding: 0px;
         }
 
         .about-section, .important-section {
@@ -86,9 +86,10 @@ export const About = (props) => {
         }
 
         .about-content, .important-dates-container {
-         color: #FFFFFF; 
+          color: #FFFFFF; 
           flex: 2;
           min-width: 300px;
+          padding: 0px;
         }
 
         /* ตารางปรับปรุงใหม่ */

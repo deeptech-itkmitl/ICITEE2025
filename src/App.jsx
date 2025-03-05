@@ -13,7 +13,7 @@ import { Contact } from "./components/contact";
 import { TopicsOfInterest } from "./components/TopicsOfInterest";
 import { OrganizeCommittee } from "./components/OrganizeCommittee";
 import QualityControlPage from "./components/QualityControl";
-// import Announcement from "./components/ProgressTimeline";
+import Announcement from "./components/ProgressTimeline";
 import AnnouncementDetail from "./components/ProgressTimelineDetail";
 import JsonData from "./data/data.json";
 // import VisitorCounter from "./components/visitor-update";  // นำเข้าฟังก์ชัน VisitorCounter
@@ -63,12 +63,13 @@ const AppContent = ({ landingPageData }) => {
         <Route path="/announcement" element={<Layout5 data={landingPageData} />}>
           <Route index element={<AnnouncementDetail data={landingPageData.Quality} />} />
         </Route>
-        
+
       </Routes>
 
       {/* แสดงข้อมูล VisitorCounter และ Team2 Team1 Contact เฉพาะหน้า "/" */}
       {isHomePage && (
-        <>                   
+        <>    
+          <Announcement data={landingPageData.Team} />               
           <Team2 data={landingPageData.Team} />
           <Team1 data={landingPageData.Team2} />          
           <Contact data={landingPageData.Contact} />          
