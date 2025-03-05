@@ -41,7 +41,7 @@ export const About = (props) => {
             </div>
 
             <div className="important-dates-container">          
-              <table className="important-dates tr:hover">
+              <table className="tr:hover">
                 <thead>
                   <tr>
                     <th>DATE</th>
