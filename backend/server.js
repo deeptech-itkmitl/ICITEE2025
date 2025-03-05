@@ -1,4 +1,3 @@
-// server.js (Backend)
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
@@ -21,9 +20,15 @@ const readVisitorData = () => {
   return new Promise((resolve, reject) => {
     fs.readFile(filePath, "utf8", (err, data) => {
       if (err) {
-        reject(err);
+        // หากไม่พบไฟล์หรือเกิดข้อผิดพลาด ให้ส่งค่าเริ่มต้น
+        resolve({ count: 0, countryData: [] });
       } else {
-        resolve(JSON.parse(data));
+        try {
+          resolve(JSON.parse(data));
+        } catch (parseError) {
+          // หากไม่สามารถแปลง JSON ได้ ให้ส่งค่าเริ่มต้น
+          resolve({ count: 0, countryData: [] });
+        }
       }
     });
   });
