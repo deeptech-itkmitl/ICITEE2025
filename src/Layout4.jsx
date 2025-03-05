@@ -1,7 +1,7 @@
 // ใน Layout2.jsx
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Headersub from "./components/headersub4"; // แก้ไขการนำเข้าให้ตรง
+import Headersub from "./components/headersub2"; // แก้ไขการนำเข้าให้ตรง
 import { Navigation } from "./components/navigation"; // นำเข้า Navigation
 import { Footer } from "components/Footer";
 
