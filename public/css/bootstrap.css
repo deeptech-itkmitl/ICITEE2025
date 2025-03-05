@@ -3475,13 +3475,14 @@ input[type="button"].btn-block {
 .fade.in {
   opacity: 1;
 }
+/* extend menu collapse menu */
 .collapse {
   display: none;
-  height: 200px;
+  height: 250px;
 }
 .collapse.in {
   display: block;
-  height: 200px;
+  height: 250px;
 }
 tr.collapse.in {
   display: table-row;
@@ -4222,7 +4223,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-fixed-bottom .navbar-collapse {
   max-height: 340px;
 }
-@media (max-device-width: 480px) and (orientation: landscape) {
+@media (max-device-width: 500px) and (orientation: landscape) {
   .navbar-fixed-top .navbar-collapse,
   .navbar-fixed-bottom .navbar-collapse {
     max-height: 200px;
