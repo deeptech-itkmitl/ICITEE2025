@@ -25,15 +25,15 @@ export default function ProgressTimelineDetail() {
         <table className="min-w-full border-collapse border border-gray-300">
           <thead>
             <tr className="bg-gray-100">
-              <th className="border p-2 text-left">Status</th>
+              {/* <th className="border p-2 text-left">Status</th> */}
               <th className="border p-2 text-left">Task</th>
-              <th className="border p-2 text-left">Date</th>
+              {/* <th className="border p-2 text-left">Date</th> */}
             </tr>
           </thead>
           <tbody>
             {steps.map((step, index) => (
               <tr key={index} className="border">
-                <td className="border p-2 text-center">
+                {/* <td className="border p-2 text-center">
                   {index < currentStep ? (
                     <CheckCircle className="text-green-500 inline" />
                   ) : index === currentStep ? (
@@ -41,9 +41,9 @@ export default function ProgressTimelineDetail() {
                   ) : (
                     <Circle className="text-gray-400 inline" />
                   )}
-                </td>
+                </td> */}
                 <td className="border p-2">{step.title}</td>
-                <td className="border p-2">{step.date}</td>
+                {/* <td className="border p-2">{step.date}</td> */}
               </tr>
             ))}
           </tbody>
