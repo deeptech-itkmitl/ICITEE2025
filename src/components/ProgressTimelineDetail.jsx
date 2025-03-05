@@ -25,7 +25,7 @@ export default function ProgressTimelineDetail() {
         <table className="min-w-full max-w-3xl mx-auto border-collapse border border-gray-300 border-spacing-4">
           <thead>
             <tr className="bg-gray-100">
-              <th className="border border-gray-300 p-2 text-left text-sm md:text-base">Task</th>
+              <th className="border border-gray-300 p-2 text-left text-sm md:text-base">Announcement</th>
             </tr>
           </thead>
           <tbody>
