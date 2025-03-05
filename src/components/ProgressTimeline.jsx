@@ -7,7 +7,10 @@ const steps = [
   { title: "Promotion and Registration", date: "March 10, 2025" },
   { title: "Conference Execution", date: "March 20, 2025" },
   { title: "Evaluation and Summary", date: "March 25, 2025" }
-];
+].sort((a, b) => new Date(b.date) - new Date(a.date)); // เรียงจากใหม่ -> เก่า
+
+console.log(steps); // Debug ดูว่าข้อมูลเรียงถูกต้องไหม
+
 
 export default function ProgressTimeline() {
   const [currentStep, setCurrentStep] = useState(2);
