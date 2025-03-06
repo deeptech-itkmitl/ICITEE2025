@@ -68,7 +68,7 @@ export const Contact = (props) => {
                     <div>
                       <iframe
                         src="https://www.youtube.com/embed/q3OUFsQAivI?autoplay=1&mute=1&loop=1&playlist=q3OUFsQAivI,pIL8u81AMJs,tET1abGvZDk"
-                        title="Tourism Video Playlist"
+                        title="Bangkok Thailand"
                         frameBorder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
