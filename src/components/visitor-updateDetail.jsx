@@ -3,40 +3,33 @@ import axios from "axios";
 
 const API_BASE_URL = process.env.REACT_APP_API_URL || "http://icitee2025.it.kmitl.ac.th:5000";
 
-export default function VisitorCounter() {
+export default function VisitorCounter2() {
   const [totalVisitors, setTotalVisitors] = useState(0);
   const [countryData, setCountryData] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // ฟังก์ชันดึงข้อมูลจากเซิร์ฟเวอร์
   const fetchVisitorData = async () => {
     try {
-      console.log("Fetching visitor data...");
       const response = await axios.get(`${API_BASE_URL}/api/visitor`);
-      console.log("Visitor Data:", response.data);
-
       setTotalVisitors(response.data.count || 0);
       setCountryData(response.data.countryData || []);
     } catch (error) {
       console.error("Error fetching visitor data:", error);
+    } finally {
+      setLoading(false);
     }
   };
 
   useEffect(() => {
     const registerVisitor = async () => {
       try {
-        console.log("Fetching IP info...");
         const ipResponse = await axios.get("https://ipinfo.io/json?token=a999487011bb0b");
-        const country = ipResponse.data.country || "Unknown";
+        const country = ipResponse.data.country;
 
-        console.log("Detected country:", country);
         await axios.post(`${API_BASE_URL}/api/visitor`, { country });
-
-        await fetchVisitorData(); // รอให้ดึงข้อมูลเสร็จก่อน
+        fetchVisitorData(); // อัปเดตข้อมูลหลังจากบันทึกสำเร็จ
       } catch (error) {
         console.error("Error registering visitor:", error);
-      } finally {
-        setLoading(false); // ปิดสถานะ Loading เสมอ
       }
     };
 

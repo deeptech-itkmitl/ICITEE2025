@@ -5,10 +5,9 @@ export const Gallery = (props) => {
   return (
     <div id="portfolio" className="text-center">
       <div className="container">
-        <div className="section-title">
-          <h2>Gallery</h2>
+        <div className="section-title">          
           <p className="text-justify">
-          The Gallery International Conference on Information Technology and Electrical Engineering (ICITEE 2025) is organized by IEEE CIS Thailand Chapter and co-organized by King Mongkut's Institute of Technology Ladkrabang (KMITL), Bangkok, Thailand, and Universitas Gadjah Mada (UGM), Yogyakarta, Indonesia.
+          The Gallery International Conference on Information Technology and Electrical Engineering (ICITEE 2023) is organized by IEEE CIS Thailand Chapter and co-organized by King Mongkut's Institute of Technology Ladkrabang (KMITL), Bangkok, Thailand, and Universitas Gadjah Mada (UGM), Yogyakarta, Indonesia.
           </p>
         </div>
         <div className="row">

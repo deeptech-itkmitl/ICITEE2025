@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 import React from "react";
  // import { VisitorCounter } from "./visitor"; ✅ แก้ import ให้ถูกต้อง (ไม่ต้องใช้ /components/visitor)
  //import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebook } from "react-icons/fa";
-import VisitorCounter from "../components/visitor-update";  // นำเข้าฟังก์ชัน VisitorCounter
+// import VisitorCounter from "./visitor-update";  // นำเข้าฟังก์ชัน VisitorCounter
 
 const initialState = {
   name: "",
@@ -66,9 +66,10 @@ export const Contact = (props) => {
                         }}
                       ></iframe> */}
                     <div>
+                      
                       <iframe
                         src="https://www.youtube.com/embed/q3OUFsQAivI?autoplay=1&mute=1&loop=1&playlist=q3OUFsQAivI,pIL8u81AMJs,tET1abGvZDk"
-                        title="Tourism Video Playlist"
+                        title="Bangkok Thailand"
                         frameBorder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
@@ -79,6 +80,7 @@ export const Contact = (props) => {
                           aspectRatio: "16/9",
                         }}
                       ></iframe>
+
                     </div>
                   </div>
                 </div>
@@ -109,7 +111,7 @@ export const Contact = (props) => {
           <div className="col-md-12">
                       {/* ✅ แสดง VisitorCounter ด้านล่าง <VisitorCounter />*/}
                       <div className="col-md-12">
-                      <VisitorCounter/>
+                      {/* <VisitorCounter/> */}
                       </div>
             <div className="row">
               <div className="social">

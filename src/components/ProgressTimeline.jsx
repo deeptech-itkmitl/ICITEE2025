@@ -33,13 +33,15 @@ export default function ProgressTimeline() {
             <table>
               <thead>
                 <tr>
-                  <th>Topics</th>
+                  <th>Proceedings</th>
+                  <th>Location</th>
                 </tr>
               </thead>
               <tbody>
                 {steps.map((step, index) => (
                   <tr key={index}>
                     <td>{step.title}</td>
+                     <td>{step.date}</td>
                   </tr>
                 ))}
               </tbody>
@@ -48,9 +50,6 @@ export default function ProgressTimeline() {
 
           {/* ปุ่มลิงก์ไปหน้าประกาศ */}
           <div className="text-right mt-4">
-            <Link to="/announcement" className="text-blue-500 hover:underline text-sm md:text-base">
-              &lt;&lt; Detail &gt;&gt;
-            </Link>
           </div>
         </div>
 

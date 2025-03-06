@@ -26,50 +26,101 @@
   },
   "Gallery": [
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/01-large.jpg",
-      "smallImage": "img/portfolio/01-small.jpg"
+      "title": "ICITEE 2023",
+      "largeImage": "img/portfolio/1.jpg",
+      "smallImage": "img/portfolio/1.jpg"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/02-large.jpg",
-      "smallImage": "img/portfolio/02-small.jpg"
+      "title": "ICITEE 2023",
+      "largeImage": "img/portfolio/2.jpg",
+      "smallImage": "img/portfolio/2.jpg"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/03-large.jpg",
-      "smallImage": "img/portfolio/03-small.jpg"
+      "title": "ICITEE 2023",
+      "largeImage": "img/portfolio/3.jpg",
+      "smallImage": "img/portfolio/3.jpg"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/04-large.jpg",
-      "smallImage": "img/portfolio/04-small.jpg"
+      "title": "ICITEE 2023",
+      "largeImage": "img/portfolio/4.jpg",
+      "smallImage": "img/portfolio/4.jpg"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/05-large.jpg",
-      "smallImage": "img/portfolio/05-small.jpg"
+      "title": "ICITEE 2023",
+      "largeImage": "img/portfolio/5.jpg",
+      "smallImage": "img/portfolio/5.jpg"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/06-large.jpg",
-      "smallImage": "img/portfolio/06-small.jpg"
+      "title": "ICITEE 2023",
+      "largeImage": "img/portfolio/6.jpg",
+      "smallImage": "img/portfolio/6.jpg"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/07-large.jpg",
-      "smallImage": "img/portfolio/07-small.jpg"
+      "title": "ICITEE 2023",
+      "largeImage": "img/portfolio/7.jpg",
+      "smallImage": "img/portfolio/7.jpg"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/08-large.jpg",
-      "smallImage": "img/portfolio/08-small.jpg"
+      "title": "ICITEE 2023",
+      "largeImage": "img/portfolio/8.jpg",
+      "smallImage": "img/portfolio/8.jpg"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
+      "title": "ICITEE 2023",
+      "largeImage": "img/portfolio/9.jpg",
+      "smallImage": "img/portfolio/9.jpg"
+    },
+    {
+      "title": "ICITEE 2023",
+      "largeImage": "img/portfolio/10.jpg",
+      "smallImage": "img/portfolio/10.jpg"
+    },
+    {
+      "title": "ICITEE 2023",
+      "largeImage": "img/portfolio/11.jpg",
+      "smallImage": "img/portfolio/11.jpg"
+    },
+    {
+      "title": "ICITEE 2023",
+      "largeImage": "img/portfolio/12.jpg",
+      "smallImage": "img/portfolio/12.jpg"
+    },
+    {
+      "title": "ICITEE 2023",
+      "largeImage": "img/portfolio/13.jpg",
+      "smallImage": "img/portfolio/13.jpg"
+    },
+    {
+      "title": "ICITEE 2023",
+      "largeImage": "img/portfolio/14.jpg",
+      "smallImage": "img/portfolio/14.jpg"
+    },
+    {
+      "title": "ICITEE 2023",
+      "largeImage": "img/portfolio/15.jpg",
+      "smallImage": "img/portfolio/15.jpg"
+    },
+    {
+      "title": "ICITEE 2023",
+      "largeImage": "img/portfolio/16.jpg",
+      "smallImage": "img/portfolio/16.jpg"
+    },
+    {
+      "title": "ICITEE 2023",
+      "largeImage": "img/portfolio/17.jpg",
+      "smallImage": "img/portfolio/17.jpg"
+    },
+    {
+      "title": "ICITEE 2023",
+      "largeImage": "img/portfolio/19.jpg",
+      "smallImage": "img/portfolio/19.jpg"
+    },
+    {
+      "title": "ICITEE 2023",
+      "largeImage": "img/portfolio/20.jpg",
+      "smallImage": "img/portfolio/20.jpg"
     }
+
   ],
   "Services": [
     {

@@ -47,8 +47,8 @@ export const Navigation = () => {
               {isAboutOpen && (
                 <ul className="dropdown-menu">                  
                   {/* <li><a href="/organizing-committee" className="page-scroll">Organizing Committee</a></li>*/}
-                  <li><a href="/#" className="page-scroll">Past Conferences</a></li>                                  
-                  <li><a href="/#" className="page-scroll">Gallery</a></li>                                   
+                  <li><a href="/pass-conference" className="page-scroll">Past Conferences</a></li>                                  
+                  <li><a href="/gallery" className="page-scroll">Gallery</a></li>                                   
                 </ul>
               )}
             </li>
