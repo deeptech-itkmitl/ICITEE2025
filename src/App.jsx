@@ -5,6 +5,7 @@ import Layout3 from "./Layout3";
 import Layout4 from "./Layout4";
 import Layout5 from "./Layout5";
 import Layout6 from "./Layout6";
+import Layout7 from "./Layout7";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { About } from "./components/about";
@@ -17,6 +18,7 @@ import { OrganizeCommittee } from "./components/OrganizeCommittee";
 import QualityControlPage from "./components/QualityControl";
 // import Announcement from "./components/ProgressTimeline";
 import AnnouncementDetail from "./components/ProgressTimelineDetail";
+import PastConference from "./components/PastConferences";
 import JsonData from "./data/data.json";
 // import VisitorCounter from "./components/visitor-update";  // นำเข้าฟังก์ชัน VisitorCounter
 import "./App.css";
@@ -69,7 +71,11 @@ const AppContent = ({ landingPageData }) => {
 
         <Route path="/gallery" element={<Layout6 data={landingPageData} />}>
           <Route index element={<Gallery data={landingPageData.Gallery} />} />
-        </Route>        
+        </Route>      
+
+        <Route path="/pass-conference" element={<Layout7 data={landingPageData} />}>
+          <Route index element={<PastConference data={landingPageData.Gallery} />} />
+        </Route>    
 
       </Routes>
 

@@ -1,39 +1,60 @@
-import React from "react";
-import "../css/Announcement.css";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
-const Announcements = () => {
-  const announcements = [
-    {
-      date: "March 03, 2025",
-      title: "Quality Control and Management update",
-      description: "ICITEE2025 adopts a Rolling Review Process with an Open Review Policy.",
-    },
-    {
-      date: "Feb 15, 2025",
-      title: "Topics of Interest and Committee update",
-      description: "Topics of Interest and Organizing Committee has been announced.",
-    },
-    {
-      date: "Feb 10, 2025",
-      title: "Website Launched",
-      description: "ICITEE2025 Website has launched.",
-    },
-  ];
+const steps = [
+  { title: "Planning and Topic Selection", date: "March 1, 2025" },
+  { title: "Contacting Speakers and Venue", date: "March 5, 2025" },
+  { title: "Promotion and Registration", date: "March 10, 2025" },
+  { title: "Conference Execution", date: "March 20, 2025" },
+  { title: "Evaluation and Summary", date: "March 25, 2025" }
+].sort((a, b) => new Date(b.date) - new Date(a.date)); // เรียงจากใหม่ -> เก่า
 
-  return (
-    <div className="bg-[#0D1B2A] text-white p-8 rounded-2xl shadow-lg max-w-3xl mx-auto">
-      <h2 className="text-2xl font-semibold mb-6">Announcements</h2>
-      <div className="divide-y divide-gray-600">
-        {announcements.map((announcement, index) => (
-          <div key={index} className="py-4">
-            <p className="text-sm text-gray-400">{announcement.date}</p>
-            <h3 className="text-lg font-semibold mt-1">{announcement.title}</h3>
-            <p className="text-gray-300">{announcement.description}</p>
+console.log(steps); // Debug ดูว่าข้อมูลเรียงถูกต้องไหม
+
+
+export default function ProgressTimeline() {
+  const [currentStep, setCurrentStep] = useState(2);
+
+  return (   
+    <div className="container mx-auto p-4"> 
+      <h2 className="text-2xl font-bold mb-4 text-center"></h2>
+
+      <div className="content-layout flex flex-col md:flex-row gap-6">
+
+        {/* ส่วนซ้าย */}
+        <div className="about-section text-center md:text-left flex-1">
+          <h1 className="topic-title">Announcement</h1>
+          <h6 className="text-gray-400"></h6>
+        </div>
+
+        {/* ส่วนตารางขวา */}
+        <div className="about-content flex-2">
+          <div className="important-dates-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Proceedings</th>
+                  <th>Location</th>
+                </tr>
+              </thead>
+              <tbody>
+                {steps.map((step, index) => (
+                  <tr key={index}>
+                    <td>{step.title}</td>
+                     <td>{step.date}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
-        ))}
+
+          {/* ปุ่มลิงก์ไปหน้าประกาศ */}
+          <div className="text-right mt-4">
+          </div>
+        </div>
+
       </div>
+      <h2 className="text-2xl font-bold mb-4 text-center"></h2>
     </div>
   );
-};
-
-export default Announcements;
+}
