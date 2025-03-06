@@ -4,12 +4,14 @@ import Layout2 from "./Layout2";
 import Layout3 from "./Layout3";
 import Layout4 from "./Layout4";
 import Layout5 from "./Layout5";
+import Layout6 from "./Layout6";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { About } from "./components/about";
 import { Team1 } from "./components/Team1";
 import { Team2 } from "./components/Team2";
 import { Contact } from "./components/contact";
+// import { Gallery } from "components/gallery";
 import { TopicsOfInterest } from "./components/TopicsOfInterest";
 import { OrganizeCommittee } from "./components/OrganizeCommittee";
 import QualityControlPage from "./components/QualityControl";
@@ -18,6 +20,7 @@ import AnnouncementDetail from "./components/ProgressTimelineDetail";
 import JsonData from "./data/data.json";
 // import VisitorCounter from "./components/visitor-update";  // นำเข้าฟังก์ชัน VisitorCounter
 import "./App.css";
+import { Gallery } from "components/gallery";
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
@@ -64,12 +67,17 @@ const AppContent = ({ landingPageData }) => {
           <Route index element={<AnnouncementDetail data={landingPageData.Quality} />} />
         </Route>
 
+        <Route path="/gallery" element={<Layout6 data={landingPageData} />}>
+          <Route index element={<Gallery data={landingPageData.Gallery} />} />
+        </Route>        
+
       </Routes>
 
       {/* แสดงข้อมูล VisitorCounter และ Team2 Team1 Contact เฉพาะหน้า "/" */}
       {isHomePage && (
         <>    
           {/* <Announcement data={landingPageData.Team} />                */}
+          {/* <Gallery/> */}
           <Team2 data={landingPageData.Team} />
           <Team1 data={landingPageData.Team2} />   
           {/* <VisitorCounter data={landingPageData}/>        */}
