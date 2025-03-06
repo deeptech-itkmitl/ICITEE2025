@@ -4,7 +4,7 @@ const path = require("path");
 const cors = require("cors");
 
 const app = express();
-const port = 5000;
+const port = 3333;
 
 // ใช้ CORS เพื่อให้สามารถเข้าถึง API ได้จากโดเมนอื่น
 app.use(cors());
