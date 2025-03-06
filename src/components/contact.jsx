@@ -66,6 +66,7 @@ export const Contact = (props) => {
                         }}
                       ></iframe> */}
                     <div>
+                      
                       <iframe
                         src="https://www.youtube.com/embed/q3OUFsQAivI?autoplay=1&mute=1&loop=1&playlist=q3OUFsQAivI,pIL8u81AMJs,tET1abGvZDk"
                         title="Bangkok Thailand"
@@ -79,6 +80,7 @@ export const Contact = (props) => {
                           aspectRatio: "16/9",
                         }}
                       ></iframe>
+
                     </div>
                   </div>
                 </div>
