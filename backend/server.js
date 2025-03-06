@@ -6,7 +6,7 @@ const cors = require("cors");
 const app = express();
 const port = 5000;
 
-// ใช้ CORS เพื่อให้สามารถเข้าถึง API    ได้จากโดเมนอื่น
+// ใช้ CORS เพื่อให้สามารถเข้าถึง API จากโดเมนอื่น
 app.use(cors());
 
 // รองรับการรับข้อมูลในรูปแบบ JSON
@@ -16,40 +16,37 @@ app.use(express.json());
 const filePath = path.join(__dirname, "visitor_count.json");
 
 // ฟังก์ชันสำหรับอ่านข้อมูลจากไฟล์
-const readVisitorData = () => {
-  return new Promise((resolve, reject) => {
-    fs.readFile(filePath, "utf8", (err, data) => {
-      if (err) {
-        // หากไม่พบไฟล์หรือเกิดข้อผิดพลาด ให้ส่งค่าเริ่มต้น
-        resolve({ count: 0, countryData: [] });
-      } else {
-        try {
-          resolve(JSON.parse(data));
-        } catch (parseError) {
-          // หากไม่สามารถแปลง JSON ได้ ให้ส่งค่าเริ่มต้น
-          resolve({ count: 0, countryData: [] });
-        }
-      }
-    });
-  });
+const readVisitorData = async () => {
+  try {
+    if (!fs.existsSync(filePath)) {
+      return { count: 0, countryData: [] };
+    }
+    const data = await fs.promises.readFile(filePath, "utf8");
+    return JSON.parse(data);
+  } catch (error) {
+    return { count: 0, countryData: [] }; // ใช้ค่าเริ่มต้น
+  }
 };
 
-// ฟังก์ชันสำหรับเขียนข้อมูลไปยังไฟล์
-const writeVisitorData = (visitorData) => {
-  return new Promise((resolve, reject) => {
-    fs.writeFile(filePath, JSON.stringify(visitorData), (err) => {
-      if (err) {
-        reject(err);
-      } else {
-        resolve();
-      }
-    });
-  });
+// ฟังก์ชันสำหรับเขียนข้อมูลไปยังไฟล์ (ใช้ไฟล์ชั่วคราวป้องกันไฟล์เสียหาย)
+const writeVisitorData = async (visitorData) => {
+  const tempPath = filePath + ".tmp";
+  try {
+    await fs.promises.writeFile(tempPath, JSON.stringify(visitorData, null, 2));
+    await fs.promises.rename(tempPath, filePath);
+  } catch (error) {
+    console.error("Error writing visitor data:", error);
+    throw error;
+  }
 };
 
 // API สำหรับการเพิ่มจำนวนผู้เข้าชมพร้อมข้อมูลประเทศ
 app.post("/api/visitor", async (req, res) => {
-  const { country } = req.body;  // รับข้อมูลประเทศจาก request
+  const { country } = req.body;
+
+  if (!country || typeof country !== "string") {
+    return res.status(400).json({ message: "Invalid country data" });
+  }
 
   try {
     let visitorData = await readVisitorData();
@@ -58,7 +55,7 @@ app.post("/api/visitor", async (req, res) => {
     visitorData.count += 1;
 
     // ตรวจสอบว่าประเทศนี้มีการเยี่ยมชมแล้วหรือไม่
-    const existingCountry = visitorData.countryData.find(item => item.name === country);
+    const existingCountry = visitorData.countryData.find((item) => item.name === country);
     if (existingCountry) {
       existingCountry.count += 1;
     } else {
@@ -68,8 +65,11 @@ app.post("/api/visitor", async (req, res) => {
     // เขียนข้อมูลกลับไปยังไฟล์
     await writeVisitorData(visitorData);
 
-    // ส่งการตอบกลับ
-    return res.status(200).json({ message: "Visitor count updated", count: visitorData.count });
+    return res.status(200).json({
+      message: "Visitor count updated",
+      count: visitorData.count,
+      countryData: visitorData.countryData,
+    });
   } catch (err) {
     console.error("Error handling visitor data:", err);
     return res.status(500).json({ message: "Error updating visitor data" });
@@ -80,7 +80,10 @@ app.post("/api/visitor", async (req, res) => {
 app.get("/api/visitor", async (req, res) => {
   try {
     const visitorData = await readVisitorData();
-    return res.status(200).json({ count: visitorData.count, countryData: visitorData.countryData });
+    return res.status(200).json({
+      count: visitorData.count,
+      countryData: visitorData.countryData,
+    });
   } catch (err) {
     console.error("Error reading visitor data:", err);
     return res.status(500).json({ message: "Error reading visitor data" });
@@ -89,5 +92,5 @@ app.get("/api/visitor", async (req, res) => {
 
 // เริ่มต้นเซิร์ฟเวอร์
 app.listen(port, () => {
-  console.log(`Server running at http://icitee2025.it.kmitl.ac.th:${port}`);
+  console.log(`Server running at http://localhost:${port}`);
 });
