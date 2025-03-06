@@ -1,83 +1,50 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+
 export default function VisitorCounter() {
-  const [visitorCount, setVisitorCount] = useState(0);
-  const [countryData, setCountryData] = useState([]);
-  const [userInfo, setUserInfo] = useState(null);
+  const [totalVisitors, setTotalVisitors] = useState(0);
+
+  // ฟังก์ชันสำหรับเพิ่มผู้เยี่ยมชม
+  const addVisitor = (country) => {
+    axios
+      .post(`${API_BASE_URL}/api/visitor`, { country })
+      .then(() => {
+        // ทำการดึงข้อมูลใหม่เพื่ออัปเดตจำนวนนักท่องเที่ยว
+        return axios.get(`${API_BASE_URL}/api/visitor`);
+      })
+      .then((response) => {
+        setTotalVisitors(response.data.count || 0);  // อัปเดตจำนวนผู้เยี่ยมชม
+      })
+      .catch((error) => console.error("Error adding visitor", error));
+  };
 
   useEffect(() => {
-    // ✅ ดึงข้อมูล IP ปัจจุบันของผู้ใช้
-    axios.get("https://ipinfo.io/json?token=a999487011bb0b")
-      .then(response => {
-        setUserInfo(response.data);
-
-        const country = response.data.country;
-
-        // ✅ ส่งข้อมูลไปยัง Backend
-        return axios.post("http://localhost:5000/api/visitor", { country });
+    // ดึงข้อมูล IP และประเทศจาก API ภายนอก (ipinfo.io)
+    axios
+      .get("https://ipinfo.io/json?token=a999487011bb0b")
+      .then((response) => {
+        // ส่งข้อมูลประเทศที่ผู้เยี่ยมชมเข้ามาจากไปยัง API ของคุณ
+        addVisitor(response.data.country);  // เรียกใช้ฟังก์ชัน addVisitor
       })
-      .then(() => {
-        // ✅ ดึงจำนวนผู้เยี่ยมชมล่าสุด
-        return axios.get("http://localhost:5000/api/visitor");
+      .then(() => axios.get(`${API_BASE_URL}/api/visitor`))  // ดึงข้อมูลจำนวนผู้เข้าชม
+      .then((response) => {
+        setTotalVisitors(response.data.count || 0);  // อัปเดตจำนวนผู้เยี่ยมชม
       })
-      .then(response => {
-        setVisitorCount(response.data.count || 0);
-
-        // ✅ กรองข้อมูลที่ไม่มีชื่อประเทศ
-        const validCountries = response.data.countryData.filter(
-          country => country.name
-        );
-
-        setCountryData(validCountries);
-      })
-      .catch(error => {
-        console.error("Error fetching data", error);
-      });
-  }, []);
+      .catch((error) => console.error("Error fetching data", error));
+  }, []);  // ใช้ useEffect เพื่อเรียก API เมื่อโหลดคอมโพเนนต์เสร็จ
 
   return (
-    <div className="container p-4">
-      <h4 className="text-2xl font-bold">Visitor Counter</h4>
-      <p className="mt-2 text-lg">🌍 Total visitors: {visitorCount.toLocaleString()}</p>
-
-      {userInfo && (
-        <div className="mt-4 p-4 border rounded-lg bg-gray-100">
-          <h4 className="text-xl font-semibold">🛠 Your Info</h4>
-          <p><strong>IP:</strong> {userInfo.ip}</p>
-          <p><strong>City:</strong> {userInfo.city}</p>
-          <p><strong>Region:</strong> {userInfo.region}</p>
-          <p><strong>Country:</strong> {userInfo.country}</p>
-          <p><strong>Organization:</strong> {userInfo.org}</p>
-          <p><strong>Timezone:</strong> {userInfo.timezone}</p>
-        </div>
-      )}
-
-      <h4 className="mt-6 text-lg font-semibold">📊 Visitors by Country:</h4>
-      <table className="min-w-full border-collapse border border-gray-300 mt-2">
-        <thead>
-          <tr className="bg-gray-200">
-            <th className="border px-4 py-2 text-left">Country</th>
-            <th className="border px-4 py-2 text-right">Visitor Count</th>
-          </tr>
-        </thead>
-        <tbody>
-          {countryData.length > 0 ? (
-            countryData.map((country, index) => (
-              <tr key={index} className="border border-gray-300">
-                <td className="border px-4 py-2">{country.name}</td>
-                <td className="border px-4 py-2 text-right">
-                  {country.count.toLocaleString()}
-                </td>
-              </tr>
-            ))
-          ) : (
-            <tr>
-              <td colSpan="2" className="text-center py-2">No data available</td>
-            </tr>
-          )}
-        </tbody>
-      </table>
+    <div className="container p-6 max-w-xl mx-auto bg-gradient-to-r from-blue-500 to-indigo-500 rounded-lg shadow-lg text-white">
+      <h4 className="text-3xl font-extrabold text-center mb-4">🌍 Visitor Counter</h4>
+      <p className="text-lg font-semibold text-center">
+        <span className="text-4xl bg-gradient-to-r from-purple-500 to-white text-transparent bg-clip-text">{totalVisitors.toLocaleString()}</span> total visitors
+      </p>
+      <div className="mt-6 p-4 bg-white text-gray-800 rounded-lg shadow-md">
+        <p className="text-center text-xl font-medium">Thank you for visiting our site!</p>
+        <p className="mt-2 text-center text-sm"></p>
+      </div>
     </div>
   );
 }
