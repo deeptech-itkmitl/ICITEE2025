@@ -89,5 +89,5 @@ app.get("/api/visitor", async (req, res) => {
 
 // เริ่มต้นเซิร์ฟเวอร์
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+  console.log(`Server running at http://icitee2025.it.kmitl.ac.th:${port}`);
 });
