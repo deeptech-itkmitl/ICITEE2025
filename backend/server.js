@@ -24,6 +24,7 @@ const readVisitorData = async () => {
     const data = await fs.promises.readFile(filePath, "utf8");
     return JSON.parse(data);
   } catch (error) {
+    console.error("Error reading visitor data:", error);
     return { count: 0, countryData: [] }; // ใช้ค่าเริ่มต้น
   }
 };
@@ -62,6 +63,11 @@ app.post("/api/visitor", async (req, res) => {
       visitorData.countryData.push({ name: country, count: 1 });
     }
 
+    // กำจัดข้อมูลที่ไม่มี 'name' หรือ 'count'
+    visitorData.countryData = visitorData.countryData.filter(
+      (item) => item.name && item.count
+    );
+
     // เขียนข้อมูลกลับไปยังไฟล์
     await writeVisitorData(visitorData);
 
@@ -80,6 +86,12 @@ app.post("/api/visitor", async (req, res) => {
 app.get("/api/visitor", async (req, res) => {
   try {
     const visitorData = await readVisitorData();
+
+    // กำจัดข้อมูลที่ไม่มี 'name' หรือ 'count'
+    visitorData.countryData = visitorData.countryData.filter(
+      (item) => item.name && item.count
+    );
+
     return res.status(200).json({
       count: visitorData.count,
       countryData: visitorData.countryData,

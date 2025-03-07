@@ -16,7 +16,13 @@ export default function VisitorCounter() {
       console.log("Visitor Data:", response.data);
 
       setTotalVisitors(response.data.count || 0);
-      setCountryData(response.data.countryData || []);
+
+      // กรองประเทศที่มีจำนวนผู้เข้าชมสูงสุด 3 ประเทศ
+      const sortedCountryData = response.data.countryData
+        .sort((a, b) => b.count - a.count) // เรียงลำดับจากมากไปหาน้อย
+        .slice(0, 3); // เลือกแค่ 3 ประเทศที่มีจำนวนผู้เข้าชมสูงสุด
+
+      setCountryData(sortedCountryData);
     } catch (error) {
       console.error("Error fetching visitor data:", error);
     }
@@ -44,7 +50,7 @@ export default function VisitorCounter() {
   }, []);
 
   return (
-    <div className="container p-6 max-w-xl mx-auto bg-gradient-to-r from-blue-500 to-indigo-500 rounded-lg shadow-lg text-white">
+    <div className="container p-6 max-w-xl mx-auto bg-gradient-to-r from-blue-500 to-indigo-500 rounded-lg shadow-lg text-white flex flex-col items-center">
       <h4 className="text-3xl font-extrabold text-center mb-4">🌍 Visitor Counter</h4>
 
       {loading ? (
@@ -58,7 +64,7 @@ export default function VisitorCounter() {
             total visitors
           </p>
 
-          <div className="mt-6 p-4 bg-white text-gray-800 rounded-lg shadow-md">
+          <div className="mt-6 p-4 bg-white text-gray-800 rounded-lg shadow-md w-[20%]">
             <p className="text-center text-xl font-medium">Thank you for visiting our site!</p>
 
             <div className="mt-4">

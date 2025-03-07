@@ -610,7 +610,9 @@ hr {
   left: 50%;
 }
 .section-title p {
-  font-size: 18px;
+  font-family: poppins;
+  font-size: 16px;
+  color: white;
 }
 .btn-custom {
   font-family: "Raleway", sans-serif;
