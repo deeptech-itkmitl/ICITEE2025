@@ -23,7 +23,7 @@
     "smooth-scroll": "^16.1.3",
     "yarn": "^1.22.22"
   },
-  "proxy": "https://icitee2025.it.kmitl.ac.th:5000",    "scripts": {
+  "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
