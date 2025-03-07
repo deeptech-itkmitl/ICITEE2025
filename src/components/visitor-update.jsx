@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || "http://icitee2025.it.kmitl.ac.th:5000";
+// ใช้ HTTPS ถ้า REACT_APP_API_URL มีการตั้งค่า หรือใช้ HTTP ถ้าไม่มี
+const API_BASE_URL = process.env.REACT_APP_API_URL || "https://icitee2025.it.kmitl.ac.th:5000";
 
 export default function VisitorCounter() {
   const [totalVisitors, setTotalVisitors] = useState(0);
