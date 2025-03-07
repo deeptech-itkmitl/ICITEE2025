@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const steps = [
   { title: "Planning and Topic Selection", date: "March 1, 2025" },
@@ -13,7 +13,7 @@ console.log(steps); // Debug ดูว่าข้อมูลเรียงถ
 
 
 export default function ProgressTimeline() {
-  const [currentStep, setCurrentStep] = useState(2);
+  const [] = useState(2);
 
   return (   
     <div className="container mx-auto p-4"> 

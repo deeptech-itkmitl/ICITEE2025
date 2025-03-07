@@ -18,7 +18,10 @@
 }
 
 .text-justify { 
-   text-align: justify; 
+  text-align: justify;
+  color: white;
+  font-family: 'Poppins';
+    font-size: 14px;
 }
 
 .video-frame {
