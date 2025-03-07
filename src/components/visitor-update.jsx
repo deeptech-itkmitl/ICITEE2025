@@ -50,23 +50,27 @@ export default function VisitorCounter() {
         <p className="text-center text-lg font-semibold">Loading...</p>
       ) : (
         <>
-          <p className="text-lg font-semibold text-center">
+          <p className="text-lg font-semibold text-center mb-4">
             <span className="text-4xl bg-gradient-to-r from-purple-500 to-white text-transparent bg-clip-text">
               {totalVisitors.toLocaleString()}
             </span>{" "}
             total visitors
           </p>
 
-          <div className="container">
-            <ResponsiveContainer width="20%" height="20%">
-              <BarChart data={countryData} layout="vertical">
-                <XAxis type="number" hide />
-                <YAxis dataKey="name" type="category" width={80} />
-                <Tooltip />
-                <Bar dataKey="count" fill="#8884d8" barSize={20} />
-              </BarChart>
-            </ResponsiveContainer>
+          <div className="w-full flex justify-center mt-4">
+            <div className="w-full max-w-4xl"> {/* กำหนดความกว้างสูงสุดให้กราฟ */}
+              <ResponsiveContainer width="100%" height={150}>
+                <BarChart data={countryData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                  <XAxis dataKey="name" tick={{ fill: 'white' }} />
+                  <YAxis />
+                  <Tooltip cursor={{ fill: 'rgba(255, 255, 255, 0.1)' }} />
+                  <Bar dataKey="count" fill="#8884d8" barSize={40} radius={[5, 5, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
           </div>
+
+
         </>
       )}
     </div>
