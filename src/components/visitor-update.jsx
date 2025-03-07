@@ -57,18 +57,20 @@ export default function VisitorCounter() {
             total visitors
           </p>
 
-          <div className="container">
-            <div className="container">
-            <ResponsiveContainer width="20%" height="10%">
-              <BarChart data={countryData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
-                <XAxis dataKey="name" tick={{ fill: 'white' }} />
-                <YAxis />
-                <Tooltip cursor={{ fill: 'rgba(255, 255, 255, 0.1)' }} />
-                <Bar dataKey="count" fill="#8884d8" barSize={40} radius={[5, 5, 0, 0]} />
-              </BarChart>
-            </ResponsiveContainer>
+          <div className="w-full flex justify-center mt-4">
+            <div className="w-full max-w-4xl"> {/* กำหนดความกว้างสูงสุดให้กราฟ */}
+              <ResponsiveContainer width="100%" height={150}>
+                <BarChart data={countryData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                  <XAxis dataKey="name" tick={{ fill: 'white' }} />
+                  <YAxis />
+                  <Tooltip cursor={{ fill: 'rgba(255, 255, 255, 0.1)' }} />
+                  <Bar dataKey="count" fill="#8884d8" barSize={40} radius={[5, 5, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
             </div>
           </div>
+
+
         </>
       )}
     </div>
