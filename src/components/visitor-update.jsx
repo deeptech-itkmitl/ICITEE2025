@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 
-// ใช้ HTTPS ถ้า REACT_APP_API_URL มีการตั้งค่า หรือใช้ HTTP ถ้าไม่มี
 const API_BASE_URL = process.env.REACT_APP_API_URL || "https://icitee2025.it.kmitl.ac.th";
 
 export default function VisitorCounter() {
@@ -16,8 +14,9 @@ export default function VisitorCounter() {
       setTotalVisitors(response.data.count || 0);
 
       const sortedCountryData = response.data.countryData
+        .filter((c) => c.name && c.count) // กรองข้อมูลที่ไม่มีชื่อประเทศ
         .sort((a, b) => b.count - a.count)
-        .slice(0, 3);
+        .slice(0, 5); // เอาเฉพาะ 5 อันดับแรก
 
       setCountryData(sortedCountryData);
     } catch (error) {
@@ -57,20 +56,40 @@ export default function VisitorCounter() {
             total visitors
           </p>
 
-          <div className="w-full flex justify-center mt-4">
-            <div className="w-full max-w-4xl"> {/* กำหนดความกว้างสูงสุดให้กราฟ */}
-              <ResponsiveContainer width="100%" height={150}>
-                <BarChart data={countryData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
-                  <XAxis dataKey="name" tick={{ fill: 'white' }} />
-                  <YAxis />
-                  <Tooltip cursor={{ fill: 'rgba(255, 255, 255, 0.1)' }} />
-                  <Bar dataKey="count" fill="#8884d8" barSize={40} radius={[5, 5, 0, 0]} />
-                </BarChart>
-              </ResponsiveContainer>
-            </div>
-          </div>
+          {/* ตารางแสดงข้อมูล 5 อันดับแรก */}
+          <div className="content-layout">
+
+                    
+          
+  <div className="flex justify-center mt-4">
+    <table className="border-collapse border border-gray-300 bg-white text-black">
+      <tbody>
+        <tr>
+          {countryData.map((country, index) => (
+            <td key={index} className="border border-gray-300 px-4 py-2 text-center">
+              <img
+                src={`https://flagcdn.com/w40/${country.name.toLowerCase()}.png`}
+                alt={country.name}
+                className="w-12 h-12 object-cover mx-auto"
+                onError={(e) => (e.target.style.display = 'none')}
+              />
+            </td>
+          ))}
+        </tr>
+        <tr>
+          {countryData.map((country, index) => (
+            <td key={index} className="border border-gray-300 px-4 py-2 text-lg font-semibold text-center">
+              {country.count}
+            </td>
+          ))}
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
 
+        
         </>
       )}
     </div>
