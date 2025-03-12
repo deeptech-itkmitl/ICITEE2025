@@ -61,31 +61,34 @@ export default function VisitorCounter() {
 
                     
           
-  <div className="flex justify-center mt-4">
-    <table className="border-collapse border border-gray-300 bg-white text-black">
-      <tbody>
-        <tr>
-          {countryData.map((country, index) => (
-            <td key={index} className="border border-gray-300 px-4 py-2 text-center">
-              <img
-                src={`https://flagcdn.com/w40/${country.name.toLowerCase()}.png`}
-                alt={country.name}
-                className="w-12 h-12 object-cover mx-auto"
-                onError={(e) => (e.target.style.display = 'none')}
-              />
-            </td>
-          ))}
-        </tr>
-        <tr>
-          {countryData.map((country, index) => (
-            <td key={index} className="border border-gray-300 px-4 py-2 text-lg font-semibold text-center">
-              {country.count}
-            </td>
-          ))}
-        </tr>
-      </tbody>
-    </table>
-  </div>
+          <div className="flex justify-center mt-4">
+  <table className="border-collapse border border-gray-300 bg-white text-black">
+    <tbody>
+      <tr>
+        {countryData.map((country, index) => (
+          <td key={index} className="border border-gray-300 px-4 py-2 text-center">
+            <img
+              src={`https://flagcdn.com/w40/${country.name.toLowerCase()}.png`}
+              alt={country.name}
+              className="w-[5px] h-[5px] object-cover mx-auto"
+              onError={(e) => (e.target.style.display = 'none')}
+            />
+          </td>
+        ))}
+      </tr>
+      <tr>
+        {countryData.map((country, index) => (
+          <td key={index} className="border border-gray-300 px-4 py-2 text-lg font-semibold text-center">
+            {country.count}
+          </td>
+        ))}
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
 </div>
 
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const steps = [
   { title: "Planning and Topic Selection", date: "March 1, 2025" },
@@ -8,9 +8,6 @@ const steps = [
   { title: "Conference Execution", date: "March 20, 2025" },
   { title: "Evaluation and Summary", date: "March 25, 2025" }
 ].sort((a, b) => new Date(b.date) - new Date(a.date)); // เรียงจากใหม่ -> เก่า
-
-console.log(steps); // Debug ดูว่าข้อมูลเรียงถูกต้องไหม
-
 
 export default function ProgressTimeline() {
   const [] = useState(2);
@@ -30,26 +27,26 @@ export default function ProgressTimeline() {
         {/* ส่วนตารางขวา */}
         <div className="about-content flex-2">
           <div className="important-dates-container">
-            <table>
+            <table className="w-full border-collapse border border-gray-300">
               <thead>
-                <tr>
-                  <th>Proceedings</th>
-                  <th>Location</th>
+                <tr className="bg-gray-100">
+                  <th className="border p-2">Proceedings</th>
+                  <th className="border p-2">Date</th>
                 </tr>
               </thead>
               <tbody>
                 {steps.map((step, index) => (
-                  <tr key={index}>
-                    <td>{step.title}</td>
-                     <td>{step.date}</td>
+                  <tr key={index} className="hover:bg-gray-50">
+                    <td className="border p-2">
+                      <Link to={`/details/${index}`} className="text-blue-500 underline">
+                        {step.title} <span className="ml-1">🔗</span>
+                      </Link>
+                    </td>
+                    <td className="border p-2">{step.date}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
-          </div>
-
-          {/* ปุ่มลิงก์ไปหน้าประกาศ */}
-          <div className="text-right mt-4">
           </div>
         </div>
 
