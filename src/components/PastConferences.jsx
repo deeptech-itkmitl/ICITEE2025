@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const steps = [
   { title: "Bali, Indonesia", link: "https://ieeexplore.ieee.org/xpl/conhome/10808184/proceeding", date: "ICITEE2024" },
-  { title: "Chaingmai, Thailand", link: "https://ieeexplore.ieee.org/xpl/conhome/10317623/proceeding", date: "ICITEE2023" },
+  { title: "Chiang Mai, Thailand", link: "https://ieeexplore.ieee.org/xpl/conhome/10317623/proceeding", date: "ICITEE2023" },
   { title: "Online Virtual Conference", link: "https://ieeexplore.ieee.org/xpl/conhome/9954039/proceeding", date: "ICITEE2022" },
   { title: "Online Virtual Conference", link: "https://ieeexplore.ieee.org/xpl/conhome/9611817/proceeding", date: "ICITEE2021" },
   { title: "Yogyakarta, Indonesia", link: "https://ieeexplore.ieee.org/xpl/conhome/9271662/proceeding", date: "ICITEE2020" },
@@ -15,33 +15,32 @@ const steps = [
 
 export default function PastConferences() {
   return (   
-    <div className="container mx-auto p-4"> 
-      <h2 className="text-2xl font-bold mb-4 text-center"></h2>
-
+    <div className="container mx-auto p-6 max-w-screen-lg">
+      <h2 className="text-3xl font-bold mb-6 text-center text-gray-800"></h2>
       <div className="content-layout flex flex-col md:flex-row gap-6">
         <div className="about-content flex-2">
           <div className="important-dates-container">
-            <table className="w-full border-collapse border border-gray-300">
+            <table className="w-full border-collapse border border-gray-400 shadow-lg">
               <thead>
-                <tr className="bg-gray-100">
-                  <th className="border border-gray-300 p-2">Proceedings</th>
-                  <th className="border border-gray-300 p-2">Location</th>
+                <tr className="bg-gray-200">
+                  <th className="border border-gray-400 p-3 text-left">Proceedings</th>
+                  <th className="border border-gray-400 p-3 text-left">Location</th>
                 </tr>
               </thead>
               <tbody>
                 {steps.map((step, index) => (
-                  <tr key={index} className="hover:bg-gray-200 transition duration-200">
-                    <td className="border border-gray-300 p-2">
+                  <tr key={index} className="hover:bg-gray-100 transition duration-200">
+                    <td className="border border-gray-400 p-3">
                       <a 
                         href={step.link} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-blue-500 underline hover:text-blue-700"
+                        className="text-blue-600 font-semibold hover:text-blue-800 flex items-center gap-1"
                       >
-                        {step.date}
+                        {step.date} <span>🔗</span>
                       </a>
                     </td>
-                    <td className="border border-gray-300 p-2">{step.title}</td>
+                    <td className="border border-gray-400 p-3">{step.title}</td>
                   </tr>
                 ))}
               </tbody>
