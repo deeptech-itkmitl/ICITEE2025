@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { HelmetProvider } from "react-helmet-async";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Layout2 from "./Layout2";
 import Layout3 from "./Layout3";
@@ -32,9 +33,11 @@ const App = () => {
   }, []);
 
   return (
+    <HelmetProvider>
     <Router>
       <AppContent landingPageData={landingPageData} />
     </Router>
+    </HelmetProvider>
   );
 };
 
@@ -43,6 +46,7 @@ const AppContent = ({ landingPageData }) => {
   const isHomePage = location.pathname === "/";
 
   return (
+    <HelmetProvider>
     <>
       {/* แสดง Header เฉพาะหน้า "/" */}
       {isHomePage && <Header data={landingPageData.Header} />}
@@ -89,8 +93,9 @@ const AppContent = ({ landingPageData }) => {
           {/* <VisitorCounter data={landingPageData}/>        */}
           <Contact data={landingPageData.Contact} />          
         </>
-      )}
-    </>
+      )}    
+    </> 
+    </HelmetProvider>
   );
 };
 
