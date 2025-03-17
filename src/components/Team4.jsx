@@ -7,8 +7,6 @@ export const Team4 = (props) => {
       <div className="container">
         <div className="col-md-8 col-md-offset-2 section-title">
           <h33>Co-Organize</h33>
-          <p>
-          </p>
         </div>
         <div id="row">
           {props.data
