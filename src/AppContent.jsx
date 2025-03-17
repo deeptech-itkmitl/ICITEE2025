@@ -72,13 +72,13 @@ const AppContent = ({ landingPageData }) => {
 
   const defaultSeoData = {
     title: {
-      en: "ICITEE 2025",
-      th: "ICITEE 2025",
-      ko: "ICITEE 2025",
-      ja: "ICITEE 2025",
-      id: "ICITEE 2025",
-      ms: "ICITEE 2025",
-      ph: "ICITEE 2025"
+      en: "ICITEE 2019,2020,2021,2022,2023,2024,2025.",
+      th: "ICITEE 2019,2020,2021,2022,2023,2024,2025.",
+      ko: "ICITEE 2019,2020,2021,2022,2023,2024,2025.",
+      ja: "ICITEE 2019,2020,2021,2022,2023,2024,2025.",
+      id: "ICITEE 2019,2020,2021,2022,2023,2024,2025.",
+      ms: "ICITEE 2019,2020,2021,2022,2023,2024,2025.",
+      ph: "ICITEE 2019,2020,2021,2022,2023,2024,2025."
     },
     description: {
       en: "International Conference on Information Technology and Electrical Engineering",
