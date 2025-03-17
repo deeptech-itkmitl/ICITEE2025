@@ -10,8 +10,10 @@ import Layout7 from "./Layout7";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { About } from "./components/about";
-import { Team1 } from "./components/Team1";
+// import { Team1 } from "./components/Team1";
 import { Team2 } from "./components/Team2";
+// import { Team3 } from "./components/Team3";
+import { Team4 } from "./components/Team4";
 import { Contact } from "./components/contact";
 // import { Gallery } from "components/gallery";
 import { TopicsOfInterest } from "./components/TopicsOfInterest";
@@ -89,7 +91,10 @@ const AppContent = ({ landingPageData }) => {
           {/* <Announcement data={landingPageData.Team} />                */}
           {/* <Gallery/> */}
           <Team2 data={landingPageData.Team} />
-          <Team1 data={landingPageData.Team2} />   
+          {/* <Team3 data={landingPageData.Team3} /> */}
+          {/* <Team1 data={landingPageData.Team2} />   */}
+          <Team4 data={landingPageData.Team4} />   
+          {/* <Team3 data={landingPageData.Team3} />     */}
           {/* <VisitorCounter data={landingPageData}/>        */}
           <Contact data={landingPageData.Contact} />          
         </>
