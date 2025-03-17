@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { HelmetProvider } from "react-helmet-async";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Layout2 from "./Layout2";
 import Layout3 from "./Layout3";
@@ -9,8 +10,10 @@ import Layout7 from "./Layout7";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { About } from "./components/about";
-import { Team1 } from "./components/Team1";
+// import { Team1 } from "./components/Team1";
 import { Team2 } from "./components/Team2";
+// import { Team3 } from "./components/Team3";
+import { Team4 } from "./components/Team4";
 import { Contact } from "./components/contact";
 // import { Gallery } from "components/gallery";
 import { TopicsOfInterest } from "./components/TopicsOfInterest";
@@ -32,9 +35,11 @@ const App = () => {
   }, []);
 
   return (
+    <HelmetProvider>
     <Router>
       <AppContent landingPageData={landingPageData} />
     </Router>
+    </HelmetProvider>
   );
 };
 
@@ -43,6 +48,7 @@ const AppContent = ({ landingPageData }) => {
   const isHomePage = location.pathname === "/";
 
   return (
+    <HelmetProvider>
     <>
       {/* แสดง Header เฉพาะหน้า "/" */}
       {isHomePage && <Header data={landingPageData.Header} />}
@@ -85,12 +91,16 @@ const AppContent = ({ landingPageData }) => {
           {/* <Announcement data={landingPageData.Team} />                */}
           {/* <Gallery/> */}
           <Team2 data={landingPageData.Team} />
-          <Team1 data={landingPageData.Team2} />   
+          {/* <Team3 data={landingPageData.Team3} /> */}
+          {/* <Team1 data={landingPageData.Team2} />   */}
+          <Team4 data={landingPageData.Team4} />   
+          {/* <Team3 data={landingPageData.Team3} />     */}
           {/* <VisitorCounter data={landingPageData}/>        */}
           <Contact data={landingPageData.Contact} />          
         </>
-      )}
-    </>
+      )}    
+    </> 
+    </HelmetProvider>
   );
 };
 
