@@ -1,18 +1,1 @@
-{
-    "count": 672,
-    "countryData": [
-      { "name": "TH", "count": 571 },
-      { "name": "US", "count": 21 },
-      { "name": "ID", "count": 33 },
-      { "name": "VN", "count": 3 },
-      { "name": "MA", "count": 4 },
-      { "name": "KR", "count": 6 },
-      { "name": "CA", "count": 1 },
-      { "name": "CN", "count": 2 },
-      { "name": "DE", "count": 5 },
-      { "name": "JP", "count": 14 },
-      { "name": "SG", "count": 1 },
-      { "name": "IN", "count": 6 }
-    ]
-  }
-  
+{"count":672,"countryData":[{"name":"TH","count":571},{"name":"US","count":21},{"name":"ID","count":33},{"name":"VN","count":3},{"name":"MA","count":4},{"name":"KR","count":6},{"name":"CA","count":1},{"name":"CN","count":2},{"name":"DE","count":5},{"name":"JP","count":14},{"name":"SG","count":1},{"name":"IN","count":6}
