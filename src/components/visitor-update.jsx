@@ -70,7 +70,7 @@ export default function VisitorCounter() {
             <img
               src={`https://flagcdn.com/w40/${country.name.toLowerCase()}.png`}
               alt={country.name}
-              className="w-[5px] h-[5px] object-cover mx-auto"
+              className="width='20' height='12' object-cover mx-auto"
               onError={(e) => (e.target.style.display = 'none')}
             />
           </td>
