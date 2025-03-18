@@ -27,6 +27,7 @@ import JsonData from "./data/data.json";
 import "./App.css";
 import { Gallery } from "components/gallery";
 
+
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
 
@@ -47,43 +48,61 @@ const AppContent = ({ landingPageData }) => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
 
-  return (
+  return (  
+      
     <HelmetProvider>
+      
     <>
       {/* แสดง Header เฉพาะหน้า "/" */}
-      {isHomePage && <Header data={landingPageData.Header} />}
+      {isHomePage && <Header data={landingPageData.Header} />}      
       <Navigation />
-
+      
+      <helmet>
       <Routes>
+        
+        <helmet>
         <Route path="/" element={<About data={landingPageData.About} />} />
+        </helmet>
 
         {/* <Route path="/topics-of-interest" element={<TopicsOfInterest />} /> */}
-
+        <helmet>
         <Route path="/organizing-committee" element={<Layout2 data={landingPageData} />}>
           <Route index element={<OrganizeCommittee data={landingPageData.OrganizeCommittee} />} />
         </Route>
+        </helmet>
 
+        <helmet>
         <Route path="/quality-control-management" element={<Layout4 data={landingPageData} />}>
           <Route index element={<QualityControlPage data={landingPageData.Quality} />} />
         </Route>
+        </helmet>
 
+        <helmet>
         <Route path="/topics-of-interest" element={<Layout3 data={landingPageData} />}>
           <Route index element={<TopicsOfInterest data={landingPageData.Quality} />} />
         </Route>
+        </helmet>
 
+        <helmet>
         <Route path="/announcement" element={<Layout5 data={landingPageData} />}>
           <Route index element={<AnnouncementDetail data={landingPageData.Quality} />} />
         </Route>
+        </helmet>
 
+        <helmet>
         <Route path="/gallery" element={<Layout6 data={landingPageData} />}>
           <Route index element={<Gallery data={landingPageData.Gallery} />} />
         </Route>      
+        </helmet>
 
+        <helmet>
         <Route path="/pass-conference" element={<Layout7 data={landingPageData} />}>
           <Route index element={<PastConference data={landingPageData.Gallery} />} />
         </Route>    
+        </helmet>
 
       </Routes>
+      </helmet>
 
       {/* แสดงข้อมูล VisitorCounter และ Team2 Team1 Contact เฉพาะหน้า "/" */}
       {isHomePage && (
