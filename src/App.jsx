@@ -7,6 +7,7 @@ import Layout4 from "./Layout4";
 import Layout5 from "./Layout5";
 import Layout6 from "./Layout6";
 import Layout7 from "./Layout7";
+import Layout8 from "./Layout8";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { About } from "./components/about";
@@ -16,6 +17,7 @@ import { Team2 } from "./components/Team2";
 import { Team4 } from "./components/Team4";
 import { Contact } from "./components/contact";
 // import { Gallery } from "components/gallery";
+import PaperSubmissionGuidelines from "./components/PaperSubmissionGuidelines"
 import { TopicsOfInterest } from "./components/TopicsOfInterest";
 import { OrganizeCommittee } from "./components/OrganizeCommittee";
 import QualityControlPage from "./components/QualityControl";
@@ -69,6 +71,10 @@ const AppContent = ({ landingPageData }) => {
 
         <Route path="/topics-of-interest" element={<Layout3 data={landingPageData} />}>
           <Route index element={<TopicsOfInterest data={landingPageData.Quality} />} />
+        </Route>
+
+        <Route path="/paper-submission-guidelines" element={<Layout8 data={landingPageData} />}>
+          <Route index element={<PaperSubmissionGuidelines data={landingPageData.Quality} />} />
         </Route>
 
         <Route path="/announcement" element={<Layout5 data={landingPageData} />}>
