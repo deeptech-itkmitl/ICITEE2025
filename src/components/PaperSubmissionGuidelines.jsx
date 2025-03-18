@@ -53,6 +53,7 @@ const PaperSubmissionGuidelines = () => {
         </ul>
 
         <h3>2.1 How Open Review Works</h3>
+        <p2>
         <ol>
           <li><strong>Initial Submission:</strong> Authors submit their anonymized paper through EDAS.</li>
           <li><strong>Review Assignment:</strong> Papers are assigned to three reviewers who provide detailed feedback.</li>
@@ -61,7 +62,7 @@ const PaperSubmissionGuidelines = () => {
           <li><strong>Decision:</strong> The Track Chair considers initial reviews, author rebuttals, and any reviewer updates before making a final decision on acceptance or rejection.</li>
           <li><strong>Public Review Phase:</strong> Only accepted papers and their corresponding reviews (with reviewer and author identities anonymized) will be publicly accessible. This promotes academic transparency, encourages constructive discussions, and enhances knowledge-sharing on high-quality research.</li>
         </ol>
-
+        </p2>
         <h3>2.2 Why Open Review?</h3>
         <ul>
           <li>Encourages high-quality, transparent feedback.</li>
@@ -105,24 +106,25 @@ const PaperSubmissionGuidelines = () => {
           <li>Authors must sign the IEEE Copyright Form before final submission.</li>
           <li>Only papers that pass the IEEE PDF eXpress check will be included in the conference proceedings.</li>
         </ul>
-        <p>📌 IEEE PDF eXpress Instructions: Log in to the IEEE PDF eXpress™ site</p>
-        <p>First-time users should do the following:</p>
+        <p2>📌 IEEE PDF eXpress Instructions: Log in to the IEEE PDF eXpress™ site</p2>
+        <p2>First-time users should do the following:</p2>
         <ol>
-          <li>Select the New Users - Click Here link.</li>
-          <li>Enter the following:</li>
+        
+          <li><p2>Select the New Users - Click Here link.</p2></li>
+          <li><p2>Enter the following:</p2></li>
           <ul>
             <li>66631X for the Conference ID</li>
             <li>Your email address</li>
             <li>A password</li>
           </ul>
-          <li>Continue to enter information as prompted.</li>
-          <li>An online confirmation will be displayed, and an email confirmation will be sent verifying your account setup.</li>
+          <li><p2>Continue to enter information as prompted.</p2></li>
+          <li><p2>An online confirmation will be displayed, and an email confirmation will be sent verifying your account setup.</p2></li>
         </ol>
       </div>
 
       <div className="card">
         <h2>5. Submission Process and EDAS Instructions</h2>
-        <p>📌 Submission Portal: <a href="https://edas.info/">ICITEE 2025 EDAS Submission</a></p>
+        <p2>📌 Submission Portal: <a href="https://edas.info/">ICITEE 2025 EDAS Submission</a></p2>
         <h3>Steps to Submit a Paper:</h3>
         <ul>
           <li>Log in to EDAS (Create an account if you don’t have one).</li>
@@ -147,14 +149,14 @@ const PaperSubmissionGuidelines = () => {
           <li>Respectful review discussions – Unprofessional author responses may result in rejection.</li>
           <li>Strict formatting compliance – Papers that do not follow IEEE format will be rejected.</li>
         </ul>
-        <p>📌 Important: The Technical Program Committee reserves the right to reject submissions that fail quality control checks, even before the review process.</p>
+        <p2>📌 Important: The Technical Program Committee reserves the right to reject submissions that fail quality control checks, even before the review process.</p2>
       </div>
 
       <div className="card">
         <h2>7. Contact and Support</h2>
-        <p>For any questions regarding submission, formatting, or the review process, please contact:</p>
-        <p>📧 ICITEE 2025 Submission Committee: <a href="mailto:icitee2025@it.kmitl.ac.th">icitee2025@it.kmitl.ac.th</a></p>
-        <p>🌐 Conference Website: <a href="https://icitee2025.it.kmitl.ac.th/">https://icitee2025.it.kmitl.ac.th/</a></p>
+        <p2>For any questions regarding submission, formatting, or the review process, please contact:</p2>
+        <p2>📧 ICITEE 2025 Submission Committee: <a href="mailto:icitee2025@it.kmitl.ac.th">icitee2025@it.kmitl.ac.th</a></p2>
+        <p2>🌐 Conference Website: <a href="https://icitee2025.it.kmitl.ac.th/">https://icitee2025.it.kmitl.ac.th/</a></p2>
       </div>
     </div>
   );
