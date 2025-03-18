@@ -226,16 +226,16 @@
       "img": "img/team/04.png",
       "name": " ",
       "job": "School of Information Technology, King Mongkut's Institute of Technology Ladkrabang (KMITL),Thailand."
-    },
-    {
-      "img": "img/team/07.png",
-      "name": " ",
-      "job": "Musashino University. Shin-machi, Nishitokyo-shi, Tokyo, Japan."
     },{
       "img": "img/team/05.png",
       "name": " ",
       "job": "Department of Electrical Engineering and Information Technology, Universitas Gadjah Mada (UGM), Indonesia."
-    }
+    },
+      {
+      "img": "img/team/07.png",
+      "name": " ",
+      "job": "Musashino University, Japan."
+      }
   ],
   "Team3": [    
     {
@@ -246,7 +246,7 @@
     {
       "img": "img/team/07.png",
       "name": " ",
-      "job": "Musashino University. Shin-machi, Nishitokyo-shi, Tokyo, Japan."
+      "job": "Musashino University, Tokyo, Japan."
     }
   ],
   "Contact": {
