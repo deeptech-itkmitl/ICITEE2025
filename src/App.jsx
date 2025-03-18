@@ -27,7 +27,6 @@ import JsonData from "./data/data.json";
 import "./App.css";
 import { Gallery } from "components/gallery";
 
-
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
 
@@ -48,16 +47,14 @@ const AppContent = ({ landingPageData }) => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
 
-  return (  
-      
+  return (
     <HelmetProvider>
-      
     <>
       {/* แสดง Header เฉพาะหน้า "/" */}
       {isHomePage && <Header data={landingPageData.Header} />}
       <Navigation />
+
       <Routes>
-        
         <Route path="/" element={<About data={landingPageData.About} />} />
 
         {/* <Route path="/topics-of-interest" element={<TopicsOfInterest />} /> */}
