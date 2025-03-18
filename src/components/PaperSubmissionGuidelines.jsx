@@ -4,7 +4,7 @@ import "../css/QualityControl.css";
 const PaperSubmissionGuidelines = () => {
   return (
     <div className="quality-container">
-      <h4 className="title">Paper Submission Guidelines for ICITEE 2025</h4>
+      <h4 className="title"></h4>
       <div className="card">
         <p className="intro">
           Prospective authors are invited to submit original full papers (4 to 6 pages) in A4 IEEE Xplore double-column format, including tables, figures, and references.
