@@ -51,38 +51,23 @@ const PaperSubmissionGuidelines = () => {
         <h3><center>Decision Categories</center></h3>
         <p2>Each submission will receive one of the following decisions:</p2>
         <p2>
-        <table style={{ borderCollapse: "collapse", width: "100%", border: "" }}>
-          <tbody>
-            <tr style={{ border: "", width: "33%", height: "150px" }}>
-              <td style={{ border: "", width: "33%", height: "150px" }}>
-                <center>
-                <img src={`${process.env.PUBLIC_URL}/img/Group216.png`} alt="Image 1"  style={{ maxWidth: "100%", maxHeight: "50px" }} />
-                </center>
-              </td>
-              <td style={{ border: "", width: "33%", height: "150px" }}>
-                <center>
-                <img src={`${process.env.PUBLIC_URL}/img/Group218.png`} alt="Image 2"   style={{ maxWidth: "100%", maxHeight: "50px" }}/>
-                </center>
-              </td>
-              <td style={{ border: "", width: "33%", height: "150px" }}>
-                <center>
-                <img src={`${process.env.PUBLIC_URL}/img/Group219.png`} alt="Image 3"  style={{ maxWidth: "100%", maxHeight: "50px" }} />
-                </center>
-              </td>
-            </tr>
-            <tr style={{ border: "", width: "33%", height: "150px" }}>
-              <td style={{ border: "", width: "33%", height: "150px" }}>
-                <p2>The paper is accepted as-is and will be included in the proceedings.</p2>
-              </td>
-              <td style={{ border: "", width: "33%", height: "150px" }}>
-                <p2>The paper is conditionally accepted, but authors must address reviewer concerns and submit a revised version within four weeks.</p2>
-              </td>
-              <td style={{ border: "", width: "33%", height: "150px" }}>
-                <p2>The paper does not meet the quality standards and is not eligible for resubmission.</p2>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: "10px", textAlign: "center" }}>
+          <div>
+            <img src={`${process.env.PUBLIC_URL}/img/Group216.png`} alt="Image 1" style={{ maxWidth: "100%", height: "50px" }} />
+            <p className="text-justify">The paper is accepted as-is and will be included in the proceedings.</p>
+          </div>
+          <div>
+            <img src={`${process.env.PUBLIC_URL}/img/Group218.png`} alt="Image 2" style={{ maxWidth: "100%", height: "50px" }} />
+            <p className="text-justify">The paper is conditionally accepted, but authors must address reviewer concerns and submit a revised version within four weeks.</p>
+          </div>
+          <div>
+            <img src={`${process.env.PUBLIC_URL}/img/Group219.png`} alt="Image 3" style={{ maxWidth: "100%", height: "50px" }} />
+            <p className="text-justify">The paper does not meet the quality standards and is not eligible for resubmission.</p>
+          </div>
+        </div>
+
+
         </p2>
         <ul>
           {/* <li><strong>Accept:</strong> The paper is accepted as-is and will be included in the proceedings.</li>
@@ -147,23 +132,24 @@ const PaperSubmissionGuidelines = () => {
         <h2></h2>
         <h3><center>Formatting</center></h3>
         <p2>
-        <table style={{ borderCollapse: "collapse", width: "100%", border: "" }}>
-          <tbody>
-            <tr style={{ border: "", width: "33%", height: "150px" }}>
-              <td style={{ border: "", width: "33%", height: "150px" }}>
-                <center>
-                <img src={`${process.env.PUBLIC_URL}/img/Group 221.png`} alt="Image 1"  style={{ maxWidth: "30%", maxHeight: "30%" }} />
-                </center>
-              </td>
-              <td style={{ border: "", width: "33%", height: "150px" }}>
-                <center>
-                <img src={`${process.env.PUBLIC_URL}/img/Group 220.png`} alt="Image 2"   style={{ maxWidth: "30%", maxHeight: "30%" }}/>
-                </center>
-              </td>
-            </tr>
-            
-          </tbody>
-        </table>
+
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "10px" }}>
+            <div style={{ flex: "1 1 150px", display: "flex", justifyContent: "center" }}>
+              <img
+                src={`${process.env.PUBLIC_URL}/img/Group 221.png`}
+                alt="Image 1"
+                style={{ maxWidth: "80%", maxHeight: "80%" }}
+              />
+            </div>
+            <div style={{ flex: "1 1 150px", display: "flex", justifyContent: "center" }}>
+              <img
+                src={`${process.env.PUBLIC_URL}/img/Group 220.png`}
+                alt="Image 2"
+                style={{ maxWidth: "80%", maxHeight: "80%" }}
+              />
+            </div>
+          </div>
+
 
         </p2>
         <ul>
@@ -210,35 +196,49 @@ const PaperSubmissionGuidelines = () => {
         <p2><center><b><i> IEEE PDF eXpress </i></b> Instructions: </center> <p><break></break></p> 
         
         <p2>
-        <table style={{ borderCollapse: "collapse", width: "100%", border: "" }}>
-          <tbody>
-            <tr style={{ border: "", width: "33%", height: "150px" }}>
-              <td style={{ border: "", width: "33%", height: "150px" }}>
-                <center>
-                <img src={`${process.env.PUBLIC_URL}/img/Frame 222.png`} alt="Image 1"  style={{ maxWidth: "30%", maxHeight: "30%" }} />
-                </center>
-              </td>
-              <td style={{ border: "", width: "33%", height: "150px" }}>
-                <left>
-                <p2>Log in to the <span>🔗</span> <b><i><a href="https://ieee-pdf-express.org/ "><i><b>IEEE PDF eXpress™ </b></i></a></i></b> site</p2>
-                <p2>First-time users should do the following:</p2>
-                <ol>        
-                  <li><p2>1. Select the New Users - <span>🔗</span> <a href="https://www.ieee.org/"><i><b>Click Here link.</b></i></a></p2></li>
-                  <li><p2>2. Enter the following:</p2></li><p><break></break></p>
-                  <ul>
-                    <li>66631X for the Conference ID</li>
-                    <li>Your email address</li>
-                    <li>A password</li><p><break></break></p>
-                  </ul>
-                  <li><p2>3. Continue to enter information as prompted.</p2></li><p><break></break></p>
-                  <li><p2>An online confirmation will be displayed, and an email confirmation will be sent verifying your account setup.</p2></li>
-                </ol>
-                </left>
-              </td>
-            </tr>
-            
-          </tbody>
-        </table>
+
+        <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "20px" }}>
+  {/* ส่วนของรูปภาพ */}
+  <div style={{ flex: "1 1 150px", textAlign: "center" }}>
+    <img
+      src={`${process.env.PUBLIC_URL}/img/Frame 222.png`}
+      alt="Image 1"
+      style={{ maxWidth: "80%", maxHeight: "80%" }}
+    />
+  </div>
+
+  {/* ส่วนของข้อความ */}
+  <div style={{ flex: "2 1 300px", textAlign: "left" }}>
+    <p>
+      Log in to the <span>🔗</span> 
+      <b>
+        <i>
+          <a href="https://ieee-pdf-express.org/"><i>IEEE PDF eXpress™</i></a>
+        </i>
+      </b> site
+    </p>
+    <p>First-time users should do the following:</p>
+    <ol>
+      <li>
+        <p>1. Select the New Users - <span>🔗</span> 
+          <a href="https://www.ieee.org/"><i><b>Click Here link.</b></i></a>
+        </p>
+      </li>
+      <li>
+        <p>2. Enter the following:</p>
+        <ul>
+          <li>66631X for the Conference ID</li>
+          <li>Your email address</li>
+          <li>A password</li>
+        </ul>
+      </li>
+      <li><p>3. Continue to enter information as prompted.</p></li>
+      <li><p>An online confirmation will be displayed, and an email confirmation will be sent verifying your account setup.</p></li>
+    </ol>
+  </div>
+</div>
+
+        
         </p2>
         </p2>
       </div>
