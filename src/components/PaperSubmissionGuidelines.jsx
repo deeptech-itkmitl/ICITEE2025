@@ -18,6 +18,7 @@ const PaperSubmissionGuidelines = () => {
           <li>Authors must ensure their paper is processable for similarity checking (e.g., no scanned images of text).</li>
           <li>Papers with plagiarism or self-plagiarism exceeding 30% similarity will be immediately rejected.</li>
         </ul>
+        <p2><b>New in ICITEE 2025: Rolling Review and Open Review Policy</b></p2><p><break></break></p>
         <p className="intro">
           ICITEE 2025 follows a <strong>Rolling Review Process</strong> with an <strong>Open Review Policy</strong> to ensure high-quality submissions, provide timely feedback, and enhance transparency.
         </p>
