@@ -208,7 +208,7 @@ const PaperSubmissionGuidelines = () => {
   </div>
 
   {/* ส่วนของข้อความ */}
-  <div style={{ flex: "2 1 300px", textAlign: "left" }}>
+  <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: "10px", textAlign: "center" }}>
     <p>
       Log in to the <span>🔗</span> 
       <b>
