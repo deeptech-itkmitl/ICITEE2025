@@ -84,7 +84,7 @@ const PaperSubmissionGuidelines = () => {
           <li>Templates can be found here: <span>🔗</span> <a href="https://www.ieee.org/conferences/publishing/templates.html"><i><b>IEEE Templates</b></i></a>.</li>
         </ul>
 
-        <h3>Anonymity (For First Submission Only)</h3>
+        <h3><center>Anonymity (For First Submission Only)</center></h3>
         <ul>
           ICITEE 2025 follows a partially anonymized review process. Initial submissions must be double-blind, meaning:<p><break></break></p>
           1.Do NOT include author names, emails, or affiliations anywhere in the paper.<p><break></break></p>
