@@ -146,6 +146,26 @@ const PaperSubmissionGuidelines = () => {
       </h4>
         <h2></h2>
         <h3><center>Formatting</center></h3>
+        <p2>
+        <table style={{ borderCollapse: "collapse", width: "100%", border: "" }}>
+          <tbody>
+            <tr style={{ border: "", width: "33%", height: "150px" }}>
+              <td style={{ border: "", width: "33%", height: "150px" }}>
+                <center>
+                <img src={`${process.env.PUBLIC_URL}/img/Group 221.png`} alt="Image 1"  style={{ maxWidth: "30%", maxHeight: "30%" }} />
+                </center>
+              </td>
+              <td style={{ border: "", width: "33%", height: "150px" }}>
+                <center>
+                <img src={`${process.env.PUBLIC_URL}/img/Group 220.png`} alt="Image 2"   style={{ maxWidth: "30%", maxHeight: "30%" }}/>
+                </center>
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+
+        </p2>
         <ul>
           <li>Papers must follow the IEEE A4 two-column format.</li><p><break></break></p>
           <li>Templates can be found here: <span>🔗</span> <a href="https://www.ieee.org/conferences/publishing/templates.html"><i><b>IEEE Templates</b></i></a>.</li>
