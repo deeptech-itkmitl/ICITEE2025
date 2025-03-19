@@ -115,7 +115,7 @@ const PaperSubmissionGuidelines = () => {
           <ul>
             <li>66631X for the Conference ID</li>
             <li>Your email address</li>
-            <li>A password</li>
+            <li>A password</li><p><break></break></p>
           </ul>
           <li><p2>Continue to enter information as prompted.</p2></li>
           <li><p2>An online confirmation will be displayed, and an email confirmation will be sent verifying your account setup.</p2></li>
