@@ -6,7 +6,7 @@ const PaperSubmissionGuidelines = () => {
     <div className="quality-container">
       <h4 className="title"><center>General Submission Guidelines</center></h4>
       <div className="card">
-        <p className="intro">
+        <p className="card">
           Prospective authors are invited to submit original full papers (4 to 6 pages) in A4 IEEE Xplore double-column format, including tables, figures, and references.
         </p>
         <p2>General Submission Guidelines:</p2>
@@ -19,7 +19,7 @@ const PaperSubmissionGuidelines = () => {
           <li>Papers with plagiarism or self-plagiarism exceeding 30% similarity will be immediately rejected.</li>
         </ul>
         <p2><b>New in ICITEE 2025: Rolling Review and Open Review Policy</b></p2><p><break></break></p>
-        <p className="intro">
+        <p className="">
           ICITEE 2025 follows a <strong>Rolling Review Process</strong> with an <strong>Open Review Policy</strong> to ensure high-quality submissions, provide timely feedback, and enhance transparency.
         </p>
       </div>
