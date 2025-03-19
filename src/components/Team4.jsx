@@ -1,12 +1,12 @@
 import React from "react";
 // import "../css/Team.css";
-
+// update this file
 export const Team4 = (props) => {
   return (
     <div id="team4" style={{background: 'white'}} className="text-center">
       <div className="container">
         <div className="col-md-8 col-md-offset-2 section-title">
-          <h33>Co-Organize</h33>
+          <h33>Co-Organizer</h33>
         </div>
         <div id="row">
           {props.data
