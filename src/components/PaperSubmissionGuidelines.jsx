@@ -56,12 +56,12 @@ const PaperSubmissionGuidelines = () => {
         <h3>2.1 How Open Review Works</h3>
         <p2>
         <ol>
-          <li><strong>Initial Submission:</strong> Authors submit their anonymized paper through EDAS.</li>
-          <li><strong>Review Assignment:</strong> Papers are assigned to three reviewers who provide detailed feedback.</li>
-          <li><strong>Rebuttal Phase:</strong> Authors receive reviews within three weeks and have four weeks to submit a rebuttal addressing reviewer comments, clarifying misunderstandings, and justifying their research decisions.</li>
-          <li><strong>Reviewer Updates (Optional):</strong> Reviewers may update their evaluations after considering the author’s rebuttal, but this is optional and at the reviewer’s discretion.</li>
-          <li><strong>Decision:</strong> The Track Chair considers initial reviews, author rebuttals, and any reviewer updates before making a final decision on acceptance or rejection.</li>
-          <li><strong>Public Review Phase:</strong> Only accepted papers and their corresponding reviews (with reviewer and author identities anonymized) will be publicly accessible. This promotes academic transparency, encourages constructive discussions, and enhances knowledge-sharing on high-quality research.</li>
+          <li><strong>1. Initial Submission:</strong> Authors submit their anonymized paper through EDAS.</li>
+          <li><strong>2. Review Assignment:</strong> Papers are assigned to three reviewers who provide detailed feedback.</li>
+          <li><strong>3. Rebuttal Phase:</strong> Authors receive reviews within three weeks and have four weeks to submit a rebuttal addressing reviewer comments, clarifying misunderstandings, and justifying their research decisions.</li>
+          <li><strong>4. Reviewer Updates (Optional):</strong> Reviewers may update their evaluations after considering the author’s rebuttal, but this is optional and at the reviewer’s discretion.</li>
+          <li><strong>5. Decision:</strong> The Track Chair considers initial reviews, author rebuttals, and any reviewer updates before making a final decision on acceptance or rejection.</li>
+          <li><strong>6. Public Review Phase:</strong> Only accepted papers and their corresponding reviews (with reviewer and author identities anonymized) will be publicly accessible. This promotes academic transparency, encourages constructive discussions, and enhances knowledge-sharing on high-quality research.</li>
         </ol>
         </p2>
         <h3>2.2 Why Open Review?</h3>
