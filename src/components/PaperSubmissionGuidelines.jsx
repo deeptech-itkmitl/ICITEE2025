@@ -257,9 +257,9 @@ const PaperSubmissionGuidelines = () => {
     <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
     <div style={{ flex: "1 1 150px", textAlign: "center" }}>
     <img
-      src={`${process.env.PUBLIC_URL}/img/Group 216.png`}
+      src={`${process.env.PUBLIC_URL}/img/Group220.png`}
       alt="Image 1"
-      style={{ maxWidth: "100%", Height: "50px" }}
+      style={{ maxWidth: "30%", Height: "50px" }}
     />
     </div>
   </div></h4>
