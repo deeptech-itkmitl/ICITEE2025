@@ -51,33 +51,33 @@ const PaperSubmissionGuidelines = () => {
         <h3><center>Decision Categories</center></h3>
         <p2>Each submission will receive one of the following decisions:</p2>
         <p2>
-        <table style={{ borderCollapse: "collapse", width: "100%" }} border="1">
+        <table style={{ borderCollapse: "collapse", width: "100%", border: "" }}>
           <tbody>
-            <tr>
-              <td>
+            <tr style={{ border: "", width: "33%", height: "150px" }}>
+              <td style={{ border: "", width: "33%", height: "150px" }}>
                 <center>
                 <img src={`${process.env.PUBLIC_URL}/img/Group216.png`} alt="Image 1"  style={{ maxWidth: "100%", maxHeight: "50px" }} />
                 </center>
               </td>
-              <td>
+              <td style={{ border: "", width: "33%", height: "150px" }}>
                 <center>
                 <img src={`${process.env.PUBLIC_URL}/img/Group218.png`} alt="Image 2"   style={{ maxWidth: "100%", maxHeight: "50px" }}/>
                 </center>
               </td>
-              <td>
+              <td style={{ border: "", width: "33%", height: "150px" }}>
                 <center>
                 <img src={`${process.env.PUBLIC_URL}/img/Group219.png`} alt="Image 3"  style={{ maxWidth: "100%", maxHeight: "50px" }} />
                 </center>
               </td>
             </tr>
-            <tr>
-              <td>
+            <tr style={{ border: "", width: "33%", height: "150px" }}>
+              <td style={{ border: "", width: "33%", height: "150px" }}>
                 <p2>The paper is accepted as-is and will be included in the proceedings.</p2>
               </td>
-              <td>
+              <td style={{ border: "", width: "33%", height: "150px" }}>
                 <p2>The paper is conditionally accepted, but authors must address reviewer concerns and submit a revised version within four weeks.</p2>
               </td>
-              <td>
+              <td style={{ border: "", width: "33%", height: "150px" }}>
                 <p2>The paper does not meet the quality standards and is not eligible for resubmission.</p2>
               </td>
             </tr>
