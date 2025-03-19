@@ -75,8 +75,8 @@ const PaperSubmissionGuidelines = () => {
         <h2>3. Formatting and Anonymity Policy</h2>
         <h3>3.1 Formatting</h3>
         <ul>
-          <li>Papers must follow the IEEE A4 two-column format.</li>
-          <li>Templates can be found here: <a href="https://www.ieee.org/conferences/publishing/templates.html">IEEE Templates</a>.</li>
+          <li>Papers must follow the IEEE A4 two-column format.</li><p><break></break></p>
+          <li>Templates can be found here: <a href="https://www.ieee.org/conferences/publishing/templates.html"><i><b>IEEE Templates</b></i></a>.</li>
         </ul>
 
         <h3>3.2 Anonymity (For First Submission Only)</h3>
@@ -104,14 +104,14 @@ const PaperSubmissionGuidelines = () => {
           <li>Final accepted papers must include author names, emails, and affiliations.</li>
           <li>All accepted papers will be checked for compliance with IEEE Xplore standards before publication.</li>
           <li>Authors must sign the IEEE Copyright Form before final submission.</li>
-          <li>Only papers that pass the IEEE PDF eXpress check will be included in the conference proceedings.</li>
+          <li>Only papers that pass the IEEE PDF eXpress check will be included in the conference proceedings.</li><p><break></break></p>
         </ul>
         <p2>📌 IEEE PDF eXpress Instructions: Log in to the IEEE PDF eXpress™ site</p2>
         <p2>First-time users should do the following:</p2>
         <ol>
         
-          <li><p2>Select the New Users - Click Here link.</p2></li>
-          <li><p2>Enter the following:</p2></li>
+          <li><p2>Select the New Users - <i><b>Click Here link.</b></i></p2></li>
+          <li><p2>Enter the following:</p2></li><p><break></break></p>
           <ul>
             <li>66631X for the Conference ID</li>
             <li>Your email address</li>
@@ -123,15 +123,15 @@ const PaperSubmissionGuidelines = () => {
       </div>
 
       <div className="card">
-        <h2>5. Submission Process and EDAS Instructions</h2>
-        <p2>📌 Submission Portal: <a href="https://edas.info/">ICITEE 2025 EDAS Submission</a></p2>
+        <h2>5. Submission Process and EDAS Instructions</h2><p><break></break></p>
+        <p2>📌 Submission Portal: <a href="https://edas.info/"><i><b>ICITEE 2025 EDAS Submission</b></i></a></p2>
         <h3>Steps to Submit a Paper:</h3>
         <ul>
           <li>Log in to EDAS (Create an account if you don’t have one).</li>
           <li>Click "Submit Paper" and choose the relevant track.</li>
           <li>Upload your double-blind formatted PDF.</li>
-          <li>Enter all author details and affiliations in EDAS.</li>
-          <li>Click Submit and wait for confirmation.</li>
+          <li>Enter all author details and affiliations in EDAS.</li><p><break></break></p>
+          <li><i><b>Click Submit and wait for confirmation.</b></i></li>
         </ul>
         <h3>Steps for Revised Submissions:</h3>
         <ul>
@@ -156,8 +156,8 @@ const PaperSubmissionGuidelines = () => {
         <h2>7. Contact and Support</h2>
         <p2>For any questions regarding submission, formatting, or the review process, please contact:</p2>
         <p><break></break></p>
-        <p2>📧 ICITEE 2025 Submission Committee: <a href="mailto:icitee2025@it.kmitl.ac.th">icitee2025@it.kmitl.ac.th</a></p2> <p><break></break></p>
-        <p2>🌐 Conference Website: <a href="https://icitee2025.it.kmitl.ac.th/">https://icitee2025.it.kmitl.ac.th/</a></p2>
+        <p2>📧 ICITEE 2025 Submission Committee: <a href="mailto:icitee2025@it.kmitl.ac.th"><i><b>icitee2025@it.kmitl.ac.th</b></i></a></p2> <p><break></break></p>
+        <p2>🌐 Conference Website: <a href="https://icitee2025.it.kmitl.ac.th/"><i><b>https://icitee2025.it.kmitl.ac.th/</b></i></a></p2>
       </div>
     </div>
   );
