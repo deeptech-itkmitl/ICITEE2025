@@ -50,10 +50,44 @@ const PaperSubmissionGuidelines = () => {
 
         <h3><center>Decision Categories</center></h3>
         <p2>Each submission will receive one of the following decisions:</p2>
+        <p2>
+        <table style={{ borderCollapse: "collapse", width: "100%" }} border="1">
+          <tbody>
+            <tr>
+              <td>
+                <center>
+                <img src={`${process.env.PUBLIC_URL}/img/Group216.png`} alt="Image 1"  style={{ maxWidth: "100%", maxHeight: "50px" }} />
+                </center>
+              </td>
+              <td>
+                <center>
+                <img src={`${process.env.PUBLIC_URL}/img/Group218.png`} alt="Image 2"   style={{ maxWidth: "100%", maxHeight: "50px" }}/>
+                </center>
+              </td>
+              <td>
+                <center>
+                <img src={`${process.env.PUBLIC_URL}/img/Group219.png`} alt="Image 3"  style={{ maxWidth: "100%", maxHeight: "50px" }} />
+                </center>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p2>The paper is accepted as-is and will be included in the proceedings.</p2>
+              </td>
+              <td>
+                <p2>The paper is conditionally accepted, but authors must address reviewer concerns and submit a revised version within four weeks.</p2>
+              </td>
+              <td>
+                <p2>The paper does not meet the quality standards and is not eligible for resubmission.</p2>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </p2>
         <ul>
-          <li><strong>Accept:</strong> The paper is accepted as-is and will be included in the proceedings.</li>
+          {/* <li><strong>Accept:</strong> The paper is accepted as-is and will be included in the proceedings.</li>
           <li><strong>Revise & Resubmit (R&R):</strong> The paper is conditionally accepted, but authors must address reviewer concerns and submit a revised version within four weeks.</li>
-          <li><strong>Reject:</strong> The paper does not meet the quality standards and is not eligible for resubmission.</li>
+          <li><strong>Reject:</strong> The paper does not meet the quality standards and is not eligible for resubmission.</li> */}
         </ul>
         <p2>
           Note: A "Revise & Resubmit" decision does not guarantee acceptance. The revised paper will undergo another review before a final decision is made.
