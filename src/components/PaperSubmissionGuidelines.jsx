@@ -124,7 +124,7 @@ const PaperSubmissionGuidelines = () => {
 
       <div className="card">
         <h2>5. Submission Process and EDAS Instructions</h2><p><break></break></p>
-        <p2>📌 Submission Portal: <a href="https://edas.info/"><i><b>ICITEE 2025 EDAS Submission</b></i></a></p2>
+        <p2>📌 Submission Portal: <a href="https://edas.info/N33533"><i><b>ICITEE 2025 EDAS Submission</b></i></a></p2>
         <h3>Steps to Submit a Paper:</h3>
         <ul>
           <li>Log in to EDAS (Create an account if you don’t have one).</li>
