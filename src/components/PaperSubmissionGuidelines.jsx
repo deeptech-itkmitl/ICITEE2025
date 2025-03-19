@@ -4,7 +4,7 @@ import "../css/QualityControl.css";
 const PaperSubmissionGuidelines = () => {
   return (
     <div className="quality-container">
-      <h4 className="title"></h4>
+      <h4 className="title"><center>General Submission Guidelines</center></h4>
       <div className="card">
         <p className="intro">
           Prospective authors are invited to submit original full papers (4 to 6 pages) in A4 IEEE Xplore double-column format, including tables, figures, and references.
@@ -25,6 +25,7 @@ const PaperSubmissionGuidelines = () => {
       </div>
 
       <div className="card">
+      <h4 className="title"><center> Rolling Review Process</center></h4>
         <h2>1. Rolling Review Process</h2>
         <h3>1.1 Continuous Submission and Review Timeline</h3>
         <p2>
@@ -43,7 +44,8 @@ const PaperSubmissionGuidelines = () => {
       </div>
 
       <div className="card">
-        <h2>2. Open Review Policy</h2>
+      <h4 className="title"><center> Open Review Policy </center></h4>
+        <h2></h2>
         <p2>
           ICITEE 2025 adopts a <strong>Partially Open Review Policy</strong> to enhance transparency and encourage constructive discussions.
         </p2>
@@ -53,7 +55,7 @@ const PaperSubmissionGuidelines = () => {
           <li>Reviewers may update their evaluations based on author responses.</li>
         </ul>
 
-        <h3>2.1 How Open Review Works</h3>
+        <h4 className="title"><center> How Open Review Works </center></h4>        
         <p2>
         <ol>
           <li><strong>1. Initial Submission:</strong> Authors submit their anonymized paper through EDAS.</li>
@@ -64,7 +66,8 @@ const PaperSubmissionGuidelines = () => {
           <li><strong>6. Public Review Phase:</strong> Only accepted papers and their corresponding reviews (with reviewer and author identities anonymized) will be publicly accessible. This promotes academic transparency, encourages constructive discussions, and enhances knowledge-sharing on high-quality research.</li>
         </ol>
         </p2>
-        <h3>2.2 Why Open Review?</h3>
+        <h4 className="title"><center> Why Open Review? </center></h4>        
+        <h3></h3>
         <ul>
           <li>Encourages high-quality, transparent feedback.</li>
           <li>Allows the research community to engage with accepted papers and their reviews.</li>
@@ -73,25 +76,26 @@ const PaperSubmissionGuidelines = () => {
       </div>
 
       <div className="card">
-        <h2>3. Formatting and Anonymity Policy</h2>
-        <h3>3.1 Formatting</h3>
+        <h4 className="title"><center> Formatting and Anonymity Policy </center></h4>
+        <h2></h2>
+        <h3><center>Formatting</center></h3>
         <ul>
           <li>Papers must follow the IEEE A4 two-column format.</li><p><break></break></p>
           <li>Templates can be found here: <span>🔗</span> <a href="https://www.ieee.org/conferences/publishing/templates.html"><i><b>IEEE Templates</b></i></a>.</li>
         </ul>
 
-        <h3>3.2 Anonymity (For First Submission Only)</h3>
+        <h3>Anonymity (For First Submission Only)</h3>
         <ul>
-          <li>ICITEE 2025 follows a partially anonymized review process. Initial submissions must be double-blind, meaning:</li>
-          <li>Do NOT include author names, emails, or affiliations anywhere in the paper.</li>
-          <li>Self-citations must be anonymized (e.g., use "Blind year" instead of "Smith et al., 2023").</li>
-          <li>Remove identifying information from document metadata before submission.</li>
+          ICITEE 2025 follows a partially anonymized review process. Initial submissions must be double-blind, meaning:<p><break></break></p>
+          1.Do NOT include author names, emails, or affiliations anywhere in the paper.<p><break></break></p>
+          2.Self-citations must be anonymized (e.g., use "Blind year" instead of "Smith et al., 2023").<p><break></break></p>
+          3.Remove identifying information from document metadata before submission.<p><break></break></p>
         </ul>
       </div>
 
       <div className="card">
-        <h2>4. Revision and Resubmission Policy</h2>
-        <h3>4.1 Revision Guidelines (For Revise & Resubmit Decisions)</h3>
+      <h4 className="title"><center> Revision and Resubmission Policy </center></h4><p><break></break></p>
+      <h4 className="title"><center> Revision Guidelines (For Revise & Resubmit Decisions)</center></h4>
         <ul>
           <li>Authors receiving an R&R decision must submit a revised paper that thoroughly addresses all reviewer comments. Submissions with only minor modifications or insufficient revisions may be rejected.</li>
           <li>Revised papers must be submitted within four weeks of receiving reviewer feedback.</li>
@@ -100,38 +104,40 @@ const PaperSubmissionGuidelines = () => {
           <li>Whenever possible, the same reviewers will re-evaluate the revised submission to ensure continuity and consistency in feedback.</li>
         </ul>
 
-        <h3>4.2 Camera-Ready Submission Guidelines</h3>
+        <h4 className="title"><center> Camera-Ready Submission Guidelines </center></h4>
+        <h3></h3>
         <ul>
           <li>Final accepted papers must include author names, emails, and affiliations.</li>
           <li>All accepted papers will be checked for compliance with IEEE Xplore standards before publication.</li>
           <li>Authors must sign the IEEE Copyright Form before final submission.</li>
           <li>Only papers that pass the IEEE PDF eXpress check will be included in the conference proceedings.</li><p><break></break></p>
         </ul>
-        <p2>📌 <b><i> IEEE PDF eXpress </i></b> Instructions: Log in to the <b><i>IEEE PDF eXpress™ </i></b> site</p2>
+        <p2>📌 <b><i> IEEE PDF eXpress </i></b> Instructions: Log in to the <span>🔗</span> <b><i><a href="https://ieee-pdf-express.org/ "><i><b>IEEE PDF eXpress™ </b></i></a></i></b> site</p2>
         <p2>First-time users should do the following:</p2>
         <ol>
         
-          <li><p2>Select the New Users - <span>🔗</span> <a href="https://www.ieee.org/"><i><b>Click Here link.</b></i></a></p2></li>
-          <li><p2>Enter the following:</p2></li><p><break></break></p>
+          <li><p2>1.Select the New Users - <span>🔗</span> <a href="https://www.ieee.org/"><i><b>Click Here link.</b></i></a></p2></li>
+          <li><p2>2.Enter the following:</p2></li><p><break></break></p>
           <ul>
             <li>66631X for the Conference ID</li>
             <li>Your email address</li>
             <li>A password</li><p><break></break></p>
           </ul>
-          <li><p2>Continue to enter information as prompted.</p2></li>
+          <li><p2>3.Continue to enter information as prompted.</p2></li><p><break></break></p>
           <li><p2>An online confirmation will be displayed, and an email confirmation will be sent verifying your account setup.</p2></li>
         </ol>
       </div>
 
       <div className="card">
-        <h2>5. Submission Process and EDAS Instructions</h2><p><break></break></p>
+      <h4 className="title"><center> Submission Process and EDAS Instructions </center></h4>
+        <h2></h2><p><break></break></p>
         <p2>📌 Submission Portal: <span>🔗</span> <a href="https://edas.info/N33533"><i><b>ICITEE 2025 EDAS Submission</b></i></a></p2>
         <h3>Steps to Submit a Paper:</h3>
         <ul>
-          <li>Log in to EDAS (Create an account if you don’t have one).</li>
-          <li>Click "Submit Paper" and choose the relevant track.</li>
-          <li>Upload your double-blind formatted PDF.</li>
-          <li>Enter all author details and affiliations in EDAS.</li><p><break></break></p>
+          <li>Step 1 Log in to EDAS (Create an account if you don’t have one).</li>
+          <li>Step 2 Click "Submit Paper" and choose the relevant track.</li>
+          <li>Step 3 Upload your double-blind formatted PDF.</li>
+          <li>Step 4 Enter all author details and affiliations in EDAS.</li><p><break></break></p>
           <li><i><b>Click Submit and wait for confirmation.</b></i></li>
         </ul>
         <h3>Steps for Revised Submissions:</h3>
@@ -143,7 +149,8 @@ const PaperSubmissionGuidelines = () => {
       </div>
 
       <div className="card">
-        <h2>6. Ethical Guidelines and Quality Control</h2>
+      <h4 className="title"><center> Ethical Guidelines and Quality Control </center></h4>
+        <h3>ICITEE 2025 is committed to maintaining high research integrity. Authors must adhere to the following guidelines:</h3>
         <ul>
           <li>Plagiarism must be below 30% (checked via similarity detection tools).</li>
           <li>No dual submissions – Papers under review elsewhere will be immediately rejected.</li>
@@ -154,7 +161,8 @@ const PaperSubmissionGuidelines = () => {
       </div>
 
       <div className="card">
-        <h2>7. Contact and Support</h2>
+      <h4 className="title"><center> Contact and Support </center></h4>
+        <h2></h2>
         <p2>For any questions regarding submission, formatting, or the review process, please contact:</p2>
         <p><break></break></p>
         <p2>📧 ICITEE 2025 Submission Committee: <span>🔗</span> <a href="mailto:icitee2025@it.kmitl.ac.th"><i><b>icitee2025@it.kmitl.ac.th</b></i></a></p2> <p><break></break></p>
