@@ -215,7 +215,7 @@ const PaperSubmissionGuidelines = () => {
             <tr style={{ border: "", width: "33%", height: "150px" }}>
               <td style={{ border: "", width: "33%", height: "150px" }}>
                 <center>
-                <img src={`${process.env.PUBLIC_URL}/img/Frame 222.png`} alt="Image 1"  style={{ maxWidth: "50%", maxHeight: "50%" }} />
+                <img src={`${process.env.PUBLIC_URL}/img/Frame 222.png`} alt="Image 1"  style={{ maxWidth: "30%", maxHeight: "30%" }} />
                 </center>
               </td>
               <td style={{ border: "", width: "33%", height: "150px" }}>
