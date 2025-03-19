@@ -111,7 +111,7 @@ const PaperSubmissionGuidelines = () => {
         <p2>First-time users should do the following:</p2>
         <ol>
         
-          <li><p2>Select the New Users - <span>🔗</span> <a href="https://edas.info/N33533"><i><b>Click Here link.</b></i></a></p2></li>
+          <li><p2>Select the New Users - <span>🔗</span> <a href="https://www.ieee.org/"><i><b>Click Here link.</b></i></a></p2></li>
           <li><p2>Enter the following:</p2></li><p><break></break></p>
           <ul>
             <li>66631X for the Conference ID</li>
