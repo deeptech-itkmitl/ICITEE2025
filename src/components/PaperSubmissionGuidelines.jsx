@@ -19,10 +19,10 @@ const PaperSubmissionGuidelines = () => {
         </p>
         <p2>General Submission Guidelines:</p2>
         <ul>
-          <li>Submissions must be written in English and adhere to <b><a href="https://www.ieee.org/conferences/publishing/templates.html"> IEEE formatting guidelines.</a></b></li>
+          <li>Submissions must be written in English and adhere to <b><u><i><a href="https://www.ieee.org/conferences/publishing/templates.html"> IEEE formatting guidelines.</a></i></u></b></li>
           <li>All submitted papers must be original, unpublished, and not under review elsewhere.</li>
           <li>Papers exceeding 6 pages (excluding references) will be automatically rejected.</li>
-          <li>All papers must be submitted electronically through the <b><a href="https://edas.info/N33533">EDAS Conference Submission System.</a></b></li>
+          <li>All papers must be submitted electronically through the <b><u><i><a href="https://edas.info/N33533">EDAS Conference Submission System.</a></i></u></b></li>
           <li>Authors must ensure their paper is processable for similarity checking (e.g., no scanned images of text).</li>
           <li>Papers with plagiarism or self-plagiarism exceeding 30% similarity will be immediately rejected.</li>
         </ul>
@@ -120,7 +120,7 @@ const PaperSubmissionGuidelines = () => {
       <a 
   href="/quality-control-management" 
 >
-<span>🔗</span> <i>For More Information</i>
+<span>🔗</span> <u><i>For More Information</i></u>
 </a> </center>
       </div>
      
@@ -185,7 +185,7 @@ const PaperSubmissionGuidelines = () => {
         </p2>
         <ul>
           <li>Papers must follow the IEEE A4 two-column format.</li><p><break></break></p>
-          <li>Templates can be found here: <span>🔗</span> <a href="https://www.ieee.org/conferences/publishing/templates.html"><i><b>IEEE Templates</b></i></a>.</li>
+          <li>Templates can be found here: <span>🔗</span> <u><a href="https://www.ieee.org/conferences/publishing/templates.html"><i><b>IEEE Templates</b></i></a></u></li>
         </ul>
 
         <h3><center>Anonymity (For First Submission Only)</center></h3>
@@ -264,7 +264,7 @@ const PaperSubmissionGuidelines = () => {
       Log in to the <span>🔗</span> 
       <b>
         <i>
-          <a href="https://ieee-pdf-express.org/"><i>IEEE PDF eXpress™</i></a>
+          <u><a href="https://ieee-pdf-express.org/"><i>IEEE PDF eXpress™</i></a></u>
         </i>
       </b> site
     </p>
@@ -272,7 +272,7 @@ const PaperSubmissionGuidelines = () => {
     <ol>
       <li>
         <p>1. Select the New Users - <span>🔗</span> 
-          <a href="https://ieee-pdf-express.org/account/signup"><i><b>Click Here link.</b></i></a>
+          <u><a href="https://ieee-pdf-express.org/account/signup"><i><b>Click Here link.</b></i></a></u>
         </p>
       </li>
       <li>
@@ -336,7 +336,7 @@ const PaperSubmissionGuidelines = () => {
     </div>
   </div></h4>
   <h2></h2><p><break></break></p>
-  <p2>📌 Submission Portal: <span>🔗</span> <a href="https://edas.info/N33533"><i><b>ICITEE 2025 EDAS Submission</b></i></a></p2>
+  <p2>📌 Submission Portal: <span>🔗</span> <u><a href="https://edas.info/N33533"><i><b>ICITEE 2025 EDAS Submission</b></i></a></u></p2>
   <h3>Steps to Submit a Paper:</h3>
   <ul>
     <li>Step 1 - Log in to EDAS (Create an account if you don’t have one).</li>
