@@ -2,8 +2,8 @@ import React from "react";
 
 export const About = (props) => {
   return (
-    <div id="features" className="text-center">
-      <h1 className="topic-title"></h1>
+    <div className="container"> 
+    <h1 className="topic-title"></h1>
       <div>
         <div className="container">  
           <div className="content-layout">
@@ -56,8 +56,21 @@ export const About = (props) => {
                 </tbody>
               </table>
             </div>
+            
           </div>
+          <p2>
+          <h4 className="title"><center>
+                                      <img
+                                              src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+                                              alt="Line"
+                                              className=""
+                                              style={{ width: "100%", height: "0.25%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                                      /></center>
+                </h4>
+                  
+          </p2>
         </div>
+        
       </div>
 
       <style jsx>{`
@@ -124,6 +137,6 @@ export const About = (props) => {
           }
         }
       `}</style>
-    </div>
+    </div>    
   );
 };

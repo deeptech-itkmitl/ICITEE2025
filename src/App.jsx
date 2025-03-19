@@ -21,7 +21,7 @@ import PaperSubmissionGuidelines from "./components/PaperSubmissionGuidelines"
 import { TopicsOfInterest } from "./components/TopicsOfInterest";
 import { OrganizeCommittee } from "./components/OrganizeCommittee";
 import QualityControlPage from "./components/QualityControl";
-// import Announcement from "./components/ProgressTimeline";
+import Announcement from "./components/ProgressTimeline";
 import AnnouncementDetail from "./components/ProgressTimelineDetail";
 import PastConference from "./components/PastConferences";
 import JsonData from "./data/data.json";
@@ -54,8 +54,8 @@ const AppContent = ({ landingPageData }) => {
     <>
       {/* แสดง Header เฉพาะหน้า "/" */}
       {isHomePage && <Header data={landingPageData.Header} />}
+                  {/* // && <Announcement data={landingPageData.Team} />  } */}
       <Navigation />
-
       <Routes>
         <Route path="/" element={<About data={landingPageData.About} />} />
 
@@ -94,7 +94,7 @@ const AppContent = ({ landingPageData }) => {
       {/* แสดงข้อมูล VisitorCounter และ Team2 Team1 Contact เฉพาะหน้า "/" */}
       {isHomePage && (
         <>    
-          {/* <Announcement data={landingPageData.Team} />                */}
+          <Announcement data={landingPageData.Team} />               
           {/* <Gallery/> */}
           <Team2 data={landingPageData.Team} />
           {/* <Team3 data={landingPageData.Team3} /> */}
