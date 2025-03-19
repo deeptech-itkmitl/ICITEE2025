@@ -205,22 +205,42 @@ const PaperSubmissionGuidelines = () => {
           <li>Final accepted papers must include author <b> names, emails, and affiliations.</b></li>
           <li>All accepted papers will be <b>checked for compliance</b> with IEEE Xplore standards before publication.</li>
           <li>Authors must <b>sign the IEEE Copyright Form </b> before final submission.</li>
-          <li>Only papers that <b>pass the IEEE PDF eXpress check </b> will be included in the conference proceedings.</li><p><break></break></p>
-        </ul>
-        <p2>📌 <b><i> IEEE PDF eXpress </i></b> Instructions: Log in to the <span>🔗</span> <b><i><a href="https://ieee-pdf-express.org/ "><i><b>IEEE PDF eXpress™ </b></i></a></i></b> site</p2>
-        <p2>First-time users should do the following:</p2>
-        <ol>
+          <li>Only papers that <b>pass the IEEE PDF eXpress check </b> will be included in the conference proceedings.<p><break></break></p></li><p><break></break></p>
+        </ul><p><break></break></p>
+        <p2><center><b><i> IEEE PDF eXpress </i></b> Instructions: </center> <p><break></break></p> 
         
-          <li><p2>1. Select the New Users - <span>🔗</span> <a href="https://www.ieee.org/"><i><b>Click Here link.</b></i></a></p2></li>
-          <li><p2>2. Enter the following:</p2></li><p><break></break></p>
-          <ul>
-            <li>66631X for the Conference ID</li>
-            <li>Your email address</li>
-            <li>A password</li><p><break></break></p>
-          </ul>
-          <li><p2>3. Continue to enter information as prompted.</p2></li><p><break></break></p>
-          <li><p2>An online confirmation will be displayed, and an email confirmation will be sent verifying your account setup.</p2></li>
-        </ol>
+        <p2>
+        <table style={{ borderCollapse: "collapse", width: "100%", border: "" }}>
+          <tbody>
+            <tr style={{ border: "", width: "33%", height: "150px" }}>
+              <td style={{ border: "", width: "33%", height: "150px" }}>
+                <center>
+                <img src={`${process.env.PUBLIC_URL}/img/Frame 222.png`} alt="Image 1"  style={{ maxWidth: "50%", maxHeight: "50%" }} />
+                </center>
+              </td>
+              <td style={{ border: "", width: "33%", height: "150px" }}>
+                <left>
+                <p2>Log in to the <span>🔗</span> <b><i><a href="https://ieee-pdf-express.org/ "><i><b>IEEE PDF eXpress™ </b></i></a></i></b> site</p2>
+                <p2>First-time users should do the following:</p2>
+                <ol>        
+                  <li><p2>1. Select the New Users - <span>🔗</span> <a href="https://www.ieee.org/"><i><b>Click Here link.</b></i></a></p2></li>
+                  <li><p2>2. Enter the following:</p2></li><p><break></break></p>
+                  <ul>
+                    <li>66631X for the Conference ID</li>
+                    <li>Your email address</li>
+                    <li>A password</li><p><break></break></p>
+                  </ul>
+                  <li><p2>3. Continue to enter information as prompted.</p2></li><p><break></break></p>
+                  <li><p2>An online confirmation will be displayed, and an email confirmation will be sent verifying your account setup.</p2></li>
+                </ol>
+                </left>
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+        </p2>
+        </p2>
       </div>
 
       <div className="card">
@@ -228,6 +248,14 @@ const PaperSubmissionGuidelines = () => {
       <h4 className="title"><center>
                             <img
                                     src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+                                    alt="Line"
+                                    className=""
+                                    style={{ width: "30%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                            /></center>
+      </h4>
+      <h4 className="title"><center>
+                            <img
+                                    src={`${process.env.PUBLIC_URL}/img/Group 216.png`}
                                     alt="Line"
                                     className=""
                                     style={{ width: "30%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
