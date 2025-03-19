@@ -90,8 +90,9 @@ const QualityControl = () => {
                                       /></center>
                 </h4>
                   
-          </p2>          
-        <table>
+          </p2>     
+
+        {/* <table>
           <thead>
             <tr>
               <th>Aspect</th>
@@ -126,7 +127,41 @@ const QualityControl = () => {
               <td>Usually after notification</td>
             </tr>
           </tbody>
-        </table>
+        </table> */}
+
+        <p2>
+        <div className="overflow-x-auto">
+  <table className="w-full border-collapse border border-gray-300 bg-white text-black min-w-[400px]">
+    <thead className="bg-gray-100">
+      <tr>
+        <th className="border border-gray-300 px-4 py-2 text-left">Aspect</th>
+        <th className="border border-gray-300 px-4 py-2 text-left">Rolling Review</th>
+        <th className="border border-gray-300 px-4 py-2 text-left">Traditional Review</th>
+      </tr>
+    </thead>
+    <tbody>
+      {[
+        ["Submission Period", "Open for months", "Single deadline"],
+        ["Review Start", "Immediately after submission", "After submission closes"],
+        ["Decision Timeline", "3 weeks per submission", "Months after deadline"],
+        ["Paper Quality", "Higher (more time for revision & feedback)", "Often rushed before deadline"],
+        ["Author Response", "Available before final decision", "Usually after notification"]
+      ].map((row, index) => (
+        <tr key={index} className="odd:bg-white even:bg-gray-50">
+          {row.map((cell, cellIndex) => (
+            <td key={cellIndex} className="border border-gray-300 px-4 py-2">
+              {cell}
+            </td>
+          ))}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+
+        </p2>
+
       </div>
 
       <div className="card">
