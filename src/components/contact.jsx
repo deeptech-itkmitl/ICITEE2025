@@ -102,7 +102,7 @@ export const Contact = (props) => {
 
               <p><b>Telephone :</b> (+66) 2-723-4900</p>
 
-              <p><b>Email :</b> icitee2025@it.kmitl.ac.th</p>
+              <p><b>Email :</b> <a href="mailto:icitee2025@it.kmitl.ac.th">icitee2025@it.kmitl.ac.th</a></p>
 
               <p><b>Facebook :</b><a href="https://www.facebook.com/icitee"> ICITEE2025 </a></p>
           </div>

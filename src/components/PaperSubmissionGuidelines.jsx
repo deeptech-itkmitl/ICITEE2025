@@ -47,22 +47,25 @@ const PaperSubmissionGuidelines = () => {
         <h3><center>Decision Categories</center></h3>
         <p2>Each submission will receive one of the following decisions:</p2>
         <p2>
-
+        <h3><center></center></h3>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: "10px", textAlign: "center" }}>
           <div>
             <img src={`${process.env.PUBLIC_URL}/img/Group216.png`} alt="Image 1" style={{ maxWidth: "100%", height: "50px" }} />
-            <p className="text-justify">The paper is accepted as-is and will be included in the proceedings.</p>
-          </div>
+            <h1><center></center></h1>
+            <p className="">The paper is accepted as-is and will be included in the proceedings.</p>
+          </div>          
           <div>
             <img src={`${process.env.PUBLIC_URL}/img/Group218.png`} alt="Image 2" style={{ maxWidth: "100%", height: "50px" }} />
-            <p className="text-justify">The paper is conditionally accepted, but authors must address reviewer concerns and submit a revised version within four weeks.</p>
+            <h1><center></center></h1>
+            <p className="">The paper is conditionally accepted, but authors must address reviewer concerns and submit a revised version within four weeks.</p>
           </div>
           <div>
             <img src={`${process.env.PUBLIC_URL}/img/Group219.png`} alt="Image 3" style={{ maxWidth: "100%", height: "50px" }} />
-            <p className="text-justify">The paper does not meet the quality standards and is not eligible for resubmission.</p>
+            <h1><center></center></h1>
+            <p className="">The paper does not meet the quality standards and is not eligible for resubmission.</p>
           </div>
         </div>
-
+        <h3><center></center></h3>
 
         </p2>
         <ul>
@@ -113,8 +116,14 @@ const PaperSubmissionGuidelines = () => {
           <li>Allows the research community to engage with accepted papers and their reviews.</li>
           <li>Ensures a fair review process with accountability while protecting rejected papers.</li>
         </ul>
+        <center>
+      <a 
+  href="/quality-control-management" 
+>
+<span>🔗</span> <i>For More Information</i>
+</a> </center>
       </div>
-
+     
       <div className="card">
         <h4 className="title"><center> Formatting and Anonymity Policy </center></h4>
         <h4 className="title"><center>
@@ -129,20 +138,46 @@ const PaperSubmissionGuidelines = () => {
         <h3><center>Formatting</center></h3>
         <p2>
 
-          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "10px" }}>
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "20px" }}>
             <div style={{ flex: "1 1 150px", display: "flex", justifyContent: "center" }}>
-              <img
-                src={`${process.env.PUBLIC_URL}/img/Group 221.png`}
+              {/* <img
+                src={`${process.env.PUBLIC_URL}/img/Group 220.png`}
                 alt="Image 1"
-                style={{ maxWidth: "80%", maxHeight: "80%" }}
-              />
+                style={{ maxWidth: "30%", Height: "50px" }}
+              /> */}
+
+<center>
+  <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank" rel="noopener noreferrer">
+    <img 
+      src={`${process.env.PUBLIC_URL}/img/Group 220.png`} 
+      alt="IEEE Templates"
+      style={{ maxWidth: "80%", maxHeight: "80%" }} 
+    />
+    <br />
+    {/* <span>🔗</span><i>For More Information</i> */}
+  </a>
+</center>
+
             </div>
             <div style={{ flex: "1 1 150px", display: "flex", justifyContent: "center" }}>
-              <img
-                src={`${process.env.PUBLIC_URL}/img/Group 220.png`}
+              {/* <img
+                src={`${process.env.PUBLIC_URL}/img/Group 221.png`}
                 alt="Image 2"
-                style={{ maxWidth: "80%", maxHeight: "80%" }}
-              />
+                style={{ maxWidth: "40%", Height: "50px" }}
+              /> */}
+
+<center>
+  <a href="https://www.ieee.org/publications/rights/copyright-main.html" target="_blank" rel="noopener noreferrer">
+    <img 
+      src={`${process.env.PUBLIC_URL}/img/Group 221.png`} 
+      alt="IEEE Templates"
+      style={{ maxWidth: "80%", maxHeight: "80%" }} 
+    />
+    <br />
+    {/* <span>🔗</span><i>For More Information</i> */}
+  </a>
+</center>
+
             </div>
           </div>
 
@@ -204,11 +239,24 @@ const PaperSubmissionGuidelines = () => {
 
   {/* ส่วนของรูปภาพ */}
   <div style={{ flex: "1 1 150px", textAlign: "center" }}>
-    <img
+    {/* <img
       src={`${process.env.PUBLIC_URL}/img/Frame 222.png`}
       alt="Image 2"
-      style={{ maxWidth: "80%", maxHeight: "80%" }}
+      style={{ maxWidth: "50%", Height: "50px" }}
+    /> */}
+
+<center>
+  <a href="https://ieee-pdf-express.org/" target="_blank" rel="noopener noreferrer">
+    <img 
+      src={`${process.env.PUBLIC_URL}/img/Frame 222.png`} 
+      alt="IEEE Templates"
+      style={{ maxWidth: "50%", Height: "50px" }}
     />
+    <br />
+    {/* <span>🔗</span><i>For More Information</i> */}
+  </a>
+</center>
+
   </div>
   {/* ส่วนของข้อความ */}
   <div style={{ flex: "2 1 400px", textAlign: "left" }}>
@@ -256,11 +304,24 @@ const PaperSubmissionGuidelines = () => {
   <h4 className="title">
     <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
     <div style={{ flex: "1 1 150px", textAlign: "center" }}>
-    <img
+    {/* <img
       src={`${process.env.PUBLIC_URL}/img/Group220.png`}
       alt="Image 1"
       style={{ maxWidth: "30%", Height: "50px" }}
+    /> */}
+
+<center>
+  <a href="https://edas.info/N33533" target="_blank" rel="noopener noreferrer">
+    <img 
+      src={`${process.env.PUBLIC_URL}/img/Group220.png`} 
+      alt="IEEE Templates"
+      style={{ maxWidth: "30%", Height: "50px" }} 
     />
+    <br />
+    {/* <span>🔗</span><i>For More Information</i> */}
+  </a>
+</center>
+
     </div>
   </div></h4>
   <h2></h2><p><break></break></p>
