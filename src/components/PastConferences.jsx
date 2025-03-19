@@ -72,10 +72,7 @@ export default function PastConferences() {
                   ))}
                 </tbody>
               </table>
-            </div> */}
-
-            
-
+            </div> */}           
           </div>
         </div>
       </div>

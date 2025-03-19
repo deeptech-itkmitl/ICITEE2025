@@ -2,8 +2,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const steps = [
+  { title: "The papers submission system for ICITEE2025 is now open.", date: "Mar-19, 2025" },
   { title: "Quality Control and management update ICITEE2025 adopts a Rolling Review Process with and Open Review Policy.", date: "Mar-03, 2025" },
-  { title: "Topics of Interest and Committee update Topics of Interest and Organizing Committee has been announced.", date: "Feb-15, 2025" },
+  { title: "Topics of Interest has been announced.", date: "Feb-15, 2025" },
   { title: "Website launched ICITEE2025 Website has launched.", date: "Feb-10, 2025" }
 ].sort((a, b) => new Date(b.date) - new Date(a.date)); // เรียงจากใหม่ -> เก่า
 
@@ -15,7 +16,19 @@ export default function ProgressTimeline() {
     <h1 className="topic-title"></h1>
     <h4 className="text-2xl font-bold mb-4 text-center"><p2></p2></h4>
       <h2 className="text-2xl font-bold mb-4 text-center"></h2>
+      <h2><center>
+      <div>
+      <a 
+  href="/paper-submission-guidelines" 
+  className="btn btn-custom btn-lg page-scroll" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  PAPER SUBMISSION GUIDELINE
+</a>
 
+                </div>
+                </center></h2>
       <div className="content-layout flex flex-col md:flex-row gap-6">
 
         {/* ส่วนซ้าย */}
@@ -33,19 +46,20 @@ export default function ProgressTimeline() {
                   <th>Date</th>
                   <th>Details</th>
                 </tr>
-              </thead> */}
-<div style={{ overflowX: "auto" }}>
-  <table style={{ width: "100%", borderCollapse: "collapse", minWidth: "300px" }}>
-    <tbody>
-      {steps.map((step, index) => (
-        <tr key={index} style={{ borderBottom: "1px solid #ddd" }}>
-          <td style={{ padding: "8px", whiteSpace: "nowrap" }}>{step.date}</td>
-          <td style={{ padding: "8px" }}>{step.title}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-</div>
+              </thead> */}              
+              <div style={{ overflowX: "auto" }}>
+                <table style={{ width: "100%", borderCollapse: "collapse", minWidth: "300px" }}>
+                  <tbody>
+                    {steps.map((step, index) => (
+                      <tr key={index} style={{ borderBottom: "1px solid #ddd" }}>
+                        <td style={{ padding: "8px", whiteSpace: "nowrap" }}>{step.date}</td>
+                        <td style={{ padding: "8px" }}>{step.title}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+
+              </div>
 
             {/* </table> */}
           </div>

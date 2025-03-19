@@ -210,7 +210,6 @@ const PaperSubmissionGuidelines = () => {
       style={{ maxWidth: "80%", maxHeight: "80%" }}
     />
   </div>
-
   {/* ส่วนของข้อความ */}
   <div style={{ flex: "2 1 400px", textAlign: "left" }}>
     <p>
@@ -225,7 +224,7 @@ const PaperSubmissionGuidelines = () => {
     <ol>
       <li>
         <p>1. Select the New Users - <span>🔗</span> 
-          <a href="https://www.ieee.org/"><i><b>Click Here link.</b></i></a>
+          <a href="https://ieee-pdf-express.org/account/signup"><i><b>Click Here link.</b></i></a>
         </p>
       </li>
       <li>
@@ -241,9 +240,7 @@ const PaperSubmissionGuidelines = () => {
     </ol>
   </div>
 </div>
-
 </p2>
-
 </p2>
 
 <div className="card">
@@ -262,7 +259,7 @@ const PaperSubmissionGuidelines = () => {
     <img
       src={`${process.env.PUBLIC_URL}/img/Group 216.png`}
       alt="Image 1"
-      style={{ maxWidth: "80%", maxHeight: "80%" }}
+      style={{ maxWidth: "100%", Height: "50px" }}
     />
     </div>
   </div></h4>
@@ -273,8 +270,8 @@ const PaperSubmissionGuidelines = () => {
     <li>Step 1 - Log in to EDAS (Create an account if you don’t have one).</li>
     <li>Step 2 - Click "Submit Paper" and choose the relevant track.</li>
     <li>Step 3 - Upload your double-blind formatted PDF.</li>
-    <li>Step 4 - Enter all author details and affiliations in EDAS.</li><p><break></break></p>
-    <li><i><b>Click Submit and wait for confirmation.</b></i></li>
+    <li>Step 4 - Enter all author details and affiliations in EDAS.</li>
+    <li>Step 5 - Click Submit and wait for confirmation.</li>
   </ul>
   <h3>Steps for Revised Submissions:</h3>
   <ul>
