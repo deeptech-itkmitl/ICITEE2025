@@ -26,13 +26,14 @@ const PaperSubmissionGuidelines = () => {
 
       <div className="card">
       <h4 className="title"><center> Rolling Review Process</center></h4>
-        <h2>1. Rolling Review Process</h2>
-        <h3>1.1 Continuous Submission and Review Timeline</h3>
+        <h2></h2>
+        <h3><center>Continuous Submission and Review Timeline</center></h3>
         <p2>
           ICITEE 2025 implements a rolling review process, meaning papers are reviewed as they are submitted rather than waiting for a fixed deadline. Authors will receive a decision within three weeks of submission.
         </p2>
 
-        <h3>1.2 Decision Categories</h3>
+        <h3><center>Decision Categories</center></h3>
+        <p2>Each submission will receive one of the following decisions:</p2>
         <ul>
           <li><strong>Accept:</strong> The paper is accepted as-is and will be included in the proceedings.</li>
           <li><strong>Revise & Resubmit (R&R):</strong> The paper is conditionally accepted, but authors must address reviewer concerns and submit a revised version within four weeks.</li>
@@ -95,7 +96,7 @@ const PaperSubmissionGuidelines = () => {
 
       <div className="card">
       <h4 className="title"><center> Revision and Resubmission Policy </center></h4><p><break></break></p>
-      <h4 className="title"><center> Revision Guidelines (For Revise & Resubmit Decisions)</center></h4>
+      <h4 className="title"><center><h3> Revision Guidelines (For Revise & Resubmit Decisions)</h3></center></h4>
         <ul>
           <li>Authors receiving an R&R decision must submit a revised paper that thoroughly addresses all reviewer comments. Submissions with only minor modifications or insufficient revisions may be rejected.</li>
           <li>Revised papers must be submitted within four weeks of receiving reviewer feedback.</li>
@@ -107,10 +108,10 @@ const PaperSubmissionGuidelines = () => {
         <h4 className="title"><center> Camera-Ready Submission Guidelines </center></h4>
         <h3></h3>
         <ul>
-          <li>Final accepted papers must include author names, emails, and affiliations.</li>
-          <li>All accepted papers will be checked for compliance with IEEE Xplore standards before publication.</li>
-          <li>Authors must sign the IEEE Copyright Form before final submission.</li>
-          <li>Only papers that pass the IEEE PDF eXpress check will be included in the conference proceedings.</li><p><break></break></p>
+          <li>Final accepted papers must include author <b> names, emails, and affiliations.</b></li>
+          <li>All accepted papers will be <b>checked for compliance</b> with IEEE Xplore standards before publication.</li>
+          <li>Authors must <b>sign the IEEE Copyright Form </b> before final submission.</li>
+          <li>Only papers that <b>pass the IEEE PDF eXpress check </b> will be included in the conference proceedings.</li><p><break></break></p>
         </ul>
         <p2>📌 <b><i> IEEE PDF eXpress </i></b> Instructions: Log in to the <span>🔗</span> <b><i><a href="https://ieee-pdf-express.org/ "><i><b>IEEE PDF eXpress™ </b></i></a></i></b> site</p2>
         <p2>First-time users should do the following:</p2>
@@ -152,12 +153,12 @@ const PaperSubmissionGuidelines = () => {
       <h4 className="title"><center> Ethical Guidelines and Quality Control </center></h4>
         <h3>ICITEE 2025 is committed to maintaining high research integrity. Authors must adhere to the following guidelines:</h3>
         <ul>
-          <li>Plagiarism must be below 30% (checked via similarity detection tools).</li>
-          <li>No dual submissions – Papers under review elsewhere will be immediately rejected.</li>
-          <li>Respectful review discussions – Unprofessional author responses may result in rejection.</li>
-          <li>Strict formatting compliance – Papers that do not follow IEEE format will be rejected.</li>
+          <li><b>Plagiarism must be below 30% </b>(checked via similarity detection tools).</li>
+          <li><b>No dual submissions </b> – Papers under review elsewhere will be immediately rejected.</li>
+          <li><b>Respectful review discussions </b> – Unprofessional author responses may result in rejection.</li>
+          <li><b>Strict formatting compliance </b>– Papers that do not follow IEEE format will be rejected.</li>
         </ul>
-        <p2>📌 Important: The Technical Program Committee reserves the right to reject submissions that fail quality control checks, even before the review process.</p2>
+        <p2>📌 <b>Important: </b>The Technical Program Committee reserves the right to reject submissions that fail quality control checks, even before the review process.</p2>
       </div>
 
       <div className="card">
