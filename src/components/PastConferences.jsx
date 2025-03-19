@@ -21,7 +21,7 @@ export default function PastConferences() {
         <div className="about-content flex-2">
           <div className="important-dates-container">
 
-            {/* <table className="w-full border-collapse border border-gray-400 shadow-lg">
+            <table className="w-full border-collapse border border-gray-400 shadow-lg">
               <thead>
                 <tr className="bg-gray-200">
                   <th className="border border-gray-400 p-3 text-left">Proceedings</th>
@@ -45,8 +45,8 @@ export default function PastConferences() {
                   </tr>
                 ))}
               </tbody>
-            </table> */}
-            <div className="overflow-x-auto">
+            </table>
+            {/* <div className="overflow-x-auto">
               <table className="w-full min-w-[300px] border-collapse border border-gray-400 shadow-lg">
                 <thead>
                   <tr className="bg-gray-200">
@@ -72,7 +72,7 @@ export default function PastConferences() {
                   ))}
                 </tbody>
               </table>
-            </div>
+            </div> */}
 
             
 
