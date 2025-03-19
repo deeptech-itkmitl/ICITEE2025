@@ -6,7 +6,7 @@ const PaperSubmissionGuidelines = () => {
     <div className="quality-container">
       <h4 className="title"><center>General Submission Guidelines</center></h4>
       <div className="card">
-        <p className="card">
+        <p>
           Prospective authors are invited to submit original full papers (4 to 6 pages) in A4 IEEE Xplore double-column format, including tables, figures, and references.
         </p>
         <p2>General Submission Guidelines:</p2>
@@ -87,9 +87,9 @@ const PaperSubmissionGuidelines = () => {
         <h3><center>Anonymity (For First Submission Only)</center></h3>
         <ul>
           ICITEE 2025 follows a partially anonymized review process. Initial submissions must be double-blind, meaning:<p><break></break></p>
-          1.Do NOT include author names, emails, or affiliations anywhere in the paper.<p><break></break></p>
-          2.Self-citations must be anonymized (e.g., use "Blind year" instead of "Smith et al., 2023").<p><break></break></p>
-          3.Remove identifying information from document metadata before submission.<p><break></break></p>
+          1. Do NOT include author names, emails, or affiliations anywhere in the paper.<p><break></break></p>
+          2. Self-citations must be anonymized (e.g., use "Blind year" instead of "Smith et al., 2023").<p><break></break></p>
+          3. Remove identifying information from document metadata before submission.<p><break></break></p>
         </ul>
       </div>
 
@@ -116,14 +116,14 @@ const PaperSubmissionGuidelines = () => {
         <p2>First-time users should do the following:</p2>
         <ol>
         
-          <li><p2>1.Select the New Users - <span>🔗</span> <a href="https://www.ieee.org/"><i><b>Click Here link.</b></i></a></p2></li>
-          <li><p2>2.Enter the following:</p2></li><p><break></break></p>
+          <li><p2>1. Select the New Users - <span>🔗</span> <a href="https://www.ieee.org/"><i><b>Click Here link.</b></i></a></p2></li>
+          <li><p2>2. Enter the following:</p2></li><p><break></break></p>
           <ul>
             <li>66631X for the Conference ID</li>
             <li>Your email address</li>
             <li>A password</li><p><break></break></p>
           </ul>
-          <li><p2>3.Continue to enter information as prompted.</p2></li><p><break></break></p>
+          <li><p2>3. Continue to enter information as prompted.</p2></li><p><break></break></p>
           <li><p2>An online confirmation will be displayed, and an email confirmation will be sent verifying your account setup.</p2></li>
         </ol>
       </div>
@@ -134,10 +134,10 @@ const PaperSubmissionGuidelines = () => {
         <p2>📌 Submission Portal: <span>🔗</span> <a href="https://edas.info/N33533"><i><b>ICITEE 2025 EDAS Submission</b></i></a></p2>
         <h3>Steps to Submit a Paper:</h3>
         <ul>
-          <li>Step 1 Log in to EDAS (Create an account if you don’t have one).</li>
-          <li>Step 2 Click "Submit Paper" and choose the relevant track.</li>
-          <li>Step 3 Upload your double-blind formatted PDF.</li>
-          <li>Step 4 Enter all author details and affiliations in EDAS.</li><p><break></break></p>
+          <li>Step 1 - Log in to EDAS (Create an account if you don’t have one).</li>
+          <li>Step 2 - Click "Submit Paper" and choose the relevant track.</li>
+          <li>Step 3 - Upload your double-blind formatted PDF.</li>
+          <li>Step 4 - Enter all author details and affiliations in EDAS.</li><p><break></break></p>
           <li><i><b>Click Submit and wait for confirmation.</b></i></li>
         </ul>
         <h3>Steps for Revised Submissions:</h3>

@@ -6,7 +6,7 @@ const QualityControl = () => {
     <div className="quality-container">
       <h4 className="title"></h4>
       <div className="card">      
-      <p className="card">
+      <p>
         ICITEE 2025 adopts a <strong>Rolling Review Process</strong> with an <strong>Open Review Policy</strong> to enhance the peer review experience and ensure high-quality research contributions. This approach provides <strong>timely, transparent, and constructive feedback</strong>, helping authors improve their work before final acceptance.
       </p>
       <p2>Our <strong>quality control strategy</strong> is based on:</p2>
