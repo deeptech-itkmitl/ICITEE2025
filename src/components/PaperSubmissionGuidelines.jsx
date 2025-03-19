@@ -77,7 +77,7 @@ const PaperSubmissionGuidelines = () => {
         <h3>3.1 Formatting</h3>
         <ul>
           <li>Papers must follow the IEEE A4 two-column format.</li><p><break></break></p>
-          <li>Templates can be found here: <a href="https://www.ieee.org/conferences/publishing/templates.html"><i><b>IEEE Templates</b></i></a>.</li>
+          <li>Templates can be found here: <span>🔗</span> <a href="https://www.ieee.org/conferences/publishing/templates.html"><i><b>IEEE Templates</b></i></a>.</li>
         </ul>
 
         <h3>3.2 Anonymity (For First Submission Only)</h3>
@@ -107,11 +107,11 @@ const PaperSubmissionGuidelines = () => {
           <li>Authors must sign the IEEE Copyright Form before final submission.</li>
           <li>Only papers that pass the IEEE PDF eXpress check will be included in the conference proceedings.</li><p><break></break></p>
         </ul>
-        <p2>📌 IEEE PDF eXpress Instructions: Log in to the IEEE PDF eXpress™ site</p2>
+        <p2>📌 <b><i> IEEE PDF eXpress </i></b> Instructions: Log in to the <b><i>IEEE PDF eXpress™ </i></b> site</p2>
         <p2>First-time users should do the following:</p2>
         <ol>
         
-          <li><p2>Select the New Users - <i><b>Click Here link.</b></i></p2></li>
+          <li><p2>Select the New Users - <span>🔗</span> <a href="https://edas.info/N33533"><i><b>Click Here link.</b></i></a></p2></li>
           <li><p2>Enter the following:</p2></li><p><break></break></p>
           <ul>
             <li>66631X for the Conference ID</li>
@@ -125,7 +125,7 @@ const PaperSubmissionGuidelines = () => {
 
       <div className="card">
         <h2>5. Submission Process and EDAS Instructions</h2><p><break></break></p>
-        <p2>📌 Submission Portal: <a href="https://edas.info/N33533"><i><b>ICITEE 2025 EDAS Submission</b></i></a></p2>
+        <p2>📌 Submission Portal: <span>🔗</span> <a href="https://edas.info/N33533"><i><b>ICITEE 2025 EDAS Submission</b></i></a></p2>
         <h3>Steps to Submit a Paper:</h3>
         <ul>
           <li>Log in to EDAS (Create an account if you don’t have one).</li>
@@ -157,8 +157,8 @@ const PaperSubmissionGuidelines = () => {
         <h2>7. Contact and Support</h2>
         <p2>For any questions regarding submission, formatting, or the review process, please contact:</p2>
         <p><break></break></p>
-        <p2>📧 ICITEE 2025 Submission Committee: <a href="mailto:icitee2025@it.kmitl.ac.th"><i><b>icitee2025@it.kmitl.ac.th</b></i></a></p2> <p><break></break></p>
-        <p2>🌐 Conference Website: <a href="https://icitee2025.it.kmitl.ac.th/"><i><b>https://icitee2025.it.kmitl.ac.th/</b></i></a></p2>
+        <p2>📧 ICITEE 2025 Submission Committee: <span>🔗</span> <a href="mailto:icitee2025@it.kmitl.ac.th"><i><b>icitee2025@it.kmitl.ac.th</b></i></a></p2> <p><break></break></p>
+        <p2>🌐 Conference Website: <span>🔗</span> <a href="https://icitee2025.it.kmitl.ac.th/"><i><b>https://icitee2025.it.kmitl.ac.th/</b></i></a></p2>
       </div>
     </div>
   );
