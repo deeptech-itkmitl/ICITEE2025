@@ -5,6 +5,14 @@ const PaperSubmissionGuidelines = () => {
   return (
     <div className="quality-container">
       <h4 className="title"><center>General Submission Guidelines</center></h4>
+      <h4 className="title"><center>
+                            <img
+                                    src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+                                    alt="Line"
+                                    className=""
+                                    style={{ width: "30%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                            /></center>
+      </h4>
       <div className="card">
         <p>
           Prospective authors are invited to submit original full papers (4 to 6 pages) in A4 IEEE Xplore double-column format, including tables, figures, and references.
@@ -26,6 +34,14 @@ const PaperSubmissionGuidelines = () => {
 
       <div className="card">
       <h4 className="title"><center> Rolling Review Process</center></h4>
+      <h4 className="title"><center>
+                            <img
+                                    src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+                                    alt="Line"
+                                    className=""
+                                    style={{ width: "30%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                            /></center>
+      </h4>
         <h2></h2>
         <h3><center>Continuous Submission and Review Timeline</center></h3>
         <p2>
@@ -46,6 +62,14 @@ const PaperSubmissionGuidelines = () => {
 
       <div className="card">
       <h4 className="title"><center> Open Review Policy </center></h4>
+      <h4 className="title"><center>
+                            <img
+                                    src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+                                    alt="Line"
+                                    className=""
+                                    style={{ width: "30%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                            /></center>
+      </h4>
         <h2></h2>
         <p2>
           ICITEE 2025 adopts a <strong>Partially Open Review Policy</strong> to enhance transparency and encourage constructive discussions.
@@ -78,6 +102,14 @@ const PaperSubmissionGuidelines = () => {
 
       <div className="card">
         <h4 className="title"><center> Formatting and Anonymity Policy </center></h4>
+        <h4 className="title"><center>
+                            <img
+                                    src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+                                    alt="Line"
+                                    className=""
+                                    style={{ width: "30%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                            /></center>
+      </h4>
         <h2></h2>
         <h3><center>Formatting</center></h3>
         <ul>
@@ -96,6 +128,14 @@ const PaperSubmissionGuidelines = () => {
 
       <div className="card">
       <h4 className="title"><center> Revision and Resubmission Policy </center></h4><p><break></break></p>
+      <h4 className="title"><center>
+                            <img
+                                    src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+                                    alt="Line"
+                                    className=""
+                                    style={{ width: "30%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                            /></center>
+      </h4>
       <h4 className="title"><center><h3> Revision Guidelines (For Revise & Resubmit Decisions)</h3></center></h4>
         <ul>
           <li>Authors receiving an R&R decision must submit a revised paper that thoroughly addresses all reviewer comments. Submissions with only minor modifications or insufficient revisions may be rejected.</li>
@@ -131,6 +171,14 @@ const PaperSubmissionGuidelines = () => {
 
       <div className="card">
       <h4 className="title"><center> Submission Process and EDAS Instructions </center></h4>
+      <h4 className="title"><center>
+                            <img
+                                    src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+                                    alt="Line"
+                                    className=""
+                                    style={{ width: "30%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                            /></center>
+      </h4>
         <h2></h2><p><break></break></p>
         <p2>📌 Submission Portal: <span>🔗</span> <a href="https://edas.info/N33533"><i><b>ICITEE 2025 EDAS Submission</b></i></a></p2>
         <h3>Steps to Submit a Paper:</h3>
@@ -151,6 +199,14 @@ const PaperSubmissionGuidelines = () => {
 
       <div className="card">
       <h4 className="title"><center> Ethical Guidelines and Quality Control </center></h4>
+      <h4 className="title"><center>
+                            <img
+                                    src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+                                    alt="Line"
+                                    className=""
+                                    style={{ width: "30%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                            /></center>
+      </h4>
         <h3>ICITEE 2025 is committed to maintaining high research integrity. Authors must adhere to the following guidelines:</h3>
         <ul>
           <li><b>Plagiarism must be below 30% </b>(checked via similarity detection tools).</li>
@@ -163,6 +219,14 @@ const PaperSubmissionGuidelines = () => {
 
       <div className="card">
       <h4 className="title"><center> Contact and Support </center></h4>
+      <h4 className="title"><center>
+                            <img
+                                    src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+                                    alt="Line"
+                                    className=""
+                                    style={{ width: "30%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                            /></center>
+      </h4>
         <h2></h2>
         <p2>For any questions regarding submission, formatting, or the review process, please contact:</p2>
         <p><break></break></p>
