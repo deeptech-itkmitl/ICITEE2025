@@ -253,13 +253,14 @@ const PaperSubmissionGuidelines = () => {
                                     style={{ width: "30%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
                             /></center>
       </h4>
-      <h4 className="title"><center>
-                            <img
-                                    src={`${process.env.PUBLIC_URL}/img/Group 216.png`}
-                                    alt="Line"
-                                    className=""
-                                    style={{ width: "30%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
-                            /></center>
+      <h4 className="title"><div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+  <img
+    src={`${process.env.PUBLIC_URL}/img/Group 216.png`}
+    alt="Line"
+    style={{ maxWidth: "80%", maxHeight: "80%" }}
+  />
+</div>
+
       </h4>
         <h2></h2><p><break></break></p>
         <p2>📌 Submission Portal: <span>🔗</span> <a href="https://edas.info/N33533"><i><b>ICITEE 2025 EDAS Submission</b></i></a></p2>
