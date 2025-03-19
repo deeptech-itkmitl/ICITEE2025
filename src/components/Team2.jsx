@@ -6,6 +6,7 @@ export const Team2 = (props) => {
     <div id="team2" style={{background: 'white'}} className="text-center">
       <div className="container">
         <div className="col-md-8 col-md-offset-2 section-title">
+          <h1></h1>
           <h33>Organizer</h33>
           <p>
           </p>

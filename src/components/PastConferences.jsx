@@ -20,6 +20,7 @@ export default function PastConferences() {
       <div className="content-layout flex flex-col md:flex-row gap-6">
         <div className="about-content flex-2">
           <div className="important-dates-container">
+
             <table className="w-full border-collapse border border-gray-400 shadow-lg">
               <thead>
                 <tr className="bg-gray-200">
@@ -45,6 +46,33 @@ export default function PastConferences() {
                 ))}
               </tbody>
             </table>
+            {/* <div className="overflow-x-auto">
+              <table className="w-full min-w-[300px] border-collapse border border-gray-400 shadow-lg">
+                <thead>
+                  <tr className="bg-gray-200">
+                    <th className="border border-gray-400 p-3 text-left">Proceedings</th>
+                    <th className="border border-gray-400 p-3 text-left">Location</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {steps.map((step, index) => (
+                    <tr key={index} className="hover:bg-gray-100 transition duration-200">
+                      <td className="border border-gray-400 p-3">
+                        <a 
+                          href={step.link} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-blue-600 font-semibold hover:text-blue-800 flex items-center gap-1"
+                        >
+                          {step.date} <span>🔗</span>
+                        </a>
+                      </td>
+                      <td className="border border-gray-400 p-3">{step.title}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div> */}           
           </div>
         </div>
       </div>

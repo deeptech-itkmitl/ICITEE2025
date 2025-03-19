@@ -6,7 +6,7 @@ const QualityControl = () => {
     <div className="quality-container">
       <h4 className="title"></h4>
       <div className="card">      
-      <p className="intro">
+      <p>
         ICITEE 2025 adopts a <strong>Rolling Review Process</strong> with an <strong>Open Review Policy</strong> to enhance the peer review experience and ensure high-quality research contributions. This approach provides <strong>timely, transparent, and constructive feedback</strong>, helping authors improve their work before final acceptance.
       </p>
       <p2>Our <strong>quality control strategy</strong> is based on:</p2>
@@ -29,7 +29,18 @@ const QualityControl = () => {
     </div>      
 
       <div className="card">
-        <h2>1. What is a Rolling Review Process?</h2>
+        <h2><center>What is a Rolling Review Process?</center></h2>
+        <p2>
+<h4 className="title"><center>
+                            <img
+                                    src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+                                    alt="Line"
+                                    className=""
+                                    style={{ width: "30%", height: "0.25%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                            /></center>
+      </h4>
+        
+</p2>            
         <p2>
           A Rolling Review Process is a continuous submission and evaluation system where authors
           can submit their papers at any time within the submission window.
@@ -68,8 +79,20 @@ const QualityControl = () => {
       </div>
 
       <div className="card">
-        <h3>Comparison of Rolling vs. Traditional Review</h3>
-        <table>
+        <h3><center>Comparison of Rolling vs. Traditional Reviews</center></h3>
+        <p2>
+          <h4 className="title"><center>
+                                      <img
+                                              src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+                                              alt="Line"
+                                              className=""
+                                              style={{ width: "30%", height: "0.25%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                                      /></center>
+                </h4>
+                  
+          </p2>     
+
+        {/* <table>
           <thead>
             <tr>
               <th>Aspect</th>
@@ -104,11 +127,56 @@ const QualityControl = () => {
               <td>Usually after notification</td>
             </tr>
           </tbody>
-        </table>
+        </table> */}
+
+        <p2>
+        <div className="overflow-x-auto">
+  <table className="w-full border-collapse border border-gray-300 bg-white text-black min-w-[400px]">
+    <thead className="bg-gray-100">
+      <tr>
+        <th className="border border-gray-300 px-4 py-2 text-left">Aspect</th>
+        <th className="border border-gray-300 px-4 py-2 text-left">Rolling Review</th>
+        <th className="border border-gray-300 px-4 py-2 text-left">Traditional Review</th>
+      </tr>
+    </thead>
+    <tbody>
+      {[
+        ["Submission Period", "Open for months", "Single deadline"],
+        ["Review Start", "Immediately after submission", "After submission closes"],
+        ["Decision Timeline", "3 weeks per submission", "Months after deadline"],
+        ["Paper Quality", "Higher (more time for revision & feedback)", "Often rushed before deadline"],
+        ["Author Response", "Available before final decision", "Usually after notification"]
+      ].map((row, index) => (
+        <tr key={index} className="odd:bg-white even:bg-gray-50">
+          {row.map((cell, cellIndex) => (
+            <td key={cellIndex} className="border border-gray-300 px-4 py-2">
+              {cell}
+            </td>
+          ))}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+
+        </p2>
+
       </div>
 
       <div className="card">
-        <h2>2. What is an Open Review Policy?</h2>
+        <h2><center>What is an Open Review Policy?</center></h2>
+        <p2>
+          <h4 className="title"><center>
+                                      <img
+                                              src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+                                              alt="Line"
+                                              className=""
+                                              style={{ width: "30%", height: "0.25%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                                      /></center>
+                </h4>
+                  
+          </p2>         
         <p2>
         ICITEE 2025 follows a Partially Open Review Policy, which enhances quality control by ensuring transparent and constructive reviews.
         </p2>
@@ -127,7 +195,18 @@ const QualityControl = () => {
       </div>
 
       <div className="card">
-        <h2>3. Why is ICITEE 2025 Implementing Rolling & Open Review?</h2>
+        <h2><center>Why is ICITEE 2025 Implementing Rolling & Open Review?</center></h2>
+        <p2>
+          <h4 className="title"><center>
+                                      <img
+                                              src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+                                              alt="Line"
+                                              className=""
+                                              style={{ width: "30%", height: "0.25%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                                      /></center>
+                </h4>
+                  
+          </p2>         
         <p2>
         Traditional peer review systems often suffer from delays, inconsistent feedback, and lack of author engagement. ICITEE 2025 is committed to ensuring high-quality research through a fairer and more transparent review process.
         </p2>
@@ -142,7 +221,19 @@ const QualityControl = () => {
       </div>
 
       <div className="card">
-        <h2>4. Benefits for Authors</h2>
+        <h2><center>Benefits for Authors</center></h2>
+        <p2>
+          <h4 className="title"><center>
+                                      <img
+                                              src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+                                              alt="Line"
+                                              className=""
+                                              style={{ width: "30%", height: "0.25%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                                      /></center>
+                </h4>
+                  
+          </p2>         
+        <p2></p2>        
         <ul>
           <li><strong>Faster Review & Decisions:</strong> Receive feedback within 3 weeks of submission.</li>
           <li><strong>Higher Paper Quality:</strong> Iterative feedback helps refine research contributions.</li>

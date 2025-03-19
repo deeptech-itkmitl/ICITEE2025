@@ -1,12 +1,16 @@
 import { useLocation } from "react-router-dom";
 import SEO from "./components/SEO";
+import React, { useState } from "react";
 
-const AppContent = ({ landingPageData }) => {
+const AppContent = ({ landingSEOPageData }) => {
   const location = useLocation();
   const currentPath = location.pathname;
   const baseUrl = "https://icitee2025.it.kmitl.ac.th";
 
-  // ตั้งค่า Title และ Description ตามหน้า
+  // ตั้งค่า language state เพื่อจัดการการเลือกภาษา
+  const [language, setLanguage] = useState("en");
+
+  // ตั้งค่า SEO Data ตามหน้า
   const seoData = {
     "/": {
       title: {
@@ -46,26 +50,6 @@ const AppContent = ({ landingPageData }) => {
         id: "Topik penelitian yang dibahas dalam ICITEE 2025, termasuk teknologi baru dalam Teknologi Informasi, di Institut Teknologi Raja Mongkut Ladkrabang.",
         ms: "Topik penyelidikan yang dibincangkan dalam ICITEE 2025, termasuk teknologi baru dalam Teknologi Maklumat, di Institut Teknologi Raja Mongkut Ladkrabang.",
         ph: "Mga paksa ng pananaliksik na tatalakayin sa ICITEE 2025, kasama ang mga bagong teknolohiya sa Information Technology, sa King Mongkut's Institute of Technology Ladkrabang."
-      }
-    },
-    "/topics-of-interest/ict": {
-      title: {
-        en: "ICT Topics of Interest - ICITEE 2025",
-        th: "หัวข้อ ICT ที่น่าสนใจ - ICITEE 2025",
-        ko: "ICT 관심 주제 - ICITEE 2025",
-        ja: "ICT 関心のあるトピック - ICITEE 2025",
-        id: "Topik ICT yang Menarik - ICITEE 2025",
-        ms: "Topik ICT Menarik - ICITEE 2025",
-        ph: "Mga Paksa ng ICT ng Interes - ICITEE 2025"
-      },
-      description: {
-        en: "Topics covering ICT research areas such as Distributed Systems, AI-Driven Knowledge Discovery, Big Data, Data Mining, AI-Driven Analytics, and more.",
-        th: "หัวข้อที่ครอบคลุมด้านการวิจัย ICT เช่น ระบบกระจาย, การค้นหาความรู้โดยขับเคลื่อนด้วย AI, บิ๊กดาต้า, การทำเหมืองข้อมูล, การวิเคราะห์โดยขับเคลื่อนด้วย AI และอื่น ๆ",
-        ko: "분산 시스템, AI 기반 지식 발견, 빅 데이터, 데이터 마이닝, AI 기반 분석 등을 포함한 ICT 연구 주제",
-        ja: "分散システム、AI駆動の知識発見、ビッグデータ、データマイニング、AI駆動の分析などを含むICTの研究分野",
-        id: "Topik yang mencakup area penelitian ICT seperti Sistem Terdistribusi, Penemuan Pengetahuan Berbasis AI, Big Data, Data Mining, Analisis Berbasis AI, dan lainnya.",
-        ms: "Topik yang merangkumi kawasan penyelidikan ICT seperti Sistem Teragih, Penemuan Pengetahuan Berdorong AI, Data Besar, Perlombongan Data, Analisis Berdorong AI, dan banyak lagi.",
-        ph: "Mga paksa na sumasaklaw sa mga lugar ng pananaliksik ng ICT tulad ng Distributed Systems, AI-Driven Knowledge Discovery, Big Data, Data Mining, AI-Driven Analytics, at marami pang iba."
       }
     },
   };
@@ -112,15 +96,23 @@ const AppContent = ({ landingPageData }) => {
     }
   };
 
+  // เลือกข้อมูล SEO ตามหน้า
   const { title, description } = seoData[currentPath] || noContentSeoData;
-
-  // ตัดสินใจว่าจะให้แสดงข้อความไหนตามภาษาที่ผู้ใช้เลือก
-  const language = "en"; // เปลี่ยนตามภาษาที่เลือก
 
   return (
     <>
-      <SEO title={title[language]} description={description[language]} url={`${baseUrl}${currentPath}`} />
-      {/* เนื้อหาเว็บเดิม */}
+      <SEO
+        title={title[language] || defaultSeoData.title[language]}
+        description={description[language] || defaultSeoData.description[language]}
+        url={`${baseUrl}${currentPath}`}
+      />
+      {/* เนื้อหาของหน้า */}
+      <div>
+        <button onClick={() => setLanguage("en")}>English</button>
+        <button onClick={() => setLanguage("th")}>ไทย</button>
+        <button onClick={() => setLanguage("ko")}>한국어</button>
+        {/* เพิ่มปุ่มอื่นๆ สำหรับภาษาเพิ่มเติมตามต้องการ */}
+      </div>
     </>
   );
 };

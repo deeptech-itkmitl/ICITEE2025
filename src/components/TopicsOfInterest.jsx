@@ -47,11 +47,35 @@ export const TopicsOfInterest = () => {
           {topics.map((topic, index) => (
             <div key={index} className="topic-row">
               <h3>
-                 <div className="heading-left topics-title">{topic.title}</div>
+                 <div className="heading-left topics-title">{topic.title}</div>             
               </h3>
-              <div className="topic-description text-justify">{topic.description}</div>
+              <div className="topic-description text-justify">{topic.description}
+              <p2>
+
+<h4 className="title"><center>
+                            <img
+                                    src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+                                    alt="Line"
+                                    className=""
+                                    style={{ width: "100%", height: "0.25%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                            /></center>
+      </h4>
+        
+</p2>      
+              </div>                            
             </div>
+            
           ))}
+        </div>
+        <div>
+        {/* <h4 className="title"><center>
+                            <img
+                                    src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+                                    alt="Line"
+                                    className=""
+                                    style={{ width: "80%", height: "0.25%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                            /></center>
+      </h4> */}
         </div>
       </div>
     </div>
