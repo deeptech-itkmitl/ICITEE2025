@@ -26,10 +26,6 @@ const PaperSubmissionGuidelines = () => {
           <li>Authors must ensure their paper is processable for similarity checking (e.g., no scanned images of text).</li>
           <li>Papers with plagiarism or self-plagiarism exceeding 30% similarity will be immediately rejected.</li>
         </ul>
-        <p2><b>New in ICITEE 2025: Rolling Review and Open Review Policy</b></p2><p><break></break></p>
-        <p className="">
-          ICITEE 2025 follows a <strong>Rolling Review Process</strong> with an <strong>Open Review Policy</strong> to ensure high-quality submissions, provide timely feedback, and enhance transparency.
-        </p>
       </div>
 
       <div className="card">
@@ -160,9 +156,9 @@ const PaperSubmissionGuidelines = () => {
         <h3><center>Anonymity (For First Submission Only)</center></h3>
         <ul>
           ICITEE 2025 follows a partially anonymized review process. Initial submissions must be double-blind, meaning:<p><break></break></p>
-          1. Do NOT include author names, emails, or affiliations anywhere in the paper.<p><break></break></p>
-          2. Self-citations must be anonymized (e.g., use "Blind year" instead of "Smith et al., 2023").<p><break></break></p>
-          3. Remove identifying information from document metadata before submission.<p><break></break></p>
+          1. <b>Do NOT </b>include author names, emails, or affiliations anywhere in the paper.<p><break></break></p>
+          2. <b>Self-citations must be anonymized</b> (e.g., use "Blind year" instead of "Smith et al., 2023").<p><break></break></p>
+          3. <b>Remove identifying information </b>from document metadata before submission.<p><break></break></p>
         </ul>
       </div>
 
@@ -179,36 +175,44 @@ const PaperSubmissionGuidelines = () => {
       <h4 className="title"><center><h3> Revision Guidelines (For Revise & Resubmit Decisions)</h3></center></h4>
         <ul>
           <li>Authors receiving an R&R decision must submit a revised paper that thoroughly addresses all reviewer comments. Submissions with only minor modifications or insufficient revisions may be rejected.</li>
-          <li>Revised papers must be submitted within four weeks of receiving reviewer feedback.</li>
+          <li>Revised papers must be submitted within <b>four weeks </b>of receiving reviewer feedback.</li>
           <li>A detailed response letter is required, summarizing changes and justifications for any reviewer comments that were not fully implemented.</li>
           <li>Major changes must be clearly marked using tracked changes or highlighted text for easy identification.</li>
           <li>Whenever possible, the same reviewers will re-evaluate the revised submission to ensure continuity and consistency in feedback.</li>
         </ul>
 
         <h4 className="title"><center> Camera-Ready Submission Guidelines </center></h4>
-        <h3></h3>
-        <ul>
-          <li>Final accepted papers must include author <b> names, emails, and affiliations.</b></li>
-          <li>All accepted papers will be <b>checked for compliance</b> with IEEE Xplore standards before publication.</li>
-          <li>Authors must <b>sign the IEEE Copyright Form </b> before final submission.</li>
-          <li>Only papers that <b>pass the IEEE PDF eXpress check </b> will be included in the conference proceedings.<p><break></break></p></li><p><break></break></p>
-        </ul><p><break></break></p>
-        <p2><center><b><i> IEEE PDF eXpress </i></b> Instructions: </center> <p><break></break></p> 
-        
-        <p2>
+<h3></h3>
+<ul>
+  <li>Final accepted papers must include author <b> names, emails, and affiliations.</b></li>
+  <li>All accepted papers will be <b>checked for compliance</b> with IEEE Xplore standards before publication.</li>
+  <li>Authors must <b>sign the IEEE Copyright Form </b> before final submission.</li>
+  <li>Only papers that <b>pass the IEEE PDF eXpress check </b> will be included in the conference proceedings.<p><break></break></p></li><p><break></break></p>
+</ul><p><break></break></p>
+<p2><center><b><i> IEEE PDF eXpress </i></b> Instructions: </center> <p><break></break></p> 
 
-        <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "20px" }}>
+<p2>
+<div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "20px" }}>
+  {/* ส่วนของรูปภาพ */}
+  {/* <div style={{ flex: "1 1 150px", textAlign: "center" }}>
+    <img
+      src={`${process.env.PUBLIC_URL}/img/Group 221.png`}
+      alt="Image 1"
+      style={{ maxWidth: "80%", maxHeight: "80%" }}
+    />
+  </div> */}
+
   {/* ส่วนของรูปภาพ */}
   <div style={{ flex: "1 1 150px", textAlign: "center" }}>
     <img
       src={`${process.env.PUBLIC_URL}/img/Frame 222.png`}
-      alt="Image 1"
+      alt="Image 2"
       style={{ maxWidth: "80%", maxHeight: "80%" }}
     />
   </div>
 
   {/* ส่วนของข้อความ */}
-  <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: "10px", textAlign: "center" }}>
+  <div style={{ flex: "2 1 400px", textAlign: "left" }}>
     <p>
       Log in to the <span>🔗</span> 
       <b>
@@ -236,85 +240,89 @@ const PaperSubmissionGuidelines = () => {
       <li><p>An online confirmation will be displayed, and an email confirmation will be sent verifying your account setup.</p></li>
     </ol>
   </div>
-</div>        
-        </p2>
-        </p2>
-      </div>
-
-      <div className="card">
-      <h4 className="title"><center> Submission Process and EDAS Instructions </center></h4>
-      <h4 className="title"><center>
-                            <img
-                                    src={`${process.env.PUBLIC_URL}/img/Line9.png`}
-                                    alt="Line"
-                                    className=""
-                                    style={{ width: "30%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
-                            /></center>
-      </h4>
-      <h4 className="title"><div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
-  <img
-    src={`${process.env.PUBLIC_URL}/img/Group 216.png`}
-    alt="Line"
-    style={{ maxWidth: "80%", maxHeight: "80%" }}
-  />
 </div>
 
-      </h4>
-        <h2></h2><p><break></break></p>
-        <p2>📌 Submission Portal: <span>🔗</span> <a href="https://edas.info/N33533"><i><b>ICITEE 2025 EDAS Submission</b></i></a></p2>
-        <h3>Steps to Submit a Paper:</h3>
-        <ul>
-          <li>Step 1 - Log in to EDAS (Create an account if you don’t have one).</li>
-          <li>Step 2 - Click "Submit Paper" and choose the relevant track.</li>
-          <li>Step 3 - Upload your double-blind formatted PDF.</li>
-          <li>Step 4 - Enter all author details and affiliations in EDAS.</li><p><break></break></p>
-          <li><i><b>Click Submit and wait for confirmation.</b></i></li>
-        </ul>
-        <h3>Steps for Revised Submissions:</h3>
-        <ul>
-          <li>Upload the revised paper with marked changes.</li>
-          <li>Upload the response letter detailing how reviewer comments were addressed.</li>
-          <li>Complete the resubmission before the revision deadline.</li>
-        </ul>
-      </div>
+</p2>
 
-      <div className="card">
-      <h4 className="title"><center> Ethical Guidelines and Quality Control </center></h4>
-      <h4 className="title"><center>
-                            <img
-                                    src={`${process.env.PUBLIC_URL}/img/Line9.png`}
-                                    alt="Line"
-                                    className=""
-                                    style={{ width: "30%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
-                            /></center>
-      </h4>
-        <h3>ICITEE 2025 is committed to maintaining high research integrity. Authors must adhere to the following guidelines:</h3>
-        <ul>
-          <li><b>Plagiarism must be below 30% </b>(checked via similarity detection tools).</li>
-          <li><b>No dual submissions </b> – Papers under review elsewhere will be immediately rejected.</li>
-          <li><b>Respectful review discussions </b> – Unprofessional author responses may result in rejection.</li>
-          <li><b>Strict formatting compliance </b>– Papers that do not follow IEEE format will be rejected.</li>
-        </ul>
-        <p2>📌 <b>Important: </b>The Technical Program Committee reserves the right to reject submissions that fail quality control checks, even before the review process.</p2>
-      </div>
+</p2>
 
-      <div className="card">
-      <h4 className="title"><center> Contact and Support </center></h4>
-      <h4 className="title"><center>
-                            <img
-                                    src={`${process.env.PUBLIC_URL}/img/Line9.png`}
-                                    alt="Line"
-                                    className=""
-                                    style={{ width: "30%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
-                            /></center>
-      </h4>
-        <h2></h2>
-        <p2>For any questions regarding submission, formatting, or the review process, please contact:</p2>
-        <p><break></break></p>
-        <p2>📧 ICITEE 2025 Submission Committee: <span>🔗</span> <a href="mailto:icitee2025@it.kmitl.ac.th"><i><b>icitee2025@it.kmitl.ac.th</b></i></a></p2> <p><break></break></p>
-        <p2>🌐 Conference Website: <span>🔗</span> <a href="https://icitee2025.it.kmitl.ac.th/"><i><b>https://icitee2025.it.kmitl.ac.th/</b></i></a></p2>
-      </div>
+<div className="card">
+  <h4 className="title"><center> Submission Process and EDAS Instructions </center></h4>
+  <h4 className="title"><center>
+    <img
+      src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+      alt="Line"
+      className=""
+      style={{ width: "30%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+    /></center>
+  </h4>
+  <h4 className="title">
+    <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+    <div style={{ flex: "1 1 150px", textAlign: "center" }}>
+    <img
+      src={`${process.env.PUBLIC_URL}/img/Group 216.png`}
+      alt="Image 1"
+      style={{ maxWidth: "80%", maxHeight: "80%" }}
+    />
     </div>
+  </div></h4>
+  <h2></h2><p><break></break></p>
+  <p2>📌 Submission Portal: <span>🔗</span> <a href="https://edas.info/N33533"><i><b>ICITEE 2025 EDAS Submission</b></i></a></p2>
+  <h3>Steps to Submit a Paper:</h3>
+  <ul>
+    <li>Step 1 - Log in to EDAS (Create an account if you don’t have one).</li>
+    <li>Step 2 - Click "Submit Paper" and choose the relevant track.</li>
+    <li>Step 3 - Upload your double-blind formatted PDF.</li>
+    <li>Step 4 - Enter all author details and affiliations in EDAS.</li><p><break></break></p>
+    <li><i><b>Click Submit and wait for confirmation.</b></i></li>
+  </ul>
+  <h3>Steps for Revised Submissions:</h3>
+  <ul>
+    <li>Upload the <b>revised </b>paper with marked changes.</li>
+    <li>Upload the <b>response </b> letter detailing how reviewer comments were addressed.</li>
+    <li>Complete the <b>resubmission </b> before the revision deadline.</li>
+  </ul>
+</div>
+
+<div className="card">
+  <h4 className="title"><center> Ethical Guidelines and Quality Control </center></h4>
+  <h4 className="title"><center>
+    <img
+      src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+      alt="Line"
+      className=""
+      style={{ width: "30%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+    /></center>
+  </h4>
+  <h3>ICITEE 2025 is committed to maintaining high research integrity. Authors must adhere to the following guidelines:</h3>
+  <ul>
+    <li><b>Plagiarism must be below 30% </b>(checked via similarity detection tools).</li>
+    <li><b>No dual submissions </b> – Papers under review elsewhere will be immediately rejected.</li>
+    <li><b>Respectful review discussions </b> – Unprofessional author responses may result in rejection.</li>
+    <li><b>Strict formatting compliance </b>– Papers that do not follow IEEE format will be rejected.</li>
+  </ul>
+  <p2>📌 <b>Important: </b>The Technical Program Committee reserves the right to reject submissions that fail quality control checks, even before the review process.</p2>
+</div>
+
+<div className="card">
+  <h4 className="title"><center> Contact and Support </center></h4>
+  <h4 className="title"><center>
+    <img
+      src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+      alt="Line"
+      className=""
+      style={{ width: "30%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+    /></center>
+  </h4>
+  <h2></h2>
+  <p2>For any questions regarding submission, formatting, or the review process, please contact:</p2>
+  <p><break></break></p>
+  <p2>📧 ICITEE 2025 Submission Committee: <span>🔗</span> <a href="mailto:icitee2025@it.kmitl.ac.th"><i><b>icitee2025@it.kmitl.ac.th</b></i></a></p2> <p><break></break></p>
+  <p2>🌐 Conference Website: <span>🔗</span> <a href="https://icitee2025.it.kmitl.ac.th/"><i><b>https://icitee2025.it.kmitl.ac.th/</b></i></a></p2>
+</div>
+</div>
+</div>
+
   );
 };
 
