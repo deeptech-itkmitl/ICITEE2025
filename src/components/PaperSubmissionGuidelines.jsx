@@ -155,7 +155,8 @@ const PaperSubmissionGuidelines = () => {
       <div className="card">
         <h2>7. Contact and Support</h2>
         <p2>For any questions regarding submission, formatting, or the review process, please contact:</p2>
-        <p2>📧 ICITEE 2025 Submission Committee: <a href="mailto:icitee2025@it.kmitl.ac.th">icitee2025@it.kmitl.ac.th</a></p2>
+        <p><break></break></p>
+        <p2>📧 ICITEE 2025 Submission Committee: <a href="mailto:icitee2025@it.kmitl.ac.th">icitee2025@it.kmitl.ac.th</a></p2> <p><break></break></p>
         <p2>🌐 Conference Website: <a href="https://icitee2025.it.kmitl.ac.th/">https://icitee2025.it.kmitl.ac.th/</a></p2>
       </div>
     </div>
