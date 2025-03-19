@@ -34,16 +34,19 @@ export default function ProgressTimeline() {
                   <th>Details</th>
                 </tr>
               </thead> */}
-              <tbody>
-                {steps.map((step, index) => (
-                  <tr key={index}>
-                    <td>                      
-                        {step.date}                         
-                    </td>
-                    <td>{step.title}</td>
-                  </tr>
-                ))}
-              </tbody>
+<div style={{ overflowX: "auto" }}>
+  <table style={{ width: "100%", borderCollapse: "collapse", minWidth: "300px" }}>
+    <tbody>
+      {steps.map((step, index) => (
+        <tr key={index} style={{ borderBottom: "1px solid #ddd" }}>
+          <td style={{ padding: "8px", whiteSpace: "nowrap" }}>{step.date}</td>
+          <td style={{ padding: "8px" }}>{step.title}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
             {/* </table> */}
           </div>
         </div>

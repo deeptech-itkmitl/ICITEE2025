@@ -236,9 +236,7 @@ const PaperSubmissionGuidelines = () => {
       <li><p>An online confirmation will be displayed, and an email confirmation will be sent verifying your account setup.</p></li>
     </ol>
   </div>
-</div>
-
-        
+</div>        
         </p2>
         </p2>
       </div>
