@@ -320,13 +320,21 @@ const PaperSubmissionGuidelines = () => {
         </p>
       </li>
       <li>
-        <p>2. Enter the following:</p>
+    <p>2. Enter the following:</p>
         <ul>
-          <li>66631X for the Conference ID</li>
-          <li>Your email address</li>
-          <li>A password</li>
+            <li>
+                66631X for the Conference ID
+            </li>
+            <li>
+                Your email address
+            </li>
+            <li>
+                A password
+            </li>
         </ul>
-      </li>
+</li>
+
+
       <li><p>3. Continue to enter information as prompted.</p></li>
       <li><p>An online confirmation will be displayed, and an email confirmation will be sent verifying your account setup.</p></li>
     </ol>
