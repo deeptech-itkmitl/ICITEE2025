@@ -73,6 +73,33 @@ export const OrganizeCommittee = () => {
       ],
     },
     {
+      title: "Technical Program Team Leaders",
+      members: [
+        "Annop Monsakul (PIM, Thailand)",
+        "Bhattarabhorn Wattanacheep (KMITL, Thailand)",
+        "Chanboon Sathitwiriyawong (KMITL, CIS Thailand Chapter)",
+        "Chotipat Pornavalai (KMITL, Thailand)",
+        "Kanokwan Atchariyachanvanich (KMITL, Thailand)",
+        "Maleerat Sodanil (KMUTNB, IEEE CIS Thailand Chapter, Thailand)",
+        "Nat Dilokthanakul (KMITL, Thailand)",
+        "Nont Kanungsukkasem (KMITL, Thailand)",
+        "Olarn Wongwirat (KMITL, Thailand)",
+        "Olarik Surinta (MSU, Thailand)",
+        "Pornsuree Jamsri (KMITL, Thailand)",
+        "Sarayut Nonsiri (TNI, IEEE CIS Thailand Chapter, Thailand)",
+        "Sirion Vittayakorn (KMITL, Thailand)",
+        "Soradech Krootjohn (KMUTNB, IEEE CIS Thailand Chapter, Thailand)",
+        "Sudiro (UGM, Indonesia)",
+        "Sumet Prabhavat (KMITL, Thailand)",
+        "Suvit Poomrittigul (KMITL, Thailand)",
+        "Taravichit Titijaroenroj (KMITL, Thailand)",
+        "Thitiporn Lertrusdachakul (TNI, Thailand)",
+        "Tuchsanai Ploysuwan (KMITL, Thailand)",
+        "Wijaya Yudha Atmaja (UGM, Indonesia)",
+        "Ridwan Wicaksono (UGM, Indonesia)",
+      ],
+    },
+    {
       title: "Publication Chair",
       members: [
         "Samart Moodleah (KMITL, Thailand)"
