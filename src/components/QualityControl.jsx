@@ -22,7 +22,7 @@ const QualityControl = () => {
         </li>
         <li>
           <span className="check-icon"></span>
-          <strong> Multiple revision opportunities</strong> to enhance the quality of accepted papers.
+          <strong> Revision opportunities</strong> to enhance the quality of accepted papers.
         </li>
       </ul>
       </p2>

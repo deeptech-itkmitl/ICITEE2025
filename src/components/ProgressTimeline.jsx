@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const steps = [
-  { title: "The papers submission system for ICITEE2025 is now open.", date: "Mar-19, 2025" },
-  { title: "Quality Control and management update ICITEE2025 adopts a Rolling Review Process with and Open Review Policy.", date: "Mar-03, 2025" },
-  { title: "Topics of Interest has been announced.", date: "Feb-15, 2025" },
-  { title: "Website launched ICITEE2025 Website has launched.", date: "Feb-10, 2025" }
+  { title: "The paper submission system for ICITEE 2025 is now open.", date: "Mar-19, 2025" },
+  { title: "Quality Control and Management Update: ICITEE 2025 adopts a Rolling Review Process with an Open Review Policy.", date: "Mar-03, 2025" },
+  { title: "The Topics of Interest have been announced.", date: "Feb-15, 2025" },
+  { title: "The ICITEE 2025 website has officially launched.", date: "Feb-10, 2025" }
 ].sort((a, b) => new Date(b.date) - new Date(a.date)); // เรียงจากใหม่ -> เก่า
 
 export default function ProgressTimeline() {
