@@ -50,17 +50,59 @@ const PaperSubmissionGuidelines = () => {
         <h3><center></center></h3>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px", textAlign: "center" }}>
           <div>
-            <img src={`${process.env.PUBLIC_URL}/img/Group216.png`} alt="Image 1" style={{ maxWidth: "100%", height: "50px" }} />
+            {/* <img src={`${process.env.PUBLIC_URL}/img/Group216.png`} alt="Image 1" style={{ maxWidth: "100%", height: "50px" }} /> */}
+            <center>
+            <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+  <a 
+    href="/"
+    className="btn btn-custom btn-lg page-scroll" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    style={{ maxWidth: "300px", width: "80%" }} // ปรับขนาดให้ตอบสนอง
+  >
+    Accept
+  </a>
+</div>
+
+</center>
             <h1><center></center></h1>
             <p className="">The paper is accepted as-is and will be included in the proceedings.</p>
           </div>          
           <div>
-            <img src={`${process.env.PUBLIC_URL}/img/Group218.png`} alt="Image 2" style={{ maxWidth: "100%", height: "50px" }} />
+            {/* <img src={`${process.env.PUBLIC_URL}/img/Group218.png`} alt="Image 2" style={{ maxWidth: "100%", height: "50px" }} /> */}
+            <center>
+            <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+  <a 
+    href="/"
+    className="btn btn-custom btn-lg page-scroll" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    style={{ maxWidth: "300px", width: "80%" }} // ปรับขนาดให้ตอบสนอง
+  >
+    Revise & Resubmit
+  </a>
+</div>
+
+</center>
             <h1><center></center></h1>
             <p className="">The paper is conditionally accepted, but authors must address reviewer concerns and submit a revised version within four weeks.</p>
           </div>
           <div>
-            <img src={`${process.env.PUBLIC_URL}/img/Group219.png`} alt="Image 3" style={{ maxWidth: "100%", height: "50px" }} />
+            {/* <img src={`${process.env.PUBLIC_URL}/img/Group219.png`} alt="Image 3" style={{ maxWidth: "100%", height: "50px" }} /> */}
+            <center>
+            <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+  <a 
+    href="/"
+    className="btn btn-custom btn-lg page-scroll" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    style={{ maxWidth: "300px", width: "80%" }} // ปรับให้ขนาดตอบสนอง
+  >
+    Reject
+  </a>
+</div>
+
+</center>
             <h1><center></center></h1>
             <p className="">The paper does not meet the quality standards and is not eligible for resubmission.</p>
           </div>
