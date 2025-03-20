@@ -18,6 +18,7 @@ const PaperSubmissionGuidelines = () => {
           Prospective authors are invited to submit original full papers (4 to 6 pages) in A4 IEEE Xplore double-column format, including tables, figures, and references.
         </p>
         <p2>General Submission Guidelines:</p2>
+        <p>
         <ul>
           <li>Submissions must be written in English and adhere to <b><u><i><a href="https://www.ieee.org/conferences/publishing/templates.html"> IEEE formatting guidelines.</a></i></u></b></li>
           <li>All submitted papers must be original, unpublished, and not under review elsewhere.</li>
@@ -26,6 +27,7 @@ const PaperSubmissionGuidelines = () => {
           <li>Authors must ensure their paper is processable for similarity checking (e.g., no scanned images of text).</li>
           <li>Papers with plagiarism or self-plagiarism exceeding 30% similarity will be immediately rejected.</li>
         </ul>
+        </p>
       </div>
 
       <div className="card">
