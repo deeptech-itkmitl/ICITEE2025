@@ -92,7 +92,7 @@ export const OrganizeCommittee = () => {
         "Sudiro (UGM, Indonesia)",
         "Sumet Prabhavat (KMITL, Thailand)",
         "Suvit Poomrittigul (KMITL, Thailand)",
-        "Taravichit Titijaroenroj (KMITL, Thailand)",
+        "Taravichet Titijaroenroj (KMITL, Thailand)",
         "Thitiporn Lertrusdachakul (TNI, Thailand)",
         "Tuchsanai Ploysuwan (KMITL, Thailand)",
         "Wijaya Yudha Atmaja (UGM, Indonesia)",
@@ -106,7 +106,7 @@ export const OrganizeCommittee = () => {
       ],
     },
     {
-      title: "Web Chair",
+      title: "Registration Chair",
       members: [
         "Issarapong Khuankrue (KMITL, Thailand)"
       ],
