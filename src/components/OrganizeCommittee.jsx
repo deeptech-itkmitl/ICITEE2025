@@ -69,7 +69,6 @@ export const OrganizeCommittee = () => {
       title: "Technical Program Team Leaders",
       members: [
         "Annop Monsakul (PIM, Thailand)",
-        "Bhattarabhorn Wattanacheep (KMITL, Thailand)",
         "Chanboon Sathitwiriyawong (KMITL, CIS Thailand Chapter)",
         "Chotipat Pornavalai (KMITL, Thailand)",
         "Kanokwan Atchariyachanvanich (KMITL, Thailand)",
