@@ -3,9 +3,7 @@ import React from "react";
 export const OrganizeCommittee = () => {
   const committeeSections = [{
     title: "Committee of ICITEE 2025",
-    members: [
-      " "
-    ],
+    members: [" "],
   },
     {
       title: "Advisory Boards",
@@ -44,9 +42,7 @@ export const OrganizeCommittee = () => {
     },
     {
       title: "Local Organizing Committee",
-      members: [
-        " "
-      ],
+      members: [" "],
     },
     {
       title: "Conference Chair",
@@ -96,7 +92,7 @@ export const OrganizeCommittee = () => {
         "Thitiporn Lertrusdachakul (TNI, Thailand)",
         "Tuchsanai Ploysuwan (KMITL, Thailand)",
         "Wijaya Yudha Atmaja (UGM, Indonesia)",
-        "Ridwan Wicaksono (UGM, Indonesia)",
+        "Ridwan Wicaksono (UGM, Indonesia)"
       ],
     },
     {
@@ -127,26 +123,22 @@ export const OrganizeCommittee = () => {
 
   return (
     <div className="page-topics-background mb-5 flex justify-center">
-      <div className="header-container text-center mb-5"></div>
-      <div className="topics-container w-full max-w-4xl">
+      <div className="topics-container w-full max-w-4xl px-4">
         <div className="topic-description text-center">
           {committeeSections.map((section, index) => (
             <div key={index} className="mb-10">
               <h1 className="committee-title text-xl font-bold mb-4">{section.title}</h1>
-              <h1></h1>
-              <div className={section.title === "Advisory Boards" || section.title === "Steering Committee" ? "grid grid-cols-2 gap-4 justify-center" : "grid grid-cols-1 justify-center"}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center">
                 {section.members.map((member, idx) => (
                   <p key={idx} className="text-base">{member}</p>
                 ))}
-                          <h4 className="title"><center>
-                                      <img
-                                              src={`${process.env.PUBLIC_URL}/img/Line9.png`}
-                                              alt="Line"
-                                              className=""
-                                              style={{ width: "30%", height: "0.25%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
-                                      /></center>
-                </h4>
-                <h1></h1>
+              </div>
+              <div className="flex justify-center mt-4">
+                <img
+                  src={`${process.env.PUBLIC_URL}/img/Line9.png`}
+                  alt="Line"
+                  className="w-1/3 h-px"
+                />
               </div>
             </div>
           ))}
