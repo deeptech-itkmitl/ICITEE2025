@@ -106,6 +106,7 @@ export const OrganizeCommittee = () => {
           {committeeSections.map((section, index) => (
             <div key={index} className="mb-10">
               <h1 className="committee-title text-xl font-bold mb-4">{section.title}</h1>
+              <h1></h1>
               <div className={section.title === "Advisory Boards" || section.title === "Steering Committee" ? "grid grid-cols-2 gap-4 justify-center" : "grid grid-cols-1 justify-center"}>
                 {section.members.map((member, idx) => (
                   <p key={idx} className="text-base">{member}</p>
