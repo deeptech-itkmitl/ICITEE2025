@@ -1,10 +1,7 @@
 import React from "react";
 
 export const OrganizeCommittee = () => {
-  const committeeSections = [{
-    title: "Committee of ICITEE 2025",
-    members: [" "],
-  },
+  const committeeSections = [
     {
       title: "Advisory Boards",
       members: [
