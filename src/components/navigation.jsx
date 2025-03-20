@@ -26,7 +26,8 @@ export const Navigation = () => {
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
+          {/* <a className="navbar-brand page-scroll" href="#page-top"> */}
+          <a className="navbar-brand page-scroll" href="/">
             <img
               src={`${process.env.PUBLIC_URL}/img/ICITEE2025.png`}
               alt="ICITEE 2025 Logo"
