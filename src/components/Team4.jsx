@@ -13,16 +13,7 @@ export const Team4 = (props) => {
             ? props.data.map((d, i) => (
                 <div key={`${d.name}-${i}`} className="col-sm-6 team">
                   <div className="thumbnail">                 
-                    {/* <img src={d.img} alt="..." className="team-img " /> */}
-                    <img
-                      src={d.img}
-                      alt={d.name}
-                      className=""
-                      style={{ 
-                        width: "150px", 
-                        height: "150px"   
-                      }}
-                    />
+                    <img src={d.img} alt="..." className="team-img" />
                     <div className="caption">
                       <h4>{d.name}</h4>
                       <p>{d.job}</p>
