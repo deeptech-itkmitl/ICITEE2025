@@ -56,9 +56,9 @@ const PaperSubmissionGuidelines = () => {
             <center>
             <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
   <a 
-    href="/"
+    href=""
     className="btn btn-custom btn-lg page-scroll" 
-    target="_blank" 
+    target="" 
     rel="noopener noreferrer"
     style={{ maxWidth: "300px", width: "80%" }} // ปรับขนาดให้ตอบสนอง
   >
@@ -75,9 +75,9 @@ const PaperSubmissionGuidelines = () => {
             <center>
             <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
   <a 
-    href="/"
+    href=""
     className="btn btn-custom btn-lg page-scroll" 
-    target="_blank" 
+    target="" 
     rel="noopener noreferrer"
     style={{ maxWidth: "300px", width: "80%" }} // ปรับขนาดให้ตอบสนอง
   >
@@ -94,9 +94,9 @@ const PaperSubmissionGuidelines = () => {
             <center>
             <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
   <a 
-    href="/"
+    href=""
     className="btn btn-custom btn-lg page-scroll" 
-    target="_blank" 
+    target="" 
     rel="noopener noreferrer"
     style={{ maxWidth: "300px", width: "80%" }} // ปรับให้ขนาดตอบสนอง
   >
