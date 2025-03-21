@@ -81,6 +81,7 @@ export const OrganizeCommittee = () => {
         "Sarayut Nonsiri (TNI, IEEE CIS Thailand Chapter, Thailand)",
         "Sirion Vittayakorn (KMITL, Thailand)",
         "Soradech Krootjohn (KMUTNB, IEEE CIS Thailand Chapter, Thailand)",
+        "Sudchai Boonto (KMUTT, IEEE CSS Thailand Chapter, Thailand)",
         "Sudiro (UGM, Indonesia)",
         "Sumet Prabhavat (KMITL, Thailand)",
         "Suvit Poomrittigul (KMITL, Thailand)",
