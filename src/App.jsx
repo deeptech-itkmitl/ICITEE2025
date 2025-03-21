@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Layout2 from "./Layout2";
 import Layout3 from "./Layout3";
@@ -52,6 +53,12 @@ const AppContent = ({ landingPageData }) => {
   return (
     <HelmetProvider>
     <>
+            {/* ตั้งค่า Favicon */}
+        <Helmet>
+          <title>ICITEE 2025: 17th International Conference on Information Technology and Electrical Engineering., IT KMITL Conferences, Bangkok , Thailand.</title>
+          <link rel="icon" type="image/png" href="img/logo.png" />
+        </Helmet>
+
       {/* แสดง Header เฉพาะหน้า "/" */}
       {isHomePage && <Header data={landingPageData.Header} />}
                   {/* // && <Announcement data={landingPageData.Team} />  } */}
