@@ -29,7 +29,6 @@ import JsonData from "./data/data.json";
 // import VisitorCounter from "./components/visitor-update";  // นำเข้าฟังก์ชัน VisitorCounter
 import "./App.css";
 import { Gallery } from "components/gallery";
-// import Popup from "./components/ui/Popup";  // นำเข้า Popup component
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
@@ -51,23 +50,10 @@ const AppContent = ({ landingPageData }) => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
 
-
-  // สร้าง state สำหรับเปิดหรือปิด popup
-  // const [showPopup, setShowPopup] = useState(true);
-
-  // const closePopup = () => {
-  //   setShowPopup(false);
-  // };
-
-
   return (
-    
     <HelmetProvider>
     <>
-       {/* แสดง popup เมื่อ showPopup เป็น true */}
-       {/* {showPopup && <Popup onClose={closePopup} />}   */}
-      
-       {/* ตั้งค่า Favicon */}
+            {/* ตั้งค่า Favicon */}
        <Helmet>
         <title>ICITEE 2025: 17th International Conference on Information Technology and Electrical Engineering., IT KMITL Conferences, Bangkok , Thailand.</title>
         <link rel="icon" type="image/png" href="img/logo.png" />
