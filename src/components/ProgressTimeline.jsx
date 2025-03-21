@@ -21,7 +21,7 @@ export default function ProgressTimeline() {
       <a 
   href="/paper-submission-guidelines" 
   className="btn btn-custom btn-lg page-scroll" 
-  target="_blank" 
+  // target="_blank" 
   rel="noopener noreferrer"
 >
   PAPER SUBMISSION GUIDELINE
