@@ -11,21 +11,23 @@ const Popup = ({ onClose }) => {
 
   return (
     <div
-      style={{
-        position: 'fixed',
-        top: '20%',
-        left: '50%',
-        transform: 'translateX(-50%)',
-        padding: '20px',
-        backgroundColor: 'rgba(255, 255, 255, 0.9)', // พื้นหลังโปร่งแสง
-        border: '1px solid #ddd', // สีกรอบที่อ่อนกว่า
-        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-        zIndex: 9999,
-        width: '80%',  // กำหนดขนาดของ popup
-        maxWidth: '600px', // จำกัดความกว้างสูงสุด
-        textAlign: 'center', // จัดกึ่งกลางข้อความ
-        borderRadius: '10px', // ขอบกลม
-      }}
+    style={{
+      position: 'fixed',
+      top: '20%',
+      left: '50%',
+      transform: 'translateX(-50%)',
+      padding: '5px',
+      backgroundColor: 'rgba(255, 255, 255, 0.9)', // พื้นหลังโปร่งแสง
+      border: '1px solid #ddd', // สีกรอบที่อ่อนกว่า
+      boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+      zIndex: 9999,
+      width: '80%',  // กำหนดขนาดของ popup
+      maxWidth: '600px', // จำกัดความกว้างสูงสุด
+      aspectRatio: '16 / 9', // ควบคุมอัตราส่วน
+      textAlign: 'center', // จัดกึ่งกลางข้อความ
+      borderRadius: '10px', // ขอบกลม
+    }}
+    
     >
       {/* แสดงรูปภาพ banner */}
       <img
@@ -39,20 +41,20 @@ const Popup = ({ onClose }) => {
       />
       
       {/* ข้อความต้อนรับ */}
-      <h2 style={{ marginTop: '10px', fontSize: '24px', color: '#333', fontWeight: '600' }}>
-        Welcome to Our Website!
-      </h2>
+      {/* <h4 style={{ marginTop: '10px', fontSize: '24px', color: '#333', fontWeight: '600' }}>
+        Welcome to Our ICITEE 2025 Conferences!
+      </h4> */}
       
       {/* ปุ่มปิด */}
       <button
         onClick={onClose}
         style={{
           marginTop: '10px',
-          padding: '10px 20px',
+          padding: '5px 10px',
           backgroundColor: '#007bff', // สีปุ่มทันสมัย
           color: 'white',
           border: 'none',
-          borderRadius: '5px',
+          borderRadius: '2px',
           cursor: 'pointer',
           fontWeight: 'bold',
         }}
