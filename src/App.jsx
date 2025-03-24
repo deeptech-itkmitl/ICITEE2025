@@ -29,7 +29,7 @@ import JsonData from "./data/data.json";
 // import VisitorCounter from "./components/visitor-update";  // นำเข้าฟังก์ชัน VisitorCounter
 import "./App.css";
 import { Gallery } from "components/gallery";
-// import Popup from "./components/ui/Popup";  // นำเข้า Popup component
+import Popup from "./components/ui/Popup";  // นำเข้า Popup component
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
@@ -52,12 +52,12 @@ const AppContent = ({ landingPageData }) => {
   const isHomePage = location.pathname === "/";
 
 
-  // สร้าง state สำหรับเปิดหรือปิด popup
-  // const [showPopup, setShowPopup] = useState(true);
+ // สร้าง state สำหรับเปิดหรือปิด popup
+  const [showPopup, setShowPopup] = useState(true);
 
-  // const closePopup = () => {
-  //   setShowPopup(false);
-  // };
+  const closePopup = () => {
+    setShowPopup(false);
+  };
 
 
   return (
@@ -65,7 +65,7 @@ const AppContent = ({ landingPageData }) => {
     <HelmetProvider>
     <>
        {/* แสดง popup เมื่อ showPopup เป็น true */}
-       {/* {showPopup && <Popup onClose={closePopup} />}   */}
+        {/* {showPopup && <Popup onClose={closePopup} />} */}
       
        {/* ตั้งค่า Favicon */}
        <Helmet>
@@ -113,7 +113,11 @@ const AppContent = ({ landingPageData }) => {
 
       {/* แสดงข้อมูล VisitorCounter และ Team2 Team1 Contact เฉพาะหน้า "/" */}
       {isHomePage && (
-        <>    
+        <>  
+
+          {/* แสดง popup เมื่อ showPopup เป็น true */}
+          {showPopup && <Popup onClose={closePopup} />}
+
           <Announcement data={landingPageData.Team} />               
           {/* <Gallery/> */}
           <Team2 data={landingPageData.Team} />
