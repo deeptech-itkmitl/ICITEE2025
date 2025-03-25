@@ -17,7 +17,7 @@ const Popup = ({ onClose }) => {
       left: '50%',
       transform: 'translateX(-50%)',
       padding: '5px',
-      backgroundColor: 'rgba(255, 255, 255, 0.9)', // พื้นหลังโปร่งแสง
+      backgroundColor: 'rgba(255, 255, 255, 0)', // พื้นหลังโปร่งแสง
       border: '1px solid #ddd', // สีกรอบที่อ่อนกว่า
       boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
       zIndex: 9999,
