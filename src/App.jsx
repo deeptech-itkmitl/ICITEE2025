@@ -115,7 +115,7 @@ const AppContent = ({ landingPageData }) => {
       {isHomePage && (
         <>  
 
-          {/* แสดง popup เมื่อ showPopup เป็น true */}
+          {/* แสดง popup เมื่อ showPopup เป็น true เฉพาะหน้าแรก */}
           {showPopup && <Popup onClose={closePopup} />}
 
           <Announcement data={landingPageData.Team} />               
