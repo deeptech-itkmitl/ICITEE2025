@@ -16,7 +16,7 @@ export default function VisitorCounter() {
       const sortedCountryData = response.data.countryData
         .filter((c) => c.name && c.count) // กรองข้อมูลที่ไม่มีชื่อประเทศ
         .sort((a, b) => b.count - a.count)
-        .slice(0, 5); // เอาเฉพาะ 5 อันดับแรก เปลี่ยนเป็น 10 ลำดับ วันที่ 25 มีค
+        .slice(0, 10); // เอาเฉพาะ 5 อันดับแรก เปลี่ยนเป็น 10 ลำดับ วันที่ 25 มีค 68
 
       setCountryData(sortedCountryData);
     } catch (error) {
