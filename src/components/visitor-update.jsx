@@ -71,7 +71,7 @@ export default function VisitorCounter2() {
                       alt={item.name}
                     />
                     <p className="country-name">{item.name}</p>
-                    <p className="visitor-count">{item.count.toLocaleString()} visitors</p>
+                    <p className="visitor-count">{item.count.toLocaleString()} </p>
                   </div>
                 ))
               ) : (
