@@ -23,7 +23,7 @@ export const OrganizeCommittee = () => {
       members: [
         "Asako Uraki (MU, Japan)",
         "Chayanon Sub-r-pa (CYUT, Taiwan)",
-        "Chitsutha Soomlek (KKU, Thailand) Alphabetically",
+        "Chitsutha Soomlek (KKU, Thailand)",
         "I Wayan Mustika (UGM, Indonesia)",
         "Phayung Meesad (KMUTNB, IEEE CIS Thailand Chapter, Thailand)",
         "Pornchai Mongkolnam (KMUTT, IEEE CIS Thailand Chapter, Thailand)",
