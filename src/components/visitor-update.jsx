@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import '../css/Visitor.css'; // นำเข้าไฟล์ CSS
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || "http://icitee2025.it.kmitl.ac.th:5000";
+const API_BASE_URL = process.env.REACT_APP_API_URL || "https://icitee2025.it.kmitl.ac.th";
 
 export default function VisitorCounter2() {
   const [totalVisitors, setTotalVisitors] = useState(0);
