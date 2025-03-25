@@ -29,6 +29,7 @@ export const OrganizeCommittee = () => {
         "Shiori Sasaki (MU, Japan)",
         "Sigit B. Wibowo (UGM, Indonesia)",
         "Syukron Abu Ishaq Alfarozi (UGM, Indonesia)",
+        "Shigeru KUCHII (NIT, Kitakyushu College, Japan)",
         "Thatsanee Charoenporn (MU, Japan)",
         "Teerapong Leelanupab (UQ, Australia)",
         "Ungsumalee Suttapakti (BUU, Thailand)",
