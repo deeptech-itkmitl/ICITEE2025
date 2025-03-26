@@ -10,7 +10,7 @@ export const OrganizeCommittee = () => {
         "Loo Chu Kiong (UM, Malasia)",
         "Lukito Edi (UGM, Indonesia)",
         "Masanori Sugimoto (HU, Japan)",
-        "Ruttikorn Varakulsiripunth (Thailand)",
+        "Ruttikorn Varakulsiripunth (TNI, Thailand)",
         "Sarjiya (UGM, Indonesia)",
         "Supavadee Aramvith (IEEE Thailand Section)",
         "Virach Sornlertlamvanich (MU, Japan)",
@@ -25,8 +25,8 @@ export const OrganizeCommittee = () => {
         "Chayanon Sub-r-pa (CYUT, Taiwan)",
         "Chitsutha Soomlek (KKU, Thailand)",
         "I Wayan Mustika (UGM, Indonesia)",
-        "Phayung Meesad (KMUTNB, IEEE CIS Thailand Chapter, Thailand)",
-        "Pornchai Mongkolnam (KMUTT, IEEE CIS Thailand Chapter, Thailand)",
+        "Phayung Meesad (KMUTNB, IEEE CIS Thailand Chapter)",
+        "Pornchai Mongkolnam (KMUTT, IEEE CIS Thailand Chapter)",
         "Shigeru KUCHII (NIT, Kitakyushu College, Japan)",
         "Shiori Sasaki (MU, Japan)",        
         "Sigit B. Wibowo (UGM, Indonesia)",
@@ -46,7 +46,7 @@ export const OrganizeCommittee = () => {
     {
       title: "Conference Chair",
       members: [
-        "Kuntpong Woraratpanya (KMITL, IEEE CIS Thailand Chapter, Thailand)"
+        "Kuntpong Woraratpanya (IT-KMITL, IEEE CIS Thailand Chapter)"
       ],
     },
     {
@@ -58,7 +58,7 @@ export const OrganizeCommittee = () => {
     {
       title: "Technical Program Chair",
       members: [
-        "Praphan Pavarangkoon (KMITL, Thailand)"
+        "Praphan Pavarangkoon (IT-KMITL, Thailand)"
       ],
     },
     {
@@ -68,28 +68,28 @@ export const OrganizeCommittee = () => {
       ],
     },
     {
-      title: "Technical Program Team Leaders",
+      title: "Senior TPC",
       members: [
         "Annop Monsakul (PIM, Thailand)",
-        "Chanboon Sathitwiriyawong (KMITL, CIS Thailand Chapter)",
-        "Chotipat Pornavalai (KMITL, Thailand)",
-        "Kanokwan Atchariyachanvanich (KMITL, Thailand)",
-        "Maleerat Sodanil (KMUTNB, IEEE CIS Thailand Chapter, Thailand)",
-        "Nat Dilokthanakul (KMITL, Thailand)",
-        "Nont Kanungsukkasem (KMITL, Thailand)",
-        "Olarn Wongwirat (KMITL, Thailand)",
+        "Chanboon Sathitwiriyawong (IT-KMITL, CIS Thailand Chapter)",
+        "Chotipat Pornavalai (IT-KMITL, Thailand)",
+        "Kanokwan Atchariyachanvanich (IT-KMITL, Thailand)",
+        "Maleerat Sodanil (KMUTNB, IEEE CIS Thailand Chapter)",
+        "Nat Dilokthanakul (IT-KMITL, Thailand)",
+        "Nont Kanungsukkasem (IT-KMITL, Thailand)",
+        "Olarn Wongwirat (IT-KMITL, Thailand)",
         "Olarik Surinta (MSU, Thailand)",
-        "Pornsuree Jamsri (KMITL, Thailand)",
-        "Sarayut Nonsiri (TNI, IEEE CIS Thailand Chapter, Thailand)",
-        "Sirion Vittayakorn (KMITL, Thailand)",
-        "Soradech Krootjohn (KMUTNB, IEEE CIS Thailand Chapter, Thailand)",
-        "Sudchai Boonto (KMUTT, IEEE CSS Thailand Chapter, Thailand)",
+        "Pornsuree Jamsri (IT-KMITL, Thailand)",
+        "Sarayut Nonsiri (TNI, IEEE CIS Thailand Chapter)",
+        "Sirion Vittayakorn (IT-KMITL, Thailand)",
+        "Soradech Krootjohn (KMUTNB, IEEE CIS Thailand Chapter)",
+        "Sudchai Boonto (KMUTT, Thailand)",
         "Sudiro (UGM, Indonesia)",
-        "Sumet Prabhavat (KMITL, Thailand)",
-        "Suvit Poomrittigul (KMITL, Thailand)",
-        "Taravichet Titijaroenroj (KMITL, Thailand)",
+        "Sumet Prabhavat (IT-KMITL, Thailand)",
+        "Suvit Poomrittigul (IT-KMITL, Thailand)",
+        "Taravichet Titijaroenroj (IT-KMITL, Thailand)",
         "Thitiporn Lertrusdachakul (TNI, Thailand)",
-        "Tuchsanai Ploysuwan (KMITL, Thailand)",
+        "Tuchsanai Ploysuwan (IT-KMITL, Thailand)",
         "Wijaya Yudha Atmaja (UGM, Indonesia)",
         "Ridwan Wicaksono (UGM, Indonesia)"
       ],
@@ -97,25 +97,25 @@ export const OrganizeCommittee = () => {
     {
       title: "Publication Chair",
       members: [
-        "Samart Moodleah (KMITL, Thailand)"
+        "Samart Moodleah (IT-KMITL, Thailand)"
       ],
     },
     {
       title: "Registration Chair",
       members: [
-        "Issarapong Khuankrue (KMITL, Thailand)"
+        "Issarapong Khuankrue (IT-KMITL, Thailand)"
       ],
     },
     {
       title: "Financial Chair",
       members: [
-        "Warune Buavirat (KMITL, Thailand)"
+        "Warune Buavirat (IT-KMITL, Thailand)"
       ],
     },
     {
       title: "Conference Secretariat",
       members: [
-        "Kitsuchart Pasupa (KMITL, IEEE CIS Thailand Chapter)"
+        "Kitsuchart Pasupa (IT-KMITL, IEEE CIS Thailand Chapter)"
       ],
     }
   ];
@@ -133,16 +133,19 @@ export const OrganizeCommittee = () => {
                 ))}
               </div>
               <div className="flex justify-center mt-4">
-                <img
+                <h1></h1>                
+                {/* <img
                   src={`${process.env.PUBLIC_URL}/img/Line9.png`}
                   alt="Line"
                   className="w-1/3 h-px"
-                />
+                /> */}
               </div>
             </div>
+            
           ))}
         </div>
       </div>
     </div>
+    
   );
 };
