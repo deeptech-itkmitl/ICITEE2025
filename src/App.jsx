@@ -9,6 +9,7 @@ import Layout5 from "./Layout5";
 import Layout6 from "./Layout6";
 import Layout7 from "./Layout7";
 import Layout8 from "./Layout8";
+import Layout9 from "./Layout9";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { About } from "./components/about";
@@ -25,11 +26,13 @@ import QualityControlPage from "./components/QualityControl";
 import Announcement from "./components/ProgressTimeline";
 import AnnouncementDetail from "./components/ProgressTimelineDetail";
 import PastConference from "./components/PastConferences";
+// import PastConference from "./components/Registration";
 import JsonData from "./data/data.json";
 // import VisitorCounter from "./components/visitor-update";  // นำเข้าฟังก์ชัน VisitorCounter
 import "./App.css";
 import { Gallery } from "components/gallery";
 import Popup from "./components/ui/Popup";  // นำเข้า Popup component
+import Registration from "./components/Registration";
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
@@ -107,7 +110,12 @@ const AppContent = ({ landingPageData }) => {
 
         <Route path="/pass-conference" element={<Layout7 data={landingPageData} />}>
           <Route index element={<PastConference data={landingPageData.Gallery} />} />
-        </Route>    
+        </Route> 
+
+        
+        <Route path="/registration" element={<Layout9 data={landingPageData} />}>
+          <Route index element={<Registration data={landingPageData.Gallery} />} />
+        </Route>      
 
       </Routes>
 
