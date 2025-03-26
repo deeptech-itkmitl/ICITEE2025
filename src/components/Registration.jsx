@@ -117,9 +117,9 @@ const Registration = () => {
       </div>
       
       <div className="card"><center>
-        <p style={{ color: "red" }}>Final Paper Submission Deadline (Rolling Review Ends): August 20, 2025</p>
-        <p style={{ color: "red" }}>Final Notification of Acceptance (Latest Possible Decision Date): September 5, 2025</p>
-        <p>Final Registration Deadline: September 10, 2025</p>
+        <p style={{ color: "red" }}>Final Paper Submission Deadline (Rolling Review Ends): <b>August 20, 2025</b></p>
+        <p style={{ color: "red" }}>Final Notification of Acceptance (Latest Possible Decision Date): <b>September 5, 2025</b></p>
+        <p>Final Registration Deadline: <b> September 10, 2025</b></p>
         </center></div>
       
       <div className="card">
@@ -146,8 +146,8 @@ const Registration = () => {
       </div>
       
       <div className="card"><center>
-        <p>Camera-Ready Submission Deadline: September 10, 2025</p>
-        <p>The registration fee for an accompanying person: 9,000 Baht/Person</p>
+        <p>Camera-Ready Submission Deadline: <b>September 10, 2025</b></p>
+        <p>The registration fee for an accompanying person:<b> 9,000 Baht/Person</b></p>
         </center></div>
       
       <h4 className="">The registration fee for ICITEE 2025 includes:</h4>
