@@ -7,29 +7,33 @@ const Registration = () => {
       <h1 className="title"><center>Important Dates</center></h1>
       <div className="card">
         <div className="table-responsive">
-          <table>
-            <thead>
-              <tr>
-                <th>Date</th>
-                <th>Event</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>28 May 2025</td><td>Extra Early Bird Registration</td></tr>
-              <tr><td>23 July 2025</td><td>Early Bird Registration</td></tr>
-              <tr><td>20 August 2025</td><td>Final Paper Submission Deadline (Rolling Review Ends)</td></tr>
-              <tr><td>5 September 2025</td><td>Final Notification of Acceptance (Latest Possible Decision Date)</td></tr>
-              <tr><td>10 September 2025</td><td>Camera-Ready Submission Deadline</td></tr>
-              <tr><td>10 September 2025</td><td>Final Registration Deadline</td></tr>
-              <tr><td>20 - 22 October 2025</td><td>Conference Date</td></tr>
-            </tbody>
-          </table>
+        <table>
+
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Event</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>28 May 2025</td><td>Extra Early Bird Registration</td></tr>
+    <tr><td>23 July 2025</td><td>Early Bird Registration</td></tr>
+    <tr><td>20 August 2025</td><td>Final Paper Submission Deadline (Rolling Review Ends)</td></tr>
+    <tr><td>5 September 2025</td><td>Final Notification of Acceptance (Latest Possible Decision Date)</td></tr>
+    <tr><td>10 September 2025</td><td>Camera-Ready Submission Deadline</td></tr>
+    <tr><td>10 September 2025</td><td>Final Registration Deadline</td></tr>
+    <tr><td>20 - 22 October 2025</td><td>Conference Date</td></tr>
+  </tbody>
+</table>
+
+
         </div>
       </div>
       
       <h1 className="title"><center>Registration Fees</center></h1>
       <div className="card">
         <div className="table-responsive">
+
           <table>
             <thead>
               <tr>
@@ -47,6 +51,7 @@ const Registration = () => {
               <tr><td>Accompanying Person</td><td colSpan="3">9,000 THB/Person</td></tr>
             </tbody>
           </table>
+          
         </div>
         <h1></h1>
         <p>* All the registration fees should be paid by THBs. Each accepted paper should have at least one author making registration to publish the paper in the proceedings. <b>(ONE author registration will cover only ONE paper)</b> After July 23, please use the Regular registration rate. Other co-authors of the accepted papers can participate in the conference by making the registration as other participants. <b>Registration fees are non-refundable and non-transferable.</b></p>

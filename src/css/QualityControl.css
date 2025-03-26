@@ -1,94 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/* Add this to your QualityControl.css */
 
-.body {
-  font-family: 'Poppins'; 
-  text-align: justify; 
-  color: #e2e8f0;
-  background-color: #334155;
-  font-size: 14px;
-}
-
+/* Make the container responsive */
 .quality-container {
-  font-family: 'Poppins'; 
-  max-width: 1000px;
-  margin: 40px auto;
+  width: 100%;
   padding: 20px;
-  text-align: left;  
-  color: #f8fafc; 
 }
 
-.title {
-  font-family: 'Poppins'; 
-  text-align: center;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: white;
-  text-align: justify; 
-}
-
-.intro {
-  font-family: 'Poppins'; 
-  text-align: left;
-  font-size: 14px;
-  /* margin-bottom: 40px; */
-  color: #f8fafc; 
-  
-}
-
+/* Style for the card */
 .card {
-  /* background: #1e293b; */
-  color: #f8fafc; 
+  margin: 20px 0;
   padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.card:hover {
-  transform: translateY(-5px);
-}
-
-h2, h3 {
-  font-family: 'Poppins'; 
-  color: #f8fafc; 
-  font-size: 16px;
-}
-
-p2 {
-  font-family: 'Poppins'; 
-  color: #f8fafc; 
-  font-size: 14px;
-}
-
+/* Table styles for responsiveness */
 table {
   width: 100%;
-  margin-top: 15px;
   border-collapse: collapse;
 }
 
-th {
-  font-family: 'Poppins'; 
-  background: #334155;
-  color: #f8fafc;
-  
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
 }
 
-th, td {
-  font-family: 'Poppins'; 
-  font-size: 14px;
-  padding: 12px;
-  border: 1px solid #475569;
-  color: #f8fafc;
-  text-align: justify; 
+th {
+  background-color: #f2f2f2;
+}
+
+/* Center the headings */
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0;
 }
 
 ul {
-  list-style: disc;
-  padding-left: 20px;
-  font-size: 14px;
-  color: #f8fafc;
-  /* text-align: justify;  */
+  list-style-type: none;
+  padding: 0;
 }
 
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Make the table scrollable on small screens */
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+  /* Stack the columns in small screens */
+  th, td {
+    display: block;
+    width: 100%;
+  }
+  
+  /* Ensure the header text is center-aligned for smaller screens */
+  .title {
+    font-size: 20px;
+  }
+  
+  /* Adjust the card padding for smaller screens */
+  .card {
+    padding: 10px;
+  }
+}
+
+/* Styling for center-aligned text */
+.center {
+  text-align: center;
+}
+
+p {
+  line-height: 1.6;
+}
