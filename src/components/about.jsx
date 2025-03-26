@@ -67,11 +67,11 @@ export const About = (props) => {
               <tbody>                 
                 <tr>
                   <td>28 May 2025</td>
-                  <td>Extra Early Bird Registration</td>
+                  <td>Extra Early Bird Registration Deadline</td>
                 </tr>
                 <tr>
                   <td>23 July 2025</td>
-                  <td>Early Bird Registration</td>
+                  <td>Early Bird Registration Deadline</td>
                 </tr>
                 <tr>
                   <td>20 August 2025</td>
