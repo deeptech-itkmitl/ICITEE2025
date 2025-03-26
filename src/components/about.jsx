@@ -57,48 +57,45 @@ export const About = (props) => {
               </table>
             </div> */}
             <div className="important-dates-container">          
-  <table>
-    <thead>
-      <tr>
-        <th>Date</th>
-        <th>Event</th>
-      </tr>
-    </thead>
-    <tbody>                 
-      <tr>
-        <td>28 May 2025</td>
-        <td>Extra Early Bird Registration</td>
-      </tr>
-      <tr>
-        <td>23 July 2025</td>
-        <td>Early Bird Registration</td>
-      </tr>
-      <tr>
-        <td>20 August 2025</td>
-        <td>Final Paper Submission Deadline (Rolling Review Ends)</td>
-      </tr>
-      <tr>
-        <td>5 September 2025</td>
-        <td>Final Notification of Acceptance (Latest Possible Decision Date)</td>
-      </tr>
-      <tr>
-        <td>10 September 2025</td>
-        <td>Camera-Ready Submission Deadline</td>
-      </tr>
-      <tr>
-        <td>10 September 2025</td>
-        <td>Final Registration Deadline</td>
-      </tr>
-      <tr>
-        <td>20 - 22 October 2025</td>
-        <td>Conference Date</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-            
-            
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Event</th>
+                </tr>
+              </thead>
+              <tbody>                 
+                <tr>
+                  <td>28 May 2025</td>
+                  <td>Extra Early Bird Registration</td>
+                </tr>
+                <tr>
+                  <td>23 July 2025</td>
+                  <td>Early Bird Registration</td>
+                </tr>
+                <tr>
+                  <td>20 August 2025</td>
+                  <td>Final Paper Submission Deadline (Rolling Review Ends)</td>
+                </tr>
+                <tr>
+                  <td>5 September 2025</td>
+                  <td>Final Notification of Acceptance (Latest Possible Decision Date)</td>
+                </tr>
+                <tr>
+                  <td>10 September 2025</td>
+                  <td>Camera-Ready Submission Deadline</td>
+                </tr>
+                <tr>
+                  <td>10 September 2025</td>
+                  <td>Final Registration Deadline</td>
+                </tr>
+                <tr>
+                  <td>20 - 22 October 2025</td>
+                  <td>Conference Date</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>           
           </div>
           <p2>
           <h4 className="title"><center>
