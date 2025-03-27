@@ -32,70 +32,44 @@ export const About = (props) => {
           </div>
 
           {/* ส่วนตารางวันที่สำคัญ */}
-          <div className="content-layout">
-            <div className="important-section">
-              <div className="about-title-container">
-                <h1 className="topic-title">Important Dates</h1>
-                <h6 className="topic-title"></h6>
-              </div>
+          <div className="content-layout flex flex-col md:flex-row gap-6">
+           {/* ส่วนตารางวันที่สำคัญ */}
+            
+            {/* ส่วนซ้าย */}
+            <div className="about-section text-center md:text-left flex-1">
+              <h1 className="topic-title">Announcement</h1>
+              <h6 className="text-gray-400"></h6>
             </div>
 
-            {/* <div className="important-dates-container">          
-              <table>
-                <thead>
-                  <tr>
-                    <th>Date</th>
-                    <th>Event</th>
-                  </tr>
-                </thead>
-                <tbody>                 
-                  <tr>
-                    <td>20 - 22 October 2025</td>
-                    <td>Conference Date</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div> */}
-            <div className="important-dates-container">          
-            <table>
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>Event</th>
-                </tr>
-              </thead>
-              <tbody>                 
-                <tr>
-                  <td>28 May 2025</td>
-                  <td>Extra Early Bird Registration Deadline</td>
-                </tr>
-                <tr>
-                  <td>23 July 2025</td>
-                  <td>Early Bird Registration Deadline</td>
-                </tr>
-                <tr>
-                  <td>20 August 2025</td>
-                  <td>Final Paper Submission Deadline (Rolling Review Ends)</td>
-                </tr>
-                <tr>
-                  <td>5 September 2025</td>
-                  <td>Final Notification of Acceptance (Latest Possible Decision Date)</td>
-                </tr>
-                <tr>
-                  <td>10 September 2025</td>
-                  <td>Camera-Ready Submission Deadline</td>
-                </tr>
-                <tr>
-                  <td>10 September 2025</td>
-                  <td>Final Registration Deadline</td>
-                </tr>
-                <tr>
-                  <td>20 - 22 October 2025</td>
-                  <td>Conference Date</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>           
+              <div class="about-content flex-2">
+                <table style={{ width: "100%", borderCollapse: "collapse", minWidth: "300px" }}>
+                  <thead>
+                    <tr className="bg-gray-200">
+                      <th className="border border-gray-300 p-2 text-left">Date</th>
+                      <th className="border border-gray-300 p-2 text-left">Event</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      ["May-28, 2025", "Extra Early Bird Registration Deadline"],
+                      ["Jul-23, 2025", "Early Bird Registration Deadline"],
+                      ["Aug-20, 2025", "Final Paper Submission Deadline (Rolling Review Ends)"],
+                      ["Sep-05, 2025", "Final Notification of Acceptance (Latest Possible Decision Date)"],
+                      ["Sep-10, 2025", "Camera-Ready Submission Deadline"],
+                      ["Sep-10, 2025", "Final Registration Deadline"],
+                      ["Oct-20,22, 2025", "Conference Date"],
+                    ].map(([date, event], index) => (
+                      <tr key={index}>
+                        <td className="border border-gray-300 p-2 text-left">{date}</td>
+                        <td className="border border-gray-300 p-2 text-left">{event}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+           
+
+
           </div>
           <p2>
           <h4 className="title"><center>
