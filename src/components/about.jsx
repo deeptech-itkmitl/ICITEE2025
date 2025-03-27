@@ -37,7 +37,7 @@ export const About = (props) => {
             
             {/* ส่วนซ้าย */}
             <div className="about-section text-center md:text-left flex-1">
-              <h1 className="topic-title">Announcement</h1>
+              <h1 className="topic-title">Important Dates</h1>
               <h6 className="text-gray-400"></h6>
             </div>
 
