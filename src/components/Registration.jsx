@@ -54,7 +54,8 @@ const Registration = () => {
           
         </div>
         <h1></h1>
-        <p>* All the registration fees should be paid by THBs. Each accepted paper should have at least one author making registration to publish the paper in the proceedings. <b>(ONE author registration will cover only ONE paper)</b> After July 23, please use the Regular registration rate. Other co-authors of the accepted papers can participate in the conference by making the registration as other participants. <b>Registration fees are non-refundable and non-transferable.</b></p>
+        <p>* All the registration fees should be paid by <b>THBs.(Thai Baht)</b> Authors are required to pay publication fees, which may vary depending on the exchange rate. Additionally, financial transaction charges may apply, affecting the total payment amount. Authors are advised to check with their financial institutions for applicable exchange rates and transaction fees before making payments.</p>
+        <p>Each accepted paper should have at least one author making registration to publish the paper in the proceedings. <b>(ONE author registration will cover only ONE paper)</b> After July 23, please use the Regular registration rate. Other co-authors of the accepted papers can participate in the conference by making the registration as other participants. <b>Registration fees are non-refundable and non-transferable.</b></p>
       </div>
       
       <h4 className=""><b>** The registration will be open when time comes closer.</b> The registration fee for ICITEE 2025 includes:</h4>
