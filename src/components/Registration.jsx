@@ -16,13 +16,13 @@ const Registration = () => {
     </tr>
   </thead>
   <tbody>
-    <tr><td>28 May 2025</td><td>Extra Early Bird Registration Deadline</td></tr>
-    <tr><td>23 July 2025</td><td>Early Bird Registration Deadline</td></tr>
-    <tr><td>20 August 2025</td><td>Final Paper Submission Deadline (Rolling Review Ends)</td></tr>
-    <tr><td>5 September 2025</td><td>Final Notification of Acceptance (Latest Possible Decision Date)</td></tr>
-    <tr><td>10 September 2025</td><td>Camera-Ready Submission Deadline</td></tr>
-    <tr><td>10 September 2025</td><td>Final Registration Deadline</td></tr>
-    <tr><td>20 - 22 October 2025</td><td>Conference Date</td></tr>
+    <tr><td>May-28, 2025</td><td>Extra Early Bird Registration Deadline</td></tr>
+    <tr><td>Jul-23, 2025</td><td>Early Bird Registration Deadline</td></tr>
+    <tr><td>Aug-20, 2025</td><td>Final Paper Submission Deadline (Rolling Review Ends)</td></tr>
+    <tr><td>Sep-05, 2025</td><td>Final Notification of Acceptance (Latest Possible Decision Date)</td></tr>
+    <tr><td>Sep-10, 2025</td><td>Camera-Ready Submission Deadline</td></tr>
+    <tr><td>Sep-10, 2025</td><td>Final Registration Deadline</td></tr>
+    <tr><td>Oct-20,22, 2025</td><td>Conference Date</td></tr>
   </tbody>
 </table>
 
