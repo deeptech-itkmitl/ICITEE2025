@@ -17,7 +17,7 @@ const Registration = () => {
   </thead>
   <tbody>
     <tr><td>May-28, 2025</td><td>Extra Early Bird Registration Deadline.</td></tr>
-    <tr><td>Jul-23, 2025</td><td>Early Bird Registration Deadline</td></tr>
+    <tr><td>Jul-23, 2025</td><td>Early Bird Registration Deadline.</td></tr>
     <tr><td>Aug-20, 2025</td><td>Final Paper Submission Deadline (Rolling Review Ends).</td></tr>
     <tr><td>Sep-05, 2025</td><td>Final Notification of Acceptance (Latest Possible Decision Date).</td></tr>
     <tr><td>Sep-10, 2025</td><td>Camera-Ready Submission Deadline.</td></tr>
