@@ -73,6 +73,8 @@ export const OrganizeCommittee = () => {
         "Annop Monsakul (PIM, Thailand)",
         "Chanboon Sathitwiriyawong (IT-KMITL, CIS Thailand Chapter)",
         "Chotipat Pornavalai (IT-KMITL, Thailand)",
+        "David Klotz (HdM, Germany)",
+        "Jan Kirenz (HdM, Germany)",
         "Kanokwan Atchariyachanvanich (IT-KMITL, Thailand)",
         "Maleerat Sodanil (KMUTNB, IEEE CIS Thailand Chapter)",
         "Nat Dilokthanakul (IT-KMITL, Thailand)",
