@@ -3,7 +3,7 @@ import React from "react";
 export const OrganizeCommittee = () => {
   const committeeSections = [
     {
-      title: "Advisory Boards",
+      title: "Advisory Board",
       members: [
         "Hanung Adi Nugroho (UGM, Indonesia)",
         "Jonathan Hoyin Chan (KMUTT, IEEE CIS Thailand Chapter, Thailand)",

@@ -5,7 +5,7 @@ export const Testimonials = (props) => {
     <div id="testimonials">
       <div className="container">
         <div className="section-title text-center">
-          <h2>Advisory Boards</h2>
+          <h2>Advisory Board</h2>
         </div>
         <div className="row">
           {props.data
