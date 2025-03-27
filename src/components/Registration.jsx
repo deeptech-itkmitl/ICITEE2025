@@ -66,7 +66,7 @@ const Registration = () => {
           <li>Cruise dinner on Day 2</li>
         </ul>
       </div>
-      <div className="quality-container">
+      {/* <div className="quality-container">
       <h1 className="title"><center>Important Dates & Registration</center></h1>
       
       <div className="card">
@@ -120,8 +120,8 @@ const Registration = () => {
           </table>
         </div>
       </div>
-      
-      <div className="card"><center>
+       */}
+      {/* <div className="card"><center>
         <p style={{ color: "red" }}>Final Paper Submission Deadline (Rolling Review Ends): <b>August 20, 2025</b></p>
         <p style={{ color: "red" }}>Final Notification of Acceptance (Latest Possible Decision Date): <b>September 5, 2025</b></p>
         <p>Final Registration Deadline: <b> September 10, 2025</b></p>
@@ -148,9 +148,9 @@ const Registration = () => {
             </tbody>
           </table>
         </div>
-      </div>
+      </div> */}
       
-      <div className="card"><center>
+      {/* <div className="card"><center>
         <p>Camera-Ready Submission Deadline: <b>September 10, 2025</b></p>
         <p>The registration fee for an accompanying person:<b> 9,000 Baht/Person</b></p>
         </center></div>
@@ -164,7 +164,7 @@ const Registration = () => {
           <li>Cruise dinner on Day 2</li>
         </ul>
       </div>
-    </div>
+    </div> */}
     </div>
     
   );
