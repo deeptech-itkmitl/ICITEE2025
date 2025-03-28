@@ -9,7 +9,7 @@ const Registration = () => {
       <div className="card">
         <div className="">
          <h1></h1>
-         <p>* ICITEE 2025 offers two rounds of early-bird registration to align with our Rolling Review Process, ensuring authors who submit early receive timely decisions. Papers that meet the quality criteria can be accepted as-is, allowing authors to secure the lowest registration fee in the first early-bird round. This system encourages high-quality submissions while giving authors ample time for revisions if needed.</p>
+         <p><b>* ICITEE 2025 offers two rounds of early-bird registration to align with our Rolling Review Process</b>, ensuring authors who submit early receive timely decisions. Papers that meet the quality criteria can be accepted as-is, allowing authors to secure the lowest registration fee in the first early-bird round. <b>This system encourages high-quality submissions</b> while giving authors ample time for revisions if needed.</p>
         <h1></h1>
         </div>
       </div>
@@ -67,7 +67,9 @@ const Registration = () => {
         <p>Each accepted paper should have at least one author making registration to publish the paper in the proceedings. <b>(ONE author registration will cover only ONE paper)</b> After July 23, please use the Regular registration rate. Other co-authors of the accepted papers can participate in the conference by making the registration as other participants. <b>Registration fees are non-refundable and non-transferable.</b></p>
       </div>
       
+      <div className="card">
       <h4 className=""><b>** The registration will be open when time comes closer.</b> The registration fee for ICITEE 2025 includes:</h4>
+      </div>
       <div className="card">
         <ul>
           <li>Conference kit</li>
