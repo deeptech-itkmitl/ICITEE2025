@@ -56,13 +56,13 @@ const AppContent = ({ landingSEOPageData }) => {
 
   const defaultSeoData = {
     title: {
-      en: "ICITEE 2019,2020,2021,2022,2023,2024,2025.",
-      th: "ICITEE 2019,2020,2021,2022,2023,2024,2025.",
-      ko: "ICITEE 2019,2020,2021,2022,2023,2024,2025.",
-      ja: "ICITEE 2019,2020,2021,2022,2023,2024,2025.",
-      id: "ICITEE 2019,2020,2021,2022,2023,2024,2025.",
-      ms: "ICITEE 2019,2020,2021,2022,2023,2024,2025.",
-      ph: "ICITEE 2019,2020,2021,2022,2023,2024,2025."
+      en: "ICITEE 2019,2020,2021,2022,2023,2024,2025.,icitee",
+      th: "ICITEE 2019,2020,2021,2022,2023,2024,2025.icitee",
+      ko: "ICITEE 2019,2020,2021,2022,2023,2024,2025.icitee",
+      ja: "ICITEE 2019,2020,2021,2022,2023,2024,2025.icitee",
+      id: "ICITEE 2019,2020,2021,2022,2023,2024,2025.icitee",
+      ms: "ICITEE 2019,2020,2021,2022,2023,2024,2025.icitee",
+      ph: "ICITEE 2019,2020,2021,2022,2023,2024,2025.icitee"
     },
     description: {
       en: "International Conference on Information Technology and Electrical Engineering",

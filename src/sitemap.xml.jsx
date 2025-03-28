@@ -1,7 +1,7 @@
 export default function Sitemap() {}
 
 export async function getServerSideProps({ res }) {
-  const baseUrl = "https://icitee.it.kmitl.ac.th";
+  const baseUrl = "https://icitee2025.it.kmitl.ac.th";
   const pages = ["/", "/about", "/call-for-papers"];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
