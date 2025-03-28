@@ -10,7 +10,7 @@ export const OrganizeCommittee = () => {
         "Loo Chu Kiong (UM, Malasia)",
         "Lukito Edi (UGM, Indonesia)",
         "Masanori Sugimoto (HU, Japan)",
-        "Ruttikorn Varakulsiripunth (TNI, Thailand)",
+        "Ruttikorn Varakulsiripunth (PlanetComm, Thailand)",
         "Sarjiya (UGM, Indonesia)",
         "Supavadee Aramvith (IEEE Thailand Section)",
         "Virach Sornlertlamvanich (MU, Japan)",
