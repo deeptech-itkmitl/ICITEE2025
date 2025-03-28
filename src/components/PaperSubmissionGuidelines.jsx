@@ -35,7 +35,7 @@ const PaperSubmissionGuidelines = () => {
                                     src={`${process.env.PUBLIC_URL}/img/Group_233.png`}
                                     alt="Line"
                                     className=""
-                                    style={{ width: "85%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                                    style={{ width: "100%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
                             /></center>
       </h4>
       </div>
