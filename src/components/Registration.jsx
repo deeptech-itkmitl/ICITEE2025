@@ -9,7 +9,7 @@ const Registration = () => {
       <div className="card">
         <div className="">
          <h1></h1>
-         <p><b>* ICITEE 2025 offers two rounds of early-bird registration to align with our Rolling Review Process</b>, ensuring authors who submit early receive timely decisions. Papers that meet the quality criteria can be accepted as-is, allowing authors to secure the lowest registration fee in the first early-bird round. <b>This system encourages high-quality submissions</b> while giving authors ample time for revisions if needed.</p>
+         <p><b>ICITEE 2025 offers two rounds of early-bird registration to align with our Rolling Review Process</b>, ensuring authors who submit early receive timely decisions. Papers that meet the quality criteria can be accepted as-is, allowing authors to secure the lowest registration fee in the first early-bird round. <b>This system encourages high-quality submissions</b> while giving authors ample time for revisions if needed.</p>
         <h1></h1>
         </div>
       </div>
