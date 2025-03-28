@@ -25,7 +25,7 @@ export const Header = (props) => {
                     className="conference-logo2"
                   />
                 </h1>
-                <p><div class="typotitle">20 - 22 October 2025 | Bangkok, Thailand</div></p>
+                <p><div class="typotitle">20 - 21 October 2025 | Bangkok, Thailand</div></p>
                 <div className="conference-timer">The Conference starts in</div>
                 <div>
                   <CountDownTimer />                  
