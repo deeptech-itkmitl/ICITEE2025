@@ -31,7 +31,7 @@ const Registration = () => {
     <tr><td>Sep-05, 2025</td><td>Final Notification of Acceptance (Latest Possible Decision Date).</td></tr>
     <tr><td>Sep-10, 2025</td><td>Camera-Ready Submission Deadline.</td></tr>
     <tr><td>Sep-10, 2025</td><td>Final Registration Deadline.</td></tr>
-    <tr><td>Oct-20,22, 2025</td><td>Conference Date.</td></tr>
+    <tr><td>Oct-20,21, 2025</td><td>Conference Date.</td></tr>
   </tbody>
 </table>
 

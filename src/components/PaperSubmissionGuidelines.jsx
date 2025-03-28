@@ -29,7 +29,16 @@ const PaperSubmissionGuidelines = () => {
         </ul>
         </p>
       </div>
-
+      <div className="card">
+      <h4 className="title"><center>
+                            <img
+                                    src={`${process.env.PUBLIC_URL}/img/Group_233.png`}
+                                    alt="Line"
+                                    className=""
+                                    style={{ width: "100%" }} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                            /></center>
+      </h4>
+      </div>
       <div className="card">
       <h4 className="title"><center> Rolling Review Process</center></h4>
       <h4 className="title"><center>

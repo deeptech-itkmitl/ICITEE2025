@@ -25,14 +25,14 @@ export const Header = (props) => {
                     className="conference-logo2"
                   />
                 </h1>
-                <p><div class="typotitle">20 - 22 October 2025 | Bangkok, Thailand</div></p>
+                <p><div class="typotitle">20 - 21 October 2025 | Bangkok, Thailand</div></p>
                 <div className="conference-timer">The Conference starts in</div>
                 <div>
                   <CountDownTimer />                  
                 </div>
                 <div><p></p></div>
                 <div>
-                <a href={`${process.env.PUBLIC_URL}/pdf/A4-21x29.7_ICITEE2025_CFP_03-3.pdf`} 
+                <a href={`${process.env.PUBLIC_URL}/pdf/A4-21x29.7_ICITEE2025_CFP_03-4.pdf`} 
                   className="btn btn-custom btn-lg page-scroll" 
                   target="_blank" 
                   rel="noopener noreferrer">
