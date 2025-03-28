@@ -68,13 +68,13 @@ const AppContent = ({ landingPageData }) => {
     <HelmetProvider>
     <>
        {/* แสดง popup เมื่อ showPopup เป็น true */}
-        {/* {showPopup && <Popup onClose={closePopup} />} */}
+       {/* {showPopup && <Popup onClose={closePopup} />} */}
       
        {/* ตั้งค่า Favicon */}
        <Helmet>
         <title>ICITEE 2025: 17th International Conference on Information Technology and Electrical Engineering., IT KMITL Conferences, Bangkok , Thailand.</title>
         <link rel="icon" type="image/png" href="img/logo.png" />
-      </Helmet>
+       </Helmet>
 
       {/* แสดง Header เฉพาะหน้า "/" */}
       {isHomePage && <Header data={landingPageData.Header} />}
@@ -122,10 +122,8 @@ const AppContent = ({ landingPageData }) => {
       {/* แสดงข้อมูล VisitorCounter และ Team2 Team1 Contact เฉพาะหน้า "/" */}
       {isHomePage && (
         <>  
-
           {/* แสดง popup เมื่อ showPopup เป็น true เฉพาะหน้าแรก */}
           {showPopup && <Popup onClose={closePopup} />}
-
           <Announcement data={landingPageData.Team} />               
           {/* <Gallery/> */}
           <Team2 data={landingPageData.Team} />
