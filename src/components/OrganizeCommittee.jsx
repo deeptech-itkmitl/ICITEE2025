@@ -117,7 +117,7 @@ export const OrganizeCommittee = () => {
     {
       title: "Local Arrangement Chair",
       members: [
-        "Nont Kanungsukkasem"
+        "Nont Kanungsukkasem (IT-KMITL, Thailand)"
       ],
     },
     {
