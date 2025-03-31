@@ -5,11 +5,14 @@ export const OrganizeCommittee = () => {
     {
       title: "Advisory Board",
       members: [
+        "Frederic Merienne (UTP, Malaysia)",
         "Hanung Adi Nugroho (UGM, Indonesia)",
         "Jonathan Hoyin Chan (KMUTT, IEEE CIS Thailand Chapter, Thailand)",
+        "Lila Iznita Izhar (UTP, Malaysia)",
         "Loo Chu Kiong (UM, Malasia)",
         "Lukito Edi (UGM, Indonesia)",
         "Masanori Sugimoto (HU, Japan)",
+        "M Naufal M Saad (UTP, Malaysia)",
         "Ruttikorn Varakulsiripunth (PlanetComm, Thailand)",
         "Sarjiya (UGM, Indonesia)",
         "Supavadee Aramvith (IEEE Thailand Section)",
@@ -54,7 +57,8 @@ export const OrganizeCommittee = () => {
     {
       title: "Conference Co-chair",
       members: [
-        "Guntur Dharma Putra (UGM, Indonesia)"
+        "Guntur Dharma Putra (UGM, Indonesia)",
+        "Ramani Kannan (UTP, Malaysia)"
       ],
     },
     {
@@ -66,7 +70,8 @@ export const OrganizeCommittee = () => {
     {
       title: "Technical Program Co-chair",
       members: [
-        "Ahmad Ataka Awwalur Rizqi (UGM, Indonesia)"
+        "Ahmad Ataka Awwalur Rizqi (UGM, Indonesia)",
+        "Taib Ibrahim (UTP, Malaysia)"
       ],
     },
     {
@@ -107,6 +112,12 @@ export const OrganizeCommittee = () => {
       title: "Registration Chair",
       members: [
         "Issarapong Khuankrue (IT-KMITL, Thailand)"
+      ],
+    },
+    {
+      title: "Local Arrangement Chair",
+      members: [
+        "Nont Kanungsukkasem"
       ],
     },
     {
