@@ -10,6 +10,7 @@ import Layout6 from "./Layout6";
 import Layout7 from "./Layout7";
 import Layout8 from "./Layout8";
 import Layout9 from "./Layout9";
+import Layout10 from "./Layout10";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { About } from "./components/about";
@@ -29,6 +30,7 @@ import PastConference from "./components/PastConferences";
 // import PastConference from "./components/Registration";
 import JsonData from "./data/data.json";
 // import VisitorCounter from "./components/visitor-update";  // นำเข้าฟังก์ชัน VisitorCounter
+import VisitorCounter from "./components/visitor-updateDetail";  // นำเข้าฟังก์ชัน VisitorCounter
 import "./App.css";
 import { Gallery } from "components/gallery";
 import Popup from "./components/ui/Popup";  // นำเข้า Popup component
@@ -79,6 +81,7 @@ const AppContent = ({ landingPageData }) => {
       {/* แสดง Header เฉพาะหน้า "/" */}
       {isHomePage && <Header data={landingPageData.Header} />}
       {/* // && <Announcement data={landingPageData.Team} />  } */}
+      
       <Navigation />
       <Routes>
         <Route path="/" element={<About data={landingPageData.About} />} />
@@ -115,7 +118,11 @@ const AppContent = ({ landingPageData }) => {
         
         <Route path="/registration" element={<Layout9 data={landingPageData} />}>
           <Route index element={<Registration data={landingPageData.Gallery} />} />
-        </Route>      
+        </Route>    
+
+        <Route path="/VisitorCounter" element={<Layout10 data={landingPageData} />}>
+          <Route index element={<VisitorCounter data={landingPageData.Gallery} />} />
+        </Route>    
 
       </Routes>
 
