@@ -32,6 +32,11 @@ export const TopicsOfInterest = () => {
       description:
         "Control Theory and Applications; Robotics and Autonomous Systems; Intelligent Control, Robust and Nonlinear Control; Adaptive Control, Industrial Automation, and Control Systems Technology; Control of Infinite Dimensional Systems; Geometric Control Theory and Applications",
     },
+    {
+      title: "Special session: Agentic AI in Business Applications and Digital Transformation",
+      description:
+        "Decision-making, Digital Marketing, Process Automation, Software Development Workflows, IT System Integration, and Business Transformation",
+    },
   ];
 
   return (
