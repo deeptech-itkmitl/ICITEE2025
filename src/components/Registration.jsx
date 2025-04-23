@@ -68,9 +68,10 @@ const Registration = () => {
       </div>
       
       <div className="card">
-      <h4 className=""><b>** The registration will be open when time comes closer.</b> The registration fee for ICITEE 2025 includes:</h4>
+      <h4><b>** The registration will be open when time comes closer.</b> </h4>
       </div>
       <div className="card">
+        <h4>The registration fee for ICITEE 2025 includes:</h4>
         <ul>
           <li>Conference kit</li>
           <li>Two lunches and four coffee breaks (over two days)</li>
