@@ -88,6 +88,7 @@ export const OrganizeCommittee = () => {
         "Olarn Wongwirat (IT-KMITL, Thailand)",
         "Olarik Surinta (MSU, Thailand)",
         "Pornsuree Jamsri (IT-KMITL, Thailand)",
+        "Pramuk Boonsieng (TNI, Thailand)",
         "Sarayut Nonsiri (TNI, IEEE CIS Thailand Chapter)",
         "Sirion Vittayakorn (IT-KMITL, Thailand)",
         "Soradech Krootjohn (KMUTNB, IEEE CIS Thailand Chapter)",
