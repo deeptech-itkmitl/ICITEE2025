@@ -18,9 +18,8 @@ export const Navigation = () => {
             type="button"
             className="navbar-toggle collapsed"
             data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1"
-            
-          >
+            data-target="#bs-example-navbar-collapse-1"            
+        >
             <span className="sr-only">Toggle navigation</span>
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
@@ -62,7 +61,20 @@ export const Navigation = () => {
                 <ul className="dropdown-menu">                 
                   <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>      
                   <li><a href="/paper-submission-guidelines" className="page-scroll">Paper Submission Guidelines</a></li>  
-                  <li><a href="/registration" className="page-scroll">Registration</a></li>           
+                  <li><a href="/registration" className="page-scroll">Registration</a></li>       
+                </ul>
+              )}
+            </li>
+
+            <li className="dropdown">
+              <a href="#Venue & Travel Information" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setSubmissionOpen); }}>
+              Venue & Travel Information <i className="fa fa-caret-down"></i>
+              </a>
+              {isSubmissionOpen && (
+                <ul className="dropdown-menu">                 
+                  {/* <li><a href="/conference-venue-detail" className="page-scroll">Conference venue details</a></li>      
+                  <li><a href="/travel-guidance" className="page-scroll">Travel Guidance</a></li>   */}
+                  <li><a href="/visa-information" className="page-scroll">Visa Information</a></li>       
                 </ul>
               )}
             </li>
