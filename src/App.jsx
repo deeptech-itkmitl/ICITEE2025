@@ -11,6 +11,7 @@ import Layout7 from "./Layout7";
 import Layout8 from "./Layout8";
 import Layout9 from "./Layout9";
 import Layout10 from "./Layout10";
+import Layout11 from "./Layout11";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { About } from "./components/about";
@@ -27,6 +28,7 @@ import QualityControlPage from "./components/QualityControl";
 import Announcement from "./components/ProgressTimeline";
 import AnnouncementDetail from "./components/ProgressTimelineDetail";
 import PastConference from "./components/PastConferences";
+import VisaInformation from "./components/Visainformation";
 // import PastConference from "./components/Registration";
 import JsonData from "./data/data.json";
 // import VisitorCounter from "./components/visitor-update";  // นำเข้าฟังก์ชัน VisitorCounter
@@ -122,7 +124,11 @@ const AppContent = ({ landingPageData }) => {
 
         <Route path="/VisitorCounter" element={<Layout10 data={landingPageData} />}>
           <Route index element={<VisitorCounter data={landingPageData.Gallery} />} />
-        </Route>    
+        </Route> 
+
+        <Route path="/visa-information" element={<Layout11 data={landingPageData} />}>
+          <Route index element={<VisaInformation data={landingPageData.Gallery} />} />
+        </Route>       
 
       </Routes>
 
