@@ -305,7 +305,7 @@ const TravelGuidance = () => {
           <h1></h1>
         </section>
 
-        {/* 🔖 Jump Button */}
+        {/* 🔖 Jump Button
         <div className="text-center mb-6">
           <button
             onClick={scrollToMap}
@@ -314,7 +314,7 @@ const TravelGuidance = () => {
             🔖 {t.scrollToMap}
           </button>
           <h1></h1>
-        </div>
+        </div> */}
 
         <section className="mb-8" ref={mapRef}>
           <h2 className="text-xl font-semibold mb-2">{t.mapTitle}</h2>
