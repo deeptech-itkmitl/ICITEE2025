@@ -4,16 +4,16 @@ import "../css/TravelGuidance.css";
 
 const translations = {
     en: {
-      title: 'Travel Guide',
-      conferenceInfo: 'Conference Information',
+      title: 'Conference Venue',
+      conferenceInfo: '',
       conferenceDetails:
-        'The ICITEE 2025 conference will be held at The Berkeley Hotel Pratunam, Bangkok from December 1-3, 2025. Please register in advance and prepare the necessary documents.',
+        '',
       hotelInfo: 'Hotel Information',
       hotelName: 'The Berkeley Hotel Pratunam',
       hotelAddress:
         '559 Ratchaprarop Road, Makkasan, Ratchathewi, Bangkok 10400, Thailand',
-      phone: 'Phone',
-      email: 'Email',
+      phone: 'Phone : (662) 309-9999',
+      email: 'Website : https://berkeleypratunam.com',
       mapTitle: 'Hotel Map',
       qrTitle: 'Scan to open map',
       qrNote: 'Scan this QR code to open the map of The Berkeley Hotel on your phone.',
@@ -299,8 +299,8 @@ const TravelGuidance = () => {
           <p>
             <strong>{t.phone}:</strong> (662) 309-9999<br />
             <strong>{t.email}:</strong>{' '}
-            <a href="mailto:rsvn@berkeleyhotel.co.th" className="text-blue-600 underline">rsvn@berkeleyhotel.co.th</a>,{' '}
-            <a href="mailto:info@berkeleyhotel.co.th" className="text-blue-600 underline">info@berkeleyhotel.co.th</a>
+            <a href="mailto:rsvn@berkeleyhotel.co.th" className="text-blue-600 underline"></a>{' '}
+            <a href="mailto:info@berkeleyhotel.co.th" className="text-blue-600 underline"></a>
           </p>
           <h1></h1>
         </section>
