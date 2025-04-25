@@ -54,7 +54,7 @@ const VisaInformation = () => {
           <li><strong>Who can request an invitation letter?</strong><br/>Only registered participants (authors, presenters, or attendees).</li>
           <li><strong>How to request an invitation letter?</strong><br/>After registration, fill out the VISA Invitation Request Form via ICITEE 2025 portal. Provide your full name, passport number, and affiliation. The organizing committee will issue the letter within 5 business days.</li>
         </ul>
-        <p className="mt-2"><u><i><b><a className="text-blue-600 underline" href="#">Request your VISA Invitation Letter here</a></b></i></u></p>
+        <p className="mt-2">Request your VISA Invitation Letter here :<u><i><b><a className="text-blue-600 underline" href="#">ICITEE 2025 VISA Request Form</a></b></i></u></p>
       </section>
 
       <section className="card">
