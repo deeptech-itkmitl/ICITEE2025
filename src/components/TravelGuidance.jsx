@@ -361,6 +361,17 @@ const TravelGuidance = () => {
             className="inline-block bg-blue-700 text-white px-6 py-2 rounded-full shadow hover:bg-blue-800 transition"
           >
             <h1></h1>
+            <div>
+            <h4 className="title"><center>
+                                      <img
+                                              src={`${process.env.PUBLIC_URL}/img/image7.png`}
+                                              alt="Line"
+                                              className=""
+                                              style={{ width: "100%", height: "60%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                                      /></center>
+                </h4>
+                </div>
+                <h1></h1>
             <u><i><b>{t.hotelWebsite}</b></i></u>
           </a>
         </div>
