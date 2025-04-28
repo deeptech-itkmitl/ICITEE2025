@@ -68,12 +68,13 @@ export const Navigation = () => {
 
             <li className="dropdown">
               <a href="#Venue & Travel Information" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setSubmissionOpen); }}>
-              Venue & Travel Information <i className="fa fa-caret-down"></i>
+              Venue & Travel <i className="fa fa-caret-down"></i>
               </a>
               {isSubmissionOpen && (
                 <ul className="dropdown-menu">                 
-                  {/* <li><a href="/conference-venue-detail" className="page-scroll">Conference venue details</a></li>      
-                  <li><a href="/travel-guidance" className="page-scroll">Travel Guidance</a></li>   */}
+                  {/* <li><a href="/conference-venue-detail" className="page-scroll">Conference venue details</a></li>      */}
+                  <li><a href="venue-travel" className="page-scroll">Conference Venue</a></li>   
+                  {/* <li><a href="/travel-guidance" className="page-scroll">Conference Venue</a></li>    */}
                   <li><a href="/visa-information" className="page-scroll">Visa Information</a></li>       
                 </ul>
               )}

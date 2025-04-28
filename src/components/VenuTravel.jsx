@@ -4,7 +4,7 @@ import "../css/TravelGuidance.css";
 
 const translations = {
     en: {
-      title: 'Conference Venue',
+      title: 'Venue & Travel',
       conferenceInfo: '',
       conferenceDetails:
         '',
@@ -230,7 +230,7 @@ const translations = {
     },
   };
   
-const TravelGuidance = () => {
+const VenuTravel = () => {
   const [lang, setLang] = useState('en');
   const t = translations[lang] || translations['en'];
   const mapRef = useRef(null);
@@ -263,24 +263,25 @@ const TravelGuidance = () => {
             <option value="it">Italiano</option>
           </select>
         </div> */}
-        <div className="mb-6 text-right">
-        <i><label className="font-semibold mr-2 text-black">{t.selectLang || 'Language'}:</label></i>
-        <select
-          value={lang}
-          onChange={(e) => setLang(e.target.value)}
-          className="border px-2 py-1 rounded text-black"
-        >
-          <option value="en">English</option>
-          <option value="th">ไทย</option>
-          <option value="zh">中文</option>
-          <option value="ko">한국어</option>
-          <option value="vi">Tiếng Việt</option>
-          <option value="he">עברית</option>
-          <option value="hi">हिंदी</option>
-          <option value="fr">Français</option>
-          <option value="it">Italiano</option>
-        </select>
-      </div>
+        {/* <div className="mb-6 text-right">
+          <i><label className="font-semibold mr-2 text-black">{t.selectLang || 'Language'}:</label></i>
+          <select
+            value={lang}
+            onChange={(e) => setLang(e.target.value)}
+            className="border px-2 py-1 rounded text-black"
+          >
+            <option value="en">English</option>
+            <option value="th">ไทย</option>
+            <option value="zh">中文</option>
+            <option value="ko">한국어</option>
+            <option value="vi">Tiếng Việt</option>
+            <option value="he">עברית</option>
+            <option value="hi">हिंदी</option>
+            <option value="fr">Français</option>
+            <option value="it">Italiano</option>
+          </select>
+
+         </div> */}
 
 
         <h1 className="text-3xl font-bold mb-6 text-center text-blue-800">{}</h1>
@@ -298,7 +299,14 @@ const TravelGuidance = () => {
           </p>
           <p>
             <strong>{t.phone}:</strong> (662) 309-9999<br />
-            <strong>{t.email}:</strong>{' '}
+            {/* <strong>{t.email}:</strong>{' '} */}
+             {/* <u><i><b>{t.hotelWebsite}</b></i></u> */}
+             <a
+            href="https://www.berkeleypratunam.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-blue-700 text-white px-6 py-2 rounded-full shadow hover:bg-blue-800 transition"
+          > <strong>{t.email}:</strong>{' '} </a>
             <a href="mailto:rsvn@berkeleyhotel.co.th" className="text-blue-600 underline"></a>{' '}
             <a href="mailto:info@berkeleyhotel.co.th" className="text-blue-600 underline"></a>
           </p>
@@ -332,25 +340,33 @@ const TravelGuidance = () => {
         </section>
 
         <section className="mb-8 text-center">
-          <h1></h1>
+          {/* <h1></h1>
           <h2 className="text-xl font-semibold mb-2">{t.qrTitle}</h2>
           <img
             src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://goo.gl/maps/wYh1jBuJPhR2"
             alt="QR Code Map"
             className="mx-auto"
-          />
+          /> */}
           <h1></h1>
-          <p className="text-gray-600 mt-2">{t.qrNote}</p>
+          {/* <p className="text-gray-600 mt-2">{t.qrNote}</p> */}
         </section>
 
         <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-2">{t.travelTips}</h2>
-          <ul className="list-disc pl-6">
+          {/* <h2 className="text-xl font-semibold mb-2">{t.travelTips}</h2> */}
+          {/* <ul className="list-disc pl-6">
             {t.tips.map((tip, index) => (
               <li key={index} className="mb-1">{tip}</li>
             ))}
-          </ul>
+          </ul> */}
         </section>
+
+        <div className="text-center mt-10">
+        <h1></h1>
+        <h1></h1>
+        <h3>How to Reach the Conference Venue</h3>
+        <h1></h1>
+        <h1></h1>
+        </div>
          
         <div className="text-center mt-10">
           <h1></h1>
@@ -372,7 +388,7 @@ const TravelGuidance = () => {
                 </h4>
                 </div>
                 <h1></h1>
-            <u><i><b>{t.hotelWebsite}</b></i></u>
+            {/* <u><i><b>{t.hotelWebsite}</b></i></u> */}
           </a>
         </div>
       </div>
@@ -380,4 +396,4 @@ const TravelGuidance = () => {
   );
 };
 
-export default TravelGuidance;
+export default VenuTravel;

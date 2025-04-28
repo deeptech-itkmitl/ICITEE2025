@@ -30,7 +30,8 @@ import Announcement from "./components/ProgressTimeline";
 import AnnouncementDetail from "./components/ProgressTimelineDetail";
 import PastConference from "./components/PastConferences";
 import VisaInformation from "./components/Visainformation";
-import TravelGuidance from "./components/TravelGuidance";
+import VenuTravel from "./components/VenuTravel";
+// import TravelGuidance from "./components/TravelGuidance";
 // import PastConference from "./components/Registration";
 import JsonData from "./data/data.json";
 // import VisitorCounter from "./components/visitor-update";  // นำเข้าฟังก์ชัน VisitorCounter
@@ -128,8 +129,8 @@ const AppContent = ({ landingPageData }) => {
           <Route index element={<VisitorCounter data={landingPageData.Gallery} />} />
         </Route> 
 
-        <Route path="/travel-guidance" element={<Layout12 data={landingPageData} />}>
-          <Route index element={<TravelGuidance data={landingPageData.Gallery} />} />
+        <Route path="/venue-travel" element={<Layout12 data={landingPageData} />}>
+          <Route index element={<VenuTravel data={landingPageData.Gallery} />} />
         </Route>      
         
         <Route path="/visa-information" element={<Layout11 data={landingPageData} />}>
