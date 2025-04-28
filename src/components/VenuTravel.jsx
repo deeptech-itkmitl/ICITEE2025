@@ -352,6 +352,14 @@ const VenuTravel = () => {
             ))}
           </ul> */}
         </section>
+
+        <div className="text-center mt-10">
+        <h1></h1>
+        <h1></h1>
+        <h3>How to Reach the Conference Venue</h3>
+        <h1></h1>
+        <h1></h1>
+        </div>
          
         <div className="text-center mt-10">
           <h1></h1>
