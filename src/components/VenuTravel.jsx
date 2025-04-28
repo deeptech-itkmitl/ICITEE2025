@@ -299,7 +299,14 @@ const VenuTravel = () => {
           </p>
           <p>
             <strong>{t.phone}:</strong> (662) 309-9999<br />
-            <strong>{t.email}:</strong>{' '}
+            {/* <strong>{t.email}:</strong>{' '} */}
+             {/* <u><i><b>{t.hotelWebsite}</b></i></u> */}
+             <a
+            href="https://www.berkeleypratunam.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-blue-700 text-white px-6 py-2 rounded-full shadow hover:bg-blue-800 transition"
+          > <strong>{t.email}:</strong>{' '} </a>
             <a href="mailto:rsvn@berkeleyhotel.co.th" className="text-blue-600 underline"></a>{' '}
             <a href="mailto:info@berkeleyhotel.co.th" className="text-blue-600 underline"></a>
           </p>
