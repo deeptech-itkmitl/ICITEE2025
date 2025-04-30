@@ -383,7 +383,7 @@ const VenuTravel = () => {
                                               src={`${process.env.PUBLIC_URL}/img/image7.png`}
                                               alt="Line"
                                               className=""
-                                              style={{ width: "100%", height: "60%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                                              style={{ width: "100%", height: "80%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
                                       /></center>
                 </h4>
                 </div>
