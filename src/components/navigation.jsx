@@ -73,8 +73,8 @@ export const Navigation = () => {
               {isSubmissionOpen && (
                 <ul className="dropdown-menu">                 
                   {/* <li><a href="/conference-venue-detail" className="page-scroll">Conference venue details</a></li>      */}
-                  <li><a href="venue-travel" className="page-scroll">Conference Venue</a></li>   
-                  {/* <li><a href="/travel-guidance" className="page-scroll">Conference Venue</a></li>    */}
+                  <li><a href="/venue-travel" className="page-scroll">Conference Venue</a></li>   
+                  <li><a href="/travel-guidance" className="page-scroll">Travel Guidance </a></li>   
                   <li><a href="/visa-information" className="page-scroll">Visa Information</a></li>       
                 </ul>
               )}
