@@ -4,20 +4,40 @@ import "../css/TravelGuidance.css";
 
 const translations = {
     en: {
-      title: 'Conference Venue',
-      conferenceInfo: '',
+      title: 'Shopping Malls & Markets',
+      conferenceInfo: 'Shopping Malls & Markets',
       conferenceDetails:
         '',
       hotelInfo: 'Hotel Information',
       hotelName: 'The Berkeley Hotel Pratunam',
-      hotelAddress:
-        '559 Ratchaprarop Road, Makkasan, Ratchathewi, Bangkok 10400, Thailand',
-      phone: 'Phone : (662) 309-9999',
-      email: 'Website : https://berkeleypratunam.com',
+
+      content1:
+        'Bangkok offers a shopping experience that’s hard to match, blending the luxury of sprawling malls with the lively atmosphere of bustling day and night markets. Whether you’re hunting for high-end designer brands or the most affordable knockoffs, Bangkok has it all. So, prepare to indulge your shopping desires and explore the city’s diverse retail landscape, where the excitement of shopping never stops.',
+      content2:
+        'Many of the world’s international luxury brands like Chanel, Dior, Louis Vuitton and Prada have stores in this modern shopping center, Highlight is the ocean tunnel, which gives visitors the illusion of walking on the ocean floor surrounded by fish.',
+      content3:
+        'Bangkok offers a shopping experience that’s hard to match, blending the luxury of sprawling malls with the lively atmosphere of bustling day and night markets. Whether you’re hunting for high-end designer brands or the most affordable knockoffs, Bangkok has it all. So, prepare to indulge your shopping desires and explore the city’s diverse retail landscape, where the excitement of shopping never stops.',
+      
+      hotelAddress : 'Hotel Address : 991 Rama I Rd, Pathumwan, Bangkok 10330', 
+      howgetAddress : 'How to get there: A few steps walk from Siam BTS station.', 
+      phone: 'Phone: 66 2 610 8000',
+      email: 'Website: http://www.siamparagon.co.th',
+
+      hotelAddress1 : 'Hotel Address : 991 Rama I Rd, Pathumwan, Bangkok 10330', 
+      howgetAddress1 : 'How to get there: A few steps walk from Siam BTS station.', 
+      phone1: 'Phone: 66 2 610 8000',
+      email1: 'Website: http://www.siamparagon.co.th',
+
+      
+      hotelAddress2 : 'Hotel Address : 991 Rama I Rd, Pathumwan, Bangkok 10330', 
+      howgetAddress2 : 'How to get there: A few steps walk from Siam BTS station.', 
+      phone2: 'Phone: 66 2 610 8000',
+      email2: 'Website: http://www.siamparagon.co.th',
+
       mapTitle: 'Hotel Map',
       qrTitle: 'Scan to open map',
       qrNote: 'Scan this QR code to open the map of The Berkeley Hotel on your phone.',
-      travelTips: 'Travel Tips',
+      travelTips: 'Siam Paragon',
       tips: [
         'You can take a taxi or Airport Rail Link (Ratchaprarop Station) from Suvarnabhumi Airport.',
         'BTS/MRT, bus, or Grab service is available around Bangkok.',
@@ -26,7 +46,7 @@ const translations = {
       ],
       hotelWebsite: 'Visit Hotel Website',
       selectLang: 'Select Language',
-      scrollToMap: 'Jump to Hotel Map',
+      scrollToMap: 'Jump to Hotel Map',      
     },
     th: {
       title: 'แนะแนวการเดินทาง',
@@ -264,8 +284,8 @@ const TravelGuidance = () => {
           </select>
         </div> */}
         <div className="mb-6 text-right">
-        <i><label className="font-semibold mr-2 text-black">{t.selectLang || 'Language'}:</label></i>
-        <select
+        {/* <i><label className="font-semibold mr-2 text-black">{t.selectLang || 'Language'}:</label></i> */}
+        {/* <select
           value={lang}
           onChange={(e) => setLang(e.target.value)}
           className="border px-2 py-1 rounded text-black"
@@ -279,28 +299,28 @@ const TravelGuidance = () => {
           <option value="hi">हिंदी</option>
           <option value="fr">Français</option>
           <option value="it">Italiano</option>
-        </select>
+        </select> */}
       </div>
 
 
         <h1 className="text-3xl font-bold mb-6 text-center text-blue-800">{}</h1>
 
         <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-2">{t.conferenceInfo}</h2>
+          <h2 className="text-xl font-semibold mb-2"><center>{t.conferenceInfo}</center></h2>
           <p>{t.conferenceDetails}</p>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-2">{t.hotelInfo}</h2>
+          {/* <h2 className="text-xl font-semibold mb-2">{t.hotelInfo}</h2> */}
           <p className="mb-2">
-            <strong>{t.hotelName}</strong><br />
-            {t.hotelAddress}
+            {/* <strong>{t.hotelName}</strong><br /> */}
+            {/* {t.hotelAddress} */}            
           </p>
           <p>
-            <strong>{t.phone}:</strong> (662) 309-9999<br />
-            <strong>{t.email}:</strong>{' '}
-            <a href="mailto:rsvn@berkeleyhotel.co.th" className="text-blue-600 underline"></a>{' '}
-            <a href="mailto:info@berkeleyhotel.co.th" className="text-blue-600 underline"></a>
+            {/* <strong>{t.phone}:</strong> (662) 309-9999<br /> */}
+            {/* <strong>{t.email}:</strong>{' '} */}
+            {/* <a href="mailto:rsvn@berkeleyhotel.co.th" className="text-blue-600 underline"></a>{' '} */}
+            {/* <a href="mailto:info@berkeleyhotel.co.th" className="text-blue-600 underline"></a> */}
           </p>
           <h1></h1>
         </section>
@@ -317,40 +337,269 @@ const TravelGuidance = () => {
         </div> */}
 
         <section className="mb-8" ref={mapRef}>
-          <h2 className="text-xl font-semibold mb-2">{t.mapTitle}</h2>
+          {/* <h2 className="text-xl font-semibold mb-2">{t.mapTitle}</h2> */}
           <div className="aspect-w-16 aspect-h-9">
-            <iframe
-              title="Hotel Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.7180590762127!2d100.5399155!3d13.7513468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ed8d1a16175%3A0x620f4d61dc9e9fd5!2sThe%20Berkeley%20Hotel%20Pratunam!5e0!3m2!1sen!2sth!4v1680093276889!5m2!1sen!2sth"
-              width="100%"
-              height="400"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-            ></iframe>
+            {/* <iframe
+              // title="Hotel Map"
+              // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.7180590762127!2d100.5399155!3d13.7513468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ed8d1a16175%3A0x620f4d61dc9e9fd5!2sThe%20Berkeley%20Hotel%20Pratunam!5e0!3m2!1sen!2sth!4v1680093276889!5m2!1sen!2sth"
+              // width="100%"
+              // height="400"
+              // style={{ border: 0 }}
+              // allowFullScreen
+              // loading="lazy"
+            ></iframe> */}
+             <h4 className="title"><center>
+                                      <img
+                                              src={`${process.env.PUBLIC_URL}/img/20250212-1 1.png`}
+                                              alt="Line"
+                                              className=""
+                                              style={{ width: "100%", height: "40%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                                      /></center>
+            </h4>
           </div>
         </section>
 
         <section className="mb-8 text-center">
           <h1></h1>
-          <h2 className="text-xl font-semibold mb-2">{t.qrTitle}</h2>
-          <img
+          <p className="mb-2">
+            {/* <strong>{t.hotelName}</strong><br /> */}
+            {t.content1}            
+          </p>         
+          {/* <h2 className="text-xl font-semibold mb-2">{t.qrTitle}</h2> */}
+          {/* <img
             src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://goo.gl/maps/wYh1jBuJPhR2"
             alt="QR Code Map"
             className="mx-auto"
-          />
+          /> */}        
+          <p className="mb-2">
+            {/* <strong>{t.hotelName}</strong><br /> */}            
+            {/* {t.hotelAddress} */}
+          </p>
           <h1></h1>
-          <p className="text-gray-600 mt-2">{t.qrNote}</p>
+          {/* <p className="text-gray-600 mt-2">{t.qrNote}</p> */}
+
+        </section>
+ 
+        <section className="mb-8">
+            {/* <h2 className="text-xl font-semibold mb-2">{t.hotelInfo}</h2>
+            <p>
+              {/* <strong>{t.hotelName}</strong><br /> */}
+              {/* {t.hotelAddress}             */}
+            <p></p>
+            <p>
+              {/* <strong>{t.phone}:</strong> (662) 309-9999<br /> */}
+              {/* <strong>{t.email}:</strong>{' '} */}
+              {/* <a href="mailto:rsvn@berkeleyhotel.co.th" className="text-blue-600 underline"></a>{' '} */}
+              {/* <a href="mailto:info@berkeleyhotel.co.th" className="text-blue-600 underline"></a> */}
+            </p>
+          <h1></h1>
+        </section> 
+
+        <section className="mb-8">
+          <h2 className="text-xl font-semibold mb-2">{t.travelTips}</h2>
+          <p className="mb-2">
+            {/* <strong>{t.hotelName}</strong><br /> */}
+            {t.content2}            
+          </p> 
+          <p className="mb-2">
+            {/* <strong>{t.hotelName}</strong><br /> */}
+            {t.content3}            
+          </p> 
+            {/* <h2 className="text-xl font-semibold mb-2">{t.hotelInfo}</h2>
+            
+              {/* <strong>{t.hotelName}</strong><br /> */}
+              <p>
+              {/* {t.hotelAddress}                     */}
+              <p>
+              {/* {t.hotelAddress}         */}
+              </p>           
+              <p>{t.hotelAddress}</p>
+              <p>{t.howgetAddress}</p>
+              <p><strong>{t.phone}:</strong></p>
+              {/* <br /><strong>{t.email}:</strong>{' '} */}
+              <a
+                href="http://www.siamparagon.co.th/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-blue-700 text-white px-6 py-2 rounded-full shadow hover:bg-blue-800 transition"
+              >http://www.siamparagon.co.th/</a>
+              {/* <a href="mailto:rsvn@berkeleyhotel.co.th" className="text-blue-600 underline"></a>{' '} */}
+              {/* <a href="mailto:info@berkeleyhotel.co.th" className="text-blue-600 underline"></a> */}
+            </p>
+          <h3></h3>
+          {/* <ul className="list-disc pl-6">
+            {t.tips.map((tip, index) => (
+              <li key={index} className="mb-1">{tip}</li>
+            ))}
+          </ul> */}
+
+           {/* {t.hotelAddress} */}
+
+           <h3></h3>
+          {/* <h4 className="title"><center>
+                                      <img
+                                              src={`${process.env.PUBLIC_URL}/img/wat-arun-temple-bangkok-thailand 3.jpg`}
+                                              alt="Line"
+                                              className=""
+                                              style={{ width: "100%", height: "60%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                                      /></center>
+            </h4> */}
         </section>
 
         <section className="mb-8">
           <h2 className="text-xl font-semibold mb-2">{t.travelTips}</h2>
-          <ul className="list-disc pl-6">
+          <p className="mb-2">
+            {/* <strong>{t.hotelName}</strong><br /> */}
+            {t.content2}            
+          </p> 
+          <p className="mb-2">
+            {/* <strong>{t.hotelName}</strong><br /> */}
+            {t.content3}            
+          </p> 
+            {/* <h2 className="text-xl font-semibold mb-2">{t.hotelInfo}</h2>
+            
+              {/* <strong>{t.hotelName}</strong><br /> */}
+              <p>
+              {/* {t.hotelAddress}                     */}
+              <p>
+              {/* {t.hotelAddress}         */}
+              </p>           
+              <p>{t.hotelAddress}</p>
+              <p>{t.howgetAddress}</p>
+              <p><strong>{t.phone}:</strong></p>
+              {/* <br /><strong>{t.email}:</strong>{' '} */}
+              <a
+                href="http://www.siamparagon.co.th/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-blue-700 text-white px-6 py-2 rounded-full shadow hover:bg-blue-800 transition"
+              >http://www.siamparagon.co.th/</a>
+              {/* <a href="mailto:rsvn@berkeleyhotel.co.th" className="text-blue-600 underline"></a>{' '} */}
+              {/* <a href="mailto:info@berkeleyhotel.co.th" className="text-blue-600 underline"></a> */}
+            </p>
+          <h3></h3>
+          {/* <ul className="list-disc pl-6">
             {t.tips.map((tip, index) => (
               <li key={index} className="mb-1">{tip}</li>
             ))}
-          </ul>
+          </ul> */}
+
+           {/* {t.hotelAddress} */}
+
+           <h3></h3>
+          {/* <h4 className="title"><center>
+                                      <img
+                                              src={`${process.env.PUBLIC_URL}/img/wat-arun-temple-bangkok-thailand 3.jpg`}
+                                              alt="Line"
+                                              className=""
+                                              style={{ width: "100%", height: "60%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                                      /></center>
+            </h4> */}
         </section>
+
+        <section className="mb-8">
+          <h2 className="text-xl font-semibold mb-2">{t.travelTips}</h2>
+          <p className="mb-2">
+            {/* <strong>{t.hotelName}</strong><br /> */}
+            {t.content2}            
+          </p> 
+          <p className="mb-2">
+            {/* <strong>{t.hotelName}</strong><br /> */}
+            {t.content3}            
+          </p> 
+            {/* <h2 className="text-xl font-semibold mb-2">{t.hotelInfo}</h2>
+            
+              {/* <strong>{t.hotelName}</strong><br /> */}
+              <p>
+              {/* {t.hotelAddress}                     */}
+              <p>
+              {/* {t.hotelAddress}         */}
+              </p>           
+              <p>{t.hotelAddress}</p>
+              <p>{t.howgetAddress}</p>
+              <p><strong>{t.phone}:</strong></p>
+              {/* <br /><strong>{t.email}:</strong>{' '} */}
+              <a
+                href="http://www.siamparagon.co.th/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-blue-700 text-white px-6 py-2 rounded-full shadow hover:bg-blue-800 transition"
+              >http://www.siamparagon.co.th/</a>
+              {/* <a href="mailto:rsvn@berkeleyhotel.co.th" className="text-blue-600 underline"></a>{' '} */}
+              {/* <a href="mailto:info@berkeleyhotel.co.th" className="text-blue-600 underline"></a> */}
+            </p>
+          <h3></h3>
+          {/* <ul className="list-disc pl-6">
+            {t.tips.map((tip, index) => (
+              <li key={index} className="mb-1">{tip}</li>
+            ))}
+          </ul> */}
+
+           {/* {t.hotelAddress} */}
+
+           <h3></h3>
+          {/* <h4 className="title"><center>
+                                      <img
+                                              src={`${process.env.PUBLIC_URL}/img/wat-arun-temple-bangkok-thailand 3.jpg`}
+                                              alt="Line"
+                                              className=""
+                                              style={{ width: "100%", height: "60%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                                      /></center>
+            </h4> */}
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-xl font-semibold mb-2">{t.travelTips}</h2>
+          <p className="mb-2">
+            {/* <strong>{t.hotelName}</strong><br /> */}
+            {t.content2}            
+          </p> 
+          <p className="mb-2">
+            {/* <strong>{t.hotelName}</strong><br /> */}
+            {t.content3}            
+          </p> 
+            {/* <h2 className="text-xl font-semibold mb-2">{t.hotelInfo}</h2>
+            
+              {/* <strong>{t.hotelName}</strong><br /> */}
+              <p>
+              {/* {t.hotelAddress}                     */}
+              <p>
+              {/* {t.hotelAddress}         */}
+              </p>           
+              <p>{t.hotelAddress}</p>
+              <p>{t.howgetAddress}</p>
+              <p><strong>{t.phone}:</strong></p>
+              {/* <br /><strong>{t.email}:</strong>{' '} */}
+              <a
+                href="http://www.siamparagon.co.th/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-blue-700 text-white px-6 py-2 rounded-full shadow hover:bg-blue-800 transition"
+              >http://www.siamparagon.co.th/</a>
+              {/* <a href="mailto:rsvn@berkeleyhotel.co.th" className="text-blue-600 underline"></a>{' '} */}
+              {/* <a href="mailto:info@berkeleyhotel.co.th" className="text-blue-600 underline"></a> */}
+            </p>
+          <h3></h3>
+          
+          {/* <ul className="list-disc pl-6">
+            {t.tips.map((tip, index) => (
+              <li key={index} className="mb-1">{tip}</li>
+            ))}
+          </ul> */}
+
+           {/* {t.hotelAddress} */}
+
+           <h3></h3>
+          <h4 className="title"><center>
+                                      <img
+                                              src={`${process.env.PUBLIC_URL}/img/wat-arun-temple-bangkok-thailand 3.jpg`}
+                                              alt="Line"
+                                              className=""
+                                              style={{ width: "100%", height: "60%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                                      /></center>
+            </h4>
+        </section>
+
          
         <div className="text-center mt-10">
           <h1></h1>
@@ -364,12 +613,12 @@ const TravelGuidance = () => {
             <div>
             <h4 className="title"><center>
                                       <img
-                                              src={`${process.env.PUBLIC_URL}/img/image7.png`}
+                                              src={`${process.env.PUBLIC_URL}/img/image 9.png`}
                                               alt="Line"
                                               className=""
                                               style={{ width: "100%", height: "60%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
                                       /></center>
-                </h4>
+            </h4>
                 </div>
                 <h1></h1>
             <u><i><b>{t.hotelWebsite}</b></i></u>

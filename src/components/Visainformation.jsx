@@ -72,7 +72,7 @@ const VisaInformation = () => {
         </ul>
       </section>
 
-      <section className="card">
+      {/* <section className="card">
         <h3 className="text-xl font-bold">Where Should This VISA Information Be Placed?</h3>
         <ul className="list-disc ml-6 mt-2">
           <li><strong>"Travel & Accommodation" Page</strong> – Under a dedicated "Visa Information" section.</li>
@@ -80,7 +80,8 @@ const VisaInformation = () => {
           <li><strong>"Registration Confirmation Email"</strong> – Include a link to the visa guidelines.</li>
           <li><strong>"Conference Invitation Letter Request Form"</strong> – With instructions on how to apply.</li>
         </ul>
-      </section>
+      </section> */}
+
     </div>
     </div>
   );
