@@ -77,19 +77,28 @@ export const OrganizeCommittee = () => {
     {
       title: "Senior TPC",
       members: [
+        "Ataka Ahmad (UGM,Indonesia)",
         "Annop Monsakul (PIM, Thailand)",
         "Chanboon Sathitwiriyawong (IT-KMITL, CIS Thailand Chapter)",
         "Chotipat Pornavalai (IT-KMITL, Thailand)",
         "Chuwong Phongcharoenpanich (KMITL, Thailand)",
+        "Hasanah Rini (UB, Indonesia)",
+        "Iswandi Iswandi (UGM, Indonesia)",
         "Kanokwan Atchariyachanvanich (IT-KMITL, Thailand)",
+        "Kitsuwan Nattapong  (UEC, Japan)",
+        "Kobayashi Kazuki (Shindai, Japan)",
         "Maleerat Sodanil (KMUTNB, IEEE CIS Thailand Chapter)",
         "Nat Dilokthanakul (IT-KMITL, Thailand)",
+        "Nasikun Ahmad (UGM, Indonesia)",
         "Nont Kanungsukkasem (IT-KMITL, Thailand)",
         "Olarn Wongwirat (IT-KMITL, Thailand)",
         "Olarik Surinta (MSU, Thailand)",
+        "Pratama Azkario Rizky (UGM, Indonesia",
         "Pornsuree Jamsri (IT-KMITL, Thailand)",
         "Pramuk Boonsieng (TNI, Thailand)",
+        "Putra Guntur (UGM, Indonesia)",
         "Sarayut Nonsiri (TNI, IEEE CIS Thailand Chapter)",
+        "Setyawan Iwan (UKSW, Indonesia)",
         "Sirion Vittayakorn (IT-KMITL, Thailand)",
         "Soradech Krootjohn (KMUTNB, IEEE CIS Thailand Chapter)",
         "Sudchai Boonto (KMUTT, Thailand)",
@@ -100,7 +109,8 @@ export const OrganizeCommittee = () => {
         "Thitiporn Lertrusdachakul (TNI, Thailand)",
         "Tuchsanai Ploysuwan (IT-KMITL, Thailand)",
         "Wijaya Yudha Atmaja (UGM, Indonesia)",
-        "Ridwan Wicaksono (UGM, Indonesia)"
+        "Ridwan Wicaksono (UGM, Indonesia)",
+        "Unger Herwig (FeU Germany)"
       ],
     },
     {
