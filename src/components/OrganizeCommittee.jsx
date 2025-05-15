@@ -106,10 +106,12 @@ export const OrganizeCommittee = () => {
         "Sumet Prabhavat (IT-KMITL, Thailand)",
         "Suvit Poomrittigul (IT-KMITL, Thailand)",
         "Taravichet Titijaroenroj (IT-KMITL, Thailand)",
+        "Timotius Ivanna (UKSW, Indonesia)",
         "Thitiporn Lertrusdachakul (TNI, Thailand)",
         "Tuchsanai Ploysuwan (IT-KMITL, Thailand)",
         "Wijaya Yudha Atmaja (UGM, Indonesia)",
         "Ridwan Wicaksono (UGM, Indonesia)",
+        "Sutthiphong Srigrarom (NUS, Singapore)",
         "Unger Herwig (FeU Germany)"
       ],
     },

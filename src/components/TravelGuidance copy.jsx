@@ -49,21 +49,9 @@ const translations = {
         'The hotel is close to Platinum Fashion Mall, CentralWorld, and Siam Paragon.',
         'It is recommended to book the hotel in advance as there may be many attendees.',
       ],
-
-       mapTitle: 'Hotel Map',
-      qrTitle: 'Scan to open map',
-      qrNote: 'Scan this QR code to open the map of The Berkeley Hotel on your phone.',
-      travelTips2: 'Central World',
-      tips: [
-        'You can take a taxi or Airport Rail Link (Ratchaprarop Station) from Suvarnabhumi Airport.',
-        'BTS/MRT, bus, or Grab service is available around Bangkok.',
-        'The hotel is close to Platinum Fashion Mall, CentralWorld, and Siam Paragon.',
-        'It is recommended to book the hotel in advance as there may be many attendees.',
-      ],
       hotelWebsite: 'Visit Hotel Website',
       selectLang: 'Select Language',
-      scrollToMap: 'Jump to Hotel Map',  
-          
+      scrollToMap: 'Jump to Hotel Map',      
     },
     th: {
       title: 'แนะแนวการเดินทาง',
@@ -416,11 +404,11 @@ const TravelGuidance = () => {
           <h2 className="text-xl font-semibold mb-2">{t.travelTips}</h2>
           <p className="mb-2">
             {/* <strong>{t.hotelName}</strong><br /> */}
-            {t.content1}            
+            {t.content2}            
           </p> 
           <p className="mb-2">
             {/* <strong>{t.hotelName}</strong><br /> */}
-            {t.content1}            
+            {t.content3}            
           </p> 
             {/* <h2 className="text-xl font-semibold mb-2">{t.hotelInfo}</h2>
             
@@ -430,9 +418,9 @@ const TravelGuidance = () => {
               <p>
               {/* {t.hotelAddress}         */}
               </p>           
-              <p>{t.hotelAddress1}</p>
-              <p>{t.howgetAddress1}</p>
-              <p><strong>{t.phone1}:</strong></p>
+              <p>{t.hotelAddress}</p>
+              <p>{t.howgetAddress}</p>
+              <p><strong>{t.phone}:</strong></p>
               {/* <br /><strong>{t.email}:</strong>{' '} */}
               <a
                 href="http://www.siamparagon.co.th/"
@@ -464,10 +452,10 @@ const TravelGuidance = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-2">{t.travelTips2}</h2>
+          <h2 className="text-xl font-semibold mb-2">{t.travelTips}</h2>
           <p className="mb-2">
             {/* <strong>{t.hotelName}</strong><br /> */}
-            {t.content3}            
+            {t.content2}            
           </p> 
           <p className="mb-2">
             {/* <strong>{t.hotelName}</strong><br /> */}
@@ -481,9 +469,9 @@ const TravelGuidance = () => {
               <p>
               {/* {t.hotelAddress}         */}
               </p>           
-              <p>{t.hotelAddress3}</p>
-              <p>{t.howgetAddress3}</p>
-              <p><strong>{t.phone3}:</strong></p>
+              <p>{t.hotelAddress}</p>
+              <p>{t.howgetAddress}</p>
+              <p><strong>{t.phone}:</strong></p>
               {/* <br /><strong>{t.email}:</strong>{' '} */}
               <a
                 href="http://www.siamparagon.co.th/"
