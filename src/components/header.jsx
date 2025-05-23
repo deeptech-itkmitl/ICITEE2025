@@ -20,12 +20,18 @@ export const Header = (props) => {
                 <h2 className="conference-title">
                   <div className="conference-title"></div>
                   <img
-                    src={`${process.env.PUBLIC_URL}/img/IEEE Thailand section Logo.png`}
-                    alt="ICITEE 2025 Logo 2"
+                    src={`${process.env.PUBLIC_URL}/img/IEEE logo.png`}
+                    alt="ICITEE 2025 Logo IEEE 1"
+                    style={{ width: 'Auto', height: '100px' }}
                     className="conference-logo2"
                   />
                 </h2>
+                <h1></h1>
+                <h1></h1>
+                <h1></h1>
+                <h1></h1>
                 <h1 className="conference-title">
+
                   <div className="conference-title"></div>
                   <img
                     src={`${process.env.PUBLIC_URL}/img/ICITEE2025-C-logo.png`}
