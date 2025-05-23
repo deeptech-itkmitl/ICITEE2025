@@ -30,27 +30,32 @@ export const Header = (props) => {
                 <h1></h1>
                 <h1></h1>
                 <h1 className="conference-title">
-
                   <div className="conference-title"></div>
                   <img
                     src={`${process.env.PUBLIC_URL}/img/ICITEE2025-C-logo.png`}
                     alt="ICITEE 2025 Logo 2"
                     className="conference-logo2"
                   />
-                </h1>                
-                <p><div class="typotitle">20 - 21 October 2025 | Bangkok, Thailand</div></p>
-                {/* <p><div class="typotitle center custom-center">Co-located with The 22nd International conference on Cooperative Design Visualization and Engineering (CDVE2025) </div></p> */}
+                </h1>    
+<h1></h1>
                 <p><div
                   className="typotitle"
                   style={{
-                    marginLeft: '15%',
-                    fontSize: '2rem',
+                    marginLeft: '0%',
+                    fontSize: '1.8rem',
                   }}
                 >
                 Co-located with The 22nd International<br /> 
-                </div>
-                <div>Conference on Cooperative Design Visualization and Engineering (CDVE2025)</div></p>
+                </div>   
+                <h1></h1>
+                 <div>Conference on Cooperative Design Visualization and Engineering (CDVE2025)</div></p>
                 <div className="conference-timer">The Conference starts in</div>
+                <h1></h1> 
+                <h1></h1>
+                <p><div class="typotitle">20 - 21 October 2025 | Bangkok, Thailand</div></p>
+                {/* <p><div class="typotitle center custom-center">Co-located with The 22nd International conference on Cooperative Design Visualization and Engineering (CDVE2025) </div></p> */}
+                
+               
                 <div>
                   <CountDownTimer />                  
                 </div>
