@@ -17,6 +17,14 @@ export const Header = (props) => {
           <div className="container">
             <div className="row">
               <div className="col-md-8 col-md-offset-0.5 intro-text">
+                <h2 className="conference-title">
+                  <div className="conference-title"></div>
+                  <img
+                    src={`${process.env.PUBLIC_URL}/img/IEEE Thailand section Logo.png`}
+                    alt="ICITEE 2025 Logo 2"
+                    className="conference-logo2"
+                  />
+                </h2>
                 <h1 className="conference-title">
                   <div className="conference-title"></div>
                   <img
@@ -24,8 +32,9 @@ export const Header = (props) => {
                     alt="ICITEE 2025 Logo 2"
                     className="conference-logo2"
                   />
-                </h1>
+                </h1>                
                 <p><div class="typotitle">20 - 21 October 2025 | Bangkok, Thailand</div></p>
+                <p><div class="typotitle">Co-located with The 22nd International conference on Cooperative Design Visualization and Engineering (CDVE2025) </div></p>
                 <div className="conference-timer">The Conference starts in</div>
                 <div>
                   <CountDownTimer />                  
