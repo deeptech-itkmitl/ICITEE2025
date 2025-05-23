@@ -43,7 +43,7 @@ export const Header = (props) => {
                 </div></p>     
                 <p><div class="typotitle">20 - 21 October 2025 | Bangkok, Thailand</div></p>
                 {/* <p><div class="typotitle center custom-center">Co-located with The 22nd International conference on Cooperative Design Visualization and Engineering (CDVE2025) </div></p> */}               
-                <div className="conference-timer">The Conference starts in</div>
+                <div className="typotitle">The Conference starts in</div>
                 <div>
                   <CountDownTimer />                  
                 </div>
