@@ -1,6 +1,5 @@
 import React from "react";
 import CountDownTimer from "../components/CountDownTimer";
-//import SlideshowHeader from "../components/SlideshowHeader";
 
 export const Header = (props) => {
   return (
@@ -40,7 +39,17 @@ export const Header = (props) => {
                   />
                 </h1>                
                 <p><div class="typotitle">20 - 21 October 2025 | Bangkok, Thailand</div></p>
-                <p><div class="typotitle">Co-located with The 22nd International conference on Cooperative Design Visualization and Engineering (CDVE2025) </div></p>
+                {/* <p><div class="typotitle center custom-center">Co-located with The 22nd International conference on Cooperative Design Visualization and Engineering (CDVE2025) </div></p> */}
+                <p><div
+                  className="typotitle"
+                  style={{
+                    marginLeft: '15%',
+                    fontSize: '2rem',
+                  }}
+                >
+                Co-located with The 22nd International<br /> 
+                </div>
+                <div>Conference on Cooperative Design Visualization and Engineering (CDVE2025)</div></p>
                 <div className="conference-timer">The Conference starts in</div>
                 <div>
                   <CountDownTimer />                  
