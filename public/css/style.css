@@ -802,7 +802,7 @@ a:focus,
 
 .intro p {
   color: #fff;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 30px;
   margin: 0 auto;
@@ -831,6 +831,18 @@ header .intro-text {
 @media (min-width: 1024px) {
   .header-container img {
     max-width: 200px;
+  }
+}
+
+/* Responsive: บนมือถือหรือจอเล็ก ปรับให้ชิดซ้ายหรือกลาง */
+@media screen and (max-width: 768px) {
+  .custom-center {
+    margin-left: 5%;
+  }
+
+  .typotitle {
+    font-size: 1rem;
+    max-width: 100%;
   }
 }
 
