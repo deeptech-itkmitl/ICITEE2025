@@ -36,26 +36,14 @@ export const Header = (props) => {
                     alt="ICITEE 2025 Logo 2"
                     className="conference-logo2"
                   />
-                </h1>    
-<h1></h1>
-                <p><div
-                  className="typotitle"
-                  style={{
-                    marginLeft: '0%',
-                    fontSize: '1.8rem',
-                  }}
-                >
+                </h1>   
+                <p><div className="typotitle" >
                 Co-located with The 22nd International<br /> 
-                </div>   
-                <h1></h1>
-                 <div>Conference on Cooperative Design Visualization and Engineering (CDVE2025)</div></p>
-                <div className="conference-timer">The Conference starts in</div>
-                <h1></h1> 
-                <h1></h1>
+                Conference on Cooperative Design Visualization and Engineering (CDVE2025)
+                </div></p>     
                 <p><div class="typotitle">20 - 21 October 2025 | Bangkok, Thailand</div></p>
-                {/* <p><div class="typotitle center custom-center">Co-located with The 22nd International conference on Cooperative Design Visualization and Engineering (CDVE2025) </div></p> */}
-                
-               
+                {/* <p><div class="typotitle center custom-center">Co-located with The 22nd International conference on Cooperative Design Visualization and Engineering (CDVE2025) </div></p> */}               
+                <div className="conference-timer">The Conference starts in</div>
                 <div>
                   <CountDownTimer />                  
                 </div>

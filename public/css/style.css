@@ -834,6 +834,18 @@ header .intro-text {
   }
 }
 
+/* Responsive: บนมือถือหรือจอเล็ก ปรับให้ชิดซ้ายหรือกลาง */
+@media screen and (max-width: 768px) {
+  .custom-center {
+    margin-left: 5%;
+  }
+
+  .typotitle {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
+
 
 /* Features Section */
 #features {
