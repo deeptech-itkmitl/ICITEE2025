@@ -699,6 +699,17 @@ a:focus,
   text-align: center;
 }
 
+.superscript {
+  font-size: 0.6em;
+  vertical-align: super;
+}
+
+.semi-bold-text {
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .typotitle{
   color: #FFF;
   text-align: center;
@@ -708,7 +719,7 @@ a:focus,
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.5px;
-  padding-top: 10px;
+  padding-top: 0px;
 }
 
 .typotitle2{
@@ -720,7 +731,7 @@ a:focus,
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.5px;
-  padding-top: 10px;
+  padding-top: 0px;
 }
 
 .typotitle3{
@@ -818,7 +829,7 @@ a:focus,
   font-weight: 300;
   line-height: 30px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 header .intro-text {
@@ -866,6 +877,10 @@ header .intro-text {
     font-size: 1.2rem;
     max-width: 100%;
   }
+
+  .light-text {
+  font-weight: 300;
+}
 }
 
 
@@ -1034,6 +1049,15 @@ header .intro-text {
 .important-dates th {
   font-weight: bold;
   
+}
+
+.light-text {
+  font-family: "Poppins";
+  padding: 12px;
+  font-size: 18px;
+  border-collapse: collapse;
+  font-weight: 300;
+  padding: 10px 0;
 }
 
 .important-dates tbody tr {
