@@ -698,7 +698,6 @@ a:focus,
   max-height: 230px;
   text-align: center;
 }
-
 .superscript {
   font-size: 0.6em;
   vertical-align: super;
@@ -719,7 +718,7 @@ a:focus,
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.5px;
-  padding-top: 0px;
+  padding-top: 10px;
 }
 
 .typotitle2{
@@ -731,7 +730,7 @@ a:focus,
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.5px;
-  padding-top: 0px;
+  padding-top: 10px;
 }
 
 .typotitle3{
@@ -829,7 +828,7 @@ a:focus,
   font-weight: 300;
   line-height: 30px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 header .intro-text {
@@ -881,6 +880,7 @@ header .intro-text {
   .light-text {
   font-weight: 300;
 }
+
 }
 
 
@@ -1055,6 +1055,15 @@ header .intro-text {
   font-family: "Poppins";
   padding: 12px;
   font-size: 18px;
+  border-collapse: collapse;
+  font-weight: 300;
+  padding: 10px 0;
+}
+
+.light-text1 {
+  font-family: "Poppins";
+  padding: 12px;
+  font-size: 14px;
   border-collapse: collapse;
   font-weight: 300;
   padding: 10px 0;

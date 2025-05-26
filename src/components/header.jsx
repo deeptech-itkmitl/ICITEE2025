@@ -37,7 +37,7 @@ export const Header = (props) => {
                 <div className="typotitle3">
                   <p>
                     The 22<span className="superscript">nd</span> International Conference on<br />
-                    Cooperative Design Visualization and Engineering<h3 className=".light-text">(CDVE2025)</h3>
+                    Cooperative Design Visualization and Engineering<span className=".light-text1">(CDVE2025)</span>
                   </p>
                 </div>  
                 <h1><div className="semi-bold-text">20 - 21 October 2025 | Bangkok, Thailand</div></h1>
