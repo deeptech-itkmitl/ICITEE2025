@@ -723,6 +723,18 @@ a:focus,
   padding-top: 10px;
 }
 
+.typotitle3{
+  color: #FFF;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  padding-top: 2px;
+}
+
 /* Header Section */
 .btn-registration {
   background-color: linear-gradient(to right, #553c9a 0%, #5ca9fb 100%);
@@ -842,6 +854,16 @@ header .intro-text {
 
   .typotitle {
     font-size: 1.5rem;
+    max-width: 100%;
+  }
+
+    .typotitle2 {
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+
+    .typotitle3 {
+    font-size: 1.2rem;
     max-width: 100%;
   }
 }

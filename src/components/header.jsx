@@ -27,8 +27,6 @@ export const Header = (props) => {
                 </h2>
                 <h1></h1>
                 <h1></h1>
-                <h1></h1>
-                <h1></h1>
                 <h1 className="conference-title">
                   <div className="conference-title"></div>
                   <img
@@ -37,11 +35,11 @@ export const Header = (props) => {
                     className="conference-logo2"
                   />
                 </h1>   
-                <p><div className="typotitle" >
-                Co-located with The 22nd International<br /> 
-                Conference on Cooperative Design Visualization and Engineering (CDVE2025)
-                </div></p>     
-                <p><div class="typotitle">20 - 21 October 2025 | Bangkok, Thailand</div></p>
+                <h3><div className="typotitle3" >
+                Co-located with <br />The 22nd International Conference on<br /> 
+                Cooperative Design Visualization and Engineering(CDVE2025)
+                </div></h3>     
+                <h1><div class="typotitle">20 - 21 October 2025 | Bangkok, Thailand</div></h1>
                 {/* <p><div class="typotitle center custom-center">Co-located with The 22nd International conference on Cooperative Design Visualization and Engineering (CDVE2025) </div></p> */}               
                 <div className="typotitle">The Conference starts in</div>
                 <div>
