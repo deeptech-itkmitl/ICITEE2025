@@ -828,7 +828,7 @@ a:focus,
   font-weight: 300;
   line-height: 30px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 header .intro-text {
@@ -1054,7 +1054,7 @@ header .intro-text {
 .light-text {
   font-family: "Poppins";
   padding: 12px;
-  font-size: 18px;
+  font-size: 18px !important;
   border-collapse: collapse;
   font-weight: 300;
   padding: 10px 0;
@@ -1063,7 +1063,7 @@ header .intro-text {
 .light-text1 {
   font-family: "Poppins";
   padding: 12px;
-  font-size: 14px;
+  font-size: 14px; 
   border-collapse: collapse;
   font-weight: 300;
   padding: 10px 0;
