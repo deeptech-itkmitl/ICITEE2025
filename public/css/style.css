@@ -704,7 +704,7 @@ a:focus,
 }
 
 .semi-bold-text {
-  font-style: normal;
+  font-style: semi-bold;
   font-size: 20px;
   font-weight: 600;
 }
@@ -1063,7 +1063,7 @@ header .intro-text {
 .light-text1 {
   font-family: "Poppins";
   padding: 12px;
-  font-size: 14px; 
+  font-size: 15px; 
   border-collapse: collapse;
   font-weight: 300;
   padding: 10px 0;

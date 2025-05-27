@@ -35,7 +35,7 @@ export const Header = (props) => {
                 </h1>   
                 <div className=".light-text">Co-located with</div>
                 <div className="typotitle3">
-                  <p>
+                  <p className="text-[20px] font-semibold">
                     The 22<span className="superscript">nd</span> International Conference on<br />
                     Cooperative Design Visualization and Engineering<span className="text-sm text-gray-600 ml-2 light-text1">(CDVE2025)</span>
                   </p>
