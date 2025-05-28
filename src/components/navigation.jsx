@@ -52,6 +52,19 @@ export const Navigation = () => {
                 </ul>
               )}
             </li>
+
+            <li className="dropdown">
+              <a href="#submission" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setSubmissionOpen); }}>
+                Program <i className="fa fa-caret-down"></i>
+              </a>
+              {isSubmissionOpen && (
+                <ul className="dropdown-menu">                 
+                  <li><a href="/keynote-speaker" className="page-scroll">KeyNote Speaker</a></li>      
+                  {/* <li><a href="/paper-submission-guidelines" className="page-scroll">Paper Submission Guidelines</a></li>  
+                  <li><a href="/registration" className="page-scroll">Registration</a></li>        */}
+                </ul>
+              )}
+            </li>            
             
             <li className="dropdown">
               <a href="#submission" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setSubmissionOpen); }}>
