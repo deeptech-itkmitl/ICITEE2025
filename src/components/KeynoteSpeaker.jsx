@@ -233,7 +233,7 @@ const TravelGuidance = () => {
                                               src={`${process.env.PUBLIC_URL}/img/image0.jpg`}
                                               alt="Line"
                                               className=""
-                                              style={{ width: "100%", height: "100%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
+                                              style={{ width: "50%", height: "50%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
                                       /></center>
             </h4>
           </div>
