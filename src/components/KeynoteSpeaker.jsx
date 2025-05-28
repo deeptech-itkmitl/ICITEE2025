@@ -228,19 +228,59 @@ const TravelGuidance = () => {
               // allowFullScreen
               // loading="lazy"
             ></iframe> */}
-            <h4 className="title">
+
+            {/* <div style={{
+              display: "flex",
+              alignItems: "center",
+              flexWrap: "wrap",            // เพื่อให้ responsive บนจอเล็ก
+              gap: "20px",                 // เว้นระยะห่างรูปกับข้อความ
+              marginBottom: "1rem"
+            }}>
               <img
                 src={`${process.env.PUBLIC_URL}/img/image0.jpg`}
-                alt="Line"
+                alt="Profile"
                 style={{
                   width: "100%",
-                  maxWidth: "400px",     // กำหนดขนาดสูงสุดของภาพ
-                  height: "auto",        // รักษาสัดส่วนภาพ
-                  display: "block",      // เพื่อใช้ margin auto
-                  margin: "0 auto",      // จัดภาพให้อยู่กลาง
+                  maxWidth: "150px",
+                  height: "auto",
+                  borderRadius: "12px",     // ขอบมน
+                  display: "block"
                 }}
               />
-            </h4>
+              <div>
+                <h4 style={{ margin: 0 }}>นายสมชาย ใจดี</h4>
+                <p style={{ margin: 0 }}>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
+              </div>
+            </div> */}
+            <div style={{
+              display: "flex",
+              justifyContent: "center",     // จัด content ให้อยู่ตรงกลางแนวนอน
+              marginTop: "2rem"
+            }}>
+              <div style={{
+                display: "flex",
+                alignItems: "center",
+                flexWrap: "wrap",           // Responsive บนอุปกรณ์เล็ก
+                gap: "20px"
+              }}>
+                <img
+                  src={`${process.env.PUBLIC_URL}/img/image0.jpg`}
+                  alt="Profile"
+                  style={{
+                    width: "100%",
+                    maxWidth: "150px",
+                    height: "auto",
+                    borderRadius: "12px",
+                    display: "block"
+                  }}
+                />
+                <div>
+                  <h4 style={{ margin: 0 }}>Masanori Sugimoto</h4>
+                  <p style={{ margin: 0 }}>Hokkaido University</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </section>
 
