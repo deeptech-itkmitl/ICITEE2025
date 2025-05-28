@@ -59,10 +59,23 @@ export const Navigation = () => {
               </a>
               {isSubmissionOpen && (
                 <ul className="dropdown-menu">                 
-                  <li><a href="/keynote-speaker" className="page-scroll">KeyNote Speaker</a></li>      
-                  {/* <li><a href="/paper-submission-guidelines" className="page-scroll">Paper Submission Guidelines</a></li>  
-                  <li><a href="/registration" className="page-scroll">Registration</a></li>        */}
+                  {/* <li><a href="/topics-of-interest" className="page-scroll">KeyNote S</a></li>       */}
+                <li className="submenu-parent">
+                <a href="/topics-of-interest" className="page-scroll">
+                  KeyNote Speaker ▸
+                </a>
+
+                {/* Submenu ที่สไลด์ไปทางขวา */}
+                <ul className="submenu">
+                    <li>
+                      <a href="/keynote-speaker">
+                        Emerging Trends and Future Perspectives on Indoor Positioning Technologies
+                      </a>
+                        </li>
+                      </ul>
+                    </li>                  
                 </ul>
+                
               )}
             </li>            
             
