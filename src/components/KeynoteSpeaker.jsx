@@ -275,8 +275,8 @@ const TravelGuidance = () => {
                   }}
                 />
                 <div>
-                  <h4 style={{ margin: 0 }}>Masanori Sugimoto</h4>
-                  <p style={{ margin: 0 }}>Hokkaido University</p>
+                  <h4 style={{ margin: 0 }}> Masanori Sugimoto </h4>
+                  <p style={{ margin: 0 }}> Hokkaido University </p>
                 </div>
               </div>
             </div>

@@ -36,8 +36,16 @@ export const Header = (props) => {
                 <div className=".light-text">Co-located with</div>
                 <div className="typotitle3">
                   <p className="text-[20px] font-semibold">
-                    The 22<span className="superscript">nd</span> International Conference on<br />
-                    Cooperative Design Visualization and Engineering<span className="text-sm text-gray-600 ml-2 light-text1">(CDVE2025)</span>
+                  <a 
+                      href="https://www.cdve.org/" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      style={{ 
+                        textDecoration: "none", 
+                        color: "inherit" 
+                      }}
+                    > The 22<span className="superscript">nd</span> International Conference on<br />
+                    Cooperative Design Visualization and Engineering<span className="text-sm text-gray-600 ml-2 light-text1">(CDVE2025)</span></a>                   
                   </p>
                 </div>  
                 <h1><div className="semi-bold-text">20 - 21 October 2025 | Bangkok, Thailand</div></h1>

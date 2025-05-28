@@ -1160,7 +1160,7 @@ header .intro-text {
 }
 
 .submenu-parent > a::after {
-  content: ' ▸';
+  content: ' ';
   float: right;
 }
 
