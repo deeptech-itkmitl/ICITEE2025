@@ -233,11 +233,11 @@ const TravelGuidance = () => {
                 src={`${process.env.PUBLIC_URL}/img/image0.jpg`}
                 alt="Line"
                 style={{
-                  maxWidth: "100%",
-                  width: "300px", // หรือ 50%, หรือ 100%, แล้วแต่ที่เหมาะ
-                  height: "auto",
-                  display: "block",
-                  margin: "0 auto"
+                  width: "100%",
+                  maxWidth: "400px",     // กำหนดขนาดสูงสุดของภาพ
+                  height: "auto",        // รักษาสัดส่วนภาพ
+                  display: "block",      // เพื่อใช้ margin auto
+                  margin: "0 auto",      // จัดภาพให้อยู่กลาง
                 }}
               />
             </h4>
