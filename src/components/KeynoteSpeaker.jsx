@@ -228,13 +228,18 @@ const TravelGuidance = () => {
               // allowFullScreen
               // loading="lazy"
             ></iframe> */}
-             <h4 className="title"><center>
-                                      <img
-                                              src={`${process.env.PUBLIC_URL}/img/image0.jpg`}
-                                              alt="Line"
-                                              className=""
-                                              style={{ width: "50%", height: "50%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
-                                      /></center>
+            <h4 className="title">
+              <img
+                src={`${process.env.PUBLIC_URL}/img/image0.jpg`}
+                alt="Line"
+                style={{
+                  maxWidth: "100%",
+                  width: "300px", // หรือ 50%, หรือ 100%, แล้วแต่ที่เหมาะ
+                  height: "auto",
+                  display: "block",
+                  margin: "0 auto"
+                }}
+              />
             </h4>
           </div>
         </section>
