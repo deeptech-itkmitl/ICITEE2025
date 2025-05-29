@@ -67,8 +67,7 @@ const Registration = () => {
         <p>Each accepted paper should have at least one author making registration to publish the paper in the proceedings. <b>(ONE author registration will cover only ONE paper)</b> After July 23, please use the Regular registration rate. Other co-authors of the accepted papers can participate in the conference by making the registration as other participants. <b>Registration fees are non-refundable and non-transferable.</b></p>
       </div>
       
-      <div className="card">
-        {/* <b>** Registration Instructions for ICITEE 2025 ** .</b> */}
+      <div className="card">      
       <h4>
                       <a href={`${process.env.PUBLIC_URL}/pdf/Registration Instructions for ICITEE 2025.pdf`} 
                   className="btn btn-custom btn-lg page-scroll" 
@@ -77,6 +76,17 @@ const Registration = () => {
                   ** Registration Instructions for ICITEE 2025 **
                 </a> </h4>
       </div>
+
+            <div className="card">      
+      <h4>
+                      <a href='https://events.it.kmitl.ac.th/' 
+                  className="btn btn-custom btn-lg page-scroll" 
+                  target="_blank" 
+                  rel="noopener noreferrer">
+                  ** Registration for ICITEE 2025 **
+                </a> </h4>
+      </div>
+
       <div className="card">
         <h4>The registration fee for ICITEE 2025 includes:</h4>
         <ul>
