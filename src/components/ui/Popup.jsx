@@ -29,7 +29,7 @@ const Popup = ({ onClose }) => {
       }}
     >
       {/* แสดงรูปภาพ banner */}
-      <img
+      {/* <img
         src="img/conference_brand.png"  // เปลี่ยนเป็น URL ของรูปภาพของคุณ      
         alt="Banner"
         style={{
@@ -37,7 +37,20 @@ const Popup = ({ onClose }) => {
           height: 'auto',
           borderRadius: '8px',  // ขอบรูปให้โค้งเล็กน้อย
         }}
-      />
+      /> */}
+
+      <a href="/registration" style={{ textDecoration: 'none' }}>
+        <img
+          src="img/conference_brand.png" // เปลี่ยนเป็น URL ของรูปภาพของคุณ
+          alt="Banner"
+          style={{
+            width: '100%',
+            height: 'auto',
+            borderRadius: '8px', // ขอบรูปให้โค้งเล็กน้อย
+            display: 'block' // ป้องกันช่องว่างใต้รูป
+          }}
+        />
+      </a>
 
       {/* ปุ่มปิด (กากบาท) */}
       <span

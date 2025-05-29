@@ -14,6 +14,8 @@ import Layout10 from "./Layout10";
 import Layout11 from "./Layout11";
 import Layout12 from "./Layout12";
 import Layout14 from "./Layout14";
+//import Layout15 from "./Layout15";
+import Layout16 from "./Layout16";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { About } from "./components/about";
@@ -33,9 +35,11 @@ import PastConference from "./components/PastConferences";
 import VisaInformation from "./components/Visainformation";
 import VenuTravel from "./components/VenuTravel";
 import TravelGuidance from "./components/TravelGuidance";
+import KeynoteSpeaker from "./components/KeynoteSpeaker";
+
 // import PastConference from "./components/Registration";
 import JsonData from "./data/data.json";
-// import VisitorCounter from "./components/visitor-update";  // นำเข้าฟังก์ชัน VisitorCounter
+// import VisitorCounter from "./components/visitor-update";  // นำเข้าฟังก์ชัน VisitorCounter keynote-speaker
 import VisitorCounter from "./components/visitor-updateDetail";  // นำเข้าฟังก์ชัน VisitorCounter
 import "./App.css";
 import { Gallery } from "components/gallery";
@@ -140,6 +144,10 @@ const AppContent = ({ landingPageData }) => {
 
         <Route path="/visa-information" element={<Layout11 data={landingPageData} />}>
           <Route index element={<VisaInformation data={landingPageData.Gallery} />} />
+        </Route>
+
+        <Route path="/keynote-speaker" element={<Layout16 data={landingPageData} />}>
+          <Route index element={< KeynoteSpeaker data={landingPageData.Gallery} />} />
         </Route> 
 
       </Routes>

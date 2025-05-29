@@ -2,6 +2,7 @@ import { useState } from "react";
 // import { Link } from "react-router-dom";
 
 const steps = [
+  { title: "Registration", date: "May 29, 2025" },
   { title: "Post-Event Survey", date: "April 15, 2025" },
   { title: "Setting Up the Venue", date: "April 10, 2025" },
   { title: "Confirming Attendees", date: "April 5, 2025" },
@@ -13,7 +14,6 @@ const steps = [
   { title: "Contacting Speakers and Venue", date: "March 5, 2025" },
   { title: "Planning and Topic Selection", date: "March 1, 2025" }
 ];
-
 
 export default function ProgressTimelineDetail() {
   const [currentStep, setCurrentStep] = useState(2); // Set current step

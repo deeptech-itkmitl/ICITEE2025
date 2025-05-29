@@ -52,6 +52,32 @@ export const Navigation = () => {
                 </ul>
               )}
             </li>
+
+            <li className="dropdown">
+              <a href="#submission" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setSubmissionOpen); }}>
+                Program <i className="fa fa-caret-down"></i>
+              </a>
+              {isSubmissionOpen && (
+                <ul className="dropdown-menu">                 
+                  {/* <li><a href="/topics-of-interest" className="page-scroll">KeyNote S</a></li>       */}
+                <li className="submenu-parent">
+                <a href="/topics-of-interest" className="page-scroll">
+                  KeyNote Speaker ▸
+                </a>
+
+                {/* Submenu ที่สไลด์ไปทางขวา */}
+                <ul className="submenu">
+                    <li>
+                      <a href="/keynote-speaker">
+                        Emerging Trends and Future Perspectives on Indoor Positioning Technologies
+                      </a>
+                        </li>
+                      </ul>
+                    </li>                  
+                </ul>
+                
+              )}
+            </li>            
             
             <li className="dropdown">
               <a href="#submission" className="page-scroll" onClick={(e) => { e.preventDefault(); toggleDropdown(setSubmissionOpen); }}>
