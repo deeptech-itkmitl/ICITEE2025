@@ -68,7 +68,14 @@ const Registration = () => {
       </div>
       
       <div className="card">
-      <h4><b>** The registration will be open when time comes closer.</b> </h4>
+        {/* <b>** Registration Instructions for ICITEE 2025 ** .</b> */}
+      <h4>
+                      <a href={`${process.env.PUBLIC_URL}/pdf/Registration Instructions for ICITEE 2025.pdf`} 
+                  className="btn btn-custom btn-lg page-scroll" 
+                  target="_blank" 
+                  rel="noopener noreferrer">
+                  ** Registration Instructions for ICITEE 2025 **
+                </a> </h4>
       </div>
       <div className="card">
         <h4>The registration fee for ICITEE 2025 includes:</h4>
