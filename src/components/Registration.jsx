@@ -77,13 +77,13 @@ const Registration = () => {
                 </a> </h4>
       </div>
 
-            <div className="card">      
+      <div className="card">      
       <h4>
-                      <a href='https://events.it.kmitl.ac.th/' 
+                <a href='https://events.it.kmitl.ac.th/' 
                   className="btn btn-custom btn-lg page-scroll" 
                   target="_blank" 
                   rel="noopener noreferrer">
-                  ** Registration for ICITEE 2025 **
+                  ** Online Registration **
                 </a> </h4>
       </div>
 
