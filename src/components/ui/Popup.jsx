@@ -39,7 +39,7 @@ const Popup = ({ onClose }) => {
         }}
       /> */}
 
-      <a href="/registration" style={{ textDecoration: 'none' }}>
+      <a href="/topics-of-interest" style={{ textDecoration: 'none' }}>
         <img
           src="img/ICITEE 2025_02_ Special_Session.jpg" // เปลี่ยนเป็น URL ของรูปภาพของคุณ
           alt="Banner"
