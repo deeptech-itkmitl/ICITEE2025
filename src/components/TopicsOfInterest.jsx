@@ -43,8 +43,8 @@ export const TopicsOfInterest = () => {
         "The Joint Symposium on Computational Intelligence (JSCI) was first held in 2016. It was initiated by the IEEE Computational Intelligence Society Thailand Chapter (IEEE-CIS Thailand Chapter) with the aim of supporting research students and young researchers. The symposium provides a platform for participants to share and discuss their research before submitting it to high-ranking journals. The event is open to all researchers interested in expanding their knowledge of computational intelligence. It features student paper presentations as well as invited talks.",
     },
     {
-      title: " ",
-      description:
+      title: "",
+      description2:
         "Neural Networks and Deep Learning;Fuzzy Systems and Fuzzy Logic;Evolutionary Computation and Genetic Algorithms;Swarm Intelligence and Nature-Inspired Computing;Machine Learning and Pattern Recognition;Data Mining and Knowledge Discovery;Bioinformatics and Biomedical Applications;Image and Signal Processing using CI Techniques;Natural Language Processing;Intelligent Robotics and Control Systems;Cognitive Computing and Brain-Inspired Systems;Hybrid Intelligent Systems;Optimization and Decision Support Systems;Reinforcement Learning and Online Learning;Explainable AI and Trustworthy CI Systems;Applications of CI in Smart Cities, Healthcare, Finance, Energy, and Industry 4.0;Cybersecurity and Privacy in Intelligent Systems"
     },
   ];
@@ -64,7 +64,7 @@ export const TopicsOfInterest = () => {
               <h3>
                  <div className="heading-left topics-title">{topic.title}</div>             
               </h3>
-              <div className="topic-description text-justify">{topic.description}
+              <div className="topic-description text-justify">{topic.description}                 
               <p2>
 
       <h4 className="title"><center>
@@ -77,7 +77,8 @@ export const TopicsOfInterest = () => {
       </h4>
         
 </p2>      
-              </div>                            
+              </div>    
+              <div className="topic-description text-justify">{topic.description2}</div>                        
             </div>
             
           ))}
