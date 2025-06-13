@@ -67,7 +67,7 @@ export const TopicsOfInterest = () => {
               <div className="topic-description text-justify">{topic.description}
               <p2>
 
-<h4 className="title"><center>
+      <h4 className="title"><center>
                             <img
                                     src={`${process.env.PUBLIC_URL}/img/Line9.png`}
                                     alt="Line"
