@@ -5,12 +5,12 @@ export const TopicsOfInterest = () => {
     {
       title: "Information Technology",
       description:
-        "Distributed Systems; AI-Driven Knowledge Discovery and Explainable AI; Big Data, Data Mining, and AI-driven Analytics; Visualization and Computer Graphics; Multimedia Computing & Applications; Human-Computer Interaction (HCI) and Brain-Computer Interfaces (BCI); Social Media and Computational Social Science; Mobile Computing and Edge AI; Internet of Things (IoT) and Industrial IoT (IIoT); AI in Digital Marketing and Personalized Advertising; Software Engineering and AI-Assisted Development; AI-Powered Decision Support Systems; Network and Cyber Security (including AI-driven threats); Generative AI and Foundation Models; Digital Twin Technology",
+        "Distributed Systems; AI-Driven Knowledge Discovery and Explainable AI; Big Data, Data Mining, and AI-driven Analytics; Visualization and Computer Graphics; Multimedia Computing & Applications; Human-Computer Interaction (HCI) and Brain-Computer Interfaces (BCI); Social Media and Computational Social Science; Mobile Computing and Edge AI; Internet of Things (IoT) and Industrial IoT (IIoT); AI in Digital Marketing and Personalized Advertising; Software Engineering and AI-Assisted Development; AI-Powered Decision Support Systems; Network and Cyber Security (including AI-driven threats); Generative AI and Foundation Models; Digital Twin Technology.",
     },
     {
-      title: "Signal Processing and Machine Intelligence",
+      title: "Signal Processing and Machine Intelligence.",
       description:
-        "Artificial Intelligence (including Generative AI and Foundation Models); Machine Learning (Self-Supervised Learning, Federated Learning, and Few-Shot Learning); High-Performance Computing for AI (GPUs and TPUs); AI-Driven Signal and Image Processing (including Neural Compression and Super-Resolution AI); AI-Based Image Synthesis (GANs, Diffusion Models, and Neural Rendering); Computer Vision (Vision Transformers, 3D Vision, and Multimodal Perception); Natural Language Processing (LLMs, Multimodal AI, and Prompt Engineering); Graph Neural Networks (GNNs) and Geometric Deep Learning; Neurosymbolic AI and Explainable AI (XAI); Bioinformatics and AI in Healthcare (Medical Imaging, Computational Genomics, and Biomedical Signal Processing); Spiking Neural Networks (SNNs) and Neuromorphic Computing",
+        "Artificial Intelligence (including Generative AI and Foundation Models); Machine Learning (Self-Supervised Learning, Federated Learning, and Few-Shot Learning); High-Performance Computing for AI (GPUs and TPUs); AI-Driven Signal and Image Processing (including Neural Compression and Super-Resolution AI); AI-Based Image Synthesis (GANs, Diffusion Models, and Neural Rendering); Computer Vision (Vision Transformers, 3D Vision, and Multimodal Perception); Natural Language Processing (LLMs, Multimodal AI, and Prompt Engineering); Graph Neural Networks (GNNs) and Geometric Deep Learning; Neurosymbolic AI and Explainable AI (XAI); Bioinformatics and AI in Healthcare (Medical Imaging, Computational Genomics, and Biomedical Signal Processing); Spiking Neural Networks (SNNs) and Neuromorphic Computing.",
     },
     {
       title: "Communication and Network Technologies",
@@ -41,12 +41,10 @@ export const TopicsOfInterest = () => {
       title: "The Joint Symposium on Computational Intelligence (JSCI)",
       description:
         "The Joint Symposium on Computational Intelligence (JSCI) was first held in 2016. It was initiated by the IEEE Computational Intelligence Society Thailand Chapter (IEEE-CIS Thailand Chapter) with the aim of supporting research students and young researchers. The symposium provides a platform for participants to share and discuss their research before submitting it to high-ranking journals. The event is open to all researchers interested in expanding their knowledge of computational intelligence. It features student paper presentations as well as invited talks.",  
+      description2:
+        "Neural Networks and Deep Learning;Fuzzy Systems and Fuzzy Logic;Evolutionary Computation and Genetic Algorithms;Swarm Intelligence and Nature-Inspired Computing;Machine Learning and Pattern Recognition;Data Mining and Knowledge Discovery;Bioinformatics and Biomedical Applications;Image and Signal Processing using CI Techniques;Natural Language Processing;Intelligent Robotics and Control Systems;Cognitive Computing and Brain-Inspired Systems;Hybrid Intelligent Systems;Optimization and Decision Support Systems;Reinforcement Learning and Online Learning;Explainable AI and Trustworthy CI Systems;Applications of CI in Smart Cities, Healthcare, Finance, Energy, and Industry 4.0;Cybersecurity and Privacy in Intelligent Systems."
     },
-    {
-      title: "",
-      description:
-        "Neural Networks and Deep Learning;Fuzzy Systems and Fuzzy Logic;Evolutionary Computation and Genetic Algorithms;Swarm Intelligence and Nature-Inspired Computing;Machine Learning and Pattern Recognition;Data Mining and Knowledge Discovery;Bioinformatics and Biomedical Applications;Image and Signal Processing using CI Techniques;Natural Language Processing;Intelligent Robotics and Control Systems;Cognitive Computing and Brain-Inspired Systems;Hybrid Intelligent Systems;Optimization and Decision Support Systems;Reinforcement Learning and Online Learning;Explainable AI and Trustworthy CI Systems;Applications of CI in Smart Cities, Healthcare, Finance, Energy, and Industry 4.0;Cybersecurity and Privacy in Intelligent Systems"
-    },
+   
   ];
 
   return (
@@ -64,9 +62,13 @@ export const TopicsOfInterest = () => {
               <h3>
                  <div className="heading-left topics-title">{topic.title}</div>             
               </h3>
-              <div className="topic-description text-justify">{topic.description}                 
-              <p2>
 
+              {/* <div className="topic-description text-justify">{topic.description + "<\t>" + topic.description2}                  */}
+              <div className="topic-description text-justify">
+                {topic.description}
+                <br /><br />
+                {topic.description2}             
+              <p2>
               <h4 className="title"><center>
                                     <img
                                             src={`${process.env.PUBLIC_URL}/img/Line9.png`}
@@ -75,9 +77,10 @@ export const TopicsOfInterest = () => {
                                             style={{ width: "100%", height: "0.25%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
                                     /></center>
               </h4>
-</p2>      
+             </p2> 
+
               </div>    
-              <div className="topic-description text-justify">{topic.description2}</div>                        
+              {/* <div className="topic-description text-justify">{topic.description2}</div>                         */}
             </div>
             
           ))}
