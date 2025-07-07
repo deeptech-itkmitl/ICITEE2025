@@ -60,18 +60,12 @@ const translations = {
       qrNote1: 'Scan this QR code to open the map of The Berkeley Hotel on your phone.',
       travelTips1: 'Abstract:',
       tips1: [
-        'Technologies for accurately recognizing the positions of people and objects are essential for realizing',
-        'applications such as the Internet of Things (IoT), cyber-physical systems (CPS), augmented reality',
-        '(AR), and digital twins. While Global Navigation Satellite System (GNSS) is the standard positioning',
-        'technology in outdoor environments, there is still no such universally accepted technology for indoor',
-        'settings, and various approaches have been proposed so far. Some market research reports predict that',
-        'the market related to indoor positioning technologies is expected to grow at a compound annual growth',
-        'rate (CAGR.) exceeding 40%, reaching USD 150 billion by 2030. In light of the social background',
-        'this talk will first introduce recent research trends in indoor positioning technologies. Then some of',
-        'the research achievements from the speaker group s indoor positioning research project will be',
-        'presented. The talk will describe indoor positioning systems realized using smartphone built-in sensors',
-        'and provide examples of their applications. Finally, future prospects for research in indoor positioning',
-        'will be discussed.',
+        'Heart rate variability (HRV) has long been used as a non-invasive indicator of autonomic nervous system activity, ',
+        'and it has become widely adopted in fields ranging from human interface design to human-robot interaction. However, ',
+        'misinterpretations and methodological pitfalls in HRV analysis remain widespread, often leading to erroneous conclusions ',
+        'about autonomic function. Our landmark paper, “Pitfalls of assessment of autonomic function by heart rate variability” (2019),',
+        'has been cited more than 370 times in just five years, reflecting the growing concern and interest in improving the scientific ',
+        'rigor of HRV-based assessments.',
         ' ',
       ],
 
@@ -80,18 +74,13 @@ const translations = {
       qrNote2: 'Scan this QR code to open the map of The Berkeley Hotel on your phone.',
       travelTips2: 'Bio:',
       tips2: [
-        'Technologies for accurately recognizing the positions of people and objects are essential for realizing',
-        'applications such as the Internet of Things (IoT), cyber-physical systems (CPS), augmented reality',
-        '(AR), and digital twins. While Global Navigation Satellite System (GNSS) is the standard positioning',
-        'technology in outdoor environments, there is still no such universally accepted technology for indoor',
-        'settings, and various approaches have been proposed so far. Some market research reports predict that',
-        'the market related to indoor positioning technologies is expected to grow at a compound annual growth',
-        'rate (CAGR.) exceeding 40%, reaching USD 150 billion by 2030. In light of the social background',
-        'this talk will first introduce recent research trends in indoor positioning technologies. Then some of',
-        'the research achievements from the speaker group s indoor positioning research project will be',
-        'presented. The talk will describe indoor positioning systems realized using smartphone built-in sensors',
-        'and provide examples of their applications. Finally, future prospects for research in indoor positioning',
-        'will be discussed.',
+        'In this talk, I will discuss the physiological basis of HRV, clarify common misunderstandings in its interpretation, ',
+        'and demonstrate why certain HRV metrics fail to reflect autonomic balance under conditions involving speech, motion, ',
+        'or cognitive load. Using evidence from both experimental and clinical studies, I will outline appropriate methods for extracting',
+        'meaningful physiological information from HRV and related bio-signals.Furthermore, I will introduce practical applications',
+        'of refined HRV analysis in the context of real-world systems, such as driver monitoring, fatigue detection, and affective computing.',
+        'Emphasis will be placed on aligning signal processing techniques with physiological principles to ensure robust and interpretable outcomes.',
+        'This presentation aims to promote more accurate and effective use of bio-signal analysis in modern human-centered technologies.',
         ' ',
       ],
 
@@ -264,7 +253,7 @@ const TravelGuidance = () => {
                 gap: "20px"
               }}>
                 <img
-                  src={`${process.env.PUBLIC_URL}/img/image0.jpg`}
+                  src={`${process.env.PUBLIC_URL}/img/image1.jpg`}
                   alt="Profile"
                   style={{
                     width: "100%",
