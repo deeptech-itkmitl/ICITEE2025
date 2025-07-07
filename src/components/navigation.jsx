@@ -71,9 +71,13 @@ export const Navigation = () => {
                       <a href="/keynote-speaker">
                         Emerging Trends and Future Perspectives on Indoor Positioning Technologies
                       </a>
-                        </li>
+                        <a href="/keynote-speaker2">
+                            Bio-signal processing research based on the characteristics of human physiology
+                        </a>
+                         </li>
                       </ul>
-                    </li>                  
+                    </li>  
+                                                    
                 </ul>
                 
               )}
