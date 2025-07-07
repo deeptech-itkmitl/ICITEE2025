@@ -119,7 +119,7 @@ const translations = {
 
   };
   
-const TravelGuidance = () => {
+const TravelGuidance1 = () => {
   const [lang, setLang] = useState('en');
   const t = translations[lang] || translations['en'];
   const mapRef = useRef(null);
@@ -496,4 +496,4 @@ const TravelGuidance = () => {
   );
 };
 
-export default TravelGuidance;
+export default TravelGuidance1;
