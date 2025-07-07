@@ -58,7 +58,7 @@ const HeaderSub15 = () => {
                     <p>{speaker.summary}</p>
                     <a
                       href={speaker.link}
-                      target="_blank"
+                      target="_parent"
                       rel="noopener noreferrer"
                       className="btn btn-primary mt-2"
                     >
