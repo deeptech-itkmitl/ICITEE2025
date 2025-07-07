@@ -1,6 +1,6 @@
 import React from "react";
 
-const HeaderSub15 = () => {
+const HeaderSub17 = () => {
   return (
 <header id="headersub17">
       <div className="intro slideshow1">
@@ -83,6 +83,6 @@ const HeaderSub15 = () => {
   );
 };
 
-export default HeaderSub15; // ✅ ต้องมี export default
+export default HeaderSub17; // ✅ ต้องมี export default
 
 
