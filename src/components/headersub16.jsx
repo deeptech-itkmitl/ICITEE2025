@@ -1,8 +1,8 @@
 import React from "react";
 
-const HeaderSub15 = () => {
+const HeaderSub16 = () => {
   return (
-<header id="headersub15">
+<header id="headersub16">
       <div className="intro slideshow1">
         
         {/* Slideshow as Background */}
@@ -83,6 +83,6 @@ const HeaderSub15 = () => {
   );
 };
 
-export default HeaderSub15; // ✅ ต้องมี export default
+export default HeaderSub16; // ✅ ต้องมี export default
 
 
