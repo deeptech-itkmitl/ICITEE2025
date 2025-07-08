@@ -16,7 +16,7 @@ const HeaderSub15 = () => {
     {
       name: "Prof. Dr. Emi Yuda",
       affiliation: "Mie University",
-      summary: "Specialist in biomedical signal processing and health data analysis.",
+      summary: "Biomedical signal processing and bio-medical big data analysis.",
       photo: `${process.env.PUBLIC_URL}/img/emi-yuda.jpg`,
       link: "/keynote-speaker-EmiYuda",
     },
@@ -72,6 +72,7 @@ const HeaderSub15 = () => {
                   </div>
                 </div>
               ))}
+
             </div>
             
           </div>
