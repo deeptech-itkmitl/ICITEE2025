@@ -1,23 +1,26 @@
 import React from 'react';
 import "../css/QualityControl.css";
 import "../css/TravelGuidance.css";
+import 'font-awesome/css/font-awesome.min.css';
 
 const HeaderSub15 = () => {
   const keynoteData = [
+
     {
       name: "Prof. Masanori Sugimoto",
       affiliation: "Hokkaido University",
-      summary: "Expert in Indoor Positioning Technologies and Smart Systems.",
+      summary: "Emerging Trends and Future Perspectives on Indoor Positioning Technologies.",
       photo: `${process.env.PUBLIC_URL}/img/masanori-sugimoto.jpg`,
-      link: "/keynote-speaker/MasanoriSugimoto",
+      link: "/keynote-speaker-MasanoriSugimoto",
     },
     {
       name: "Prof. Dr. Emi Yuda",
       affiliation: "Mie University",
       summary: "Specialist in biomedical signal processing and health data analysis.",
       photo: `${process.env.PUBLIC_URL}/img/emi-yuda.jpg`,
-      link: "/keynote-speaker/EmiYuda",
+      link: "/keynote-speaker-EmiYuda",
     },
+
   ];
 
   return (

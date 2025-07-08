@@ -154,11 +154,11 @@ const AppContent = ({ landingPageData }) => {
           <Route index element={< KeynoteSpeaker data={landingPageData.Gallery} />} />
         </Route> 
 
-        <Route path="/keynote-speaker/MasanoriSugimoto" element={<Layout16 data={landingPageData} />}>
+        <Route path="/keynote-speaker-MasanoriSugimoto" element={<Layout16 data={landingPageData} />}>
           <Route index element={< KeynoteSpeaker2 data={landingPageData.Gallery} />} />
         </Route> 
 
-        <Route path="/keynote-speaker/EmiYuda" element={<Layout17 data={landingPageData} />}>
+        <Route path="/keynote-speaker-EmiYuda" element={<Layout17 data={landingPageData} />}>
           <Route index element={< KeynoteSpeaker3 data={landingPageData.Gallery} />} />
         </Route> 
 

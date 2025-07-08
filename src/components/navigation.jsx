@@ -68,15 +68,15 @@ export const Navigation = () => {
                 {/* Submenu ที่สไลด์ไปทางขวา */}
                 <ul className="submenu">
                     <li>
-                      <a href="/keynote-speaker/MasanoriSugimoto">
+                      <a href="/keynote-speaker-MasanoriSugimoto">
                         Emerging Trends and Future Perspectives on Indoor Positioning Technologies
                       </a>
-                        <a href="/keynote-speaker/EmiYuda">
+                        <a href="/keynote-speaker-EmiYuda">
                             Bio-signal processing research based on the characteristics of human physiology
                         </a>
                          </li>
                       </ul>
-                    </li>  
+                    </li> 
                                                     
                 </ul>
                 
