@@ -28,13 +28,13 @@ const TravelGuidance1 = () => {
         <div className="flex flex-col md:flex-row items-center gap-4 justify-center mt-8">
           <img
             src={`${process.env.PUBLIC_URL}/img/masanori-sugimoto.jpg`}
-            alt="Prof. Dr. Emi Yuda"
+            alt="Prof. Masanori Sugimoto"
             className="img-fluid mb-3"
             style={{ borderRadius: "12px", height: "200px", objectFit: "cover" }}
           />
           <div className="text-center md:text-left">
-            <h4 className="text-lg font-semibold m-0">Prof. Dr. Emi Yuda</h4>
-            <p className="text-gray-600 m-0">Mie University in 2024</p>
+            <h4 className="text-lg font-semibold m-0">Prof. Masanori Sugimoto</h4>
+            <p className="text-gray-600 m-0">Hokkaido University</p>
           </div>
         </div>
 
