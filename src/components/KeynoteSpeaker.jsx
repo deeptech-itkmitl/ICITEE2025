@@ -1,4 +1,6 @@
-import React from "react";
+import React from 'react';
+import "../css/QualityControl.css";
+import "../css/TravelGuidance.css";
 
 const HeaderSub15 = () => {
   const keynoteData = [
@@ -7,14 +9,14 @@ const HeaderSub15 = () => {
       affiliation: "Hokkaido University",
       summary: "Expert in Indoor Positioning Technologies and Smart Systems.",
       photo: `${process.env.PUBLIC_URL}/img/masanori-sugimoto.jpg`,
-      link: "/keynote-speaker-MasanoriSugimoto",
+      link: "/keynote-speaker/MasanoriSugimoto",
     },
     {
       name: "Prof. Dr. Emi Yuda",
       affiliation: "Mie University",
       summary: "Specialist in biomedical signal processing and health data analysis.",
       photo: `${process.env.PUBLIC_URL}/img/emi-yuda.jpg`,
-      link: "/keynote-speaker-EmiYuda",
+      link: "/keynote-speaker/EmiYuda",
     },
   ];
 

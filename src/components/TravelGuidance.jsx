@@ -78,7 +78,7 @@ const translations = {
       qrTitle5: 'Scan to open map',
       qrNote5: 'Scan this QR code to open the map of The Berkeley Hotel on your phone.',
       travelTips5: 'Wat Arun',
-      tips3: [
+      tips5: [
         'Pratunam Market is a treasure trove of clothes, textiles, fashion accessories, and handmade crafts at',
         'cheap, wholesale prices, making this very busy market popular with locals and bargain shoppers.',
       ],      
