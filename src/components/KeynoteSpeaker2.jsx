@@ -35,7 +35,7 @@ const TravelGuidance1 = () => {
           <h1></h1>
           <div className="text-center md:text-left">
             <h2 className="text-lg font-semibold m-0">Prof. Masanori Sugimoto</h2>
-            <p className="text-gray-600 m-0">Hokkaido University</p>
+            <h3 className="text-lg font-semibold m-0">Hokkaido University</h3>
           </div>
         </div>
 

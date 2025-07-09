@@ -36,7 +36,7 @@ const TravelGuidance1 = () => {
           <h1></h1>
           <div className="text-center md:text-left">
             <h2 className="text-lg font-semibold m-0">Prof. Dr. Emi Yuda</h2>
-            <p className="text-gray-600 m-0">Mie University in 2024</p>
+            <h2 className="text-lg font-semibold m-0">Mie University in 2024</h2>            
           </div>
         </div>
 
