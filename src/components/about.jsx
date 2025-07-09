@@ -152,4 +152,5 @@ export const About = (props) => {
       `}</style>
     </div>    
   );
+  
 };

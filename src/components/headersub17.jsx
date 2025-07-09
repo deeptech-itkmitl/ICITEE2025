@@ -1,8 +1,8 @@
 import React from "react";
 
-const HeaderSub16 = () => {
+const HeaderSub17 = () => {
   return (
-<header id="headersub16">
+<header id="headersub17">
       <div className="intro slideshow1">
         
         {/* Slideshow as Background */}
@@ -17,7 +17,7 @@ const HeaderSub16 = () => {
               <div className="col-md-8 col-md-offset-0.5 intro-text">
                 <h1 className="conference-title">
                   <div className="conference-title"></div>
-                  <p><div class="typotitle2"> Emerging Trends and Future Perspectives on Indoor Positioning Technologies </div></p>
+                  <p><div class="typotitle2"> Biomedical signal processing and bio-medical big data analysis </div></p>
                 </h1>
                 <p><div class="typotitle2"></div></p>
                 <div className="conference-timer"></div>
@@ -83,6 +83,6 @@ const HeaderSub16 = () => {
   );
 };
 
-export default HeaderSub16; // ✅ ต้องมี export default
+export default HeaderSub17; // ✅ ต้องมี export default
 
 

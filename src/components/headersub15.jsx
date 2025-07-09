@@ -17,7 +17,7 @@ const HeaderSub15 = () => {
               <div className="col-md-8 col-md-offset-0.5 intro-text">
                 <h1 className="conference-title">
                   <div className="conference-title"></div>
-                  <p><div class="typotitle2"> Venue & Travel </div></p>
+                  <p><div class="typotitle2"> Keynote Speaker </div></p>
                 </h1>
                 <p><div class="typotitle2"></div></p>
                 <div className="conference-timer"></div>

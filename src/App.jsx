@@ -14,8 +14,10 @@ import Layout10 from "./Layout10";
 import Layout11 from "./Layout11";
 import Layout12 from "./Layout12";
 import Layout14 from "./Layout14";
-//import Layout15 from "./Layout15";
+import Layout15 from "./Layout15";
 import Layout16 from "./Layout16";
+import Layout17 from "./Layout17";
+
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { About } from "./components/about";
@@ -36,6 +38,8 @@ import VisaInformation from "./components/Visainformation";
 import VenuTravel from "./components/VenuTravel";
 import TravelGuidance from "./components/TravelGuidance";
 import KeynoteSpeaker from "./components/KeynoteSpeaker";
+import KeynoteSpeaker2 from "./components/KeynoteSpeaker2";
+import KeynoteSpeaker3 from "./components/KeynoteSpeaker3";
 
 // import PastConference from "./components/Registration";
 import JsonData from "./data/data.json";
@@ -146,9 +150,18 @@ const AppContent = ({ landingPageData }) => {
           <Route index element={<VisaInformation data={landingPageData.Gallery} />} />
         </Route>
 
-        <Route path="/keynote-speaker" element={<Layout16 data={landingPageData} />}>
+        <Route path="/keynote-speaker" element={<Layout15 data={landingPageData} />}>
           <Route index element={< KeynoteSpeaker data={landingPageData.Gallery} />} />
         </Route> 
+
+        <Route path="/keynote-speaker-MasanoriSugimoto" element={<Layout16 data={landingPageData} />}>
+          <Route index element={< KeynoteSpeaker2 data={landingPageData.Gallery} />} />
+        </Route> 
+
+        <Route path="/keynote-speaker-EmiYuda" element={<Layout17 data={landingPageData} />}>
+          <Route index element={< KeynoteSpeaker3 data={landingPageData.Gallery} />} />
+        </Route> 
+
 
       </Routes>
 
