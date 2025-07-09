@@ -33,8 +33,9 @@ const TravelGuidance1 = () => {
             className="img-fluid mb-3"
             style={{ borderRadius: "12px", height: "200px", objectFit: "cover" }}
           />
+          <h1></h1>
           <div className="text-center md:text-left">
-            <h4 className="text-lg font-semibold m-0">Prof. Dr. Emi Yuda</h4>
+            <h2 className="text-lg font-semibold m-0">Prof. Dr. Emi Yuda</h2>
             <p className="text-gray-600 m-0">Mie University in 2024</p>
           </div>
         </div>
