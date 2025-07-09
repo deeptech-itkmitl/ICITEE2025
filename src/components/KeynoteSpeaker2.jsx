@@ -25,7 +25,7 @@ const TravelGuidance1 = () => {
       <div className="max-w-4xl mx-auto px-4 py-8">
         
         {/* Speaker Info */}
-        <div className="flex flex-col md:flex-row items-center gap-4 justify-center mt-8">
+        <div className="text-center md:text-left">
           <img
             src={`${process.env.PUBLIC_URL}/img/masanori-sugimoto.jpg`}
             alt="Prof. Masanori Sugimoto"
