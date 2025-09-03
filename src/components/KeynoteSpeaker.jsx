@@ -20,6 +20,13 @@ const HeaderSub15 = () => {
       photo: `${process.env.PUBLIC_URL}/img/emi-yuda.jpg`,
       link: "/keynote-speaker-EmiYuda",
     },
+    {
+      name: "Adhistya Erna Permanasari",
+      affiliation: "Mie University",
+      summary: "Beyond the Screen: Unlocking Immersive Tech for Effective Learning Media.",
+      photo: `${process.env.PUBLIC_URL}/img/emi-yuda.jpg`,
+      link: "/keynote-speaker-EmiYuda",
+    },
 
   ];
 
