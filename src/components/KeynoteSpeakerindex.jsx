@@ -21,7 +21,7 @@ export const KeynoteList = () => {
       affiliation: "Mie University",
       summary: "Beyond the Screen: Unlocking Immersive Tech for Effective Learning Media.",
       photo: `${process.env.PUBLIC_URL}/img/permanasari.jpg`,
-      link: "/keynote-speaker-EmiYuda",
+      link: "/keynote-speaker-permanasari",
     },
   ];
 

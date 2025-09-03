@@ -22,10 +22,10 @@ const HeaderSub15 = () => {
     },
     {
       name: "Adhistya Erna Permanasari",
-      affiliation: "Mie University",
+      affiliation: "Universitas Gadjah Mada (UGM)",
       summary: "Beyond the Screen: Unlocking Immersive Tech for Effective Learning Media.",
-      photo: `${process.env.PUBLIC_URL}/img/emi-yuda.jpg`,
-      link: "/keynote-speaker-EmiYuda",
+      photo: `${process.env.PUBLIC_URL}/img/permanasari.jpg`,
+      link: "/keynote-speaker-permanasari",
     },
 
   ];
