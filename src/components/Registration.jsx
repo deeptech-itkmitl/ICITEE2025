@@ -30,14 +30,13 @@ const Registration = () => {
 
             {/* Final Notification of Acceptance */}
             <tr>
-              <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-05, 2025</span></td>
-              <td><del style={{ color: "red" }}>Sep-10, 2025</del></td>
+              <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-05, 2025</span></td>             
               <td>Final Notification of Acceptance (Latest Possible Decision Date).</td>
             </tr>
             {/* <tr><td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td><td>Final Notification of Acceptance (Extended).</td></tr> */}
-            <td><del style={{ color: "red" }}>Sep-10, 2025</del></td>
+            
+            <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-05, 2025</span></td>   
             <td><span className="line-through text-red-600">Sep-10, 2025</span>Final Notification of Acceptance (Extended).</td>
-
             {/* Camera-Ready Submission Deadline */}
             <tr>
               <td><span className="line-through text-red-600">Sep-10, 2025</span></td>
