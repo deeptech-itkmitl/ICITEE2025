@@ -54,9 +54,9 @@ export const About = (props) => {
                       ["May-28, 2025", "Extra Early Bird Registration Deadline."],
                       ["Jul-23, 2025", "Early Bird Registration Deadline."],
                       ["Aug-20, 2025", "Final Paper Submission Deadline (Rolling Review Ends)."],
-                      ["Sep-05, 2025", "Final Notification of Acceptance (Latest Possible Decision Date)."],
-                      ["Sep-10, 2025", "Camera-Ready Submission Deadline."],
-                      ["Sep-10, 2025", "Final Registration Deadline."],
+                      ["Sep-10, 2025", "Final Notification of Acceptance (Latest Possible Decision Date)."],
+                      ["Sep-15, 2025", "Camera-Ready Submission Deadline."],
+                      ["Sep-15, 2025", "Final Registration Deadline."],
                       ["Oct-20,21, 2025", "Conference Date."],
                     ].map(([date, event], index) => (
                       <tr key={index}>

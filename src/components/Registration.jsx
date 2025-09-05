@@ -30,19 +30,16 @@ const Registration = () => {
 
             {/* Final Notification of Acceptance */}
             <tr>
-              {/* <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td>  */}
-              <td><img src={`${process.env.PUBLIC_URL}/img/dashbaord05.jpg`} alt="ICITEE 2025 Logo 2" className="conference-logo2" />               </td>             
+              <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td>             
               <td>Final Notification of Acceptance (Latest Possible Decision Date).</td>
             </tr>
             {/* <tr><td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td><td>Final Notification of Acceptance (Extended).</td></tr> */}
             
-            {/* <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-05, 2025</span></td>    */}
-            <td><img src={`${process.env.PUBLIC_URL}/img/dashbaord12.jpg`} alt="ICITEE 2025 Logo 2" className="conference-logo2" />               </td>             
+            <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-05, 2025</span></td>   
             <td><span className="line-through text-red-600">Sep-10, 2025</span>Final Notification of Acceptance (Extended).</td>
             {/* Camera-Ready Submission Deadline */}
             <tr>
-              {/* <td><span className="line-through text-red-600">Sep-15, 2025</span></td> */}
-              <td><img src={`${process.env.PUBLIC_URL}/img/dashbaord13.jpg`} alt="ICITEE 2025 Logo 2" className="conference-logo2" />               </td>             
+              <td><span className="line-through text-red-600">Sep-15, 2025</span></td>
               {/* <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td> */}
               <td><span>Camera-Ready Submission Deadline.</span></td>
             </tr>
