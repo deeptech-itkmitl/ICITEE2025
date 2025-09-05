@@ -39,17 +39,17 @@ const Registration = () => {
             <td>Final Notification of Acceptance (Extended).</td>
             {/* Camera-Ready Submission Deadline */}
             <tr>
-              <td><span>Sep-05, 2025</span></td>
+              <td><span>Sep-10, 2025</span></td>
               {/* <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td> */}
               <td><span>Camera-Ready Submission Deadline.</span></td>
             </tr>
             <tr>
-              <td>Sep-10, 2025</td>            
+              <td>Sep-15, 2025</td>            
             <td>Camera-Ready Submission Deadline (Extended).</td></tr>
 
             {/* Final Registration Deadline */}
             <tr>
-              <td><span className="line-through text-red-600">Sep-10, 2025</span></td>
+              <td><span className="line-through text-red-600">Sep-15, 2025</span></td>
               {/* <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td> */}
               <td><span>Final Registration Deadline.</span></td>
             </tr>
