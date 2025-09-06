@@ -66,18 +66,22 @@ export const Navigation = () => {
                 </a>
 
                 {/* Submenu ที่สไลด์ไปทางขวา */}
-                <ul className="submenu">
-                    <li>
-                      <a href="/keynote-speaker-MasanoriSugimoto">
-                        Emerging Trends and Future Perspectives on Indoor Positioning Technologies
-                      </a>
-                        <a href="/keynote-speaker-EmiYuda">
+                     <ul className="submenu">
+
+                      <li>
+                          <a href="/keynote-speaker-MasanoriSugimoto">
+                            Emerging Trends and Future Perspectives on Indoor Positioning Technologies
+                          </a>
+                          <a href="/keynote-speaker-EmiYuda">
                             Bio-signal processing research based on the characteristics of human physiology
-                        </a>
-                         </li>
+                          </a>
+                          <a href="/keynote-speaker-Permanasari">
+                            Beyond the Screen: Unlocking Immersive Tech for Effective Learning Media
+                          </a>
+                      </li>
+
                       </ul>
-                    </li> 
-                                                    
+                    </li>                                                     
                 </ul>
                 
               )}

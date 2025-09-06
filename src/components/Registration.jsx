@@ -17,25 +17,53 @@ const Registration = () => {
       <div className="card">
         <div className="table-responsive">
         <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Event</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>May-28, 2025</td><td>Extra Early Bird Registration Deadline.</td></tr>
+            <tr><td>Jul-23, 2025</td><td>Early Bird Registration Deadline.</td></tr>
+            <tr><td>Aug-20, 2025</td><td>Final Paper Submission Deadline (Rolling Review Ends).</td></tr>
 
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Event</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>May-28, 2025</td><td>Extra Early Bird Registration Deadline.</td></tr>
-    <tr><td>Jul-23, 2025</td><td>Early Bird Registration Deadline.</td></tr>
-    <tr><td>Aug-20, 2025</td><td>Final Paper Submission Deadline (Rolling Review Ends).</td></tr>
-    <tr><td>Sep-05, 2025</td><td>Final Notification of Acceptance (Latest Possible Decision Date).</td></tr>
-    <tr><td>Sep-10, 2025</td><td>Camera-Ready Submission Deadline.</td></tr>
-    <tr><td>Sep-10, 2025</td><td>Final Registration Deadline.</td></tr>
-    <tr><td>Oct-20,21, 2025</td><td>Conference Date.</td></tr>
-  </tbody>
-</table>
+            {/* Final Notification of Acceptance */}
+            <tr>
+              <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td>             
+              <td>Final Notification of Acceptance (Latest Possible Decision Date).</td>
+            </tr>
+            {/* <tr><td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td><td>Final Notification of Acceptance (Extended).</td></tr> */}
+            
+            <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-05, 2025</span></td>   
+            <td><span className="line-through text-red-600">Sep-10, 2025</span>Final Notification of Acceptance (Extended).</td>
+            {/* Camera-Ready Submission Deadline */}
+            <tr>
+              <td><span className="line-through text-red-600">Sep-15, 2025</span></td>
+              {/* <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td> */}
+              <td><span>Camera-Ready Submission Deadline.</span></td>
+            </tr>
+            <tr>
+              <td><del style={{ color: "red" }}>Sep-10, 2025</del></td>            
+            <td>Camera-Ready Submission Deadline (Extended).</td></tr>
 
+            {/* Final Registration Deadline */}
+            <tr>
+              <td><span className="line-through text-red-600">Sep-15, 2025</span></td>
+              {/* <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td> */}
+              <td><span>Final Registration Deadline.</span></td>
+            </tr>
+            <tr><td>Sep-15, 2025</td><td>Final Registration Deadline (Extended).</td></tr>
+            <tr><td>Oct-20,21, 2025</td><td>Conference Date.</td></tr>
 
+            <td>
+            <span style={{ color: "red", textDecoration: "line-through" }}>
+              Sep-10, 2025
+            </span>
+          </td>
+
+          </tbody>
+        </table>
         </div>
       </div>
       
@@ -69,22 +97,24 @@ const Registration = () => {
       
       <div className="card">      
       <h4>
-                      <a href={`${process.env.PUBLIC_URL}/pdf/Registration Instructions for ICITEE 2025.pdf`} 
-                  className="btn btn-custom btn-lg page-scroll" 
-                  target="_blank" 
-                  rel="noopener noreferrer">
-                  ** Registration Instructions for ICITEE 2025 **
-                </a> </h4>
+        <a href={`${process.env.PUBLIC_URL}/pdf/Registration Instructions for ICITEE 2025.pdf`} 
+          className="btn btn-custom btn-lg page-scroll" 
+          target="_blank" 
+          rel="noopener noreferrer">
+          ** Registration Instructions for ICITEE 2025 **
+        </a> 
+      </h4>
       </div>
 
       <div className="card">      
       <h4>
-                <a href='https://events.it.kmitl.ac.th/' 
-                  className="btn btn-custom btn-lg page-scroll" 
-                  target="_blank" 
-                  rel="noopener noreferrer">
-                  ** Online Registration **
-                </a> </h4>
+        <a href='https://events.it.kmitl.ac.th/' 
+          className="btn btn-custom btn-lg page-scroll" 
+          target="_blank" 
+          rel="noopener noreferrer">
+          ** Online Registration **
+        </a> 
+      </h4>
       </div>
 
       <div className="card">
@@ -96,107 +126,7 @@ const Registration = () => {
           <li>Cruise dinner on Day 2</li>
         </ul>
       </div>
-      {/* <div className="quality-container">
-      <h1 className="title"><center>Important Dates & Registration</center></h1>
-      
-      <div className="card">
-        <div className="table-responsive">
-          <table>
-            <thead>
-              <tr>
-                <th colSpan="5"><center>Early Bird Registration (Round 1): May 28, 2025</center></th>
-              </tr>
-              <tr>
-                <th>Non-IEEE Member</th>
-                <th>IEEE Member</th>
-                <th>Non-IEEE Student Member</th>
-                <th>IEEE Student Member</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>12,000 Baht</td>
-                <td>11,500 Baht</td>
-                <td>10,000 Baht</td>
-                <td>9,500 Baht</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      
-      <div className="card">
-        <div className="table-responsive">
-          <table>
-            <thead>
-              <tr>
-                <th colSpan="5"><center>Early Bird Registration (Round 2): July 23, 2025</center></th>
-              </tr>
-              <tr>
-                <th>Non-IEEE Member</th>
-                <th>IEEE Member</th>
-                <th>Non-IEEE Student Member</th>
-                <th>IEEE Student Member</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>13,500 Baht</td>
-                <td>13,000 Baht</td>
-                <td>11,500 Baht</td>
-                <td>11,000 Baht</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-       */}
-      {/* <div className="card"><center>
-        <p style={{ color: "red" }}>Final Paper Submission Deadline (Rolling Review Ends): <b>August 20, 2025</b></p>
-        <p style={{ color: "red" }}>Final Notification of Acceptance (Latest Possible Decision Date): <b>September 5, 2025</b></p>
-        <p>Final Registration Deadline: <b> September 10, 2025</b></p>
-        </center></div>
-      
-      <div className="card">
-        <div className="table-responsive">
-          <table>
-            <thead>
-              <tr>
-                <th>Non-IEEE Member</th>
-                <th>IEEE Member</th>
-                <th>Non-IEEE Student Member</th>
-                <th>IEEE Student Member</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>15,000 Baht</td>
-                <td>14,500 Baht</td>
-                <td>12,500 Baht</td>
-                <td>12,000 Baht</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div> */}
-      
-      {/* <div className="card"><center>
-        <p>Camera-Ready Submission Deadline: <b>September 10, 2025</b></p>
-        <p>The registration fee for an accompanying person:<b> 9,000 Baht/Person</b></p>
-        </center></div>
-      
-      <h4 className="">The registration fee for ICITEE 2025 includes:</h4>
-      <div className="card">
-        <ul>
-          <li>Conference kit</li>
-          <li>Two lunches and four coffee breaks (over two days)</li>
-          <li>Banquet dinner on Day 1</li>
-          <li>Cruise dinner on Day 2</li>
-        </ul>
-      </div>
-    </div> */}
     </div>
-    
   );
 };
 
