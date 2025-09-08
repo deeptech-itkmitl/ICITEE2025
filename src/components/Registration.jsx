@@ -30,34 +30,42 @@ const Registration = () => {
 
             {/* Final Notification of Acceptance */}
             <tr>
-              <td><span>Sep-10, 2025</span></td>             
+              {/* <td><span>Sep-10, 2025</span></td>              */}
+                <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-5, 2025</span><br></br><span>Sep-10, 2025</span></td>   
               <td>Final Notification of Acceptance (Latest Possible Decision Date).</td>
             </tr>
             {/* <tr><td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td><td>Final Notification of Acceptance (Extended).</td></tr> */}
             
-            <td><span>Sep-10, 2025</span></td>   
-            <td>Final Notification of Acceptance (Extended).</td>
+            {/* <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-5, 2025</span><br></br><span>Sep-10, 2025</span></td>   
+            <td>Final Notification of Acceptance (Extended).</td> */}
             {/* Camera-Ready Submission Deadline */}
+            
             <tr>
-              <td><span>Sep-10, 2025</span></td>
+              {/* <td><span>Sep-10, 2025</span></td> */}
+              <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span><br></br><span>Sep-15, 2025</span></td> 
               {/* <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td> */}
               <td><span>Camera-Ready Submission Deadline.</span></td>
             </tr>
+
             <tr>
-              <td>Sep-15, 2025</td>            
-            <td>Camera-Ready Submission Deadline (Extended).</td></tr>
+              {/* <td>Sep-15, 2025</td>                    <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span><br></br><span>Sep-15, 2025</span></td>        
+              <td>Camera-Ready Submission Deadline (Extended).
+              </td>*/}
+            </tr>
 
             {/* Final Registration Deadline */}
             <tr>
-              <td><span className="line-through text-red-600">Sep-15, 2025</span></td>
+              {/* <td><span >Sep-15, 2025</span></td> */}
+               <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span><br></br><span>Sep-15, 2025</span></td>        
               {/* <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td> */}
               <td><span>Final Registration Deadline.</span></td>
             </tr>
-            <tr><td>Sep-15, 2025</td><td>Final Registration Deadline (Extended).</td></tr>
+            {/* <tr><td>Sep-15, 2025</td><td>Final Registration Deadline (Extended).</td></tr> */}
             <tr><td>Oct-20,21, 2025</td><td>Conference Date.</td></tr>
 
           </tbody>
         </table>
+        
         </div>
       </div>
       
