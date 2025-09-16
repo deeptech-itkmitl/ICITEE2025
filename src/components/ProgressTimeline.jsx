@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const steps = [
+  { title: "The deadlines have been extended: acceptance notification, camera-ready, and final registration.", date: "Sep-05, 2025" },
   { title: "Registration is now open.", date: "May-29, 2025" },
   { title: "The paper submission system for ICITEE 2025 is now open.", date: "Mar-19, 2025" },
   { title: "Quality Control and Management Update: ICITEE 2025 adopts a Rolling Review Process with an Open Review Policy.", date: "Mar-03, 2025" },
