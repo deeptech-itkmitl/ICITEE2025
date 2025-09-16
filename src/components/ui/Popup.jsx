@@ -41,7 +41,7 @@ const Popup = ({ onClose }) => {
 
       <a href="/topics-of-interest" style={{ textDecoration: 'none' }}>
         <img
-          src="img/ICITEE 2025_02_ Special_Session.jpg" // เปลี่ยนเป็น URL ของรูปภาพของคุณ
+          src="img/ICITEE_2025_02_Special_Session.jpg" // เปลี่ยนเป็น URL ของรูปภาพของคุณ
           alt="Banner"
           style={{
             width: '100%',
