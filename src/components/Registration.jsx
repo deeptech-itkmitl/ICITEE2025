@@ -42,7 +42,7 @@ const Registration = () => {
             
             <tr>
               {/* <td><span>Sep-10, 2025</span></td> */}
-              <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span><br></br><span>Sep-15, 2025</span></td> 
+              <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025 / Sep-15, 2025</span><br></br><span>Sep-17, 2025</span></td> 
               {/* <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td> */}
               <td><span>Camera-Ready Submission Deadline.</span></td>
             </tr>
@@ -56,7 +56,7 @@ const Registration = () => {
             {/* Final Registration Deadline */}
             <tr>
               {/* <td><span >Sep-15, 2025</span></td> */}
-               <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span><br></br><span>Sep-15, 2025</span></td>        
+               <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025 / Sep-15, 2025</span><br></br><span>Sep-19, 2025</span></td>        
               {/* <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td> */}
               <td><span>Final Registration Deadline.</span></td>
             </tr>
