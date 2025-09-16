@@ -42,59 +42,30 @@ export const About = (props) => {
             </div>
 
               <div class="about-content flex-2">
-
-                        <table>
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Event</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>May-28, 2025</td><td>Extra Early Bird Registration Deadline.</td></tr>
-            <tr><td>Jul-23, 2025</td><td>Early Bird Registration Deadline.</td></tr>
-            <tr><td>Aug-20, 2025</td><td>Final Paper Submission Deadline (Rolling Review Ends).</td></tr>
-
-            {/* Final Notification of Acceptance */}
-            <tr>
-              {/* <td><span>Sep-10, 2025</span></td>              */}
-                <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-5, 2025</span><br></br><span>Sep-10, 2025</span></td>   
-              <td>Final Notification of Acceptance (Latest Possible Decision Date).</td>
-            </tr>
-            {/* <tr><td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td><td>Final Notification of Acceptance (Extended).</td></tr> */}
-            
-            {/* <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-5, 2025</span><br></br><span>Sep-10, 2025</span></td>   
-            <td>Final Notification of Acceptance (Extended).</td> */}
-            {/* Camera-Ready Submission Deadline */}
-            
-            <tr>
-              {/* <td><span>Sep-10, 2025</span></td> */}
-              <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span><br></br><span>Sep-15, 2025</span></td> 
-              {/* <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td> */}
-              <td><span>Camera-Ready Submission Deadline.</span></td>
-            </tr>
-
-            <tr>
-              {/* <td>Sep-15, 2025</td>                    <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span><br></br><span>Sep-15, 2025</span></td>        
-              <td>Camera-Ready Submission Deadline (Extended).
-              </td>*/}
-            </tr>
-
-            {/* Final Registration Deadline */}
-            <tr>
-              {/* <td><span >Sep-15, 2025</span></td> */}
-               <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span><br></br><span>Sep-15, 2025</span></td>        
-              {/* <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td> */}
-              <td><span>Final Registration Deadline.</span></td>
-            </tr>
-            {/* <tr><td>Sep-15, 2025</td><td>Final Registration Deadline (Extended).</td></tr> */}
-            <tr><td>Oct-20,21, 2025</td><td>Conference Date.</td></tr>
-
-          </tbody>
-        </table>
-
-
-
+                <table style={{ width: "100%", borderCollapse: "collapse", minWidth: "300px" }}>
+                  <thead>
+                    <tr className="bg-gray-200">
+                      <th className="border border-gray-300 p-2 text-left">Date</th>
+                      <th className="border border-gray-300 p-2 text-left">Event</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      ["May-28, 2025", "Extra Early Bird Registration Deadline."],
+                      ["Jul-23, 2025", "Early Bird Registration Deadline."],
+                      ["Aug-20, 2025", "Final Paper Submission Deadline (Rolling Review Ends)."],
+                      ["Sep-10, 2025", "Final Notification of Acceptance (Latest Possible Decision Date)."],
+                      ["Sep-15, 2025", "Camera-Ready Submission Deadline."],
+                      ["Sep-15, 2025", "Final Registration Deadline."],
+                      ["Oct-20,21, 2025", "Conference Date."],
+                    ].map(([date, event], index) => (
+                      <tr key={index}>
+                        <td className="border border-gray-300 p-2 text-left">{date}</td>
+                        <td className="border border-gray-300 p-2 text-left">{event}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
            
 
