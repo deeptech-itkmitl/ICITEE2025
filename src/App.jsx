@@ -18,6 +18,7 @@ import Layout15 from "./Layout15";
 import Layout16 from "./Layout16";
 import Layout17 from "./Layout17";
 import Layout19 from "./Layout19";
+import Layout20 from "./Layout20";
 
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
@@ -42,10 +43,12 @@ import KeynoteSpeaker from "./components/KeynoteSpeaker";
 import KeynoteSpeaker2 from "./components/KeynoteSpeaker2";
 import KeynoteSpeaker3 from "./components/KeynoteSpeaker3";
 import KeynoteSpeaker4 from "./components/KeynoteSpeaker4";
+import KeynoteSpeaker5 from "./components/paperreview/App";
 
 ///keynote-speaker-Permanasari
 // import PastConference from "./components/Registration";
 import JsonData from "./data/data.json";
+
 // import VisitorCounter from "./components/visitor-update";  // นำเข้าฟังก์ชัน VisitorCounter keynote-speaker
 import VisitorCounter from "./components/visitor-updateDetail";  // นำเข้าฟังก์ชัน VisitorCounter
 import "./App.css";
@@ -167,6 +170,10 @@ const AppContent = ({ landingPageData }) => {
 
         <Route path="/keynote-speaker-Permanasari" element={<Layout19 data={landingPageData} />}>
           <Route index element={< KeynoteSpeaker4 data={landingPageData.Gallery} />} />
+        </Route> 
+
+        <Route path="/paper-review" element={<Layout20 data={landingPageData} />}>
+          <Route index element={< KeynoteSpeaker5 data={landingPageData.Gallery} />} />
         </Route> 
 
       </Routes>
