@@ -35,7 +35,7 @@ const Popup = ({ onClose }) => {
         style={{
           width: '100%',
           height: 'auto',
-          borderRadius: '8px',  // ขอบรูปให้โค้งเล็กน้อย
+          borderRadius: '8px',  // ขอบรูปให้โค้งเล็กน้อย+
         }}
       /> */}
 
