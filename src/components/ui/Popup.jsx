@@ -28,6 +28,7 @@ const Popup = ({ onClose }) => {
         borderRadius: '10px', // ขอบกลม
       }}
     >
+      
       {/* แสดงรูปภาพ banner */}
       {/* <img
         src="img/conference_brand.png"  // เปลี่ยนเป็น URL ของรูปภาพของคุณ      

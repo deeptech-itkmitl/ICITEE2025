@@ -4,9 +4,11 @@ export const About = (props) => {
   return (
     <div className="container"> 
     <h1 className="topic-title"></h1>
+    
       <div>
         <div className="container">  
           <div className="content-layout">
+
             {/* ส่วนหัวข้อซ้าย */}
             <div className="about-section">
               <div className="about-title-container">
@@ -68,10 +70,9 @@ export const About = (props) => {
                 </table>
               </div>
            
-
-
           </div>
           <p2>
+
           <h4 className="title"><center>
                                       <img
                                               src={`${process.env.PUBLIC_URL}/img/Line9.png`}
@@ -79,7 +80,7 @@ export const About = (props) => {
                                               className=""
                                               style={{ width: "100%", height: "0.25%"}} // กำหนดให้กว้าง 50% ของพื้นที่ที่ครอบอย
                                       /></center>
-                </h4>
+          </h4>
                   
           </p2>
         </div>
