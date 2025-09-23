@@ -6,7 +6,7 @@ const Registration2 = () => {
     <div className="quality-container">
       <div className="card">      
       <h4>
-        <a href={`${process.env.PUBLIC_URL}/pdf/ICITEE 2025 - Presentation template.pdf`} 
+        <a href={`${process.env.PUBLIC_URL}/pdf/ICITEE 2025 - Presentation template.pptx`} 
           className="btn btn-custom btn-lg page-scroll" 
           target="_blank" 
           rel="noopener noreferrer">
