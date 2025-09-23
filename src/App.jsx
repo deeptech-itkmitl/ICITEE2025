@@ -19,6 +19,8 @@ import Layout16 from "./Layout16";
 import Layout17 from "./Layout17";
 import Layout19 from "./Layout19";
 import Layout20 from "./Layout20";
+import Layout21 from "./Layout21";
+
 
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
@@ -44,6 +46,7 @@ import KeynoteSpeaker2 from "./components/KeynoteSpeaker2";
 import KeynoteSpeaker3 from "./components/KeynoteSpeaker3";
 import KeynoteSpeaker4 from "./components/KeynoteSpeaker4";
 import KeynoteSpeaker5 from "./components/paperreview/App";
+import Registration2 from "./components/Registration2";
 
 ///keynote-speaker-Permanasari
 // import PastConference from "./components/Registration";
@@ -175,6 +178,10 @@ const AppContent = ({ landingPageData }) => {
         <Route path="/paper-review" element={<Layout20 data={landingPageData} />}>
           <Route index element={< KeynoteSpeaker5 data={landingPageData.Gallery} />} />
         </Route> 
+
+        <Route path="/tentative-program" element={<Layout21 data={landingPageData} />}>
+          <Route index element={< Registration2 data={landingPageData.Gallery} />} />
+        </Route>         
 
       </Routes>
 
