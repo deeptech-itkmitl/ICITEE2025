@@ -50,7 +50,7 @@ import JsonData from "./data/data.json";
 import VisitorCounter from "./components/visitor-updateDetail";  // นำเข้าฟังก์ชัน VisitorCounter
 import "./App.css";
 import { Gallery } from "components/gallery";
-import Popup from "./components/ui/Popup";  // นำเข้า Popup component
+//import Popup from "./components/ui/Popup";  // นำเข้า Popup component
 import Registration from "./components/Registration";
 
 const App = () => {
@@ -175,7 +175,7 @@ const AppContent = ({ landingPageData }) => {
       {isHomePage && (
         <>  
           {/* แสดง popup เมื่อ showPopup เป็น true เฉพาะหน้าแรก */}
-          {showPopup && <Popup onClose={closePopup} />}
+          {/* showPopup && <Popup onClose={closePopup} />*/}
           <Announcement data={landingPageData.Team} />               
           {/* <Gallery/> */}
           <Team2 data={landingPageData.Team} />

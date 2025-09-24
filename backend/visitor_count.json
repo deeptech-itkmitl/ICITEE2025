@@ -1,21 +1,21 @@
 {
-  "count": 19184,
+  "count": 19922,
   "countryData": [
     {
       "name": "TH",
-      "count": 9893
+      "count": 10131
     },
     {
       "name": "US",
-      "count": 560
+      "count": 573
     },
     {
       "name": "ID",
-      "count": 3706
+      "count": 3907
     },
     {
       "name": "VN",
-      "count": 80
+      "count": 90
     },
     {
       "name": "MA",
@@ -23,31 +23,31 @@
     },
     {
       "name": "KR",
-      "count": 258
+      "count": 274
     },
     {
       "name": "CA",
-      "count": 53
+      "count": 64
     },
     {
       "name": "CN",
-      "count": 54
+      "count": 59
     },
     {
       "name": "DE",
-      "count": 149
+      "count": 164
     },
     {
       "name": "JP",
-      "count": 883
+      "count": 945
     },
     {
       "name": "SG",
-      "count": 309
+      "count": 317
     },
     {
       "name": "IN",
-      "count": 1019
+      "count": 1086
     },
     {
       "name": "SE",
@@ -55,15 +55,15 @@
     },
     {
       "name": "BD",
-      "count": 888
+      "count": 936
     },
     {
       "name": "PH",
-      "count": 222
+      "count": 230
     },
     {
       "name": "TW",
-      "count": 189
+      "count": 192
     },
     {
       "name": "AT",
@@ -71,7 +71,7 @@
     },
     {
       "name": "IQ",
-      "count": 20
+      "count": 21
     },
     {
       "name": "TR",
@@ -87,7 +87,7 @@
     },
     {
       "name": "HK",
-      "count": 31
+      "count": 38
     },
     {
       "name": "PK",
@@ -95,11 +95,11 @@
     },
     {
       "name": "MY",
-      "count": 153
+      "count": 154
     },
     {
       "name": "FR",
-      "count": 23
+      "count": 24
     },
     {
       "name": "IE",
@@ -135,7 +135,7 @@
     },
     {
       "name": "AU",
-      "count": 44
+      "count": 47
     },
     {
       "name": "AE",
@@ -147,11 +147,11 @@
     },
     {
       "name": "JO",
-      "count": 5
+      "count": 6
     },
     {
       "name": "NL",
-      "count": 42
+      "count": 43
     },
     {
       "name": "PT",
@@ -159,7 +159,7 @@
     },
     {
       "name": "ZA",
-      "count": 23
+      "count": 24
     },
     {
       "name": "DZ",
@@ -203,7 +203,7 @@
     },
     {
       "name": "BR",
-      "count": 73
+      "count": 85
     },
     {
       "name": "MM",
@@ -223,7 +223,7 @@
     },
     {
       "name": "BT",
-      "count": 1
+      "count": 2
     },
     {
       "name": "RO",
@@ -231,7 +231,7 @@
     },
     {
       "name": "BN",
-      "count": 39
+      "count": 40
     },
     {
       "name": "KZ",
@@ -239,7 +239,7 @@
     },
     {
       "name": "PL",
-      "count": 29
+      "count": 32
     },
     {
       "name": "KE",
