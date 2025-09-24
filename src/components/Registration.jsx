@@ -95,6 +95,7 @@ export const About = (props) => {
 
 
 
+
               </div>
            
 
@@ -111,6 +112,9 @@ export const About = (props) => {
                 </h4>
                   
           </p2>
+
+        
+
         </div>
         
       </div>

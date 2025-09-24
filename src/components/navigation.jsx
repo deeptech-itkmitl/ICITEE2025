@@ -64,6 +64,9 @@ export const Navigation = () => {
                 <a href="/keynote-speaker" className="page-scroll">
                   KeyNote Speaker ▸
                 </a>
+                <a href="/tentative-program" className="page-scroll">
+                  Tentative Program
+                </a>
 
                 {/* Submenu ที่สไลด์ไปทางขวา */}
                      <ul className="submenu">
@@ -96,6 +99,7 @@ export const Navigation = () => {
                   <li><a href="/topics-of-interest" className="page-scroll">Topics of Interest</a></li>      
                   <li><a href="/paper-submission-guidelines" className="page-scroll">Paper Submission Guidelines</a></li>  
                   <li><a href="/registration" className="page-scroll">Registration</a></li>       
+                  <li><a href="/paper-review" className="page-scroll">Paper review</a></li> 
                 </ul>
               )}
             </li>
