@@ -30,7 +30,7 @@ import { Team2 } from "./components/Team2";
 // import { Team3 } from "./components/Team3";
 import { Team4 } from "./components/Team4";
 import { Contact } from "./components/contact";
-// import { Gallery } from "components/gallery";
+// import { Gallery } from "components/gallery"......;
 import PaperSubmissionGuidelines from "./components/PaperSubmissionGuidelines"
 import { TopicsOfInterest } from "./components/TopicsOfInterest";
 import { OrganizeCommittee } from "./components/OrganizeCommittee";
