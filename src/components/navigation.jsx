@@ -60,34 +60,35 @@ export const Navigation = () => {
               {isSubmissionOpen && (
                 <ul className="dropdown-menu">                 
                   {/* <li><a href="/topics-of-interest" className="page-scroll">KeyNote S</a></li>       */}
-                <li className="submenu-parent">
-                <a href="/keynote-speaker" className="page-scroll">
-                  KeyNote Speaker ▸
-                </a>
-                <a href="/tentative-program" className="page-scroll">
-                  Tentative Program
-                </a>
+                  <li className="submenu-parent">
+                    <a href="/keynote-speaker" className="page-scroll">
+                      KeyNote Speaker ▸
+                    </a>
+                    {/* Submenu ที่สไลด์ไปทางขวา */}
+                    <ul className="submenu">
 
-                {/* Submenu ที่สไลด์ไปทางขวา */}
-                     <ul className="submenu">
+                        <li>
+                            <a href="/keynote-speaker-JaimeLloret">
+                              Intelligent collaborative sensor networks for Precision Agriculture
+                            </a>   
+                            <a href="/keynote-speaker-Permanasari">
+                              Beyond the Screen: Unlocking Immersive Tech for Effective Learning Media
+                            </a>                                               
+                            <a href="/keynote-speaker-MasanoriSugimoto">
+                              Emerging Trends and Future Perspectives on Indoor Positioning Technologies
+                            </a>
+                            <a href="/keynote-speaker-EmiYuda">
+                              Bio-signal processing research based on the characteristics of human physiology
+                            </a>
+                        </li>
 
-                      <li>
-                          <a href="/keynote-speaker-JaimeLloret">
-                            Intelligent collaborative sensor networks for Precision Agriculture
-                          </a>   
-                          <a href="/keynote-speaker-Permanasari">
-                            Beyond the Screen: Unlocking Immersive Tech for Effective Learning Media
-                          </a>                                               
-                          <a href="/keynote-speaker-MasanoriSugimoto">
-                            Emerging Trends and Future Perspectives on Indoor Positioning Technologies
-                          </a>
-                          <a href="/keynote-speaker-EmiYuda">
-                            Bio-signal processing research based on the characteristics of human physiology
-                          </a>
-                      </li>
-
-                      </ul>
-                    </li>                                                     
+                    </ul>
+                  </li>   
+                  <li>
+                    <a href="/tentative-program" className="page-scroll">
+                      Tentative Program
+                    </a>
+                  </li>                                                     
                 </ul>
                 
               )}

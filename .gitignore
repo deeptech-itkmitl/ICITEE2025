@@ -24,3 +24,4 @@ yarn-error.log*
 
 # Don't replace visitor_count.json and data.json
 /backend/visitor_count.json
+.vercel

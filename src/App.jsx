@@ -59,7 +59,7 @@ import JsonData from "./data/data.json";
 import VisitorCounter from "./components/visitor-updateDetail";  // นำเข้าฟังก์ชัน VisitorCounter
 import "./App.css";
 import { Gallery } from "components/gallery";
-// import Popup from "./components/ui/Popup";  // นำเข้า Popup component
+import Popup from "./components/ui/Popup";  // นำเข้า Popup component
 import Registration from "./components/Registration";
 
 const App = () => {
@@ -83,12 +83,12 @@ const AppContent = ({ landingPageData }) => {
   const isHomePage = location.pathname === "/";
 
 
- // สร้าง state สำหรับเปิดหรือปิด popup
-  // const [showPopup, setShowPopup] = useState(true);
+//  สร้าง state สำหรับเปิดหรือปิด popup
+  const [showPopup, setShowPopup] = useState(true);
 
-  // const closePopup = () => {
-  //   setShowPopup(false);
-  // };
+  const closePopup = () => {
+    setShowPopup(false);
+  };
 
 
   return (
@@ -96,7 +96,7 @@ const AppContent = ({ landingPageData }) => {
     <HelmetProvider>
     <>
        {/* แสดง popup เมื่อ showPopup เป็น true */}
-       {/* {showPopup && <Popup onClose={closePopup} />} */}
+       {showPopup && <Popup onClose={closePopup} />}
       
        {/* ตั้งค่า Favicon */}
        <Helmet>
