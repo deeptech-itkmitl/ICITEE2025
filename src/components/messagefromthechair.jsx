@@ -31,22 +31,24 @@ const MessageFrom = ({data}) => {
                 <div className="topic-right">
                     {/* Message Section */}
                     <div className="mb-8">
-                    <div className="flex items-start gap-3 mb-4 pb-2 border-b">
-                        <Award size={24} strokeWidth={2} />
-                        <h4>Message from the Conference Chair</h4>
-                    </div>
-                    {/* <p className="leading-relaxed text-justify">
-                        {topic.ConferenceChairMassage}
-                    </p> */}
-                    <p 
-                        className="leading-relaxed text-justify"
-                        dangerouslySetInnerHTML={{ __html: topic.ConferenceChairMassage }}
-                    />
-                    <br/>
-                    <p className="leading-relaxed text-justify">
-                        <strong>{topic.footer}</strong>
-                    </p>
-                    <br/>
+                        <div className="flex items-start gap-3 mb-4 pb-2 border-b">
+                            <Award size={24} strokeWidth={2} />
+                            <h4>Message from the Conference Chair</h4>
+                        </div>
+                        {/* <p className="leading-relaxed text-justify">
+                            {topic.ConferenceChairMassage}
+                        </p> */}
+                        <div className="border-l-4 pl-6 py-2">
+                            <p 
+                                className="leading-relaxed text-justify"
+                                dangerouslySetInnerHTML={{ __html: topic.ConferenceChairMassage }}
+                            />
+                            <br/>
+                            <p className="leading-relaxed text-justify">
+                                <strong>{topic.footer}</strong>
+                            </p>
+                            <br/>
+                        </div>
                     </div>
 
                     {/* Committee */}
@@ -58,8 +60,8 @@ const MessageFrom = ({data}) => {
                     <div className="space-y-6">
                         {topic.ConferenceChair.map((chair, chairIndex) => (
                         <div key={chairIndex} className="border-l-4 pl-6 py-2">
-                            <p className="font-semibold text-lg mb-1">{chair.name}</p>
-                            <p className="font-medium uppercase text-sm tracking-wide">{chair.title}</p>
+                            <p className="font-semibold text-xl mb-1">{chair.name}</p>
+                            <p className="font-medium uppercase text-xl tracking-wide">{chair.title}</p>
                         </div>
                         ))}
                     </div>
