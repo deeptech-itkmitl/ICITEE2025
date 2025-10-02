@@ -85,11 +85,11 @@ export const Navigation = () => {
 
                     </ul>
                   </li>   
-                  <li>
+                  {/* <li>
                     <a href="/tentative-program" className="page-scroll">
                       Tentative Program
                     </a>
-                  </li> 
+                  </li>  */}
                   <li>
                     <a href={`${process.env.PUBLIC_URL}/pdf/ICITEE_2025_Full_Schedule_and_Program.pdf`} className="page-scroll" target="_blank">
                       Full Program

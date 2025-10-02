@@ -185,9 +185,9 @@ const AppContent = ({ landingPageData }) => {
           <Route index element={< KeynoteSpeaker5 data={landingPageData.Gallery} />} />
         </Route> 
 
-        <Route path="/tentative-program" element={<Layout21 data={landingPageData} />}>
+        {/* <Route path="/tentative-program" element={<Layout21 data={landingPageData} />}>
           <Route index element={< Registration2 data={landingPageData.Gallery} />} />
-        </Route>    
+        </Route>     */}
 
         <Route path="/keynote-speaker-JaimeLloret" element={<Layout22 data={landingPageData} />}>
           <Route index element={< KeynoteSpeaker6 data={landingPageData.Gallery} />} />
