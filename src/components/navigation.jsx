@@ -45,7 +45,8 @@ export const Navigation = () => {
                 About <i className="fa fa-caret-down"></i>
               </a>
               {isAboutOpen && (
-                <ul className="dropdown-menu">                  
+                <ul className="dropdown-menu">
+                  <li><a href="/Message-from-the-Conference-Chair" className="page-scroll">Message from the Conference Chair</a></li>                  
                   <li><a href="/organizing-committee" className="page-scroll">Organizing Committee</a></li>
                   <li><a href="/pass-conference" className="page-scroll">Past Conferences</a></li>                                  
                   <li><a href="/gallery" className="page-scroll">Gallery</a></li>                                   
@@ -60,31 +61,40 @@ export const Navigation = () => {
               {isSubmissionOpen && (
                 <ul className="dropdown-menu">                 
                   {/* <li><a href="/topics-of-interest" className="page-scroll">KeyNote S</a></li>       */}
-                <li className="submenu-parent">
-                <a href="/keynote-speaker" className="page-scroll">
-                  KeyNote Speaker ▸
-                </a>
-                <a href="/tentative-program" className="page-scroll">
-                  Tentative Program
-                </a>
+                  <li className="submenu-parent">
+                    <a href="/keynote-speaker" className="page-scroll">
+                      KeyNote Speaker ▸
+                    </a>
+                    {/* Submenu ที่สไลด์ไปทางขวา */}
+                    <ul className="submenu">
 
-                {/* Submenu ที่สไลด์ไปทางขวา */}
-                     <ul className="submenu">
+                        <li>
+                            <a href="/keynote-speaker-JaimeLloret">
+                              Intelligent collaborative sensor networks for Precision Agriculture
+                            </a>   
+                            <a href="/keynote-speaker-Permanasari">
+                              Beyond the Screen: Unlocking Immersive Tech for Effective Learning Media
+                            </a>                                               
+                            <a href="/keynote-speaker-MasanoriSugimoto">
+                              Emerging Trends and Future Perspectives on Indoor Positioning Technologies
+                            </a>
+                            <a href="/keynote-speaker-EmiYuda">
+                              Bio-signal processing research based on the characteristics of human physiology
+                            </a>
+                        </li>
 
-                      <li>
-                          <a href="/keynote-speaker-MasanoriSugimoto">
-                            Emerging Trends and Future Perspectives on Indoor Positioning Technologies
-                          </a>
-                          <a href="/keynote-speaker-EmiYuda">
-                            Bio-signal processing research based on the characteristics of human physiology
-                          </a>
-                          <a href="/keynote-speaker-Permanasari">
-                            Beyond the Screen: Unlocking Immersive Tech for Effective Learning Media
-                          </a>
-                      </li>
-
-                      </ul>
-                    </li>                                                     
+                    </ul>
+                  </li>   
+                  {/* <li>
+                    <a href="/tentative-program" className="page-scroll">
+                      Tentative Program
+                    </a>
+                  </li>  */}
+                  <li>
+                    <a href={`${process.env.PUBLIC_URL}/pdf/ICITEE_2025_Full_Schedule_and_Program.pdf`} className="page-scroll" target="_blank">
+                      Full Program
+                    </a>
+                  </li>                                                        
                 </ul>
                 
               )}

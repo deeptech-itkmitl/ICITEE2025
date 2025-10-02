@@ -20,6 +20,8 @@ import Layout17 from "./Layout17";
 import Layout19 from "./Layout19";
 import Layout20 from "./Layout20";
 import Layout21 from "./Layout21";
+import Layout22 from "./Layout22";
+import PageMessagefromtheChair from "./PageMessagefromtheChair";
 
 
 import { Navigation } from "./components/navigation";
@@ -30,7 +32,8 @@ import { Team2 } from "./components/Team2";
 // import { Team3 } from "./components/Team3";
 import { Team4 } from "./components/Team4";
 import { Contact } from "./components/contact";
-// import { Gallery } from "components/gallery"......;
+// import { Gallery } from "components/gallery";
+
 import PaperSubmissionGuidelines from "./components/PaperSubmissionGuidelines"
 import { TopicsOfInterest } from "./components/TopicsOfInterest";
 import { OrganizeCommittee } from "./components/OrganizeCommittee";
@@ -47,16 +50,19 @@ import KeynoteSpeaker3 from "./components/KeynoteSpeaker3";
 import KeynoteSpeaker4 from "./components/KeynoteSpeaker4";
 import KeynoteSpeaker5 from "./components/paperreview/App";
 import Registration2 from "./components/Registration2";
+import KeynoteSpeaker6 from "./components/KeynoteSpeaker5";
+import MessagefromtheChair from "./components/messagefromthechair";
 
 ///keynote-speaker-Permanasari
 // import PastConference from "./components/Registration";
 import JsonData from "./data/data.json";
+import ConferenceChairData from "./data/conferenceInfo.json";
 
 // import VisitorCounter from "./components/visitor-update";  // นำเข้าฟังก์ชัน VisitorCounter keynote-speaker
 import VisitorCounter from "./components/visitor-updateDetail";  // นำเข้าฟังก์ชัน VisitorCounter
 import "./App.css";
 import { Gallery } from "components/gallery";
-//import Popup from "./components/ui/Popup";  // นำเข้า Popup component
+import Popup from "./components/ui/Popup";  // นำเข้า Popup component
 import Registration from "./components/Registration";
 
 const App = () => {
@@ -80,7 +86,7 @@ const AppContent = ({ landingPageData }) => {
   const isHomePage = location.pathname === "/";
 
 
- // สร้าง state สำหรับเปิดหรือปิด popup
+//  สร้าง state สำหรับเปิดหรือปิด popup
   const [showPopup, setShowPopup] = useState(true);
 
   const closePopup = () => {
@@ -179,9 +185,16 @@ const AppContent = ({ landingPageData }) => {
           <Route index element={< KeynoteSpeaker5 data={landingPageData.Gallery} />} />
         </Route> 
 
-        <Route path="/tentative-program" element={<Layout21 data={landingPageData} />}>
+        {/* <Route path="/tentative-program" element={<Layout21 data={landingPageData} />}>
           <Route index element={< Registration2 data={landingPageData.Gallery} />} />
-        </Route>         
+        </Route>     */}
+
+        <Route path="/keynote-speaker-JaimeLloret" element={<Layout22 data={landingPageData} />}>
+          <Route index element={< KeynoteSpeaker6 data={landingPageData.Gallery} />} />
+        </Route>  
+
+        <Route path="/Message-from-the-Conference-Chair" element={<PageMessagefromtheChair data={ConferenceChairData.ConferenceChairInfo} />}>
+        </Route>     
 
       </Routes>
 
@@ -189,7 +202,7 @@ const AppContent = ({ landingPageData }) => {
       {isHomePage && (
         <>  
           {/* แสดง popup เมื่อ showPopup เป็น true เฉพาะหน้าแรก */}
-          {/* showPopup && <Popup onClose={closePopup} />*/}
+          {showPopup && <Popup onClose={closePopup} />}
           <Announcement data={landingPageData.Team} />               
           {/* <Gallery/> */}
           <Team2 data={landingPageData.Team} />

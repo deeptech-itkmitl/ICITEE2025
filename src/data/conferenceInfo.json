@@ -1,0 +1,25 @@
+{   
+    "ConferenceChairInfo": 
+    {
+        "header": "Message from the Conference Chair",
+        "detail":[
+        {
+            "title": "Message from the Conference Chair",
+            "ConferenceChairMassage": "It is my great pleasure to welcome you to the 17th International Conference on Information Technology and Electrical Engineering (ICITEE 2025), which will be held on 20–21 October 2025 in Bangkok, Thailand. ICITEE has established itself as a platform for researchers, academics, and industry professionals to exchange knowledge, present innovations, and discuss emerging challenges in information technology, electrical engineering, artificial intelligence, and related fields. </br></br> This year, ICITEE 2025 introduces a Rolling Review Process with an Open Review Policy to ensure timely, fair, and constructive reviews. This new approach enhances paper quality while giving authors opportunities for meaningful engagement with reviewers. Along with keynote sessions, invited talks, and technical presentations, we hope the conference will inspire new collaborations and create lasting impact. I warmly welcome you to join us in Bangkok for this exciting event.",
+            "ConferenceChair": [
+                { "name": "Guntur Dharma Putra (UGM, Indonesia)", "title": "Conference Co-Chair, ICITEE 2025" },
+                { "name": "Kuntpong Woraratpanya (KMITL, Thailand)", "title": "Conference Chair, ICITEE 2025" }
+            ],
+            "footer": "Sincerely,"
+        },
+        {
+            "title": "Message from the Chair of IEEE CIS Thailand Chapter",
+            "ConferenceChairMassage": "On behalf of the IEEE Computational Intelligence Society (CIS) Thailand Chapter, I am pleased to welcome you to the 17th International Conference on Information Technology and Electrical Engineering (ICITEE 2025), which will be held on 20–21 October 2025 in Bangkok, Thailand. This conference brings together researchers, academics, and practitioners from around the world to share their latest innovations and insights in computational intelligence, information technology, and electrical engineering. </br></br> This year, ICITEE 2025 introduces a Rolling Review and Open Review Policy to ensure fairness, transparency, and quality in the review process. We believe this initiative will strengthen academic engagement and improve the quality of accepted papers. I warmly invite you to join us in Bangkok for an inspiring and collaborative conference experience.",
+            "ConferenceChair": [
+                { "name": "Kuntpong Woraratpanya", "title": "Chair, IEEE CIS Thailand Chapter" }
+            ],
+            "footer": "Sincerely,"
+        }
+    ]
+}
+} 
