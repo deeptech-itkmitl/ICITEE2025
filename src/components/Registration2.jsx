@@ -22,22 +22,22 @@ const Registration2 = () => {
         <table>
           <thead>
             <tr>
-              <th>Date</th>
-              <th>Event</th>
+              <th>Time</th>
+              <th>Activities</th>
               <th></th>
               <th>Vanue</th>
               <th></th>
             </tr>
           </thead>
           <tbody>
-            <tr><td>08:30-09:00</td><td>Registration</td><td></td><td></td><td></td></tr>
-            <tr><td>09:00-09:10</td><td>Opening Ceremony</td><td>Conference Hall</td><td></td><td></td></tr>
-            <tr><td>09:10-10:00</td><td>Keynote #1: Prof. Dr. Jaime Lloret</td><td>Conference Hall</td><td></td><td></td></tr>
-
+            <tr><td>Start-08:30</td><td>Registration</td><td></td><td></td><td></td></tr>
+            <tr><td>08:45-09:10</td><td>Opening Ceremony</td><td>Conference Hall</td><td></td><td></td></tr>
+            <tr><td>09:10-09:55</td><td>Keynote #1: Prof. Dr. Jaime Lloret</td><td>Conference Hall</td><td></td><td></td></tr>
+            {/* <tr><td>10:50-11:10</td><td>Coffee Break</td><td></td><td></td><td></td></tr> */}
             {/* Final Notification of Acceptance */}
             <tr>
               {/* <td><span>Sep-10, 2025</span></td>              */}
-                <td><span >10:00-10:50</span><br></br><span></span></td>   
+              <td><span >10:00-10:45</span><br></br><span></span></td>   
               <td>Keynote #2: Dr. Adhistya Erna Permanasari</td>
               <td>Conference Hall</td><td></td><td></td>
             </tr>
@@ -64,7 +64,7 @@ const Registration2 = () => {
             {/* Final Registration Deadline */}
             <tr>
               {/* <td><span >Sep-15, 2025</span></td> */}
-               <td><span>11:10-12:00</span><br></br><span></span></td>        
+               <td><span>11:10-11:55</span><br></br><span></span></td>        
               {/* <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td> */}
               <td><span>Keynote #3: Prof. Dr. Masanori Sugimoto </span></td>
             <td>Conference Hall</td><td></td><td></td>
@@ -79,7 +79,7 @@ const Registration2 = () => {
                <td><span>13:00-14:40</span><br></br><span></span></td>        
               {/* <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td> */}
               <td><span>Parallel Session</span></td>
-              <td>Room 1 (5 papers)</td><td>Room 2 (5 papers)</td><td>Room 3 (5 papers)</td>
+              <td>SPML-1 (5 papers)</td><td>IT-1 (5 papers)</td><td>PS-1 (5 papers)</td>
             </tr>
             
             {/* <tr><td>Sep-15, 2025</td><td>Final Registration Deadline (Extended).</td></tr> */}
@@ -90,7 +90,7 @@ const Registration2 = () => {
                <td><span>15:00-16:40</span><br></br><span></span></td>        
               {/* <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td> */}
               <td><span>Parallel Session</span></td>
-              <td>Room 1 (5 papers)</td><td>Room 2 (5 papers)</td><td>Room 3 (5 papers)</td>
+              <td>SPML-2 (5 papers)</td><td>IT-2 (5 papers)</td><td>PS-2 (5 papers)</td>
             </tr>        
             {/* <tr><td>Sep-15, 2025</td><td>Final Registration Deadline (Extended).</td></tr> */}
             {/* <tr><td>16:40-18:00</td>
@@ -139,14 +139,14 @@ const Registration2 = () => {
           </thead>
           <tbody>
             <tr><td>08:30-09:00</td><td>Registration</td><td></td><td></td><td></td><td></td></tr>
-            <tr><td>09:00-10:40</td><td>Parallel Session</td><td>5 papers</td><td>5 papers</td><td>5 papers</td><td>5 papers</td></tr>
-            <tr><td>10:40-11:00</td><td>Coffee Break #1</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>09:00-10:40</td><td>Parallel Session</td><td>SPML-3 (5 papers)</td><td>IT-3 (5 papers)</td><td>CNT-1 (5 papers)</td><td>IT-5 (5 papers)</td></tr>
+            <tr><td>10:40-11:00</td><td>Coffee Break#1</td><td></td><td></td><td></td><td></td></tr>
 
             {/* Final Notification of Acceptance */}
             <tr>
               {/* <td><span>Sep-10, 2025</span></td>              */}
                 <td><span >11:00-12:20</span><br></br><span></span></td>                 
-              <td>Parallel Session</td><td>4 papers</td><td>4 papers</td><td>4 papers</td><td>4 papers</td>
+              <td>Parallel Session</td><td>SPML-4(4 papers)</td><td>IT-4(4 papers)</td><td>SPML-7(4 papers)</td><td>IT-6(4 papers)</td>
             </tr>
             {/* <tr><td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td><td>Final Notification of Acceptance (Extended).</td></tr> */}
             
@@ -174,11 +174,11 @@ const Registration2 = () => {
                <td><span>13:20-15:00</span><br></br><span></span></td>        
               {/* <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td> */}
               <td><span>Parallel Session</span></td>
-            <td>5 papers</td><td>5 papers</td><td>5 papers</td><td>5 papers</td>
+            <td>SPML-5(5 papers)</td><td>Invited Talk+ JSCI-1(3 papers)</td><td>CS-1(5 papers)</td><td>CNT-2(5 papers)</td>
             
             </tr>
             {/* <tr><td>Sep-15, 2025</td><td>Final Registration Deadline (Extended).</td></tr> */}
-            <tr><td>15:00-15:20</td><td>Coffee Break #2</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>15:00-15:20</td><td>Coffee Break#2</td><td></td><td></td><td></td><td></td></tr>
             {/* Final Registration Deadline */}
             {/* <td>Registration</td><td>Registration</td><td>Registration</td> */}
             <tr>
@@ -186,12 +186,13 @@ const Registration2 = () => {
                <td><span>15:20-16:40</span><br></br><span></span></td>        
               {/* <td><span style={{ color: "red", textDecoration: "line-through" }}>Sep-10, 2025</span></td> */}
               <td><span>Parallel Session</span></td>
-              <td>4 papers</td><td>4 papers</td><td>4 papers</td><td>4 papers</td>
+              <td>SPML-6(4 papers)</td><td>CS-2(4 papers)</td><td>JSCI-2+SS(3+2 papers)</td><td>ELS (4 papers)</td>
             </tr>
           
     
             {/* <tr><td>Sep-15, 2025</td><td>Final Registration Deadline (Extended).</td></tr> */}
-            <tr><td>15:00-15:20</td><td>Dinner Cruise</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>17:00-19:30</td><td>Free Time</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>19:45-21:45</td><td>Dinner Cruise</td><td></td><td></td><td></td><td></td></tr>
             {/* Final Registration Deadline */}
             {/* <td>Registration</td><td>Registration</td><td>Registration</td> */}
             
