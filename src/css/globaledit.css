@@ -1,0 +1,282 @@
+/* Scoped Styles for MessageFrom (scoped under .globaledit) */
+/* Tailwind-like utilities limited to the .globaledit container */
+
+/* Reset and Base Styles */
+.globaledit,
+.globaledit * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.globaledit {
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  color: var(--gray-900);
+}
+
+
+.globaledit {
+  background-color: #0c1329;      /* พื้นหลัง */
+  font-family: "Poppins", sans-serif; /* ฟอนต์ */
+  color: #d1d5db;                 /* สีตัวอักษร */
+  font-size: 20px;                /* ขนาดฟอนต์ */
+}
+
+/* ปรับ header ให้ตัดกับพื้นหลัง */
+.globaledit h1,
+.globaledit h2,
+.globaledit h3,
+.globaledit h4 {
+  color: #ffffff;  /* header ขาว */
+  font-weight: 600;
+}
+
+.globaledit p {
+  color: #d1d5db;  /* ยืนยันว่า paragraph ก็ใช้สีอ่อน */
+}
+
+/* Background Colors */
+.globaledit .bg-white { background-color: #ffffff; }
+.globaledit .bg-gray-50 { background-color: var(--gray-50); }
+.globaledit .bg-gray-900 { background-color: var(--gray-900); }
+
+/* Text Colors */
+.globaledit .text-white { color: #ffffff; }
+.globaledit .text-gray-500 { color: var(--gray-500); }
+.globaledit .text-gray-600 { color: var(--gray-600); }
+.globaledit .text-gray-700 { color: var(--gray-700); }
+.globaledit .text-gray-800 { color: var(--gray-800); }
+.globaledit .text-gray-900 { color: var(--gray-900); }
+
+/* Font Sizes */
+.globaledit .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+.globaledit .text-base { font-size: 1rem; line-height: 1.5rem; }
+.globaledit .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+.globaledit .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+.globaledit .text-2xl { font-size: 1.5rem; line-height: 2rem; }
+.globaledit .text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+
+/* Font Weights */
+.globaledit .font-medium { font-weight: 500; }
+.globaledit .font-semibold { font-weight: 600; }
+.globaledit .font-bold { font-weight: 700; }
+
+/* Font Family */
+.globaledit .font-serif { font-family: Georgia, Cambria, "Times New Roman", Times, serif; }
+
+/* Text Alignment */
+.globaledit .text-center { text-align: center; }
+.globaledit .text-justify { text-align: justify; }
+
+/* Text Transform */
+.globaledit .uppercase { text-transform: uppercase; }
+
+/* Letter Spacing */
+.globaledit .tracking-wide { letter-spacing: 0.025em; }
+.globaledit .tracking-widest { letter-spacing: 0.1em; }
+
+/* Line Height */
+.globaledit .leading-relaxed { line-height: 1.625; }
+
+/* Display */
+.globaledit .flex { display: flex; }
+
+/* Flex Direction */
+.globaledit .flex-col { flex-direction: column; }
+
+/* Align Items */
+.globaledit .items-start { align-items: flex-start; }
+.globaledit .items-center { align-items: center; }
+
+/* Gap */
+.globaledit .gap-3 { gap: 0.75rem; }
+.globaledit .gap-4 { gap: 1rem; }
+
+/* Spacing - Margin */
+.globaledit .mb-1 { margin-bottom: 0.25rem; }
+.globaledit .mb-3 { margin-bottom: 0.75rem; }
+.globaledit .mb-4 { margin-bottom: 1rem; }
+.globaledit .mb-6 { margin-bottom: 1.5rem; }
+.globaledit .mb-8 { margin-bottom: 2rem; }
+.globaledit .mb-16 { margin-bottom: 4rem; }
+.globaledit .mt-8 { margin-top: 2rem; }
+
+/* Spacing - Padding */
+.globaledit .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.globaledit .py-5 { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+.globaledit .py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+.globaledit .py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+.globaledit .px-4 { padding-left: 1rem; padding-right: 1rem; }
+.globaledit .px-8 { padding-left: 2rem; padding-right: 2rem; }
+.globaledit .px-20 { padding-left: 5rem; padding-right: 5rem; }
+.globaledit .pb-2 { padding-bottom: 0.5rem; }
+.globaledit .pb-8 { padding-bottom: 2rem; }
+.globaledit .pt-6 { padding-top: 1.5rem; }
+.globaledit .pl-6 { padding-left: 1.5rem; }
+
+/* Width */
+.globaledit .max-w-3xl { max-width: 48rem; }
+.globaledit .max-w-4xl { max-width: 56rem; }
+.globaledit .max-w-5xl { max-width: 64rem; }
+.globaledit .max-w-6xl { max-width: 72rem; }
+.globaledit .w-full { width: 100%; }
+
+/* Margin Auto (for centering) */
+.globaledit .mx-auto { margin-left: auto; margin-right: auto; }
+
+/* Borders */
+.globaledit .border { border-width: 1px; }
+.globaledit .border-2 { border-width: 2px; }
+.globaledit .border-4 { border-width: 4px; }
+.globaledit .border-b { border-bottom-width: 1px; }
+.globaledit .border-b-2 { border-bottom-width: 2px; }
+.globaledit .border-b-4 { border-bottom-width: 4px; }
+.globaledit .border-l-4 { border-left-width: 4px; }
+.globaledit .border-t-2 { border-top-width: 2px; }
+.globaledit .border-gray-200 { border-color: var(--gray-200); }
+.globaledit .border-gray-300 { border-color: var(--gray-300); }
+.globaledit .border-gray-700 { border-color: var(--gray-700); }
+.globaledit .border-gray-800 { border-color: var(--gray-800); }
+
+/* Space Between (for flex/grid children) */
+.globaledit .space-y-6 > * + * { margin-top: 1.5rem; }
+.globaledit .space-y-12 > * + * { margin-top: 3rem; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .globaledit .text-4xl { font-size: 1.875rem; line-height: 2.25rem; }
+  .globaledit .text-2xl { font-size: 1.25rem; line-height: 1.75rem; }
+  .globaledit .text-lg { font-size: 1rem; line-height: 1.5rem; }
+  .globaledit .px-8 { padding-left: 1rem; padding-right: 1rem; }
+  .globaledit .py-20 { padding-top: 3rem; padding-bottom: 3rem; }
+  .globaledit .mb-16 { margin-bottom: 2rem; }
+  .globaledit .space-y-12 > * + * { margin-top: 2rem; }
+}
+
+@media (max-width: 480px) {
+  .globaledit .text-4xl { font-size: 1.5rem; line-height: 2rem; }
+  .globaledit .text-2xl { font-size: 1.125rem; line-height: 1.5rem; }
+  .globaledit .px-4 { padding-left: 0.75rem; padding-right: 0.75rem; }
+  .globaledit .px-8 { padding-left: 0.75rem; padding-right: 0.75rem; }
+  .globaledit .py-8 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+  .globaledit .py-5 { padding-top: 1rem; padding-bottom: 1rem; }
+  .globaledit .pl-6 { padding-left: 1rem; }
+}
+
+/* Print Styles */
+@media print {
+  .globaledit .bg-gray-900 {
+    background-color: #000000 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .globaledit .text-white { color: #ffffff !important; }
+
+  .globaledit .border-2,
+  .globaledit .border-b-4,
+  .globaledit .border-l-4,
+  .globaledit .border-t-2 {
+    border-color: #000000 !important;
+  }
+
+  .globaledit * {
+    page-break-inside: avoid;
+  }
+}
+
+/* Card container */
+.globaledit .topic-card {
+  display: flex;
+  flex-direction: column; /* mobile */
+  border: 2px solid #d1d5db;
+  margin-bottom: 2rem;
+}
+
+/* Left column */
+.globaledit .topic-left {
+  background-color: #0c1329;
+  color: #ffffff;
+  flex: 1 1 30%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.globaledit .topic-left h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Right column */
+.globaledit .topic-right {
+  flex: 1 1 70%;
+  padding: 2rem;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+  .globaledit .topic-card {
+    flex-direction: row; /* แบ่งสองฝั่งเมื่อจอใหญ่ */
+  }
+}
+
+/* ใช้ Grid แบ่ง 2 คอลัมน์ */
+.globaledit .topic-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile: 1 column */
+}
+
+.globaledit .topic-left {
+  background-color: #0c1329;
+  color: #ffffff;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.globaledit .topic-left h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.globaledit .topic-right {
+  background-color: #ffffff00; /* transparent, ใช้ theme globaledit */
+  padding: 2rem;
+}
+
+/* Desktop: 2 columns */
+@media (min-width: 768px) {
+  .globaledit .topic-grid {
+    grid-template-columns: 1fr 2fr; /* ซ้าย 1 ส่วน, ขวา 2 ส่วน */
+  }
+}
+
+.globaledit .topic-wrapper:not(:last-child) .footer-divider {
+  width: 50%;
+  height: 2px;
+  background: linear-gradient(to right, #4d35a1, #ffffff, #4d35a1);
+  margin: 4rem auto 0 auto;
+  border: none;
+}

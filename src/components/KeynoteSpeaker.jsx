@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "../css/QualityControl.css";
 import "../css/TravelGuidance.css";
 import 'font-awesome/css/font-awesome.min.css';
@@ -39,11 +39,21 @@ const HeaderSub15 = () => {
     },
   ]; 
 
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // If the window width is less than or equal to 768px, it's considered mobile
+    };
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Run the resize handler initially to check the screen size on load
+    return () => window.removeEventListener('resize', handleResize); // Clean up the event listener on component unmount
+  }, []);
+
   return (
     <header id="headersub15">
       <div className="intro slideshow1">
         <div className="overlay">
-          <div className="container">
+          <div className="container" style={ isMobile ? { paddingRight: "15px", marginBottom: "40px" } : {marginBottom: "40px"} }>
             
             {/* ส่วนหัวข้อหลัก */}
             {/* <div className="row">
@@ -57,24 +67,21 @@ const HeaderSub15 = () => {
             </div> */}
 
             {/* ส่วน Keynote Speakers */}
-            <div className="section-title mt-5 text-center">
-              <h1></h1>
-
-              <p className="text-justify">
+            <div className="text-center" style={{ marginTop: "40px"}}>
+              <p className="text-justify-center">
                 Meet our distinguished keynote speakers from leading universities and organizations.
               </p>
-
             </div>
 
-            <div className="row">
+            <div className={`mb-4 ${!isMobile ? "row" : "grid grid-cols-1 md:grid-cols-2 gap-6"}`}>
               {keynoteData.map((speaker, i) => (
                 <div key={`${speaker.name}-${i}`} className="col-6 mb-4">
-                  <div className="card text-center p-3 shadow-sm h-100">
+                  <div className="text-center p-3 shadow-sm h-100" style={ isMobile ? { paddingBottom: "50px" } : {} }>
                     <img
                       src={speaker.photo}
                       alt={speaker.name}
                       className="img-fluid mb-3"
-                      style={{ borderRadius: "12px", height: "200px", objectFit: "cover" }}
+                      style={{ borderRadius: "12px", width:"160px", height: "200px", objectFit: "cover" }}
                     />
                     <h4>{speaker.name}</h4>
                     <p className="text-muted">{speaker.affiliation}</p>
@@ -92,17 +99,22 @@ const HeaderSub15 = () => {
               ))}
 
             </div>
-            
+
+            <div className="text-center" style={{ marginTop: "80px"}}>
+              <p className="text-justify-center"  style={{ fontSize: "30px"}}>
+                Invited Speaker
+              </p>
+            </div>
 
             <div className="row">
               {keynoteData2.map((speaker, i) => (
                 <div key={`${speaker.name}-${i}`} className="col-6 mb-4">
-                  <div className="card text-center p-3 shadow-sm h-100">
+                  <div className="text-center p-3 shadow-sm h-100">
                     <img
                       src={speaker.photo}
                       alt={speaker.name}
                       className="img-fluid mb-3"
-                      style={{ borderRadius: "12px", height: "200px", objectFit: "cover" }}
+                      style={{ borderRadius: "12px", width:"160px", height: "200px", objectFit: "cover" }}
                     />
                     <h4>{speaker.name}</h4>
                     <p className="text-muted">{speaker.affiliation}</p>

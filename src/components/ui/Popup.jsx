@@ -13,9 +13,11 @@ const Popup = ({ onClose }) => {
     <div
       style={{
         position: 'fixed',
-        top: '20%',
+        // top: '20%',
+        // left: '50%',
+        top: '50%',
         left: '50%',
-        transform: 'translateX(-50%)',
+        transform: 'translate(-50%, -50%)',
         padding: '5px',
         backgroundColor: 'rgba(255, 255, 255, 0)', // พื้นหลังโปร่งแสง
         border: '1px solid #ddd', // สีกรอบที่อ่อนกว่า

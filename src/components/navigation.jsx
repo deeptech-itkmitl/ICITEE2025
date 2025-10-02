@@ -45,7 +45,8 @@ export const Navigation = () => {
                 About <i className="fa fa-caret-down"></i>
               </a>
               {isAboutOpen && (
-                <ul className="dropdown-menu">                  
+                <ul className="dropdown-menu">
+                  <li><a href="/Message-Conference-Chair" className="page-scroll">Message Conference Chair</a></li>                  
                   <li><a href="/organizing-committee" className="page-scroll">Organizing Committee</a></li>
                   <li><a href="/pass-conference" className="page-scroll">Past Conferences</a></li>                                  
                   <li><a href="/gallery" className="page-scroll">Gallery</a></li>                                   
@@ -88,7 +89,12 @@ export const Navigation = () => {
                     <a href="/tentative-program" className="page-scroll">
                       Tentative Program
                     </a>
-                  </li>                                                     
+                  </li> 
+                  <li>
+                    <a href={`${process.env.PUBLIC_URL}/pdf/ICITEE_2025_Full_Schedule_and_Program.pdf`} className="page-scroll" target="_blank">
+                      Full Program
+                    </a>
+                  </li>                                                        
                 </ul>
                 
               )}

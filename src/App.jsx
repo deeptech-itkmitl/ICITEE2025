@@ -21,6 +21,7 @@ import Layout19 from "./Layout19";
 import Layout20 from "./Layout20";
 import Layout21 from "./Layout21";
 import Layout22 from "./Layout22";
+import PageMessagefromtheChair from "./PageMessagefromtheChair";
 
 
 import { Navigation } from "./components/navigation";
@@ -50,10 +51,12 @@ import KeynoteSpeaker4 from "./components/KeynoteSpeaker4";
 import KeynoteSpeaker5 from "./components/paperreview/App";
 import Registration2 from "./components/Registration2";
 import KeynoteSpeaker6 from "./components/KeynoteSpeaker5";
+import MessagefromtheChair from "./components/messagefromthechair";
 
 ///keynote-speaker-Permanasari
 // import PastConference from "./components/Registration";
 import JsonData from "./data/data.json";
+import ConferenceChairData from "./data/conferenceInfo.json";
 
 // import VisitorCounter from "./components/visitor-update";  // นำเข้าฟังก์ชัน VisitorCounter keynote-speaker
 import VisitorCounter from "./components/visitor-updateDetail";  // นำเข้าฟังก์ชัน VisitorCounter
@@ -96,7 +99,7 @@ const AppContent = ({ landingPageData }) => {
     <HelmetProvider>
     <>
        {/* แสดง popup เมื่อ showPopup เป็น true */}
-       {showPopup && <Popup onClose={closePopup} />}
+       {/* {showPopup && <Popup onClose={closePopup} />} */}
       
        {/* ตั้งค่า Favicon */}
        <Helmet>
@@ -188,7 +191,10 @@ const AppContent = ({ landingPageData }) => {
 
         <Route path="/keynote-speaker-JaimeLloret" element={<Layout22 data={landingPageData} />}>
           <Route index element={< KeynoteSpeaker6 data={landingPageData.Gallery} />} />
-        </Route>      
+        </Route>  
+
+        <Route path="/Message-Conference-Chair" element={<PageMessagefromtheChair data={ConferenceChairData.ConferenceChairInfo} />}>
+        </Route>     
 
       </Routes>
 
@@ -196,7 +202,7 @@ const AppContent = ({ landingPageData }) => {
       {isHomePage && (
         <>  
           {/* แสดง popup เมื่อ showPopup เป็น true เฉพาะหน้าแรก */}
-          {/* {showPopup && <Popup onClose={closePopup} />} */}
+          {showPopup && <Popup onClose={closePopup} />}
           <Announcement data={landingPageData.Team} />               
           {/* <Gallery/> */}
           <Team2 data={landingPageData.Team} />
