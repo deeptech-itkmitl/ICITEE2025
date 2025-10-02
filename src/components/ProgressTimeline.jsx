@@ -2,6 +2,10 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const steps = [
+  {title: `The presentation template is available for download 
+      <a href="${process.env.PUBLIC_URL}/pdf/ICITEE 2025 - Presentation template.pptx" target="_blank">
+        (click here)</a>.`, 
+    date: "Oct-02, 2025" },
   { title: "The deadlines have been extended: acceptance notification, camera-ready, and final registration.", date: "Sep-16, 2025" },
   { title: "The deadlines have been extended: acceptance notification, camera-ready, and final registration.", date: "Sep-05, 2025" },
   { title: "Registration is now open.", date: "May-29, 2025" },
@@ -56,7 +60,10 @@ export default function ProgressTimeline() {
                     {steps.map((step, index) => (
                       <tr key={index} style={{ borderBottom: "1px solid #ddd" }}>
                         <td style={{ padding: "8px", whiteSpace: "nowrap" }}>{step.date}</td>
-                        <td style={{ padding: "8px" }}>{step.title}</td>
+                        <td style={{ padding: "8px" }}><p 
+                                className="leading-relaxed text-justify"
+                                dangerouslySetInnerHTML={{ __html: step.title }}
+                            /></td>
                       </tr>
                     ))}
                   </tbody>
