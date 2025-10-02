@@ -193,7 +193,7 @@ const AppContent = ({ landingPageData }) => {
           <Route index element={< KeynoteSpeaker6 data={landingPageData.Gallery} />} />
         </Route>  
 
-        <Route path="/Message-Conference-Chair" element={<PageMessagefromtheChair data={ConferenceChairData.ConferenceChairInfo} />}>
+        <Route path="/Message-from-the-Conference-Chair" element={<PageMessagefromtheChair data={ConferenceChairData.ConferenceChairInfo} />}>
         </Route>     
 
       </Routes>
